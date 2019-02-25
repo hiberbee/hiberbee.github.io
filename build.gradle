@@ -1,5 +1,22 @@
 plugins {
   id 'idea'
+  id 'org.jetbrains.gradle.plugin.idea-ext' version '0.5'
+  id 'ru.vyarus.mkdocs' version '1.1.0'
+}
+version "${version != 'unspecified' && version != '' ? version : 'latest'}"
+group 'hiberbee'
+
+idea {
+  module.downloadSources = true
+  module.inheritOutputDirs = true
+
+}
+mkdocs {
+  buildDir = projectDir
+  sourcesDir = $/src/main/resources/docs/$
 }
 
-group 'io.github'
+repositories {
+  mavenCentral()
+}
+

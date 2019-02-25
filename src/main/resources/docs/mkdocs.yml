@@ -1,0 +1,42 @@
+site_name: Hiberbee OSS
+site_description: Hiberbee OSS
+site_author: Hiberbee
+site_url: https://hiberbee.github.io/hiberbee.github.io
+repo_name: Hiberbee/hiberbee.github.io
+repo_url: https://github.com/Hiberbee/hiberbee.github.io
+copyright: 'Copyright &copy; 2019 Hiberbee'
+
+theme: 'material'
+extra:
+  palette:
+    primary: 'red'
+  social:
+    - type: 'github'
+      link: 'https://github.com/Askent'
+
+google_analytics:
+  - 'UA-134817745-1'
+  - 'auto'
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - DevOps:
+      - Ansible: projects/ansible.md
+  - About:
+      - Release notes: about/history.md
