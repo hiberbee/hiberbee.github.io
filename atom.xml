@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://hiberbee.com/atom.xml" rel="self" type="application/atom+xml" /><link href="https://hiberbee.com/" rel="alternate" type="text/html" /><updated>2019-05-28T19:33:55+03:00</updated><id>https://hiberbee.com/atom.xml</id><title type="html">Hiberbee | Tech Consulting for IT professionals</title><subtitle></subtitle><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><entry><title type="html">System Design Kickoff</title><link href="https://hiberbee.com/system-design-kickoff/" rel="alternate" type="text/html" title="System Design Kickoff" /><published>2019-07-27T00:00:00+03:00</published><updated>2019-07-27T00:00:00+03:00</updated><id>https://hiberbee.com/system-design-kickoff</id><content type="html" xml:base="https://hiberbee.com/system-design-kickoff/"></content><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><category term="4H" /><category term="saturday" /><summary type="html"></summary></entry><entry><title type="html">Extremal Programming Kickoff</title><link href="https://hiberbee.com/extremal-programming-kickoff/" rel="alternate" type="text/html" title="Extremal Programming Kickoff" /><published>2019-07-25T00:00:00+03:00</published><updated>2019-07-25T00:00:00+03:00</updated><id>https://hiberbee.com/extremal-programming-kickoff</id><content type="html" xml:base="https://hiberbee.com/extremal-programming-kickoff/">&lt;h2 id=&quot;to-be-defined-soon&quot;&gt;To be defined soon&lt;/h2&gt;</content><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><category term="xp" /><summary type="html">To be defined soon</summary></entry><entry><title type="html">GraphQL: Advanced client/server features</title><link href="https://hiberbee.com/graphql-advanced/" rel="alternate" type="text/html" title="GraphQL: Advanced client/server features" /><published>2019-07-01T00:00:00+03:00</published><updated>2019-07-01T00:00:00+03:00</updated><id>https://hiberbee.com/graphql-advanced</id><content type="html" xml:base="https://hiberbee.com/graphql-advanced/">&lt;h1 id=&quot;graphql-graphql-advanced-clientserver-features&quot;&gt;GraphQL: GraphQL: Advanced client/server features&lt;/h1&gt;
+
+&lt;h2 id=&quot;какая-цель-тренинга&quot;&gt;Какая цель тренинга?&lt;/h2&gt;
+&lt;p&gt;Если ты уже знаком с GraphQL, этот тренинг познакомит с дополнительными возможностями, которые&lt;/p&gt;
+
+&lt;h2 id=&quot;с-чем-успеем-поработать&quot;&gt;С чем успеем поработать?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;подписки на события - в качестве наглядного примера события Kubernetes будут очень уместны&lt;/li&gt;
+  &lt;li&gt;продвинутая кодогенерация (генерируем любые типы в любые типы через призму GraphQL, а также готовые запросы для клиентов iOS / Android / React, схемы JSON в GraphQL, TypeScript в Kotlin - на что только хватит фантазии)&lt;/li&gt;
+  &lt;li&gt;кастомные директивы - например, для генерации в реальном времени фейковых данных тех полей с бекенда, которых к примеру там еще не существует&lt;/li&gt;
+  &lt;li&gt;разбор нескольких проблемных примеров, связанных с совместимостью и производительностью&lt;/li&gt;
+  &lt;li&gt;базовый обзор реализации на GraphQL Relay - в качестве альтернативы, для понимания контекста и общей эрудиции&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Количество мест ограничено, оплата участия доступна по ссылке https://secure.wayforpay.com/payment/s51d5e6ada6f3. Время коворкинга включено в стоимость.&lt;/p&gt;</content><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><category term="graphql" /><category term="nodejs" /><category term="rest-api" /><category term="4H" /><category term="starter" /><category term="java" /><category term="spring-boot" /><category term="starter" /><summary type="html">GraphQL: GraphQL: Advanced client/server features</summary></entry><entry><title type="html">GraphQL: Essentials and starter guide</title><link href="https://hiberbee.com/graphql-essentials/" rel="alternate" type="text/html" title="GraphQL: Essentials and starter guide" /><published>2019-07-01T00:00:00+03:00</published><updated>2019-07-01T00:00:00+03:00</updated><id>https://hiberbee.com/graphql-essentials</id><content type="html" xml:base="https://hiberbee.com/graphql-essentials/">&lt;h1 id=&quot;graphql-essentials-and-starter-guide&quot;&gt;GraphQL: Essentials and starter guide&lt;/h1&gt;
+&lt;h2 id=&quot;зачем-мне-это-нужно&quot;&gt;Зачем мне это нужно?&lt;/h2&gt;
+&lt;p&gt;“Взяв однажды GraphQL, в сторону REST API больше не захочется смотреть”&lt;/p&gt;
+
+&lt;h2 id=&quot;с-чем-успеем-поработать&quot;&gt;С чем успеем поработать?&lt;/h2&gt;
+&lt;p&gt;Базовый курс даст веб-разработчикам ответы на следующие вопросы:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;достоинств и ключевых отличие в разработке GraphQL API&lt;/li&gt;
+  &lt;li&gt;схема, типы данных, директивы,&lt;/li&gt;
+  &lt;li&gt;кодогенерация&lt;/li&gt;
+  &lt;li&gt;язык запросов, интроспекция&lt;/li&gt;
+  &lt;li&gt;best practices и подводные камни из рабочей практики&lt;/li&gt;
+  &lt;li&gt;IDE и tooling&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;В качестве примера используем Apollo Client на TypeScript, в качестве сервера на выбор - имплементации на Java / NodeJS / PHP.&lt;/p&gt;
+
+&lt;p&gt;Тренинг продолжительностью 4 часа будет полезен как для frontend, так и backend разработчиков, работающих с HTTP API.&lt;/p&gt;
+
+&lt;p&gt;Если чувствуете в себе силы, можно продолжить знакомство во второй части в этот же день - GraphQL Part II: Advanced&lt;/p&gt;
+
+&lt;p&gt;Количество мест ограничено, оплата участия доступна по ссылке https://secure.wayforpay.com/payment/s51d5e6ada6f3. Время коворкинга включено в стоимость.&lt;/p&gt;</content><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><category term="graphql" /><category term="nodejs" /><category term="rest-api" /><category term="4H" /><category term="starter" /><category term="java" /><category term="spring-boot" /><category term="starter" /><summary type="html">GraphQL: Essentials and starter guide Зачем мне это нужно? “Взяв однажды GraphQL, в сторону REST API больше не захочется смотреть”</summary></entry><entry><title type="html">Kubernetes Logging</title><link href="https://hiberbee.com/kubernetes-logging/" rel="alternate" type="text/html" title="Kubernetes Logging" /><published>2019-06-24T00:00:00+03:00</published><updated>2019-06-24T00:00:00+03:00</updated><id>https://hiberbee.com/kubernetes-logging</id><content type="html" xml:base="https://hiberbee.com/kubernetes-logging/">&lt;h1 id=&quot;kubernetes-cluster-logging-with-elk&quot;&gt;Kubernetes: Cluster logging with ELK&lt;/h1&gt;
+
+&lt;h2 id=&quot;какая-цель-тренинга&quot;&gt;Какая цель тренинга?&lt;/h2&gt;
+&lt;p&gt;Научиться, как собрать, отфильтровать, сгруппировать и анализировать логи облачных сервисов и приложений.&lt;/p&gt;
+
+&lt;h2 id=&quot;зачем-мне-это-нужно&quot;&gt;Зачем мне это нужно?&lt;/h2&gt;
+&lt;p&gt;Рано или поздно, у вас будет одна из этих задач - отследить баг в production, найти IP клиентской операции, узнать, с каким сообщением упал сервис в полночь - рано или поздно, но вопросы логирования нужно будет решать - как на стадии проектирования, так и при эксплуатации микросервисов&lt;/p&gt;
+
+&lt;h2 id=&quot;с-чем-успеем-поработать&quot;&gt;С чем успеем поработать?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;в основе тренинга - классический ELK стек для логгирования - Elasticsearch для индексации, Logstash для аггрегации и Kibana - для визуализации данных логов&lt;/li&gt;
+  &lt;li&gt;дополнительно - их работу в контексте кластера - сбор, ротация, особенности структуры, работу filebeat и fluentd&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;почему-именно-эти-темы&quot;&gt;Почему именно эти темы?&lt;/h2&gt;
+&lt;p&gt;ELK - это одно из самых популярных решений, доступных в open source, и очень мощный комплекс, закрывающий все вопросы.&lt;/p&gt;
+
+&lt;h2 id=&quot;на-кого-расчитан-тренинг&quot;&gt;На кого расчитан тренинг?&lt;/h2&gt;
+&lt;p&gt;Разработчики, Dev/Ops, SysOps работающие с микросервисами под управлением Kubernetes. Большая часть не привязана к оркестратору, и применима к Docker Swarm / Mesos. Несмотря на 6-ую позицию в серии тренингов, можно посетить после Kubernetes III: Workloads&lt;/p&gt;</content><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><category term="cloud-native" /><category term="kubernetes" /><category term="elasticsearch" /><category term="logstash" /><category term="kibana" /><category term="2H" /><summary type="html">Kubernetes: Cluster logging with ELK</summary></entry><entry><title type="html">Java 8 API: Streams &amp;amp; Lambdas</title><link href="https://hiberbee.com/java-streams-and-lambdas/" rel="alternate" type="text/html" title="Java 8 API: Streams &amp; Lambdas" /><published>2019-06-08T00:00:00+03:00</published><updated>2019-06-08T00:00:00+03:00</updated><id>https://hiberbee.com/java-streams-and-lambdas</id><content type="html" xml:base="https://hiberbee.com/java-streams-and-lambdas/">&lt;h1 id=&quot;java-stream-api--lambdas&quot;&gt;Java Stream API &amp;amp; Lambdas&lt;/h1&gt;
+
+&lt;h2 id=&quot;какая-цель-тренинга&quot;&gt;Какая цель тренинга?&lt;/h2&gt;
+&lt;p&gt;Одними из ключевых нововведением в Java 8 API стали стримы и лямбда-выражения. И хоть это произошло 5 лет назад, не все используют функциональную парадигму при разработке, а особенно - в тестировании. Приходи - это отличный способ повысить квалификацию и перейти на новый уровень.&lt;/p&gt;
+
+&lt;h2 id=&quot;для-кого-этот-тренинг&quot;&gt;Для кого этот тренинг?&lt;/h2&gt;
+&lt;p&gt;Для Automation QA инженеров, и разработчиков, использующих Java и вспомогательные библиотеки (Cucumber, JUnit, AssertJ) для тестирования веб-приложений и API. Вы научитесь эффективней работать с коллекциями, сократите дублирование, узнаете о новых API инструментов для тестирования и улучшите качество и читаемость вашего кода.&lt;/p&gt;
+
+&lt;h2 id=&quot;с-чем-успеем-поработать&quot;&gt;С чем успеем поработать?&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;фильтровать и сортировать коллекции, трансформировать данные в необходимую структуру, валидировать значения или делать группировку&lt;/li&gt;
+  &lt;li&gt;обрабатывать Nullable значения и работать с операциями, бросающими Exception&lt;/li&gt;
+  &lt;li&gt;писать универсальные матчеры, условия и предикаты для тестов, не зависящие от контекста&lt;/li&gt;
+  &lt;li&gt;расширять AssertJ, Cucumber, Jupiter API&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><category term="java" /><category term="lambdas" /><category term="streams" /><category term="4H" /><category term="saturday" /><category term="starter" /><summary type="html">Java Stream API &amp;amp; Lambdas</summary></entry><entry><title type="html">Kubernetes: Technology kick-off</title><link href="https://hiberbee.com/kubernetes-technology-kickoff/" rel="alternate" type="text/html" title="Kubernetes: Technology kick-off" /><published>2019-05-30T00:00:00+03:00</published><updated>2019-05-30T00:00:00+03:00</updated><id>https://hiberbee.com/kubernetes-technology-kickoff</id><content type="html" xml:base="https://hiberbee.com/kubernetes-technology-kickoff/">&lt;p&gt;Цитата SRE из Google:
+“Kubernetes evolves very quickly (too quickly to maintain currency), uses (many) novel concepts and that there are (too) many ways to solve the same problem.”&lt;/p&gt;
+
+&lt;p&gt;Спустя год, как и годом ранее, она все еще актуальна. Технология получилась настолько гибкой, что с легкостью смогла принять множество идей и патчей в короткий промежуток времени. Incubating статус перестал пугать, deprecated notice есть в каждой минорной версии, а в течении года появилось сразу несколько новых концептов - операторы и сервис-каталог, которые совсем не упростили понимание новичков.&lt;/p&gt;
+
+&lt;p&gt;Охватить все концепции за один тренинг точно не получится, но сделать экскурс по ключевым архитектурным решениям, проследить, какие возможности стали доступны, и с какими сложностями сталкивались компании при переезде - вполне реально. Как минимум, станет реальнее оценить трудозатраты и составить план для дальнейшего изучения.&lt;/p&gt;
+
+&lt;p&gt;Поговорим о&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;истории и причинах появления K8S и факторах, обеспечивших спрос, и как следствие - рост его популярности&lt;/li&gt;
+  &lt;li&gt;архитектуре, базовых компонентах и их ролях&lt;/li&gt;
+  &lt;li&gt;основных ресурсах API, развернув демо-инстанс небольшого приложения&lt;/li&gt;
+  &lt;li&gt;возможностях, которые предоставляет API, для расширения стандартных функций (e.g. Custom Resource Defintions, Operators)&lt;/li&gt;
+  &lt;li&gt;и в завершение - как Kubernetes повлиял на разработку, отладку, тестирование, деплоймент и другие составляющие SDLC&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Поскольку этот воркшоп скорее фундамент для более предметных тренингов, соотношение лекции/демо будет около 50/50, и поможет разработчикам, которые планируют, уже начали эксплуатацию Kubernetes, либо рассматривают Куб как альтернативу Swarm, составить оптимальный backlog и учесть последние обновления платформы.&lt;/p&gt;</content><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><category term="cloud-native" /><category term="kubernetes" /><category term="cluster-orchestration" /><category term="starter" /><summary type="html">Цитата SRE из Google: “Kubernetes evolves very quickly (too quickly to maintain currency), uses (many) novel concepts and that there are (too) many ways to solve the same problem.”</summary></entry><entry><title type="html">Ansible: Configuration management &amp;amp; infrastructure provision</title><link href="https://hiberbee.com/ansible/" rel="alternate" type="text/html" title="Ansible: Configuration management &amp; infrastructure provision" /><published>2019-05-29T00:00:00+03:00</published><updated>2019-05-29T00:00:00+03:00</updated><id>https://hiberbee.com/ansible</id><content type="html" xml:base="https://hiberbee.com/ansible/">&lt;h1 id=&quot;ansible-configuration-management--infrastructure-provision&quot;&gt;Ansible: Configuration management &amp;amp; infrastructure provision&lt;/h1&gt;
+
+&lt;h2 id=&quot;какая-цель-тренинга&quot;&gt;Какая цель тренинга?&lt;/h2&gt;
+&lt;p&gt;Наработать best practices и подготовить к поддержке более сложных инфраструктур, расширить кругозор используемых подходов и решений, показать новые ниши для автоматизации и поделиться рабочими лайфхаками.&lt;/p&gt;
+
+&lt;h2 id=&quot;зачем-мне-это-нужно&quot;&gt;Зачем мне это нужно?&lt;/h2&gt;
+&lt;p&gt;Счет облачных сервисов идет на десятки, и каждый из них имеет уникальную конфигурацию, которая зависит от множества параметров - установленной версии пакета, операционной системы, настроек и переменных окружения, прав доступа. Без инструментов для управления конфигурациями поддержка кода инфраструктуры рано или поздно перестанет быть контролируемой - виной тому чрезмерная избыточность, высокая вероятность появления ошибок по вине человеческого фактора, слабая воспроизводимость среды и самое критичное в этой ситуации - предсказуемость поведения окружения. Несколько часов инвестиции в знания configuration management окупится с лихвой в дальнейшей работе.&lt;/p&gt;
+
+&lt;h2 id=&quot;с-чем-успеем-поработать&quot;&gt;С чем успеем поработать?&lt;/h2&gt;
+&lt;p&gt;На воркшопе мы разберем workflow на примере Ansible, отработав несколько стандартных сценариев:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;полный provisioning среды, на примере bare-metal установки docker+kubernetes&lt;/li&gt;
+  &lt;li&gt;управление инфраструктурой (группировка серверов, паралельное-последовательное выполнение, работа с контейнерами)
+И несколько нестандартных, но набирающих популярность:&lt;/li&gt;
+  &lt;li&gt;работа в связке с Kubernetes - через API, в качестве задачи (Job) и отдельно - как оператор&lt;/li&gt;
+  &lt;li&gt;адаптируемость к новым API (на примерах интеграции с DigitalOcean, Vault, Slack и другими сервисами)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;почему-именно-эти-темы&quot;&gt;Почему именно эти темы?&lt;/h2&gt;
+&lt;p&gt;Примеры полностью покрывают весь функционал - секреты, события, факты, циклы, роли, повышение полномочий и т.д.&lt;/p&gt;
+
+&lt;h2 id=&quot;на-кого-расчитан-тренинг&quot;&gt;На кого расчитан тренинг?&lt;/h2&gt;
+&lt;p&gt;Воркшоп рекомендуется для разработчиков под любые серверные технологии, системных администраторов, инженеров DevOps / SecOps/ SRE, и QA Automation / SDET, работающих с несколькими тестовыми контурами.
+для комфортного восприятия рекомендуется:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;иметь достаточный для настройки окружения разработки unix-окружения (на основе Debian или CentOs)&lt;/li&gt;
+  &lt;li&gt;плюсом будет опыт работы с аналогичным инструментом&lt;/li&gt;
+  &lt;li&gt;быть готовым к интенсивному темпу live-coding сессии&lt;/li&gt;
+  &lt;li&gt;не брать ноутбук в расчете повторять шаги по ходу сессии (код с комментариями и примерами будет доступен )&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><category term="cloud-native" /><category term="ansible" /><category term="configuration-management" /><category term="2H" /><category term="thursday" /><summary type="html">Ansible: Configuration management &amp;amp; infrastructure provision</summary></entry><entry><title type="html">Docker Swarm: Complete cluster infrastructure from scratch</title><link href="https://hiberbee.com/docker-swarm/" rel="alternate" type="text/html" title="Docker Swarm: Complete cluster infrastructure from scratch" /><published>2019-05-28T00:00:00+03:00</published><updated>2019-05-28T00:00:00+03:00</updated><id>https://hiberbee.com/docker-swarm</id><content type="html" xml:base="https://hiberbee.com/docker-swarm/">&lt;h1 id=&quot;docker-swarm-complete-cluster-infrastructure-from-scratch&quot;&gt;Docker Swarm: Complete cluster infrastructure from scratch&lt;/h1&gt;
+
+&lt;h3 id=&quot;какая-цель-тренинга&quot;&gt;Какая цель тренинга?&lt;/h3&gt;
+&lt;p&gt;Наглядно продемонстрировать на примере Swarm простоту первого шага к адапатации приложений к Cloud Native, структурировать знания дизайна микросервисных архитектур, узнать новые подходы и приемы работы.&lt;/p&gt;
+
+&lt;h3 id=&quot;зачем-мне-это-нужно&quot;&gt;Зачем мне это нужно?&lt;/h3&gt;
+&lt;p&gt;Если вы уже работаете с Docker и использовали Compose, то перейти к Swarm не составит труда. И даже если вы все равно планируете использовать Kubernetes, основные концепции контейнерной оркестровки применимы и к Swarm.&lt;/p&gt;
+
+&lt;h3 id=&quot;с-чем-успеем-поработать&quot;&gt;С чем успеем поработать?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;создадим кластер swarm с master и slave нодами и подключим локальный Registry&lt;/li&gt;
+  &lt;li&gt;развернем в кластере Postgres и RabbitMQ в режиме HA;&lt;/li&gt;
+  &lt;li&gt;используя Traefik, настроим балансировку траффика и DNS&lt;/li&gt;
+  &lt;li&gt;с помощью LetsEncrypt настроим авто выдачу SSL-сертификатов подпишем *.localhost для удобства локальной разработки&lt;/li&gt;
+  &lt;li&gt;добавим мониторинг и сбор логов с TICK и ELK стеками, и менеджмент кластера с Portainer&lt;/li&gt;
+  &lt;li&gt;установим Vault для менеджмента секретных данных и S3 совместимое open-source решение для хранения файлов&lt;/li&gt;
+  &lt;li&gt;развернем API Gateway на NodeJS + GraphQL, и несколько API микросервисов на Spring Cloud&lt;/li&gt;
+  &lt;li&gt;активируем serverless-возможности на базе OpenFAAS&lt;/li&gt;
+  &lt;li&gt;в итоге, с помощью автоматизации на Ansible, перенесем наш кластер на дроплеты DigitalOcean, используя API&lt;/li&gt;
+  &lt;li&gt;в конце проведем сессию вопросов-ответов и обзор альтернативных решений&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;почему-именно-эти-темы&quot;&gt;Почему именно эти темы?&lt;/h3&gt;
+&lt;p&gt;Этот список технологий считаю джентельменским набором, хорошо зарекомендовавшим себя как в эксплуатации, так и обучении для программистов с разным уровнем знаний и опытом разработки.&lt;/p&gt;
+
+&lt;h3 id=&quot;на-кого-рассчитан-тренинг&quot;&gt;На кого рассчитан тренинг?&lt;/h3&gt;
+&lt;p&gt;Разработчики и Dev/Ops, и все специалисты, работающие с Cloud Native приложениями. Для комфортного восприятия рекомендуется:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;иметь опыт с Docker и Docker Compose&lt;/li&gt;
+  &lt;li&gt;на базовом работать с UNIX-based системами&lt;/li&gt;
+  &lt;li&gt;понимать концепции 12-factor-app (https://12factor.net/)&lt;/li&gt;
+  &lt;li&gt;быть готовым к интенсивному темпу live-coding сессии&lt;/li&gt;
+  &lt;li&gt;не брать ноутбук в расчете повторять шаги по ходу сессии (код с комментариями будет доступен после воркшопа)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><category term="cloud-native" /><category term="docker" /><category term="docker-swarm" /><category term="cluster-orchestration" /><summary type="html">Docker Swarm: Complete cluster infrastructure from scratch</summary></entry></feed>
