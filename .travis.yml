@@ -17,8 +17,9 @@ deploy:
   provider: pages
   skip-cleanup: true
   on:
-    branch: master
+    branch: development
   github-token: $GITHUB_TOKEN
   local-dir: _site
   keep-history: true
   committer-from-gh: true
+  target_branch: master
