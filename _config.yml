@@ -7,6 +7,8 @@ plugins:
   - jekyll-feed
   - jekyll-mentions
   - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-archives
 author:
   name: "Vladyslav Volkov"
   email: "vlad@hiberbee.com"
