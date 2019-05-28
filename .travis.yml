@@ -20,4 +20,3 @@ deploy:
     branch: master
   github-token: $GITHUB_TOKEN
   local-dir: _site
-  committer-from-gh: true
