@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<section class="hero" style="background-image: url('/assets/img/background/black.png');">
+  <div class="container text-left">
+    <h1>Тренинги</h1>
+    {% assign sorted_categories = site.categories | sort %}
+    {% assign sorted_tags = site.tags | sort %}
+    <h2>Категории</h2>
+    {% for category in sorted_categories %}
+      <a class="btn btn-s btn-tag" href="/category/{{ category | first }}/">#{{ category | first }}</a>
+    {% endfor %}
+    <h2>Теги</h2>
+    {% for tag in sorted_tags %}
+      <a class="btn btn-s btn-tag" href="/tag/{{ tag | first }}/">#{{ tag | first }}</a>
+    {% endfor %}
+  </div>
+</section>

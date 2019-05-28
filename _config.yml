@@ -1,1 +1,47 @@
-theme: jekyll-theme-architect
+title: Hiberbee | Tech Consulting for IT professionals
+description: ""
+email: vlad@hiberbee.com
+baseurl: ""
+url: "https://hiberbee.com"
+plugins:
+  - jekyll-feed
+  - jekyll-mentions
+  - jekyll-sitemap
+author:
+  name: "Vladyslav Volkov"
+  email: "vlad@hiberbee.com"
+  github: hiberbee
+  facebook: hiberbee
+  linkedin: vladyslavvolkov
+  telegram: nezquiraj
+organization:
+  name: Hiberbee
+  address: 3 Lva Tolstoho Str., "Chasopys" 1st floor, Kyiv, 01004
+google_analytics: UA-111095351-4
+feed:
+  path: atom.xml
+timezone: Europe/Kiev
+include:
+  - 404.html
+  - manifest.json
+  - .htaccess
+  - sw.js
+exclude:
+  - .bundle
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - build.gradle
+markdown: kramdown
+permalink: /:slug/
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: category
+  permalinks:
+    tag: '/tag/:name/'
+    category: '/category/:name/'
+future: true
+sass:
+  style: compressed
