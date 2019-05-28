@@ -16,7 +16,6 @@ after_success:
 deploy:
   provider: pages
   skip-cleanup: true
-  keep-history: true
   on:
     branch: master
   github-token: $GITHUB_TOKEN
