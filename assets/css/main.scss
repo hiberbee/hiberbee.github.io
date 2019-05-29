@@ -179,10 +179,12 @@ h3 {
 p {
   font-size: 16px;
 }
+
 .text-primary {
   color: $primaryColor
 
 }
+
 .bg-primary {
   background-color: $theme-dark;
   color: $primaryColor
@@ -211,11 +213,13 @@ aside {
 
 .navbar-default {
   color: #ffffff;
+  background-color: $theme-dark;
   border: none !important;
   @include headerFont;
   @include transition-all;
 
   .navbar-header .navbar-brand {
+    color: #ffffff;
     font-weight: 700;
     text-transform: uppercase;
 
