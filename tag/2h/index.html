@@ -18,7 +18,14 @@
 <link rel="stylesheet" href="https://use.typekit.net/ckf8ybo.css">
 <link rel="stylesheet" href="/assets/css/main.css" type="text/css">
 
-  
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+
   <script>
     !function (f, b, e, v, n, t, s) {
       if (f.fbq) return;
@@ -57,6 +64,17 @@
     gtag('config', 'UA-111095351-4');
   </script>
 
+<script>
+  window.onload = function () {
+    var script = document.createElement('script');
+    var firstScript = document.getElementsByTagName('script')[0];
+    script.type = 'text/javascript';
+    script.async = true;
+    script.src = '/sw-register.js?v=' + Date.now();
+    firstScript.parentNode.insertBefore(script, firstScript);
+  }
+  ;
+</script>
 
 </head>
 <body id="page-top">
@@ -406,5 +424,16 @@
   </ul>
 </section>
 
-</body>
+            <script>
+                window.onload = function () {
+                    var script = document.createElement('script');
+                    var firstScript = document.getElementsByTagName('script')[0];
+                    script.type = 'text/javascript';
+                    script.async = true;
+                    script.src = '/sw-register.js?v=' + Date.now();
+                    firstScript.parentNode.insertBefore(script, firstScript);
+                };
+            </script>
+            </body>
+
 </html>
