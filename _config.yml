@@ -24,6 +24,8 @@ google_analytics: UA-111095351-4
 facebook_pixel: 402031503981717
 feed:
   path: atom.xml
+  categories:
+    - dev-ops
 timezone: Europe/Kiev
 include:
   - 404.html

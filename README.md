@@ -1,5 +1,9 @@
 # Hiberbee Trainings repository
 
+[![Travis build](https://img.shields.io/travis/com/hiberbee/hiberbee.github.io.svg?style=flat-square)](https://travis-ci.com/hiberbee/hiberbee.github.io)
+[![License](https://img.shields.io/github/license/hiberbee/hiberbee.github.io.svg?style=flat-square)](https://github.com/hiberbee/hiberbee.github.io/blob/master/LICENSE)
+[![Issues](https://img.shields.io/github/issues/hiberbee/hiberbee.github.io.svg?style=flat-square)](https://github.com/hiberbee/fake-generator/issues)
+
 ## RSS Atom
 
 All trainings available since update released by link

@@ -3,10 +3,11 @@ layout: default
 ---
 {% capture nowunix %}{{ 'now' | date: '%s'}}{% endcapture %}
 {% assign reversed_tags = site.tags[page.title] | reverse %}
+{% assign reversed_categories = site.categories[page.title] | reverse %}
 <section class="container">
   <h1>#{{ page.title }}</h1>
   <ul>
-    {% for post in site.categories[page.title] %}
+    {% for post in reversed_categories %}
       {% capture posttime %}{{ post.date | date: '%s'}}{% endcapture %}
       {% if posttime >= nowunix %}
         <li>
