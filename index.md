@@ -6,38 +6,33 @@ offers:
   - category: Dev/Ops
     color: green
     trainings:
-      - Docker Swarm
-      - Kubernetes & Istio
-      - Ansible
+      - cloud-native
+      - kubernetes
+      - docker
   - category: System design
     color: red
     trainings:
-      - Architectural styles
-      - Enterprise design patterns
-      - UML & Visual thinking
+      - orchestration
   - category: Engineering practices
     color: blue
     trainings:
-      - Extreme programming & dev process
-      - Technical debt evaluation
-      - Continuous Integration / Delivery
-  - category: Software Development
+      - sdlc
+  - category: Software Engineering
     color: orange
     trainings:
-      - Java (Spring Cloud, Streams API, Lambdas)
-      - PHP (Symfony)
-      - Serverless (NodeJS)
+      - java
+      - spring-boot
+      - nodejs
   - category: Quality Assurance
     color: deep-blue
     trainings:
-      - Load & Stress testing (Gatling)
-      - Infrastructure testing (Cucumber & xUnit)
-      - API testing (Karate & Cucumber)
+      - gatling
+      - cucumber
+      - bdd
   - category: Technologies & Services
     color: violet
     slug: technology
     trainings:
-      - Persistence (Neo4j, ElasticSearch)
-      - Media processing & streaming
-      - API (GraphQL)
+      - db
+      - graphql
 ---

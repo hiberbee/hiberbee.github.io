@@ -1,23 +1,22 @@
-<section class="no-padding" id="portfolio">
+<section id="portfolio" class="no-padding">
   <div class="container-fluid">
     <div class="row no-gutter">
       {% for offer in include.page.offers %}
-        <div class="col-lg-4 col-sm-6">
-          <a href="/category/{{ offer.category | slugify }}/" class="portfolio-box">
-            <img src="/assets/img/portfolio/{{ offer.color }}.png" class="img-responsive" alt="{{ offer.category }}">
-            <div class="portfolio-box-caption">
-              <div class="portfolio-box-caption-content">
-                <div class="project-category text-faded">
-                  {{ offer.category }}
-                </div>
-                <div class="project-name">
-                  {% for training in offer.trainings %}
-                    {{ training }}<br>
-                  {% endfor %}
-                </div>
+        <div class="col-lg-4 col-sm-6 portfolio-box">
+          <img src="/assets/img/portfolio/{{ offer.color }}.png" class="img-responsive" alt="{{ offer.category }}">
+          <div class="portfolio-box-caption">
+            <div class="portfolio-box-caption-content">
+              <div class="project-category text-faded">
+                <a href="/category/{{ offer.category | slugify }}/">
+                  {{ offer.category }}</a>
+              </div>
+              <div class="project-name">
+                {% for training in offer.trainings %}
+                  <a href="/tag/{{ training }}/"><h5 style="display: inline-block">#{{ training }}</h5></a>
+                {% endfor %}
               </div>
             </div>
-          </a>
+          </div>
         </div>
       {% endfor %}
     </div>

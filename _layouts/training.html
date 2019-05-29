@@ -1,14 +1,23 @@
 ---
 layout: default
 ---
+{% assign sorted_tags = page.tags | sort %}
 <section class="hero" style="background-image: url('/assets/img/background/black.png');">
   <div class="container text-left">
-    {{ page.content }}
-  </div>
-  <div class="container">
-    {% for tag in page.tags %}
-      {% capture tag_name %}{{ tag }}{% endcapture %}
-      <a class="btn btn-tag btn-s" href="/tag/{{ tag_name }}/">#{{ tag_name }}</a>
-    {% endfor %}
+    <div class="post">
+      <h1>{{ page.title }}: {{ page.subtitle }}</h1>
+      <h4>{{ page.date | date: "%a, %-d %b" }} {{ page.time }}</h4>
+      {% for tag in sorted_tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        #<a class="contrast-link description" href="/tag/{{ tag_name }}/">{{ tag_name }}</a>&nbsp;
+      {% endfor %}
+      {{ page.content }}
+    </div>
+    <div class="container text-center">
+      {% if page.ticket_id %}
+        <a href="https://secure.wayforpay.com/button/{{ page.ticket_id }}" target="_blank"
+           class="btn btn-primary btn-xl">Купить билет</a>
+      {% endif %}
+    </div>
   </div>
 </section>

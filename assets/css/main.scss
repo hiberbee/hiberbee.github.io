@@ -2,6 +2,11 @@
 ---
 
 @charset "utf-8";
+a {
+  &:hover {
+    text-decoration: none !important;
+  }
+}
 
 $theme-primary: #282828;
 $theme-dark: #222;
@@ -87,8 +92,38 @@ hr {
   max-width: 50px;
 }
 
+.description {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  @include headerFont;
+}
+
+pre, code {
+  background-color: #222222;
+  color: #A9DC76;
+  border: none;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
 hr.light {
   border-color: white;
+}
+
+.dark-section {
+  background-color: #222222;
+  color: white;
+
+  h2 {
+    color: #e6b12e;
+
+  }
+
+  h3, h4, h5, h6, span, p {
+    color: white;
+  }
 }
 
 a {
@@ -108,15 +143,37 @@ h4,
 h5,
 h6 {
   @include headerFont;
+  margin: 10px 0;
 }
-h5 {
+
+.post {
+  font-family: pt-sans, sans-serif;
+  font-style: normal;
+  font-weight: 400;
   font-size: 18px;
-  line-height: 26px;
+  line-height: 24px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: pt-sans-caption, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
 }
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .bg-primary {
@@ -147,7 +204,7 @@ aside {
 .navbar-default {
   color: $theme-primary;
   border: none !important;
-  @include regularFont;
+  @include headerFont;
   @include transition-all;
 
   .navbar-header .navbar-brand {
@@ -318,7 +375,7 @@ aside {
 
   .portfolio-box-caption {
     color: white;
-    opacity: 0;
+    opacity: 0.6;
     display: block;
     background: rgba(0, 0, 0, .7);
     position: absolute;
@@ -335,13 +392,10 @@ aside {
       top: 50%;
       transform: translateY(-50%);
 
-      .project-name {
+      .project-name a {
         padding: 0 15px;
         font-size: 16px;
-
-        ul {
-          list-style: none;
-        }
+        color: #e6b12e;
       }
 
       .project-category {
@@ -349,6 +403,10 @@ aside {
         text-transform: uppercase;
         font-weight: 400;
         font-size: 30px;
+
+        a {
+          color: white;
+        }
       }
     }
   }
@@ -388,9 +446,10 @@ aside {
 
 .btn-tag {
   &:hover {
-    color: #ffffff!important;
+    color: #ffffff !important;
   }
-  @include button-variant(#e6b12e, rgba(0,0,0,0), rgba(0,0,0,0));
+
+  @include button-variant(#e6b12e, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
 }
 
 .btn {
@@ -439,4 +498,16 @@ img::selection {
 img::-moz-selection {
   color: white;
   background: transparent;
+}
+
+.event-id {
+  color: #90DAE6;
+}
+
+.event-time {
+  color: #A89FEC;
+}
+
+.event-tags {
+  color: #B4DA82;
 }

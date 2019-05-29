@@ -47,3 +47,51 @@ jekyll-archives:
 future: true
 sass:
   style: compressed
+trainings_identity_map:
+  do-000: docker-technology-intro
+  do-001: docker-swarm-complete-cluster-infrastructure
+  do-010: ansible-technology-intro
+  do-020: kubernetes-technology-intro
+  do-021: kubernetes-initial-setup-and-configuration
+  do-022: kubernetes-configuring-running-controllers-workloads
+  do-023: kubernetes-network-service-mesh-istio
+  do-024: kubernetes-logging-elk
+  do-025: kubernetes-push-pull-monitoring
+  do-026: kubernetes-persistence-storages-volumes
+  do-027: kubernetes-security-key-management
+  do-030: cloud-native-providers
+  ep-000: sdlc-intro
+  ep-001: sdlc-solutions
+  ep-002: sdlc-artifacts
+  ep-010: exteme-programming-intro
+  ep-020: ci-cd-intro
+  ep-021: ci-pipeline-setup
+  ep-022: cd-pipeline-setup
+  ep-030: ide-intellij
+  ep-031: remote-workstation
+  qa-000: qa-automation-essentials
+  qa-010: bdd-spec
+  qa-011: bdd-cucumber
+  qa-012: bdd-rest-karate
+  qa-020: infrastructure-integration-testing
+  qa-030: qa-java-stream-lambdas
+  sd-000: system-achicture-role-overview
+  sd-010: system-design-spec-uml
+  sd-011: system-design-spec-4-1-views
+  sd-020: reverse-enginering-microservices
+  se-010: java-intro
+  se-020: spring-hibernate-intro
+  se-021: spring-boot
+  se-022: spring-cloud-native
+  se-030: gradle-intro
+  se-031: gradle-united
+  se-032: gradle-advanced
+  se-033: gradle-kotlin-dsl
+  se-041: php-threads
+  se-042: php-app-servers
+  ts-010: db-graph-neo4j-kickoff
+  ts-020: graphql-essentials
+  ts-021: graphql-advanced
+  ts-030: media-streaming-transform
+  ts-040: mq-rabbitmq
+  ts-050: serverless-intro
