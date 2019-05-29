@@ -1,7 +1,7 @@
                         importScripts("/assets/js/workbox-v3.6.3/workbox-sw.js");
             workbox.setConfig({modulePathPrefix: "/assets/js/workbox-v3.6.3"});
 
-            self.__precacheManifest = [{"url":"/index.html","revision":"43e2d0c5f32cca7020e9055e9e4dc33f"},{"url":"/404.html","revision":"df96c308fad36cf6ae1c7602ae1a5787"},{"url":"/favicon-16x16.png","revision":"48ef8a84c99654ed87ddd65006395731"},{"url":"/favicon-32x32.png","revision":"a5c8df9c7eec1241c4ab33774a60d0b4"}];
+            self.__precacheManifest = [{"url":"/index.html","revision":"d6075f93c89d7511d0b1402442267829"},{"url":"/404.html","revision":"adefa9bde7ecb99d28e7e58151fd867c"},{"url":"/favicon-16x16.png","revision":"48ef8a84c99654ed87ddd65006395731"},{"url":"/favicon-32x32.png","revision":"a5c8df9c7eec1241c4ab33774a60d0b4"}];
             workbox.core.setCacheNameDetails({
   prefix: 'hiberbee',
   suffix: 'v1',
