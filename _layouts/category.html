@@ -1,29 +1,34 @@
 ---
 layout: default
 ---
-<section class="hero" style="background-image: url('/assets/img/background/black.png');">
-  {% assign reversed_tags = site.tags[page.title] | reverse  %}
-  <div class="container text-left">
-    <div class="post">
-      <h1>#{{ page.title }}</h1>
-      <ul>
-        {% for post in site.categories[page.title] %}
-          <li>
-            <a class="contrast-link" href="{{ post.url }}">
-              <h4>{{ post.title }}: {{ post.subtitle }} @ {{ post.date | date: "%a, %-d %b" }} {{ post.time }}</h4>
-            </a>
-          </li>
-        {% endfor %}
-        {% for post in reversed_tags %}
-          <li>
-            <h4>
-              <a class="contrast-link" href="{{ post.url }}">
-                {{ post.title }}: {{ post.subtitle }} @ {{ post.date | date: "%a, %-d %b" }} {{ post.time }}
-              </a>
-            </h4>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </div>
+{% capture nowunix %}{{ 'now' | date: '%s'}}{% endcapture %}
+{% assign reversed_tags = site.tags[page.title] | reverse %}
+<section class="container">
+  <h1>#{{ page.title }}</h1>
+  <ul>
+    {% for post in site.categories[page.title] %}
+      {% capture posttime %}{{ post.date | date: '%s'}}{% endcapture %}
+      {% if posttime >= nowunix %}
+        <li>
+          <h4>
+            <a class="tag" href="{{ post.url }}">
+              {{ post.title }}: {{ post.subtitle }}</a> <span
+            class="event-time">{{ post.date | date: "%A, %-d %B" }} {{ post.time }}</span>
+          </h4>
+        </li>
+      {% endif %}
+    {% endfor %}
+    {% for post in reversed_tags %}
+      {% capture posttime %}{{ post.date | date: '%s'}}{% endcapture %}
+      {% if posttime >= nowunix %}
+        <li>
+          <h4>
+            <a class="tag" href="{{ post.url }}">
+              {{ post.title }}: {{ post.subtitle }}</a> <span
+            class="event-time">{{ post.date | date: "%A, %-d %B" }} {{ post.time }}</span>
+          </h4>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
 </section>

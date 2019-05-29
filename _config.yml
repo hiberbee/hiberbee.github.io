@@ -36,7 +36,7 @@ exclude:
   - vendor
   - build.gradle
 markdown: kramdown
-permalink: /:slug/
+permalink: /:month/:day/:title/
 jekyll-archives:
   enabled:
     - categories
@@ -76,6 +76,7 @@ trainings_identity_map:
   qa-012: bdd-rest-karate
   qa-020: infrastructure-integration-testing
   qa-030: qa-java-stream-lambdas
+  qa-040: qa-scala-performance-stress-testing
   sd-000: system-achicture-role-overview
   sd-010: system-design-spec-uml
   sd-011: system-design-spec-4-1-views

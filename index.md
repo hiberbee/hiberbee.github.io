@@ -12,7 +12,8 @@ offers:
   - category: System design
     color: red
     trainings:
-      - orchestration
+      - microservices
+      - uml
   - category: Engineering practices
     color: blue
     trainings:

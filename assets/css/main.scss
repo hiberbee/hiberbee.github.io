@@ -8,6 +8,15 @@ a {
   }
 }
 
+a:hover {
+  color: #e6b12e;
+}
+
+a.contrast-link:hover {
+  color: #ffffff;
+}
+
+
 $theme-primary: #282828;
 $theme-dark: #222;
 
@@ -39,8 +48,6 @@ $theme-dark: #222;
   &.active,
   .open > .dropdown-toggle & {
     color: $color;
-    background-color: lighten($background, 5%);
-    border-color: lighten($border, 7%);
   }
   &:active,
   &.active,
@@ -99,6 +106,12 @@ hr {
   @include headerFont;
 }
 
+.tag {
+  font-size: 18px;
+  @include headerFont;
+  margin-right: 5px;
+}
+
 pre, code {
   background-color: #222222;
   color: #A9DC76;
@@ -129,11 +142,6 @@ hr.light {
 a {
   @include transition-all;
   color: $theme-primary;
-
-  &:hover,
-  &:focus {
-    color: lighten($theme-primary, 10%);
-  }
 }
 
 h1,
@@ -147,33 +155,30 @@ h6 {
 }
 
 .post {
-  font-family: pt-sans, sans-serif;
+  @include regularFont;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 16px;
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
+  h2, h3, h4, h5 {
     font-family: pt-sans-caption, sans-serif;
+  }
+
+  h2, h3 {
     font-weight: 700;
-    font-style: normal;
+  }
+
+  h4, h5 {
+    font-weight: 400;
   }
 }
 
 h3 {
   font-size: 24px;
-  line-height: 30px;
 }
 
 p {
   font-size: 16px;
-  line-height: 1.5;
-  margin-bottom: 10px;
 }
 
 .bg-primary {
@@ -186,7 +191,7 @@ p {
 }
 
 .text-faded {
-  color: rgba(white, .7);
+  color: rgba(255, 255, 255, .7);
 }
 
 section {
@@ -248,7 +253,7 @@ aside {
   @media (min-width: 768px) {
     background-color: rgba(0, 0, 0, 0.7);
     .navbar-header .navbar-brand {
-      color: rgba(white, .7);
+      color: rgba(255, 255, 255, 0.7);
 
       &:hover,
       &:focus {
@@ -257,7 +262,7 @@ aside {
     }
     .nav > li > a,
     .nav > li > a:focus {
-      color: rgba(white, .7);
+      color: rgba(255, 255, 255, 0.7);
 
       &:hover {
         color: #e6b12e;
@@ -437,19 +442,11 @@ aside {
 
 // Button Styles
 .btn-default {
-  @include button-variant(#9478F6, white, white);
+  @include button-variant(#282828, #f8cf4c, #e6b12e);
 }
 
 .btn-primary {
-  @include button-variant(white, #be271b, #be271b);
-}
-
-.btn-tag {
-  &:hover {
-    color: #ffffff !important;
-  }
-
-  @include button-variant(#e6b12e, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  @include button-variant(white, #be271b, rgba(230, 177, 46, 1));
 }
 
 .btn {
@@ -458,12 +455,6 @@ aside {
   border-radius: 300px;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.btn-s {
-  font-size: 14px;
-  padding: 5px 10px;
-  margin-bottom: 10px;
 }
 
 .btn-xl {
@@ -505,7 +496,8 @@ img::-moz-selection {
 }
 
 .event-time {
-  color: #A89FEC;
+  color: #373737;
+  font-size: 14px;
 }
 
 .event-tags {

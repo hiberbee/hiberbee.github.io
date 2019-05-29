@@ -1,23 +1,21 @@
 ---
-layout: default
+layout: blank
 ---
 {% assign sorted_tags = page.tags | sort %}
-<section class="hero" style="background-image: url('/assets/img/background/black.png');">
-  <div class="container text-left">
-    <div class="post">
-      <h1>{{ page.title }}: {{ page.subtitle }}</h1>
-      <h4>{{ page.date | date: "%a, %-d %b" }} {{ page.time }}</h4>
-      {% for tag in sorted_tags %}
-        {% capture tag_name %}{{ tag }}{% endcapture %}
-        #<a class="contrast-link description" href="/tag/{{ tag_name }}/">{{ tag_name }}</a>&nbsp;
-      {% endfor %}
-      {{ page.content }}
-    </div>
-    <div class="container text-center">
-      {% if page.ticket_id %}
-        <a href="https://secure.wayforpay.com/button/{{ page.ticket_id }}" target="_blank"
-           class="btn btn-primary btn-xl">Купить билет</a>
-      {% endif %}
-    </div>
+<section class="container">
+  <h1>{{ page.title }}: {{ page.subtitle }}</h1>
+  <h4>{{ page.date | date: "%a, %-d %b" }} {{ page.time }}</h4>
+  {% for tag in sorted_tags %}
+    {% capture tag_name %}{{ tag }}{% endcapture %}
+    <a class="description" href="/tag/{{ tag_name }}/"><span style="color: #222222">#</span>{{ tag_name }}
+    </a>&nbsp;
+  {% endfor %}
+  {{ page.content }}
+  <div class="container text-center">
+    {% if page.ticket_id %}
+      <hr/>
+      <a href="https://secure.wayforpay.com/button/{{ page.ticket_id }}" target="_blank"
+         class="btn btn-default btn-xl">Оплатить участие </a>
+    {% endif %}
   </div>
 </section>
