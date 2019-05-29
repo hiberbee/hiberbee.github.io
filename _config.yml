@@ -20,6 +20,7 @@ organization:
   name: Hiberbee
   address: 3 Lva Tolstoho Str., "Chasopys" 1st floor, Kyiv, 01004
 google_analytics: UA-111095351-4
+facebook_pixel: 402031503981717
 feed:
   path: atom.xml
 timezone: Europe/Kiev
