@@ -1,5 +1,5 @@
 title: Hiberbee | Tech Consulting for IT professionals
-description: ""
+description: "Технический консалтинг и супервайзинг для разработчиков, техлидов, проектных команд. Специализации: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services"
 email: vlad@hiberbee.com
 baseurl: ""
 url: "https://hiberbee.com"
@@ -58,6 +58,13 @@ pwa:
     - "/favicon*.png"
 sass:
   style: compressed
+webp:
+  enabled: true
+  quality: 75
+  img_dir: ["/assets/img/"]
+  regenerate: false
+  webp_path: nil
+  exclude: []
 trainings_identity_map:
   do-000: docker-technology-intro
   do-001: docker-swarm-complete-cluster-infrastructure

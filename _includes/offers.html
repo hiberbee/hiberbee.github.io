@@ -3,7 +3,10 @@
     <div class="row no-gutter">
       {% for offer in include.page.offers %}
         <div class="col-lg-4 col-sm-6 portfolio-box">
-          <img src="/assets/img/portfolio/{{ offer.color }}.png" class="img-responsive" alt="{{ offer.category }}">
+          <picture>
+            <source srcset="/assets/img/portfolio/{{ offer.color }}.webp" class="img-responsive" type="image/webp">
+            <img src="/assets/img/portfolio/{{ offer.color }}.png" class="img-responsive" alt="{{ offer.category }}">
+          </picture>
           <div class="portfolio-box-caption">
             <div class="portfolio-box-caption-content">
               <div class="project-category text-faded">

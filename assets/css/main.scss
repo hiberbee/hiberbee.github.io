@@ -251,13 +251,13 @@ aside {
   }
 
   @media (min-width: 768px) {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.8);
     .navbar-header .navbar-brand {
-      color: rgba(255, 255, 255, 0.7);
+      color: #e6b12e;
 
       &:hover,
       &:focus {
-        color: #e6b12e;
+        color: #ffffff;
       }
     }
     .nav > li > a,
@@ -307,6 +307,7 @@ aside {
 .hero {
   position: relative;
   width: 100%;
+  background-color: #222222;
   min-height: auto;
   @include background-cover;
   background-position: center;

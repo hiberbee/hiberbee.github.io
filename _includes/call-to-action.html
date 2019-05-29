@@ -2,9 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="col-lg-3 col-m-4 col-sm-4">
-          <div style="width: 200px" class="text-center">
-            <img src="/assets/img/photo.png" alt="{{ site.author.name }}" width="200" height="200">
+        <div style="float: left">
+          <div class="text-center">
+            <picture>
+              <source srcset="/assets/img/photo.webp" type="image/webp">
+              <img src="/assets/img/photo.png" alt="{{ site.author.name }}">
+            </picture>
             <br>
             <h5><a class="contrast-link"
                    href="https://linkedin.com/in/{{ site.author.linkdin }}"
@@ -14,7 +17,7 @@
             </h5>
           </div>
         </div>
-        <div class="col-lg-9 col-m-8 col-sm-8">
+        <div style="padding: 0 10px ">
           <h2>Контакты</h2>
           <span class="description">
             Меня зовут Владислав Волков, я буду рад помочь тебе по возникающим вопросам, как техническим, так и
