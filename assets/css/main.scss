@@ -2,23 +2,24 @@
 ---
 
 @charset "utf-8";
+
 a {
   &:hover {
     text-decoration: none !important;
   }
 }
 
+$primaryColor: #e6b12e;
+$theme-dark: #222222;
+
 a:hover {
-  color: #e6b12e;
+  color: $primaryColor;
 }
 
 a.contrast-link:hover {
   color: #ffffff;
 }
 
-
-$theme-primary: #282828;
-$theme-dark: #222;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 
@@ -130,8 +131,7 @@ hr.light {
   color: white;
 
   h2 {
-    color: #e6b12e;
-
+    color: $primaryColor;
   }
 
   h3, h4, h5, h6, span, p {
@@ -141,7 +141,6 @@ hr.light {
 
 a {
   @include transition-all;
-  color: $theme-primary;
 }
 
 h1,
@@ -180,9 +179,13 @@ h3 {
 p {
   font-size: 16px;
 }
+.text-primary {
+  color: $primaryColor
 
+}
 .bg-primary {
-  background-color: $theme-primary;
+  background-color: $theme-dark;
+  color: $primaryColor
 }
 
 .bg-dark {
@@ -207,7 +210,7 @@ aside {
 }
 
 .navbar-default {
-  color: $theme-primary;
+  color: #ffffff;
   border: none !important;
   @include headerFont;
   @include transition-all;
@@ -218,7 +221,7 @@ aside {
 
     &:hover,
     &:focus {
-      color: lighten($theme-primary, 10%);
+      color: $primaryColor;
     }
   }
 
@@ -229,63 +232,51 @@ aside {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 14px;
-        color: #e6b12e;
+        color: #ffffff;
 
         &:hover {
-          color: $theme-primary;
-        }
-      }
-
-      &.active {
-        > a,
-        > a:focus {
-          color: $theme-primary !important;
-          background-color: transparent;
-
-          &:hover {
-            background-color: transparent;
-          }
+          color: $primaryColor;
         }
       }
     }
   }
 
   @media (min-width: 768px) {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #222222;
     .navbar-header .navbar-brand {
-      color: #e6b12e;
+      color: #ffffff;
 
       &:hover,
       &:focus {
-        color: #ffffff;
+        color: $primaryColor;
       }
     }
     .nav > li > a,
     .nav > li > a:focus {
-      color: rgba(255, 255, 255, 0.7);
+      color: #ffffff;
 
       &:hover {
-        color: #e6b12e;
+        color: $primaryColor;
       }
     }
     &.affix {
-      background-color: white;
+      background-color: #222222;
 
       .navbar-header .navbar-brand {
-        color: $theme-primary;
+        color: #ffffff;
 
         &:hover,
         &:focus {
-          color: #e6b12e;
+          color: $primaryColor;
         }
       }
 
       .nav > li > a,
       .nav > li > a:focus {
-        color: rgba(0, 0, 0, 0.7);
+        color: #ffffff;
 
         &:hover {
-          color: #e6b12e;
+          color: $primaryColor;
         }
       }
     }
@@ -293,7 +284,7 @@ aside {
 }
 
 .contrast-link {
-  color: #e6b12e;
+  color: $primaryColor;
   text-decoration: none;
 
   &:hover,
@@ -401,7 +392,7 @@ aside {
       .project-name a {
         padding: 0 15px;
         font-size: 16px;
-        color: #e6b12e;
+        color: $primaryColor;
       }
 
       .project-category {
@@ -433,7 +424,7 @@ aside {
 
 // Bootstrap Overrides
 .text-primary {
-  color: $theme-primary;
+  color: $primaryColor;
 }
 
 .no-gutter > [class*='col-'] {
@@ -443,7 +434,7 @@ aside {
 
 // Button Styles
 .btn-default {
-  @include button-variant(#282828, #f8cf4c, #e6b12e);
+  @include button-variant(#282828, #f8cf4c, $primaryColor);
 }
 
 .btn-primary {

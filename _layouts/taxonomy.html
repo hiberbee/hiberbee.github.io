@@ -1,19 +1,19 @@
 ---
 layout: default
 ---
-<section class="hero" style="background-image: url('/assets/img/background/black.png');">
+<section class="hero dark-section" style="background-image: url('/assets/img/background/black.png');">
   <div class="container text-left">
-    <h1>Таксономия</h1>
+    <h2>Таксономия</h2>
     {% assign sorted_categories = site.categories | sort %}
     {% assign sorted_tags = site.tags | sort %}
-    <h2>Категории</h2>
+    <h3>Категории</h3>
     {% for category in sorted_categories %}
-      <a class="contrast-link tag" href="/category/{{ category | first }}/"><span
+      <a class="tag" href="/category/{{ category | first }}/"><span
         class="text-faded">#</span>{{ category | first }}</a>
     {% endfor %}
-    <h2>Теги</h2>
+    <h3>Теги</h3>
     {% for tag in sorted_tags %}
-      <a class="contrast-link tag" href="/tag/{{ tag | first }}/"><span class="text-faded">#</span>{{ tag | first }}</a>
+      <a class="tag" href="/tag/{{ tag | first }}/"><span class="text-primary">#</span>{{ tag | first }}</a>
     {% endfor %}
   </div>
 </section>
