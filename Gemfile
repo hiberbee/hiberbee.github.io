@@ -6,5 +6,6 @@ group :jekyll_plugins do
   gem "jekyll-github-metadata"
   gem "jekyll-mentions"
   gem "jekyll-seo-tag"
+  gem "jekyll-pwa-plugin"
   gem "jekyll-sitemap"
 end

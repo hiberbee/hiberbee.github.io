@@ -8,6 +8,7 @@ plugins:
   - jekyll-mentions
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-pwa-plugin
   - jekyll-archives
 author:
   name: "Vladyslav Volkov"
@@ -28,7 +29,7 @@ include:
   - 404.html
   - manifest.json
   - CNAME
-  - sw.js
+  - service-worker.js
 exclude:
   - .bundle
   - Gemfile
@@ -46,6 +47,15 @@ jekyll-archives:
     tag: '/tag/:name/'
     category: '/category/:name/'
 future: true
+pwa:
+  dest_js_directory: assets/js
+  precache_glob_ignores: # Optional
+    - sw-register.js
+  precache_glob_patterns: # Optional
+    - "{js,css,img}/**/*.{js,css,png,svg,jpg,jpeg}"
+    - "/index.html"
+    - "/404.html"
+    - "/favicon*.png"
 sass:
   style: compressed
 trainings_identity_map:
