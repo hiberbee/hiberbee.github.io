@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="https://hiberbee.com/feed/dev-ops.xml" rel="self" type="application/atom+xml" /><link href="https://hiberbee.com/" rel="alternate" type="text/html" /><updated>2019-05-29T16:36:26+03:00</updated><id>https://hiberbee.com/feed/dev-ops.xml</id><title type="html">Hiberbee | Tech Consulting for IT professionals | Dev-ops</title><subtitle>Технический консалтинг и супервайзинг для разработчиков, техлидов, проектных команд. Специализации: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services</subtitle><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><entry><title type="html">Docker Swarm</title><link href="https://hiberbee.com/05/28/do-001/" rel="alternate" type="text/html" title="Docker Swarm" /><published>2019-05-28T00:00:00+03:00</published><updated>2019-05-28T00:00:00+03:00</updated><id>https://hiberbee.com/05/28/do-001</id><content type="html" xml:base="https://hiberbee.com/05/28/do-001/">&lt;h3 id=&quot;какая-цель-тренинга&quot;&gt;Какая цель тренинга?&lt;/h3&gt;
+&lt;p&gt;Наглядно продемонстрировать на примере Swarm простоту первого шага к адапатации приложений к Cloud Native, структурировать знания дизайна микросервисных архитектур, узнать новые подходы и приемы работы.&lt;/p&gt;
+
+&lt;h3 id=&quot;зачем-мне-это-нужно&quot;&gt;Зачем мне это нужно?&lt;/h3&gt;
+&lt;p&gt;Если вы уже работаете с Docker и использовали Compose, то перейти к Swarm не составит труда. И даже если вы все равно планируете использовать Kubernetes, основные концепции контейнерной оркестровки применимы и к Swarm.&lt;/p&gt;
+
+&lt;h3 id=&quot;с-чем-успеем-поработать&quot;&gt;С чем успеем поработать?&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;создадим кластер swarm с master и slave нодами и подключим локальный Registry&lt;/li&gt;
+  &lt;li&gt;развернем в кластере Postgres и RabbitMQ в режиме HA;&lt;/li&gt;
+  &lt;li&gt;используя Traefik, настроим балансировку траффика и DNS&lt;/li&gt;
+  &lt;li&gt;с помощью LetsEncrypt настроим авто выдачу SSL-сертификатов подпишем *.localhost для удобства локальной разработки&lt;/li&gt;
+  &lt;li&gt;добавим мониторинг и сбор логов с TICK и ELK стеками, и менеджмент кластера с Portainer&lt;/li&gt;
+  &lt;li&gt;установим Vault для менеджмента секретных данных и S3 совместимое open-source решение для хранения файлов&lt;/li&gt;
+  &lt;li&gt;развернем API Gateway на NodeJS + GraphQL, и несколько API микросервисов на Spring Cloud&lt;/li&gt;
+  &lt;li&gt;активируем serverless-возможности на базе OpenFAAS&lt;/li&gt;
+  &lt;li&gt;в итоге, с помощью автоматизации на Ansible, перенесем наш кластер на дроплеты DigitalOcean, используя API&lt;/li&gt;
+  &lt;li&gt;в конце проведем сессию вопросов-ответов и обзор альтернативных решений&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;почему-именно-эти-темы&quot;&gt;Почему именно эти темы?&lt;/h3&gt;
+&lt;p&gt;Этот список технологий считаю джентельменским набором, хорошо зарекомендовавшим себя как в эксплуатации, так и обучении для программистов с разным уровнем знаний и опытом разработки.&lt;/p&gt;
+
+&lt;h3 id=&quot;на-кого-рассчитан-тренинг&quot;&gt;На кого рассчитан тренинг?&lt;/h3&gt;
+&lt;p&gt;Разработчики и Dev/Ops, и все специалисты, работающие с Cloud Native приложениями. Для комфортного восприятия рекомендуется:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;иметь опыт с Docker и Docker Compose&lt;/li&gt;
+  &lt;li&gt;на базовом работать с UNIX-based системами&lt;/li&gt;
+  &lt;li&gt;понимать концепции 12-factor-app (https://12factor.net/)&lt;/li&gt;
+  &lt;li&gt;быть готовым к интенсивному темпу live-coding сессии&lt;/li&gt;
+  &lt;li&gt;не брать ноутбук в расчете повторять шаги по ходу сессии (код с комментариями будет доступен после воркшопа)&lt;/li&gt;
+&lt;/ul&gt;</content><author><name>Vladyslav Volkov</name><email>vlad@hiberbee.com</email></author><category term="dev-ops" /><category term="cloud-native" /><category term="docker" /><category term="docker-swarm" /><category term="orchestration" /><category term="2H" /><category term="Thu" /><summary type="html">Какая цель тренинга? Наглядно продемонстрировать на примере Swarm простоту первого шага к адапатации приложений к Cloud Native, структурировать знания дизайна микросервисных архитектур, узнать новые подходы и приемы работы.</summary></entry></feed>
