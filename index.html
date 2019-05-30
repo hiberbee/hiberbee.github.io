@@ -85,6 +85,9 @@
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5LNHBZ"
             height="0" width="0" style="display:none;visibility:hidden"></iframe>
 </noscript>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous"
+        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=145510372820525&autoLogAppEvents=1"></script>
 <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -128,9 +131,6 @@
                 </li>
                 <li>
                     <a class="page-scroll" href="/#trainings">Тренинги</a>
-                </li>
-                <li>
-                    <a class="page-scroll" href="/#payment">Цены</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="/#contact">Контакты</a>
@@ -301,48 +301,53 @@
   </div>
 </section>
 
-<section id="trainings" class="dark-section">
-  <div class="container text-center">
-    <h2>Тренинги</h2>
-    <span class="description text-faded">Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают несколько
-      тем, для их группировки используются теги и <a class="contrast-link" href="/taxonomy/">таксономия</a>. Все тренинги и способы подписки на обновления доступны на <a
-        class="contrast-link"
-        href="https://github.com/Hiberbee/hiberbee.github.io/tree/development/_posts">Github</a></span>
-    <div>
-      <h3>По длительности</h3>
-      <a class="contrast-link tag" href="/tag/2H/"><span class="text-faded">#</span>2 часа</a>
-      <a class="contrast-link tag" href="/tag/4H/"><span class="text-faded">#</span>4 часа</a>
-      <h3>По дню недели</h3>
-      <a class="contrast-link tag" href="/tag/mon/"><span class="text-faded">#</span>Понедельник</a>
-      <a class="contrast-link tag" href="/tag/tue/"><span class="text-faded">#</span>Вторник</a>
-      <a class="contrast-link tag" href="/tag/wed/"><span class="text-faded">#</span>Среда</a>
-      <a class="contrast-link tag" href="/tag/tThu/"><span class="text-faded">#</span>Четверг</a>
-      <a class="contrast-link tag" href="/tag/fri/"><span class="text-faded">#</span>Пятница</a>
-      <a class="contrast-link tag" href="/tag/sat/"><span class="text-faded">#</span>Суббота</a>
-      <h3>По сложности</h3>
-      <a class="contrast-link tag" href="/tag/essentials/"><span class="text-faded">#</span>Вводный курс</a>
-      <a class="contrast-link tag" href="/tag/advanced/"><span class="text-faded">#</span>Для опытных</a>
-      <a class="contrast-link tag" href="/tag/boost/"><span class="text-faded">#</span>Интенсив</a>
-      <h3>Рекомендуем вместе</h3>
-      <a class="contrast-link tag" href="/tag/kubernetes/"><span class="text-faded">#</span>Kubernetes</a>
-      <a class="contrast-link tag" href="/tag/spring-boot/"><span class="text-faded">#</span>Spring Boot</a>
-      <a class="contrast-link tag" href="/tag/serverless/"><span class="text-faded">#</span>Serverless</a>
+<section id="trainings">
+    <div class="container text-center">
+        <div class="col-md-6 col-sm-12 text-left">
+            <h2>Тренинги</h2>
+            <p class="description">Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают
+                несколько
+                тем, для их группировки используются теги и <a href="/taxonomy/">таксономия</a>.
+                Все тренинги и способы подписки на обновления доступны на <a
+                        href="https://github.com/Hiberbee/hiberbee.github.io/tree/development/_posts">Github</a></p>
+            <p class="description">Как правило, на странице тренинга есть ссылка на оплату. Если вы хотите приобрести
+                несколько тренингов или
+                использовать промо-код, воспользуйтесь <a
+                        href="https://secure.wayforpay.com/button/b06d4b2643b9e"
+                        target="_blank"
+                >ссылкой</a>, указав в комментарии, какой тренинг и дата вас
+                интересуют.</p>
+            <div>
+                <h3>По длительности</h3>
+                <a class="tag" href="/tag/2H/"><span class="description">#</span>2 часа</a>
+                <a class="tag" href="/tag/4H/"><span class="description">#</span>4 часа</a>
+                <h3>По дню недели</h3>
+                <a class="tag" href="/tag/mon/"><span class="description">#</span>Понедельник</a>
+                <a class="tag" href="/tag/tue/"><span class="description">#</span>Вторник</a>
+                <a class="tag" href="/tag/wed/"><span class="description">#</span>Среда</a>
+                <a class="tag" href="/tag/tThu/"><span class="description">#</span>Четверг</a>
+                <a class="tag" href="/tag/fri/"><span class="description">#</span>Пятница</a>
+                <a class="tag" href="/tag/sat/"><span class="description">#</span>Суббота</a>
+                <h3>По сложности</h3>
+                <a class="tag" href="/tag/essentials/"><span class="description">#</span>Вводный курс</a>
+                <a class="tag" href="/tag/advanced/"><span class="description">#</span>Для опытных</a>
+                <a class="tag" href="/tag/boost/"><span class="description">#</span>Интенсив</a>
+                <h3>Рекомендуем вместе</h3>
+                <a class="tag" href="/tag/kubernetes/"><span class="description">#</span>Kubernetes</a>
+                <a class="tag" href="/tag/spring-boot/"><span class="description">#</span>Spring Boot</a>
+                <a class="tag" href="/tag/serverless/"><span class="description">#</span>Serverless</a>
+                <hr/>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <div class="fb-page" data-href="https://www.facebook.com/hiberbee/" data-tabs="events" data-width="500"
+                 data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+                 data-show-facepile="true">
+                <blockquote cite="https://www.facebook.com/hiberbee/" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/hiberbee/">Hiberbee</a></blockquote>
+            </div>
+        </div>
     </div>
-  </div>
-</section>
-
-<section id="payment">
-  <div class="container text-center">
-    <div class="call-to-action">
-      <h2>Цены</h2>
-      <span class="description">Как правило, на странице тренинга есть ссылка на оплату. Если вы хотите приобрести несколько тренингов или
-        использовать промо-код, воспользуйтесь <a class="contrast-link" href="https://secure.wayforpay.com/button/b06d4b2643b9e"
-                                                  target="_blank"
-        >ссылкой</a>, указав в комментарии, какой тренинг и дата вас
-        интересуют.</span>
-      <hr/>
-    </div>
-  </div>
 </section>
 
 <section class="dark-section" id="contact">
