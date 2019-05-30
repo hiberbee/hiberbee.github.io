@@ -13,7 +13,7 @@ layout: default
     {% endfor %}
     <h3>Теги</h3>
     {% for tag in sorted_tags %}
-      <a class="tag" href="/tag/{{ tag | downcase | first }}/"><span class="text-primary">#</span>{{ tag | first }}</a>
+      <a class="tag" href="/tag/{{ tag | first | downcase }}"><span class="text-primary">#</span>{{ tag | first }}</a>
     {% endfor %}
   </div>
 </section>
