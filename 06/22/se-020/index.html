@@ -51,14 +51,12 @@
             (i[r].q = i[r].q || []).push(arguments)
         }, i[r].l = 1 * new Date();
         a = s.createElement(o),
-            m = s.getElementsByTagName(o)
-                [0];
+            m = s.getElementsByTagName(o)[0];
         a.async = 1;
         a.src = g;
         m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-111095351-4', 'auto');
     ga('send', {
         hitType: 'pageview',
         page: location.pathname
@@ -67,20 +65,9 @@
         'appName': '',
         'screenName': 'Spring & Hibernate'
     });
+    ga('create', 'UA-111095351-4', 'auto');
 </script>
-<script>(function (w, d, s, l, i) {
-    w[l] = w[l] || [];
-    w[l].push({
-        'gtm.start':
-            new Date().getTime(), event: 'gtm.js'
-    });
-    var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
-    j.async = true;
-    j.src =
-        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-    f.parentNode.insertBefore(j, f);
-})(window, document, 'script', 'dataLayer', 'GTM-P5LNHBZ');</script>
+
 <script>
     window.onload = function () {
         var script = document.createElement('script');
@@ -95,10 +82,6 @@
 
 </head>
 <body id="page-top">
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5LNHBZ"
-            height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous"
         src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.3&appId=145510372820525&autoLogAppEvents=1"></script>
@@ -161,52 +144,64 @@
 </nav>
 
 <section class="container">
-  
+    
 <section class="container">
-  <h1>Spring & Hibernate: Migration from PHP Symfony & Doctrine</h1>
-  <h4>Sat, 22 Jun 15:00 - 19:00</h4>
-  
+    <h1>Spring & Hibernate: Migration from PHP Symfony & Doctrine</h1>
+    <h4>Sat, 22 Jun 15:00 - 19:00</h4>
     
-    <a class="description" href="/tag/4H/"><span style="color: #222222">#</span>4H
-    </a>&nbsp;
-  
+        
+        <a class="description" href="/tag/4H/"><span style="color: #222222">#</span>4H
+        </a>&nbsp;
     
-    <a class="description" href="/tag/Sat/"><span style="color: #222222">#</span>Sat
-    </a>&nbsp;
-  
+        
+        <a class="description" href="/tag/Sat/"><span style="color: #222222">#</span>Sat
+        </a>&nbsp;
     
-    <a class="description" href="/tag/boost/"><span style="color: #222222">#</span>boost
-    </a>&nbsp;
-  
+        
+        <a class="description" href="/tag/boost/"><span style="color: #222222">#</span>boost
+        </a>&nbsp;
     
-    <a class="description" href="/tag/hibernate/"><span style="color: #222222">#</span>hibernate
-    </a>&nbsp;
-  
+        
+        <a class="description" href="/tag/hibernate/"><span style="color: #222222">#</span>hibernate
+        </a>&nbsp;
     
-    <a class="description" href="/tag/java/"><span style="color: #222222">#</span>java
-    </a>&nbsp;
-  
+        
+        <a class="description" href="/tag/java/"><span style="color: #222222">#</span>java
+        </a>&nbsp;
     
-    <a class="description" href="/tag/php/"><span style="color: #222222">#</span>php
-    </a>&nbsp;
-  
+        
+        <a class="description" href="/tag/php/"><span style="color: #222222">#</span>php
+        </a>&nbsp;
     
-    <a class="description" href="/tag/spring-boot/"><span style="color: #222222">#</span>spring-boot
-    </a>&nbsp;
-  
+        
+        <a class="description" href="/tag/spring-boot/"><span style="color: #222222">#</span>spring-boot
+        </a>&nbsp;
     
-    <a class="description" href="/tag/starter/"><span style="color: #222222">#</span>starter
-    </a>&nbsp;
-  
-  
+        
+        <a class="description" href="/tag/starter/"><span style="color: #222222">#</span>starter
+        </a>&nbsp;
+    
+    
 
-  <div class="container text-center">
-    
-      <hr/>
-      <a href="https://secure.wayforpay.com/button/b20078b595abc" target="_blank"
-         class="btn btn-default btn-xl">Страница оплаты</a>
-    
-  </div>
+    <div class="container text-center">
+        
+            <hr/>
+            <script>
+                function addTransaction() {
+                    ga('require', 'ecommerce');
+                    ga('ecommerce:addTransaction', {
+                        'id': Date.now(),
+                        'name': 'Spring & Hibernate Migration from PHP Symfony & Doctrine',
+                        'sku': '/06/22/se-020/',
+                        'category': ''
+                    });
+                }
+            </script>
+            <a id="checkout-link" href="https://secure.wayforpay.com/button/b20078b595abc"
+               onclick="addTransaction()" target="_blank"
+               class="btn btn-default btn-xl">Страница оплаты</a>
+        
+    </div>
 </section>
 
 </section>
