@@ -1,57 +1,59 @@
-<script
-  src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-  integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
-  crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
-        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
-        crossorigin="anonymous"></script>
-{% if site.facebook_pixel %}
-  <script>
+<script>
     !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
     }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
+        'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '{{ site.facebook_pixel }}');
     fbq('track', 'PageView');
-  </script>
-  <noscript>
+</script>
+<noscript>
     <img height="1" width="1" style="display:none"
          src="https://www.facebook.com/tr?id=402031503981717&ev=PageView&noscript=1"/></noscript>
-{% endif %}
-{% if site.google_analytics %}
-  <script>
+<script>
     window.dataLayer = window.dataLayer || [];
 
     function gtag() {
-      dataLayer.push(arguments);
+        dataLayer.push(arguments);
     }
 
     gtag('js', new Date());
     gtag('config', '{{ site.google_analytics }}');
-  </script>
-{% endif %}
+</script>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start':
+            new Date().getTime(), event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', {{ site.google_tag }});</script>
 <script>
-  window.onload = function () {
-    var script = document.createElement('script');
-    var firstScript = document.getElementsByTagName('script')[0];
-    script.type = 'text/javascript';
-    script.async = true;
-    script.src = '/sw-register.js?v=' + Date.now();
-    firstScript.parentNode.insertBefore(script, firstScript);
-  }
-  ;
+    window.onload = function () {
+        var script = document.createElement('script');
+        var firstScript = document.getElementsByTagName('script')[0];
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = '/sw-register.js?v=' + Date.now();
+        firstScript.parentNode.insertBefore(script, firstScript);
+    }
+    ;
 </script>

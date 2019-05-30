@@ -22,6 +22,7 @@ organization:
   address: 3 Lva Tolstoho Str., "Chasopys" 1st floor, Kyiv, 01004
 google_analytics: UA-111095351-4
 facebook_pixel: 402031503981717
+google_tag: GTM-P5LNHBZ
 feed:
   path: atom.xml
   categories:

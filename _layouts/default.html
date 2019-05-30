@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="theme-color" content="#e6b12e">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="{{ site.description }}">
-  <title>{{ site.title }}</title>
-  {% include styles.html %}
-  {% include scripts.html %}
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#e6b12e">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <title>{{ site.title }}</title>
+    {% include styles.html %}
+    {% include scripts.html %}
 </head>
 <body id="page-top">
-{% include header.html %}
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5LNHBZ"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
+{% include header.html site=site %}
 {{ content }}
+{% include footer.html %}
 </body>
 </html>

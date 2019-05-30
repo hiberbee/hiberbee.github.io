@@ -250,6 +250,10 @@ aside {
   padding: 0;
 }
 
+#menu {
+  display: none;
+}
+
 .navbar-default {
   color: #ffffff;
   background-color: $theme-dark;
@@ -285,6 +289,14 @@ aside {
   }
 
   @media (min-width: 768px) {
+
+    .navbar-right {
+      margin-right: 0;
+    }
+    #menu {
+      display: block;
+    }
+
     background-color: #222222;
     .navbar-header .navbar-brand {
       color: #ffffff;
@@ -294,7 +306,9 @@ aside {
         color: $primaryColor;
       }
     }
-    .nav > li > a,
+    .nav > li > a {
+      padding: 15px 10px;
+    }
     .nav > li > a:focus {
       color: #ffffff;
 
@@ -433,7 +447,7 @@ aside {
       transform: translateY(-50%);
 
       .project-name a {
-        padding: 0 15px;
+        padding: 10px;
         font-size: 16px;
         color: $primaryColor;
       }
@@ -468,6 +482,10 @@ aside {
 // Bootstrap Overrides
 .text-primary {
   color: $primaryColor;
+}
+
+.navbar-fixed-bottom li a {
+  font-size: 12px;
 }
 
 .no-gutter > [class*='col-'] {
