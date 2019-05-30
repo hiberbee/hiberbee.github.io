@@ -58,3 +58,16 @@
     }
     ;
 </script>
+<script>
+    if (window.Notification && Notification.permission !== "granted") {
+        Notification.requestPermission(function (status) {
+            if (status === "granted") {
+                const notification = new Notification("Спасибо, что вы с нами!", {
+                    lang: "ru",
+                    body: "Обещаем присылать только важные уведомления",
+                    icon: "{{ site.url }}/apple-touch-icon.png"
+                });
+            }
+        });
+    }
+</script>

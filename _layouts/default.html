@@ -8,7 +8,7 @@
     <meta name="description" content="{{ site.description }}">
     <title>{{ site.title }}</title>
     {% include styles.html %}
-    {% include scripts.html %}
+    {% include scripts.html push_notifications=site.push_notifications %}
 </head>
 <body id="page-top">
 <div id="fb-root"></div>
@@ -17,5 +17,6 @@
 {% include header.html site=site %}
 {{ content }}
 {% include footer.html %}
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5953560.js"></script>
 </body>
 </html>
