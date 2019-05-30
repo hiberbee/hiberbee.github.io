@@ -3,19 +3,31 @@ layout: blank
 ---
 {% assign sorted_tags = page.tags | sort %}
 <section class="container">
-  <h1>{{ page.title }}: {{ page.subtitle }}</h1>
-  <h4>{{ page.date | date: "%a, %-d %b" }} {{ page.time }}</h4>
-  {% for tag in sorted_tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a class="description" href="/tag/{{ tag_name }}/"><span style="color: #222222">#</span>{{ tag_name }}
-    </a>&nbsp;
-  {% endfor %}
-  {{ page.content }}
-  <div class="container text-center">
-    {% if page.ticket_id %}
-      <hr/>
-      <a href="https://secure.wayforpay.com/button/{{ page.ticket_id }}" target="_blank"
-         class="btn btn-default btn-xl">Страница оплаты</a>
-    {% endif %}
-  </div>
+    <h1>{{ page.title }}: {{ page.subtitle }}</h1>
+    <h4>{{ page.date | date: "%a, %-d %b" }} {{ page.time }}</h4>
+    {% for tag in sorted_tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        <a class="description" href="/tag/{{ tag_name }}/"><span style="color: #222222">#</span>{{ tag_name }}
+        </a>&nbsp;
+    {% endfor %}
+    {{ page.content }}
+    <div class="container text-center">
+        {% if page.ticket_id %}
+            <hr/>
+            <script>
+                function addTransaction() {
+                    ga('require', 'ecommerce');
+                    ga('ecommerce:addTransaction', {
+                        'id': Date.now(),
+                        'name': '{{  page.title  }} {{ page.subtitle }}',
+                        'sku': '{{ page.url }}',
+                        'category': '{{ page.category }}'
+                    });
+                }
+            </script>
+            <a id="checkout-link" href="https://secure.wayforpay.com/button/{{ page.ticket_id }}"
+               onclick="addTransaction()" target="_blank"
+               class="btn btn-default btn-xl">Страница оплаты</a>
+        {% endif %}
+    </div>
 </section>
