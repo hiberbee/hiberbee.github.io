@@ -79,6 +79,19 @@
     }
     ;
 </script>
+<script>
+    if (window.Notification && Notification.permission !== "granted") {
+        Notification.requestPermission(function (status) {
+            if (status === "granted") {
+                const notification = new Notification("Спасибо, что вы с нами!", {
+                    lang: "ru",
+                    body: "Обещаем присылать только важные уведомления",
+                    icon: "https://hiberbee.com/apple-touch-icon.png"
+                });
+            }
+        });
+    }
+</script>
 
 </head>
 <body id="page-top">
@@ -185,6 +198,7 @@
     </div>
 </nav>
 
+<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/5953560.js"></script>
             <script>
                 window.onload = function () {
                     var script = document.createElement('script');
