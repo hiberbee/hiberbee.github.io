@@ -1,1 +1,1 @@
-Sitemap: https://hiberbee.com/sitemap.xml
+Disallow /vcard.vcf
