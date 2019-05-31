@@ -34,12 +34,14 @@ include:
   - manifest.json
   - CNAME
   - service-worker.js
+  - vcard.vcf
 exclude:
   - .bundle
   - Gemfile
   - Gemfile.lock
   - vendor
   - build.gradle
+push_app_id: d3180b47-35fb-477f-98a4-49105f4c3bb3
 markdown: kramdown
 permalink: /:month/:day/:title/
 jekyll-archives:
