@@ -2,51 +2,47 @@
 ---
 
 @charset "utf-8";
-
-* {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-a {
-  &:hover {
-    text-decoration: none !important;
-  }
-}
-
-.fa, .fab, .fal, .far, .fas {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
+@font-face {
+  font-family: "Myriad Pro Semibold";
   font-style: normal;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1
+  font-display: block;
+  font-weight: normal;
+  src: local("Myriad Pro Semibold"), url("../fonts/MyriadPro-Semibold.ttf");
 }
 
-.fa-facebook-f:before {
-  content: "\f39e"
+@font-face {
+  font-family: "Myriad Pro Bold";
+  font-style: normal;
+  font-display: block;
+  font-weight: normal;
+  src: local("Myriad Pro Bold"), url("../fonts/MyriadPro-Bold.ttf");
 }
 
-.fa-facebook-messenger:before {
-  content: "\f39f"
+@font-face {
+  font-family: "Myriad Pro";
+  font-style: normal;
+  font-display: block;
+  font-weight: normal;
+  src: local("Myriad Web Pro Regular"), url("../fonts/MyriadPro-Regular.ttf");
 }
 
-.fa-linkedin:before {
-  content: "\f08c"
+@mixin headerFont() {
+  font-family: "Myriad Pro Bold", sans-serif;
 }
 
 
-.fa-telegram:before {
-  content: "\f2c6"
+@mixin accentFont() {
+  font-family: "Myriad Pro Semibold", sans-serif;
 }
 
-.fab {
-  font-family: "Font Awesome 5 Brands"
+@mixin regularFont() {
+  font-family: "Myriad Pro", sans-serif;
 }
+
 
 $primaryColor: #e6b12e;
-$theme-dark: #222222;
+$darkColor: #222222;
+
 .dark-section a {
   color: $primaryColor;
 }
@@ -54,11 +50,6 @@ $theme-dark: #222222;
 a:hover {
   color: $primaryColor;
 }
-
-a.contrast-link:hover {
-  color: #ffffff;
-}
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 
@@ -114,23 +105,15 @@ a.contrast-link:hover {
   }
 }
 
-@mixin headerFont() {
-  font-family: myriad-pro, sans-serif;
-}
-
-@mixin regularFont() {
-  font-family: pt-sans, sans-serif;
-  font-size: 16px;
-}
-
 html,
 body {
   height: 100%;
   width: 100%;
+  @include regularFont
 }
 
 body {
-  @include regularFont;
+  font-size: 16px;
 }
 
 hr {
@@ -139,17 +122,11 @@ hr {
   max-width: 50px;
 }
 
-.description {
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  @include headerFont;
-}
-
 .tag {
-  font-size: 18px;
-  @include headerFont;
+  @include accentFont;
+  display: inline-block;
   margin-right: 5px;
+  font-size: 18px;
 }
 
 pre, code {
@@ -168,6 +145,15 @@ hr.light {
 .dark-section {
   background-color: #222222;
   color: white;
+
+  a {
+    color: $primaryColor;
+
+    &:hover,
+    &:focus {
+      color: white;
+    }
+  }
 
   h2 {
     color: $primaryColor;
@@ -192,45 +178,21 @@ h6 {
   margin: 10px 0;
 }
 
-.post {
-  @include regularFont;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-
-  h2, h3, h4, h5 {
-    font-family: pt-sans-caption, sans-serif;
-  }
-
-  h2, h3 {
-    font-weight: 700;
-  }
-
-  h4, h5 {
-    font-weight: 400;
-  }
-}
-
-h3 {
-  font-size: 24px;
-}
-
-p {
-  font-size: 16px;
+h1 {
+  margin-top: 40px;
 }
 
 .text-primary {
   color: $primaryColor
-
 }
 
 .bg-primary {
-  background-color: $theme-dark;
+  background-color: $darkColor;
   color: $primaryColor
 }
 
 .bg-dark {
-  background-color: $theme-dark;
+  background-color: $darkColor;
   color: white;
 }
 
@@ -238,16 +200,34 @@ p {
   color: rgba(255, 255, 255, .7);
 }
 
-section {
-  padding: 50px 0;
-}
-
-aside {
+section, aside {
   padding: 50px 0;
 }
 
 .no-padding {
   padding: 0;
+}
+
+svg {
+  width: 18px;
+  height: 18px;
+}
+
+svg path {
+  fill: white;
+}
+
+svg:hover path {
+  fill: $primaryColor
+}
+
+* {
+  @include transition-all;
+}
+
+html {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 
 #menu {
@@ -256,14 +236,14 @@ aside {
 
 .navbar-default {
   color: #ffffff;
-  background-color: $theme-dark;
+  background-color: $darkColor;
   border: none !important;
-  @include headerFont;
+  @include accentFont;
   @include transition-all;
 
   .navbar-header .navbar-brand {
+    font-size: 20px;
     color: #ffffff;
-    font-weight: 700;
     text-transform: uppercase;
 
     &:hover,
@@ -277,7 +257,6 @@ aside {
       > a,
       > a:focus {
         text-transform: uppercase;
-        font-weight: 700;
         font-size: 14px;
         color: #ffffff;
 
@@ -340,18 +319,6 @@ aside {
   }
 }
 
-.contrast-link {
-  color: $primaryColor;
-  text-decoration: none;
-
-  &:hover,
-  &:focus {
-    color: white;
-    text-decoration: none;
-  }
-
-}
-
 .hero {
   position: relative;
   min-height: 100vh;
@@ -370,7 +337,6 @@ aside {
 
     .header-content-inner {
       h1 {
-        font-weight: 700;
         font-size: 44px;
         text-transform: uppercase;
         margin-top: 0;
@@ -378,9 +344,7 @@ aside {
       }
 
       p {
-        font-weight: 300;
         color: rgba(white, .7);
-        font-size: 16px;
         margin-bottom: 50px;
       }
     }
@@ -437,7 +401,6 @@ aside {
     text-align: center;
     width: 100%;
     height: 100%;
-    @include transition-all;
 
     .portfolio-box-caption-content {
       width: 100%;
@@ -447,20 +410,7 @@ aside {
       transform: translateY(-50%);
 
       .project-name a {
-        padding: 10px;
-        font-size: 16px;
         color: $primaryColor;
-      }
-
-      .project-category {
-        @include headerFont;
-        text-transform: uppercase;
-        font-weight: 400;
-        font-size: 30px;
-
-        a {
-          color: white;
-        }
       }
     }
   }
@@ -473,13 +423,6 @@ aside {
 
 }
 
-.call-to-action {
-  h2 {
-    margin: 0 auto 20px;
-  }
-}
-
-// Bootstrap Overrides
 .text-primary {
   color: $primaryColor;
 }
@@ -488,22 +431,52 @@ aside {
   font-size: 12px;
 }
 
-.no-gutter > [class*='col-'] {
+.no-gutter > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
 
-// Button Styles
 .btn-default {
-  @include button-variant(#282828, #f8cf4c, $primaryColor);
-}
+  color: #282828;
+  background-color: #f8cf4c;
+  border: #f8cf4c;
 
-.btn-primary {
-  @include button-variant(white, #be271b, rgba(230, 177, 46, 1));
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active,
+  .open > .dropdown-toggle & {
+    opacity: 0.7;
+  }
+
+  &:active,
+  &.active,
+  .open > .dropdown-toggle & {
+    background-image: none;
+  }
+
+  &.disabled,
+  &[disabled],
+  fieldset[disabled] & {
+    &,
+    &:hover,
+    &:focus,
+    &.focus,
+    &:active,
+    &.active {
+      opacity: 0.7;
+    }
+  }
+
+  .badge {
+    color: #f8cf4c;
+    background-color: #282828;
+  }
 }
 
 .btn {
-  @include headerFont;
+  @include regularFont;
   border: none;
   border-radius: 300px;
   font-weight: 700;
@@ -514,24 +487,18 @@ aside {
   padding: 15px 30px;
 }
 
-// Contact
-#contact .fa {
-  color: $theme-dark;
-  font-size: 4em;
-}
-
 // Extras
 // -- Highlight Color Customization
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: $theme-dark;
+  background: $darkColor;
 }
 
 ::selection {
   color: white;
   text-shadow: none;
-  background: $theme-dark;
+  background: $darkColor;
 }
 
 img::selection {

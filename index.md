@@ -30,9 +30,8 @@ offers:
       - gatling
       - cucumber
       - bdd
-  - category: Technologies & Services
+  - category: Technology & Services
     color: violet
-    slug: technology
     trainings:
       - db
       - graphql

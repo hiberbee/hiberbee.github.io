@@ -1,27 +1,31 @@
 <section id="portfolio" class="no-padding">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      {% for offer in include.page.offers %}
-        <div class="col-lg-4 col-sm-6 portfolio-box">
-          <picture>
-            <source srcset="/assets/img/portfolio/{{ offer.color }}.webp" class="img-responsive" type="image/webp">
-            <img src="/assets/img/portfolio/{{ offer.color }}.png" class="img-responsive" alt="{{ offer.category }}">
-          </picture>
-          <div class="portfolio-box-caption">
-            <div class="portfolio-box-caption-content">
-              <div class="project-category text-faded">
-                <a href="/category/{{ offer.category | slugify }}/">
-                  {{ offer.category }}</a>
-              </div>
-              <div class="project-name">
-                {% for training in offer.trainings %}
-                  <a href="/tag/{{ training }}/"><h5 style="display: inline-block">#{{ training }}</h5></a>
-                {% endfor %}
-              </div>
-            </div>
-          </div>
+    <div class="container-fluid">
+        <div class="row no-gutter">
+            {% for offer in include.page.offers %}
+                <div class="col-lg-4 col-sm-6 portfolio-box">
+                    <picture>
+                        <source srcset="/assets/img/portfolio/{{ offer.color }}.webp" class="img-responsive"
+                                type="image/webp">
+                        <img src="/assets/img/portfolio/{{ offer.color }}.png" class="img-responsive"
+                             alt="{{ offer.category }}">
+                    </picture>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category">
+                                <h3><a class="text-faded" href="/category/{{ offer.category | slugify }}/">
+                                    {{ offer.category }}</a>
+                                </h3>
+                            </div>
+                            <div class="project-name">
+                                {% for training in offer.trainings %}
+                                    #<a class="tag"
+                                       href="/tag/{{ training }}/">{{ training }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
-      {% endfor %}
     </div>
-  </div>
 </section>

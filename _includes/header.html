@@ -14,25 +14,35 @@
                 {{ site.organization.name }}<img alt="{{ site.organization.name }}" src="/assets/img/logo-icon.svg"
                                                  class="flex-auto"
                                                  style="float: left; margin: -8px 20px 0 10px;" width="32" height="32"/></a>
-            <a class="navbar-brand" href="https://m.me/{{ site.author.facebook }}"
-               target="_blank"><i
-                    class="fab fa-facebook-messenger"></i></a>
+            <a class="navbar-brand" rel="noopener" href="https://m.me/{{ site.author.facebook }}"
+               target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224.5 32C98 32 0 124.44 0 249.29 0 314.6 26.83 371 70.51 410c7.55 6.78 6 10.71 7.27 52.6A18 18 0 0 0 103 478.47c47.8-21 48.41-22.71 56.51-20.5C297.93 496.08 448 407.47 448 249.29 448 124.44 351 32 224.5 32zm134.79 167.21l-66 104.39a33.75 33.75 0 0 1-48.69 9l-52.4-39.29a13.49 13.49 0 0 0-16.21.05L105.16 327c-9.44 7.17-21.82-4.15-15.45-14.15l66-104.39a33.76 33.76 0 0 1 48.69-9l52.45 39.26a13.51 13.51 0 0 0 16.22 0l70.82-53.64c9.39-7.19 21.77 4.13 15.4 14.13z"/>
+                </svg>
+            </a>
+            <a class="navbar-brand" rel="noopener" href="https://facebook.com/{{ site.author.facebook }}"
+               target="_blank">
+                <svg id="#facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/>
+                </svg>
+            </a>
             <a class="navbar-brand" href="https://t.me/{{ site.author.telegram }}"
-               target="_blank"><i class="fab fa-telegram"></i></a>
-            <a class="navbar-brand" href="https://facebook.com/{{ site.author.facebook }}"
-               target="_blank"><i
-                    class="fab fa-facebook-f"></i></a>
-            <a class="navbar-brand" href="{{ site.url }}/vcard.vcf"
-               target="_blank"><i
-                    class="fas fa-address-card"></i></a>
+               target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/>
+                </svg>
+            </a>
             <script type="application/javascript">
                 function clickHandler() {
-                    const x = document.getElementById("menu");
-                    if (x.style.display === "block") {
-                        x.style.display = "none";
-                    } else {
-                        x.style.display = "block";
-                    }
+                    const menu = document.getElementById("menu");
+                    document.addEventListener('click', function (event) {
+                        const isClickInside = event.target.id === "burger";
+                        if (isClickInside) {
+                            menu.style.display = "block";
+                        } else {
+                            menu.style.display = "none";
+                        }
+                    });
                 }
             </script>
         </div>

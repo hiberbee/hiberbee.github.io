@@ -1,6 +1,6 @@
 workbox.core.setCacheNameDetails({
     prefix: 'hiberbee',
-    suffix: 'v13',
+    suffix: 'v14',
     precache: 'precache',
     runtime: 'runtime-cache'
 });
@@ -11,17 +11,26 @@ workbox.clientsClaim();
 workbox.precaching.precacheAndRoute(self.__precacheManifest);
 
 workbox.routing.registerRoute(
-    /$/,
-    workbox.strategies.networkFirst()
+    /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
+    new workbox.strategies.CacheFirst({
+        cacheName: 'images',
+        plugins: [
+            new workbox.expiration.Plugin({
+                maxEntries: 60,
+                maxAgeSeconds: 30 * 24 * 60 * 60, // 30 Days
+            }),
+        ],
+    })
+);
+workbox.routing.registerRoute(
+    new RegExp('/assets/'),
+    new workbox.strategies.StaleWhileRevalidate()
+);
+workbox.routing.registerRoute(
+    /\.(?:js|css)$/,
+    new workbox.strategies.StaleWhileRevalidate({
+        cacheName: 'static-resources',
+    })
 );
 
-workbox.routing.registerRoute(
-    /assets\/(img)/,
-    workbox.strategies.cacheFirst()
-);
-
-workbox.routing.registerRoute(
-    /^https?:\/\/(use.typekit.net|p.typekit.net|use.fontawesome.com)/,
-    workbox.strategies.staleWhileRevalidate()
-);
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');

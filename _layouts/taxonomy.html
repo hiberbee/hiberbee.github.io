@@ -1,19 +1,20 @@
 ---
 layout: default
 ---
-<section class="hero dark-section" style="background-image: url('/assets/img/background/black.png');">
-  <div class="container text-left">
-    <h2>Таксономия</h2>
-    {% assign sorted_categories = site.categories | sort %}
-    {% assign sorted_tags = site.tags | sort %}
-    <h3>Категории</h3>
-    {% for category in sorted_categories %}
-      <a class="tag" href="/category/{{ category | first }}/"><span
-        class="text-faded">#</span>{{ category | first }}</a>
-    {% endfor %}
-    <h3>Теги</h3>
-    {% for tag in sorted_tags %}
-      <a class="tag" href="/tag/{{ tag | first | downcase }}"><span class="text-primary">#</span>{{ tag | first }}</a>
-    {% endfor %}
-  </div>
+<section class="hero dark-section" style="text-align: left; background-image: url('/assets/img/background/black.png');">
+    <div class="container">
+        <h1>Таксономия</h1>
+        {% assign sorted_categories = site.categories | sort %}
+        {% assign sorted_tags = site.tags | sort %}
+        <h3>Категории</h3>
+        {% for category in sorted_categories %}
+            <a class="tag" href="/category/{{ category | first }}/"><span
+                    class="text-faded">#</span>{{ category | first }}</a>
+        {% endfor %}
+        <h3>Теги</h3>
+        {% for tag in sorted_tags %}
+            #<a class="tag" href="/tag/{{ tag | first | downcase }}">   {{ tag | first }}
+            </a>
+        {% endfor %}
+    </div>
 </section>

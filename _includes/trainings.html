@@ -1,44 +1,47 @@
 <section id="trainings">
     <div class="container text-center">
         <div class="col-md-6 col-sm-12 text-left">
-            <h2>Тренинги</h2>
-            <p class="description">Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают
+            <h2>Тренинги <a rel="noopener" onclick='FB.AppEvents.logEvent("rssSubscribed")' target="_blank"
+                            href="{{ site.url }}/atom.xml"><i class="fas fa-rss"></i></a></h2>
+            <p>Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают
                 несколько
                 тем, для их группировки используются теги и <a href="/taxonomy/">таксономия</a>.
                 Все тренинги и способы подписки на обновления доступны на <a
                         href="https://github.com/Hiberbee/hiberbee.github.io/tree/development/_posts">Github</a></p>
-            <p class="description">Как правило, на странице тренинга есть ссылка на оплату. Если вы хотите приобрести
+            <p>Как правило, на странице тренинга есть ссылка на оплату. Если вы хотите приобрести
                 несколько тренингов или
-                использовать промо-код, воспользуйтесь <a
-                        href="https://secure.wayforpay.com/button/b06d4b2643b9e"
-                        target="_blank"
+                использовать промо-код, воспользуйтесь <a onclick='FB.AppEvents.logEvent("genericPaymentLinkClicked")'
+                                                          href="https://secure.wayforpay.com/button/b06d4b2643b9e"
+                                                          rel="noopener"
+                                                          target="_blank"
                 >ссылкой</a>, указав в комментарии, какой тренинг и дата вас
                 интересуют.</p>
             <div>
                 <h3>По длительности</h3>
-                <a class="tag" href="/tag/2H/"><span class="description">#</span>2 часа</a>
-                <a class="tag" href="/tag/4H/"><span class="description">#</span>4 часа</a>
+                #<a class="tag" href="/tag/2H/">2 часа</a>
+                #<a class="tag" href="/tag/4H/">4 часа</a>
                 <h3>По дню недели</h3>
-                <a class="tag" href="/tag/mon/"><span class="description">#</span>Понедельник</a>
-                <a class="tag" href="/tag/tue/"><span class="description">#</span>Вторник</a>
-                <a class="tag" href="/tag/wed/"><span class="description">#</span>Среда</a>
-                <a class="tag" href="/tag/tThu/"><span class="description">#</span>Четверг</a>
-                <a class="tag" href="/tag/fri/"><span class="description">#</span>Пятница</a>
-                <a class="tag" href="/tag/sat/"><span class="description">#</span>Суббота</a>
+                #<a class="tag" href="/tag/mon/">Понедельник</a>
+                #<a class="tag" href="/tag/tue/">Вторник</a>
+                #<a class="tag" href="/tag/wed/">Среда</a>
+                #<a class="tag" href="/tag/tThu/">Четверг</a>
+                #<a class="tag" href="/tag/fri/">Пятница</a>
+                #<a class="tag" href="/tag/sat/">Суббота</a>
                 <h3>По сложности</h3>
-                <a class="tag" href="/tag/essentials/"><span class="description">#</span>Вводный курс</a>
-                <a class="tag" href="/tag/advanced/"><span class="description">#</span>Для опытных</a>
-                <a class="tag" href="/tag/boost/"><span class="description">#</span>Интенсив</a>
+                #<a class="tag" href="/tag/essentials/">Вводный курс</a>
+                #<a class="tag" href="/tag/advanced/">Для опытных</a>
+                #<a class="tag" href="/tag/boost/">Интенсив</a>
                 <h3>Рекомендуем вместе</h3>
-                <a class="tag" href="/tag/kubernetes/"><span class="description">#</span>Kubernetes</a>
-                <a class="tag" href="/tag/spring-boot/"><span class="description">#</span>Spring Boot</a>
-                <a class="tag" href="/tag/serverless/"><span class="description">#</span>Serverless</a>
+                #<a class="tag" href="/tag/kubernetes/">Kubernetes</a>
+                #<a class="tag" href="/tag/spring-boot/">Spring Boot</a>
+                #<a class="tag" href="/tag/serverless/">Serverless</a>
                 <hr/>
             </div>
         </div>
         <div class="col-md-6 col-sm-12">
-            <div class="fb-page" data-href="https://www.facebook.com/hiberbee/" data-tabs="events" data-width="500"
-                 data-height="" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false"
+            <div class="fb-page" data-href="https://www.facebook.com/hiberbee/" data-tabs="events,messages"
+                 data-width="500"
+                 data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
                  data-show-facepile="true">
                 <blockquote cite="https://www.facebook.com/hiberbee/" class="fb-xfbml-parse-ignore"><a
                         href="https://www.facebook.com/hiberbee/">Hiberbee</a></blockquote>

@@ -60,12 +60,17 @@ jekyll-archives:
 future: true
 pwa:
   dest_js_directory: assets/js
-  precache_glob_ignores: # Optional
+  precache_glob_ignores:
     - sw-register.js
-  precache_glob_patterns: # Optional
-    - "{js,css,img}/**/*.{js,css,png,svg,jpg,jpeg}"
+  precache_glob_patterns:
+    - "/assets/{js,css,img,fonts}/**/*.{js,woff,ttf,css,png,svg,jpg,jpeg}"
     - "/index.html"
+    - "/manifest.json"
     - "/404.html"
+    - "/privacy-policy.html"
+    - "/faq.html"
+    - "/taxonomy.html"
+    - "/terms-of-use.html"
     - "/favicon*.png"
 sass:
   style: compressed
