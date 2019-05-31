@@ -28,6 +28,11 @@ feed:
   path: atom.xml
   categories:
     - dev-ops
+    - system-design
+    - engineering-practices
+    - software-engineering
+    - quality-assurance
+    - technologies-services
 timezone: Europe/Kiev
 include:
   - 404.html
