@@ -5,7 +5,7 @@
 @font-face {
   font-family: "Myriad Pro Semibold";
   font-style: normal;
-  font-display: block;
+  font-display: fallback;
   font-weight: normal;
   src: local("Myriad Pro Semibold"), url("../fonts/MyriadPro-Semibold.ttf");
 }
@@ -13,7 +13,7 @@
 @font-face {
   font-family: "Myriad Pro Bold";
   font-style: normal;
-  font-display: block;
+  font-display: fallback;
   font-weight: normal;
   src: local("Myriad Pro Bold"), url("../fonts/MyriadPro-Bold.ttf");
 }
@@ -21,7 +21,7 @@
 @font-face {
   font-family: "Myriad Pro";
   font-style: normal;
-  font-display: block;
+  font-display: fallback;
   font-weight: normal;
   src: local("Myriad Web Pro Regular"), url("../fonts/MyriadPro-Regular.ttf");
 }
@@ -39,87 +39,47 @@
   font-family: "Myriad Pro", sans-serif;
 }
 
-
-$primaryColor: #e6b12e;
-$darkColor: #222222;
-
-.dark-section a {
-  color: $primaryColor;
-}
-
-a:hover {
-  color: $primaryColor;
-}
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-
 @mixin transition-all() {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 
-@mixin background-cover() {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-}
+$primaryColor: #e6b12e;
+$darkColor: #222222;
 
-@mixin button-variant($color, $background, $border) {
-  color: $color;
-  background-color: $background;
-  border-color: $border;
-  @include transition-all;
-
-  &:hover,
-  &:focus,
-  &.focus,
-  &:active,
-  &.active,
-  .open > .dropdown-toggle & {
-    color: $color;
-  }
-  &:active,
-  &.active,
-  .open > .dropdown-toggle & {
-    background-image: none;
-  }
-  &.disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &.focus,
-    &:active,
-    &.active {
-      background-color: $background;
-      border-color: $border;
-    }
-  }
-
-  .badge {
-    color: $background;
-    background-color: $color;
-  }
+html {
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: auto;
 }
 
 html,
 body {
   height: 100%;
   width: 100%;
-  @include regularFont
-}
-
-body {
+  @include regularFont;
   font-size: 16px;
 }
 
+a {
+  @include transition-all;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @include headerFont;
+  margin: 10px 0;
+}
+
+a:hover {
+  color: $primaryColor;
+}
+
+.dark-section a {
+  color: $primaryColor;
+}
+
 hr {
-  border-color: #303336;
-  border-width: 3px;
-  max-width: 50px;
+  border: none;
 }
 
 .tag {
@@ -128,18 +88,13 @@ hr {
   margin-right: 5px;
   font-size: 18px;
 }
-
-pre, code {
-  background-color: #222222;
-  color: #A9DC76;
-  border: none;
-  font-size: 14px;
-  padding: 0;
-  margin: 0;
+span {
+  @include accentFont;
+  font-size: 16px;
 }
 
-hr.light {
-  border-color: white;
+.not-found {
+  background-image: url("../img/background/404.webp");
 }
 
 .dark-section {
@@ -155,7 +110,7 @@ hr.light {
     }
   }
 
-  h2 {
+  h1, h2 {
     color: $primaryColor;
   }
 
@@ -164,36 +119,12 @@ hr.light {
   }
 }
 
-a {
-  @include transition-all;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @include headerFont;
-  margin: 10px 0;
-}
-
 h1 {
   margin-top: 40px;
 }
 
 .text-primary {
   color: $primaryColor
-}
-
-.bg-primary {
-  background-color: $darkColor;
-  color: $primaryColor
-}
-
-.bg-dark {
-  background-color: $darkColor;
-  color: white;
 }
 
 .text-faded {
@@ -211,45 +142,40 @@ section, aside {
 svg {
   width: 18px;
   height: 18px;
+
+  path {
+    fill: white;
+  }
+
+  :hover, :focus, :active path {
+    @include transition-all;
+    fill: $primaryColor
+  }
 }
 
-svg path {
-  fill: white;
-}
-
-svg:hover path {
-  fill: $primaryColor
-}
-
-* {
-  @include transition-all;
-}
-
-html {
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: auto;
-}
-
-#menu {
-  display: none;
+.navbar-nav {
+  margin: 0;
 }
 
 .navbar-default {
   color: #ffffff;
   background-color: $darkColor;
   border: none !important;
-  @include accentFont;
-  @include transition-all;
 
-  .navbar-header .navbar-brand {
-    font-size: 20px;
-    color: #ffffff;
-    text-transform: uppercase;
+  .navbar-header {
+    a {
+      font-size: 20px;
+      color: #ffffff;
+      text-transform: uppercase;
+      padding: 15px 10px 5px;
+      line-height: 30px;
 
-    &:hover,
-    &:focus {
-      color: $primaryColor;
+      &:hover,
+      &:focus {
+        color: $primaryColor;
+      }
     }
+
   }
 
   .nav {
@@ -267,67 +193,41 @@ html {
     }
   }
 
-  @media (min-width: 768px) {
+  .navbar-header a {
+    color: #ffffff;
 
+    &:hover,
+    &:focus {
+      color: $primaryColor;
+    }
+  }
+
+  @media (min-width: 768px) {
     .navbar-right {
-      margin-right: 0;
+      margin-right: 15px;
     }
     #menu {
       display: block;
     }
 
-    background-color: #222222;
-    .navbar-header .navbar-brand {
-      color: #ffffff;
-
-      &:hover,
-      &:focus {
-        color: $primaryColor;
-      }
-    }
     .nav > li > a {
+      margin-left: 0;
       padding: 15px 10px;
-    }
-    .nav > li > a:focus {
-      color: #ffffff;
-
-      &:hover {
-        color: $primaryColor;
-      }
-    }
-    &.affix {
-      background-color: #222222;
-
-      .navbar-header .navbar-brand {
-        color: #ffffff;
-
-        &:hover,
-        &:focus {
-          color: $primaryColor;
-        }
-      }
-
-      .nav > li > a,
-      .nav > li > a:focus {
-        color: #ffffff;
-
-        &:hover {
-          color: $primaryColor;
-        }
-      }
     }
   }
 }
 
 .hero {
-  position: relative;
-  min-height: 100vh;
-  width: 100%;
-  background-color: #222222;
-  @include background-cover;
   background-position: center;
-  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  background-color: #222222;
   color: white;
+  min-height: 100vh;
+  position: relative;
+  text-align: center;
+  width: 100%;
 
   .header-content {
     position: relative;
@@ -337,7 +237,6 @@ html {
 
     .header-content-inner {
       h1 {
-        font-size: 44px;
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 0;
@@ -369,19 +268,23 @@ html {
   }
 }
 
-.section-heading {
-  margin-top: 0;
-}
+header {
+  height: 50px;
 
-.service-box {
-  max-width: 400px;
-  margin: 50px auto 0;
-  @media (min-width: 992px) {
-    margin: 20px auto 0;
+  nav li a {
+    @include accentFont;
   }
 
-  p {
-    margin-bottom: 0;
+  background-color: #222222;
+}
+
+footer {
+  height: 50px;
+
+  nav li a {
+    text-transform: none;
+    @include regularFont;
+    font-size: 12px;
   }
 }
 
@@ -393,9 +296,9 @@ html {
 
   .portfolio-box-caption {
     color: white;
-    opacity: 0.6;
+    opacity: 0.7;
     display: block;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(34, 34, 34, 0.7);
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -425,10 +328,6 @@ html {
 
 .text-primary {
   color: $primaryColor;
-}
-
-.navbar-fixed-bottom li a {
-  font-size: 12px;
 }
 
 .no-gutter > [class*="col-"] {
@@ -468,18 +367,11 @@ html {
       opacity: 0.7;
     }
   }
-
-  .badge {
-    color: #f8cf4c;
-    background-color: #282828;
-  }
 }
 
 .btn {
-  @include regularFont;
-  border: none;
+  @include accentFont;
   border-radius: 300px;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -487,8 +379,6 @@ html {
   padding: 15px 30px;
 }
 
-// Extras
-// -- Highlight Color Customization
 ::-moz-selection {
   color: white;
   text-shadow: none;
@@ -511,15 +401,6 @@ img::-moz-selection {
   background: transparent;
 }
 
-.event-id {
-  color: #90DAE6;
-}
-
-.event-time {
-  color: #373737;
-  font-size: 14px;
-}
-
-.event-tags {
-  color: #B4DA82;
+#burger {
+  display: none;
 }

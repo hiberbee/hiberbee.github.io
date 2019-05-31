@@ -1,7 +1,7 @@
 ---
 layout: index
-title: Полный спектр услуг технического консалтинга
-description: 
+title: Технический консалтинг и повышение квалификации
+description: Профессиональные тренинги для IT-специалистов
 offers:
   - category: Dev/Ops
     color: green
@@ -12,12 +12,11 @@ offers:
   - category: System design
     color: red
     trainings:
-      - microservices
       - uml
   - category: Engineering practices
     color: blue
     trainings:
-      - sdlc
+      - localhost
   - category: Software Engineering
     color: orange
     trainings:

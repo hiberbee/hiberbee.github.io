@@ -4,7 +4,7 @@ layout: default
 {% capture nowunix %}{{ 'now' | date: '%s'}}{% endcapture %}
 {% assign reversed_tags = site.tags[page.title] | reverse %}
 {% assign reversed_categories = site.categories[page.title] | reverse %}
-<section class="container">
+<main class="container">
     <h1>#{{ page.title }}
     </h1>
     <ul>
@@ -14,8 +14,8 @@ layout: default
                 <li>
                     <h4>
                         <a class="tag" href="{{ post.url }}">
-                            {{ post.title }}: {{ post.subtitle }}</a> <span
-                            class="event-time">{{ post.date | date: "%A, %-d %B" }} {{ post.time }}</span>
+                            {{ post.title }}: {{ post.subtitle }}</a>
+                        <span>{{ post.date | date: "%A, %-d %B" }} {{ post.time }}</span>
                     </h4>
                 </li>
             {% endif %}
@@ -26,11 +26,11 @@ layout: default
                 <li>
                     <h4>
                         <a class="tag" href="{{ post.url }}">
-                            {{ post.title }}: {{ post.subtitle }}</a> <span
-                            class="event-time">{{ post.date | date: "%A, %-d %B" }} {{ post.time }}</span>
+                            {{ post.title }}: {{ post.subtitle }}</a>
+                        <span>{{ post.date | date: "%A, %-d %B" }} {{ post.time }}</span>
                     </h4>
                 </li>
             {% endif %}
         {% endfor %}
     </ul>
-</section>
+</main>

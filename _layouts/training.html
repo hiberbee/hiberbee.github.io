@@ -2,22 +2,24 @@
 layout: blank
 ---
 {% assign sorted_tags = page.tags | sort %}
-<h1>{{ page.title }}: {{ page.subtitle }}</h1>
-{% if page.category %}
-    <h2>{{ page.category }}</h2>
-{% endif %}
-<h4>{{ page.date | date: "%a, %-d %b" }} {{ page.time }}</h4>
-{% for tag in sorted_tags %}
-    {% capture tag_name %}{{ tag }}{% endcapture %}
-    #<a class="tag" href="/tag/{{ tag_name }}/"><span style="color: #222222"></span>{{ tag_name }}</a>
-{% endfor %}
-{{ page.content }}
-<div class="text-center">
-    {% if page.ticket_id %}
-        <hr/>
-        <a rel="noopener" onclick='FB.AppEvents.logEvent("paymentLinkClicked")'
-           href="https://secure.wayforpay.com/button/{{ page.ticket_id }}"
-           target="_blank"
-           class="btn btn-default btn-xl">Купить билет</a>
+<main class="container">
+    <h1>{{ page.title }}: {{ page.subtitle }}</h1>
+    {% if page.category %}
+        <h2>{{ page.category }}</h2>
     {% endif %}
-</div>
+    <h4>{{ page.date | date: "%a, %-d %b" }} {{ page.time }}</h4>
+    {% for tag in sorted_tags %}
+        {% capture tag_name %}{{ tag }}{% endcapture %}
+        #<a class="tag" href="/tag/{{ tag_name | downcase }}/"><span style="color: #222222"></span>{{ tag_name }}</a>
+    {% endfor %}
+    {{ page.content }}
+    <div class="text-center">
+        {% if page.ticket_id %}
+            <hr/>
+            <a rel="noopener" onclick='FB.AppEvents.logEvent("paymentLinkClicked")'
+               href="https://secure.wayforpay.com/button/{{ page.ticket_id }}"
+               target="_blank"
+               class="btn btn-default btn-xl">Купить билет</a>
+        {% endif %}
+    </div>
+</main>
