@@ -1,8 +1,6 @@
 ---
-layout: event
-time_start: 19<sup>00</sup>
-time_end: 21<sup>30</sup>
-name: Kubernetes
 facebook_link:
-description: Push and pull cluster monitoring
+layout: event
+time_end: 21<sup>30</sup>
+time_start: 19<sup>00</sup>
 ---

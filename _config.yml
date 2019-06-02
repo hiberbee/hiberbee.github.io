@@ -108,51 +108,51 @@ webp:
   webp_path: nil
   exclude: []
 trainings_identity_map:
-  do-000: docker-technology-intro
-  do-001: docker-swarm-complete-cluster-infrastructure
-  do-010: ansible-technology-intro
-  do-020: kubernetes-technology-intro
-  do-021: kubernetes-initial-setup-and-configuration
-  do-022: kubernetes-configuring-running-controllers-workloads
-  do-023: kubernetes-network-service-mesh-istio
-  do-024: kubernetes-logging-elk
-  do-025: kubernetes-push-pull-monitoring
-  do-026: kubernetes-persistence-storages-volumes
-  do-027: kubernetes-security-key-management
-  do-030: cloud-native-providers
-  ep-000: sdlc-intro
-  ep-001: sdlc-solutions
-  ep-002: sdlc-artifacts
-  ep-010: exteme-programming-intro
-  ep-020: ci-cd-intro
-  ep-021: ci-pipeline-setup
-  ep-022: cd-pipeline-setup
-  ep-030: ide-intellij
-  ep-031: remote-workstation
-  qa-000: qa-automation-essentials
-  qa-010: bdd-spec
-  qa-011: bdd-cucumber
-  qa-012: bdd-rest-karate
-  qa-020: infrastructure-integration-testing
-  qa-030: qa-java-stream-lambdas
-  qa-040: qa-scala-performance-stress-testing
-  sd-000: system-achicture-role-overview
-  sd-010: system-design-spec-uml
-  sd-011: system-design-spec-4-1-views
-  sd-020: reverse-enginering-microservices
-  se-010: java-intro
-  se-020: spring-hibernate-intro
-  se-021: spring-boot
-  se-022: spring-cloud-native
-  se-030: gradle-intro
-  se-031: gradle-united
-  se-032: gradle-advanced
-  se-033: gradle-kotlin-dsl
-  se-041: php-threads
-  se-042: php-app-servers
-  ts-010: db-graph-neo4j-kickoff
-  ts-020: graphql-essentials
-  ts-021: graphql-advanced
-  ts-030: media-streaming-transform
-  ts-040: mq-rabbitmq
-  ts-050: serverless-intro
+  do-000: "Docker: Technology overview & kick-off"
+  do-001: "Docker Swarm: Complete cluster infrastructure from scratch"
+  do-010: "Ansible: Configuration management & infrastructure provision"
+  do-020: "Kubernetes: Technology overview & kick-off for developers and DevOps"
+  do-021: "Kubernetes: Initial setup and configuration and local environment workflows"
+  do-022: "Kubernetes: Configuring and running controllers and workloads"
+  do-023: "Kubernetes: Network service mesh with Istio"
+  do-024: "Kubernetes: Logging with ELK stack"
+  do-025: "Kubernetes: Push and pull monitoring with Prometheus & TICK stacks"
+  do-026: "Kubernetes: Persistence, storages and volumes management with Ceph and S3"
+  do-027: "Kubernetes: Security and key management with Vault"
+  do-030: "Cloud Native providers"
+  ep-000: "SDLC: Introduction"
+  ep-001: "SDLC: Solutions"
+  ep-002: "SDLC: Artifacts"
+  ep-010: "Exteme Programming: Introduction"
+  ep-020: "Continuous integration & delivery: Introduction"
+  ep-021: "Continuous integration: Pipeline setup and configuration"
+  ep-022: "Continuous delivery: Pipeline setup and configuration"
+  ep-030: "Jetbrains IDE family: Killer features, complete configuration, ultimate tricks and incentive insights for all JetBrains users"
+  ep-031: "Thin client: Move your environment to the cloud"
+  qa-000: "QA Automation: Essentials"
+  qa-010: "BDD: Introduction"
+  qa-011: "BDD: Cucumber"
+  qa-012: "BDD: Testing REST/GraphQL API with Cucumber & Karate"
+  qa-020: "Infrastructure test automation: Spec-driven and integration testing for automation QA & software engineers"
+  qa-030: "Java 8 API: Streams API and functional interfaces with cutting-edge test frameworks for QA automation engineers"
+  qa-040: "Gatling: Performance and stress-testing with Scala/Gatling for automation QA engineers"
+  sd-000: "System Achicture: Role overview"
+  sd-010: "System design specification: UML"
+  sd-011: "System design specification: 4+1 architecture views"
+  sd-020: "Microservices: Reverse-engineering, references & best practices"
+  se-010: "Java: SL class"
+  se-020: "Spring & Hibernate: SL class"
+  se-021: "Spring Boot: SL class"
+  se-022: "Spring Cloud: Cloud Native application example"
+  se-030: "Gradle: SL class"
+  se-031: "Gradle: United polyglot build system"
+  se-032: "Gradle: Advanced"
+  se-033: "Gradle: Kotlin DSL"
+  se-041: "PHP: Native threads"
+  se-042: "PHP: Event loop & application servers"
+  ts-010: "Neo4J: Introduction to graph databases with samples for SQL-experienced engineers"
+  ts-020: "GraphQL API: Essentials and starter guide for everyone experienced with REST"
+  ts-021: "GraphQL API: Advanced client/server features and insights for everyone experienced with REST"
+  ts-030: "Media processing: Video-on-Demand, transmux, images operations"
+  ts-040: "Message queues: RabbitMQ"
+  ts-050: "Serverless: Fundamentals, frameworks, cloud providers"

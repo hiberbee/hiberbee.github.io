@@ -1,9 +1,7 @@
 ---
-layout: event
-time_start: 15<sup>00</sup>
-time_end: 19<sup>00</sup>
-description: Configuring and running controllers and workloads
-ticket_id: b20078b595abc
 facebook_link: 892798121065338
-name: Kubernetes
+layout: event
+ticket_id: b20078b595abc
+time_end: 19<sup>00</sup>
+time_start: 15<sup>00</sup>
 ---

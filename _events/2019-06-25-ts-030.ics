@@ -1,8 +1,6 @@
 ---
 layout: event
-name: Media Processing
-time_start: 19<sup>00</sup>
-time_end: 21<sup>30</sup>
-description: Video-on-Demand, Transmux, Image processing
 ticket_id: b7f66d7f9a418
+time_end: 21<sup>30</sup>
+time_start: 19<sup>00</sup>
 ---

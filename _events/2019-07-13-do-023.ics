@@ -3,6 +3,4 @@ layout: event
 ticket_id: b20078b595abc
 time_start: 15<sup>00</sup>
 time_end: 19<sup>00</sup>
-name: Kubernetes
-description: Network Service mesh with Istio
 ---

@@ -1,8 +1,6 @@
 ---
-layout: event
-time_start: 19<sup>00</sup>
-time_end: 21<sup>30</sup>
-name: Serverless
-description: Fundamentals, frameworks, cloud providers
 facebook_link: 592851651200096
+layout: event
+time_end: 21<sup>30</sup>
+time_start: 19<sup>00</sup>
 ---

@@ -2,8 +2,6 @@
 event_id: do-001
 layout: event
 ticket_id: b20078b595abc
-description: Complete cluster infrastructure from scratch
 time_start: 19<sup>00</sup>
 time_end: 21<sup>30</sup>
-name: Docker Swarm
 ---

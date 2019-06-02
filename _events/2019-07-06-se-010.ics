@@ -1,8 +1,6 @@
 ---
 layout: event
-time_start: 15<sup>00</sup>
-time_end: 19<sup>00</sup>
 ticket_id: b20078b595abc
-name: Java
-description: Essentials for developers migrating from other technologies
+time_end: 19<sup>00</sup>
+time_start: 15<sup>00</sup>
 ---

@@ -2,7 +2,5 @@
 layout: event
 time_start: 10<sup>00</sup>
 time_end: 14<sup>00</sup>
-name: System Design specification
-description: UML
 ticket_id: b20078b595abc
 ---

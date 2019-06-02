@@ -2,7 +2,7 @@
 layout: blank
 ---
 {% assign sorted_tags = page.tags | sort | uniq %}
-{% assign events = site.events | where_exp: "item", "item.title == page.title" | where_exp: "item", "item.date >= site.time" %}
+{% assign events = site.events | where_exp: "item", "item.slug == page.slug" | where_exp: "item", "item.date >= site.time" %}
 {% assign event = events | first %}
 {% assign day_number = page.date | date: '%w' %}
 {% if day_number == "0" or day_number == "6" %}
@@ -13,8 +13,8 @@ layout: blank
     {% assign price = '600' %}
 {% endif %}
 <main class="container">
-    <h1>{{ event.name }}</h1>
-    <h2>{{ event.description }}</h2>
+    <h1>{{ site.trainings_identity_map[event.slug] | split: ":" | first }}</h1>
+    <h2>{{ site.trainings_identity_map[event.slug] | split: ":" | last }}</h2>
     {% for tag in sorted_tags %}
         {% capture tag_name %}{{ tag }}{% endcapture %}
         <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -23,7 +23,7 @@ layout: blank
         <a class="tag" href="/tag/{{ tag_name | downcase }}/">{{ tag_name }}</a>
     {% endfor %}
     <h4>Адрес: {{ event.address | default: site.organization.address | replace: '\n', ', ' | replace: '\,', ', ' }}</h4>
-    <h4>Время: {{ event.date | date: "%A, %-d %b" }},
+    <h4>Ближайший тренинг: {{ event.date | date: "%A, %-d %b" }},
         <a href="{{ event.url }}">
             {{ event.time_start }} - {{ event.time_end }}
         </a>
