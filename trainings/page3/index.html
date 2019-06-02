@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#e6b12e">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Технический консалтинг и супервайзинг для разработчиков, техлидов, проектных команд. Специализации: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services">
+    <meta name="keywords"
+          content="DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services">
+    <title>Hiberbee | Tech Consulting for IT professionals</title>
+    <link rel="manifest" href="/manifest.json">
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="stylesheet" href="/assets/css/bootstrap.css" media="all">
+<link rel="stylesheet" href="/assets/css/main.css" type="text/css" media="all">
+<link rel="stylesheet" href="/assets/css/mobile.css" media="only screen and (max-width: 768px)">
+<link rel="stylesheet" href="/assets/css/print.css" media="print">
+<link href='/assets/css/fullcalendar/core/main.css' rel='stylesheet'/>
+<link href='/assets/css/fullcalendar/daygrid/main.css' rel='stylesheet'/>
+
+    <script>
+    window.onload = function () {
+        var script = document.createElement('script');
+        var firstScript = document.getElementsByTagName('script')[0];
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = '/sw-register.js?v=' + Date.now();
+        firstScript.parentNode.insertBefore(script, firstScript);
+    }
+    ;
+</script>
+<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async defer></script>
+<script>
+    window.fbAsyncInit = function () {
+        FB.init({
+            appId: '145510372820525',
+            cookie: true,
+            xfbml: true,
+            version: 'v3.3'
+        });
+        FB.AppEvents.logPageView();
+    };
+
+    (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {
+            return;
+        }
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+</head>
+<body id="page-top">
+<header class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top" style="padding: 0 10px">
+        <div class="navbar-header">
+            <a href="#" id="burger" style="float: right"
+               aria-controls="#menu" aria-expanded="false">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"/>
+                </svg>
+            </a>
+            <a class="navbar-brand" href="/" style="padding-top: 13px">
+                Hiberbee<img alt="Hiberbee" src="/assets/img/logo-icon.svg"
+                                                 class="flex-auto"
+                                                 style="float: left; margin: -5px 15px 0 5px;" width="32"
+                                                 height="32"/></a>
+            <a class="navbar-brand" rel="noopener" href="https://m.me/hiberbee"
+               target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224.5 32C98 32 0 124.44 0 249.29 0 314.6 26.83 371 70.51 410c7.55 6.78 6 10.71 7.27 52.6A18 18 0 0 0 103 478.47c47.8-21 48.41-22.71 56.51-20.5C297.93 496.08 448 407.47 448 249.29 448 124.44 351 32 224.5 32zm134.79 167.21l-66 104.39a33.75 33.75 0 0 1-48.69 9l-52.4-39.29a13.49 13.49 0 0 0-16.21.05L105.16 327c-9.44 7.17-21.82-4.15-15.45-14.15l66-104.39a33.76 33.76 0 0 1 48.69-9l52.45 39.26a13.51 13.51 0 0 0 16.22 0l70.82-53.64c9.39-7.19 21.77 4.13 15.4 14.13z"/>
+                </svg>
+            </a>
+            <a class="navbar-brand" rel="noopener" href="https://facebook.com/hiberbee"
+               target="_blank">
+                <svg id="#facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/>
+                </svg>
+            </a>
+            <a class="navbar-brand" rel="noopener" href="https://instagram.com/hiberbee"
+               target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                </svg>
+            </a>
+            <a class="navbar-brand" href="https://t.me/nezquiraj"
+               target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                    <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z"/>
+                </svg>
+            </a>
+            <a class="navbar-brand" rel="noopener"
+               href="mailto:contact@hiberbee.com">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/>
+                </svg>
+            </a>
+        </div>
+        <div id="menu" aria-hidden="true">
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="/#portfolio">Эспертиза</a>
+                </li>
+                <li>
+                    <a href="/#trainings">Тренинги</a>
+                </li>
+                <li>
+                    <a href="/#contact">Контакты</a>
+                </li>
+                <li>
+                    <a href="/taxonomy/">Таксономия</a>
+                </li>
+                <li>
+                    <a href="/about/">Супервизор</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+
+<main class="container">
+    <h1>Posts in collection trainings - page 3</h1>
+    <ul>
+        
+            
+            
+                <li>
+                    <h4>
+                        <a class="tag" href="/trainings/sd-000/">System Architect: Role overview
+                        </a>
+                        <span>Tuesday, 11 June 19<sup>00</sup> - 21<sup>30</sup></span>
+                    </h4>
+                </li>
+            
+        
+            
+            
+                <li>
+                    <h4>
+                        <a class="tag" href="/trainings/sd-010/">System Design specification: 4+1 view
+                        </a>
+                        <span>Saturday, 20 July 15<sup>00</sup> - 19<sup>00</sup></span>
+                    </h4>
+                </li>
+            
+        
+            
+            
+                <li>
+                    <h4>
+                        <a class="tag" href="/trainings/sd-020/">Microservice Architecture: Reference architectures & best practices
+                        </a>
+                        <span>Wednesday, 10 July 19<sup>00</sup> - 21<sup>30</sup></span>
+                    </h4>
+                </li>
+            
+        
+            
+            
+                <li>
+                    <h4>
+                        <a class="tag" href="/trainings/se-010/">Java: Introduction
+                        </a>
+                        <span>Wednesday, 12 June 19<sup>00</sup> - 21<sup>30</sup></span>
+                    </h4>
+                </li>
+            
+        
+            
+            
+                <li>
+                    <h4>
+                        <a class="tag" href="/trainings/se-031/">Gradle: United build system for multi-language microservices
+                        </a>
+                        <span>Monday, 8 July 19<sup>00</sup> - 21<sup>30</sup></span>
+                    </h4>
+                </li>
+            
+        
+            
+            
+                <li>
+                    <h4>
+                        <a class="tag" href="/trainings/ts-010/">Neo4J Graph Database: Technology kick-off
+                        </a>
+                        <span>Monday, 17 June 19<sup>00</sup> - 21<sup>30</sup></span>
+                    </h4>
+                </li>
+            
+        
+            
+            
+                <li>
+                    <h4>
+                        <a class="tag" href="/trainings/ts-020/">GraphQL API: Essentials for client & server side development
+                        </a>
+                        <span>Saturday, 29 June 10<sup>00</sup> - 14<sup>00</sup></span>
+                    </h4>
+                </li>
+            
+        
+            
+            
+                <li>
+                    <h4>
+                        <a class="tag" href="/trainings/ts-021/">GraphQL API: Advanced hints & features for client & server side development
+                        </a>
+                        <span>Saturday, 29 June 15<sup>00</sup> - 19<sup>00</sup></span>
+                    </h4>
+                </li>
+            
+        
+            
+            
+                <li>
+                    <h4>
+                        <a class="tag" href="/trainings/ts-030/">Media Processing: Video-on-Demand, Transmux, Image processing
+                        </a>
+                        <span>Tuesday, 25 June 19<sup>00</sup> - 21<sup>30</sup></span>
+                    </h4>
+                </li>
+            
+        
+            
+            
+                <li>
+                    <h4>
+                        <a class="tag" href="/trainings/ts-040/">Message Queues: RabbitMQ
+                        </a>
+                        <span>Friday, 12 July 19<sup>00</sup> - 21<sup>30</sup></span>
+                    </h4>
+                </li>
+            
+        
+    </ul>
+</main>
+
+<footer class="navbar-fixed-bottom">
+    <nav class="navbar navbar-default " style="background-color: transparent">
+        <div class="container-fluid text-right">
+            <ul class="nav navbar-nav navbar-right">
+                <li style="display: inline-block">
+                    <a style="font-size: 12px;padding: 10px" href="/privacy-policy/">Privacy Policy</a>
+                </li>
+                <li style="display: inline-block">
+                    <a style="font-size: 12px;padding: 10px" href="/terms-of-use/">Terms of use</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</footer>
+
+<script type="text/javascript">
+    function toggleContent(e) {
+        e.stopPropagation();
+        const button = this;
+        const content = document.getElementById('menu');
+
+        e.preventDefault();
+
+        if (content.getAttribute('aria-hidden') === 'true') {
+            content.setAttribute('aria-hidden', 'false');
+            button.setAttribute('aria-expanded', 'true');
+        } else {
+            content.setAttribute('aria-hidden', 'true');
+            button.setAttribute('aria-expanded', 'false');
+        }
+    }
+
+    document.getElementById('page-top').addEventListener('click', function () {
+        const content = document.getElementById('menu');
+        if (document.getElementById('menu').getAttribute('aria-hidden') === 'false') {
+            content.setAttribute('aria-hidden', 'true');
+            document.getElementById('burger').setAttribute('aria-expanded', 'false');
+        }
+    });
+    document.getElementById('burger').addEventListener('click', toggleContent);
+</script>
+            <script>
+                window.onload = function () {
+                    var script = document.createElement('script');
+                    var firstScript = document.getElementsByTagName('script')[0];
+                    script.type = 'text/javascript';
+                    script.async = true;
+                    script.src = '/sw-register.js?v=' + Date.now();
+                    firstScript.parentNode.insertBefore(script, firstScript);
+                };
+            </script>
+            </body>
+
+</html>
