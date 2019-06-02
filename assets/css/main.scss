@@ -64,7 +64,7 @@ body {
 a {
   @include transition-all;
 
-  :hover {
+  &:hover {
     text-decoration: none;
   }
 
@@ -150,10 +150,11 @@ section, aside {
   padding: 0;
 }
 
-header,section {
+header, section {
   svg {
     width: 18px;
     height: 18px;
+
     path {
       fill: white;
     }

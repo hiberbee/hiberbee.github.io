@@ -16,10 +16,11 @@ author:
   github: hiberbee
   facebook: hiberbee
   linkedin: vladyslavvolkov
+  instagram: hiberbee
   telegram: nezquiraj
 organization:
   name: Hiberbee
-  address: 3 Lva Tolstoho Str., "Chasopys" 1st floor, Kyiv, 01004
+  address: Часопис\nL'va Tolstoho vulytsya\, 3\, Kiev\, Kiev\, Ukraine
 google_analytics: UA-111095351-4
 facebook_pixel: 402031503981717
 facebook_app_id: 145510372820525
@@ -40,7 +41,9 @@ include:
   - CNAME
   - service-worker.js
   - vcard.vcf
-  - _pages/*
+  - pages/*
+  - _trainings/*
+  - _events/*
 exclude:
   - .bundle
   - Gemfile
@@ -49,15 +52,37 @@ exclude:
   - build.gradle
 push_app_id: d3180b47-35fb-477f-98a4-49105f4c3bb3
 markdown: kramdown
-permalink: /:month/:day/:title/
-jekyll-archives:
-  enabled:
-    - categories
-    - tags
-  layout: category
-  permalinks:
-    tag: '/tag/:name/'
-    category: '/category/:name/'
+collections:
+  events:
+    output: true
+    permalink: /events/:title/:month-:day.ics
+  trainings:
+    output: true
+    output_tags: true
+    output_categories: true
+    permalink: /trainings/:title/
+pagination:
+  enabled: true
+autopages:
+  enabled: true
+  collections:
+    enabled: true
+    layouts:
+      - 'category.html'
+    title: 'Posts in collection :coll'
+    permalink: '/:coll'
+  categories:
+    enabled: true
+    layouts:
+      - 'category.html'
+    title: 'Posts with category :cat'
+    permalink: '/category/:cat'
+  tags:
+    enabled: true
+    layouts:
+      - 'category.html'
+    title: 'Posts tagged with :tag'
+    permalink: '/tag/:tag'
 future: true
 pwa:
   dest_js_directory: assets/js

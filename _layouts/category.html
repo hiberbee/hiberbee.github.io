@@ -1,33 +1,20 @@
 ---
 layout: default
+pagination:
+enabled: false
 ---
-{% capture nowunix %}{{ 'now' | date: '%s'}}{% endcapture %}
-{% assign reversed_tags = site.tags[page.title] | reverse %}
-{% assign reversed_categories = site.categories[page.title] | reverse %}
+{% assign posts = paginator.posts | sort: "slug"  %}
 <main class="container">
-    <h1>#{{ page.title }}
-    </h1>
+    <h1>{{ page.title }}</h1>
     <ul>
-        {% for post in reversed_categories %}
-            {% capture posttime %}{{ post.date | date: '%s'}}{% endcapture %}
-            {% if posttime >= nowunix %}
+        {% for post in posts %}
+            {% assign event = site.events | where_exp: "item", "item.slug == post.slug" | where_exp: "item", "item.date >= site.time" | first %}
+            {% if event %}
                 <li>
                     <h4>
-                        <a class="tag" href="{{ post.url }}">
-                            {{ post.title }}: {{ post.subtitle }}</a>
-                        <span>{{ post.date | date: "%A, %-d %B" }} {{ post.time }}</span>
-                    </h4>
-                </li>
-            {% endif %}
-        {% endfor %}
-        {% for post in reversed_tags %}
-            {% capture posttime %}{{ post.date | date: '%s'}}{% endcapture %}
-            {% if posttime >= nowunix %}
-                <li>
-                    <h4>
-                        <a class="tag" href="{{ post.url }}">
-                            {{ post.title }}: {{ post.subtitle }}</a>
-                        <span>{{ post.date | date: "%A, %-d %B" }} {{ post.time }}</span>
+                        <a class="tag" href="/trainings/{{ event.slug }}/">{{ event.name }}: {{ event.description }}
+                        </a>
+                        <span>{{ event.date | date: "%A, %-d %B" }} {{ event.time_start }} - {{ event.time_end }}</span>
                     </h4>
                 </li>
             {% endif %}

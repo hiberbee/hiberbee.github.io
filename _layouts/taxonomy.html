@@ -1,19 +1,19 @@
 ---
 layout: default
 ---
+{% assign categories = site.trainings  | map: 'categories' | uniq | sort %}
+{% assign tags = site.trainings  | map: 'tags' | uniq | sort %}
 <main class="hero dark-section" style="text-align: left; background-image: url('/assets/img/background/black.png');">
     <div class="container">
         <h1>Таксономия</h1>
-        {% assign sorted_categories = site.categories | sort %}
-        {% assign sorted_tags = site.tags | sort %}
         <h3>Категории</h3>
-        {% for category in sorted_categories %}
-            <a class="tag" href="/category/{{ category | first }}/"><span
-                    class="text-faded">#</span>{{ category | first }}</a>
+        {% for category in categories %}
+            <a class="tag" href="/category/{{ category | downcase }}/"><span
+                    class="text-faded">#</span>{{ category }}</a>
         {% endfor %}
         <h3>Теги</h3>
-        {% for tag in sorted_tags %}
-            #<a class="tag" href="/tag/{{ tag | first | downcase }}">   {{ tag | first }}
+        {% for tag in tags %}
+            #<a class="tag" href="/tag/{{ tag | downcase }}/">{{ tag }}
         </a>
         {% endfor %}
     </div>
