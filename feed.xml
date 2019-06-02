@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" >
+    <generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator>
+    <link href="https://hiberbee.com/feed.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://hiberbee.com/" rel="alternate" type="text/html" />
+    <updated>2019-06-03T02:48:39+03:00</updated>
+    <id>https://hiberbee.com/feed.xml</id>
+    
+
+    <title type="html">Hiberbee | Tech Consulting for IT professionals</title>
+
+
+    <subtitle>Технический консалтинг и супервайзинг для разработчиков, техлидов, проектных команд. Специализации: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services</subtitle>
+
+
+        <author>
+            <name>Vladyslav Volkov</name>
+            
+            <email>vlad@hiberbee.com</email>
+            
+            
+        </author>
+<entry>
+        <title type="html">Gatling: Performance and stress-testing with Scala/Gatling for automation QA engineers</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Gatling: Performance and stress-testing with Scala/Gatling for automation QA engineers"/>
+        <published>2019-08-10T00:00:00+03:00</published>
+        <updated>2019-08-10T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/qa-040/qa-040</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/qa-040/">
+            
+
+        </content>
+            <category term="quality-assurance"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+            <category term="gatling"/>
+        
+            <category term="performance-testing"/>
+        
+            <category term="stress-testing"/>
+        
+            <category term="scala"/>
+        
+    </entry>
+    <entry>
+        <title type="html">System design specification: 4+1 architecture views</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="System design specification: 4+1 architecture views"/>
+        <published>2019-07-20T00:00:00+03:00</published>
+        <updated>2019-07-20T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/sd-011/sd-011</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/sd-011/">
+            
+
+        </content>
+            <category term="system-design"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+            <category term="uml"/>
+        
+    </entry>
+    <entry>
+        <title type="html">System design specification: UML</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="System design specification: UML"/>
+        <published>2019-07-20T00:00:00+03:00</published>
+        <updated>2019-07-20T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/sd-010/sd-010</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/sd-010/">
+            
+
+        </content>
+            <category term="system-design"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+    </entry>
+    <entry>
+        <title type="html">System Achicture: Role overview</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="System Achicture: Role overview"/>
+        <published>2019-07-16T00:00:00+03:00</published>
+        <updated>2019-07-16T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/sd-000/sd-000</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/sd-000/">
+            
+
+        </content>
+            <category term="system-design"/>
+        
+            <category term="2H"/>
+        
+            <category term="Thu"/>
+        
+            <category term="career"/>
+        
+    </entry>
+    <entry>
+        <title type="html">BDD: Testing REST/GraphQL API with Cucumber &amp;amp; Karate</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="BDD: Testing REST/GraphQL API with Cucumber &amp; Karate"/>
+        <published>2019-07-13T00:00:00+03:00</published>
+        <updated>2019-07-13T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/qa-012/qa-012</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/qa-012/">
+            
+
+        </content>
+            <category term="quality-assurance"/>
+        
+            <category term="software-engineering"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+            <category term="HTTP-API"/>
+        
+            <category term="java"/>
+        
+            <category term="BDD"/>
+        
+            <category term="cucumber"/>
+        
+            <category term="starter"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Kubernetes: Network service mesh with Istio</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Network service mesh with Istio"/>
+        <published>2019-07-13T00:00:00+03:00</published>
+        <updated>2019-07-13T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-023/do-023</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-023/">
+            Зачем мне это нужно?
+Одна из самых сложных и значимых тем в стеке Cloud Native - сетевая инфраструктура кластера. Весь слой межсервисной коммуникации называют Service Mesh, а продукт Istio объединяет продукты и подходы, помогая в управлении траффиком, безопасностью сети и мониторинга облачных приложений.
+
+Программа
+
+  Envoy Sidecar - легковесные контейнеры, проксирующие входящий HTTP траффик
+  Certification manager - компонент, покрывающий генерацию, доступ и управление SSL-сертификатами
+  Ingress &amp;amp; Egress Gateway и правила маршрутизации внутреннего и внешнего траффика
+  Zipkin &amp;amp; Kiali - трассировка и визуализация графа запросов
+  Telemetry - сбор статистики и метрик
+  Discovery, Load balancing &amp;amp; Circuit break - балансировка нагрузки, контроль за состоянием, восстановлением и доступностью сервисов
+
+
+На кого расчитан тренинг?
+Воркшоп рассчитан на разработчиков и DevOps с опытом Kubernetes. В качестве примеров используется Spring Cloud, имеющий хорошую поддержку и совместимость с Istio.
+Для начинающих осваивать Kubernetes, рекомендуется предварительно посетить другие тренинги по в серии #kubernetes
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+            <category term="istio"/>
+        
+            <category term="kubernetes"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="service-mesh"/>
+        
+            <category term="spring-cloud"/>
+        
+            <category term="advanced"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Message queues: RabbitMQ</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Message queues: RabbitMQ"/>
+        <published>2019-07-12T00:00:00+03:00</published>
+        <updated>2019-07-12T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/ts-040/ts-040</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/ts-040/">
+            
+
+        </content>
+            <category term="technology-services"/>
+        
+            <category term="software-engineering"/>
+        
+            <category term="system-design"/>
+        
+            <category term="2H"/>
+        
+            <category term="Fri"/>
+        
+            <category term="starter"/>
+        
+            <category term="message-queue"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Continuous integration &amp;amp; delivery: Introduction</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Continuous integration &amp; delivery: Introduction"/>
+        <published>2019-07-11T00:00:00+03:00</published>
+        <updated>2019-07-11T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/ep-020/ep-020</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/ep-020/">
+            
+
+        </content>
+            <category term="engineering-practices"/>
+        
+            <category term="2H"/>
+        
+            <category term="Thu"/>
+        
+            <category term="starter"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Microservices: Reverse-engineering, references &amp;amp; best practices</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Microservices: Reverse-engineering, references &amp; best practices"/>
+        <published>2019-07-10T00:00:00+03:00</published>
+        <updated>2019-07-10T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/sd-020/sd-020</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/sd-020/">
+            
+
+        </content>
+            <category term="system-design"/>
+        
+            <category term="2H"/>
+        
+            <category term="advanced"/>
+        
+            <category term="Wed"/>
+        
+            <category term="service-mesh"/>
+        
+            <category term="cloud-native"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Exteme Programming: Introduction</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Exteme Programming: Introduction"/>
+        <published>2019-07-09T00:00:00+03:00</published>
+        <updated>2019-07-09T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/ep-010/ep-010</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/ep-010/">
+            
+
+        </content>
+            <category term="engineering-practices"/>
+        
+            <category term="2H"/>
+        
+            <category term="starter"/>
+        
+            <category term="Tue"/>
+        
+            <category term="process"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Gradle: United polyglot build system</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Gradle: United polyglot build system"/>
+        <published>2019-07-08T00:00:00+03:00</published>
+        <updated>2019-07-08T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/se-031/se-031</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/se-031/">
+            
+
+        </content>
+            <category term="software-engineering"/>
+        
+            <category term="2H"/>
+        
+            <category term="Mon"/>
+        
+            <category term="gradle"/>
+        
+            <category term="build"/>
+        
+            <category term="ci"/>
+        
+            <category term="cd"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Java: SL class</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Java: SL class"/>
+        <published>2019-07-06T00:00:00+03:00</published>
+        <updated>2019-07-06T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/se-010/se-010</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/se-010/">
+            
+
+        </content>
+            <category term="software-engineering"/>
+        
+            <category term="quality-assurance"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+            <category term="boost"/>
+        
+            <category term="starter"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Kubernetes: Configuring and running controllers and workloads</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Configuring and running controllers and workloads"/>
+        <published>2019-07-06T00:00:00+03:00</published>
+        <updated>2019-07-06T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-022/do-022</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-022/">
+            
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Kubernetes: Persistence, storages and volumes management with Ceph and S3</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Persistence, storages and volumes management with Ceph and S3"/>
+        <published>2019-07-04T00:00:00+03:00</published>
+        <updated>2019-07-04T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-026/do-026</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-026/">
+            
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="system-design"/>
+        
+            <category term="2H"/>
+        
+            <category term="Thu"/>
+        
+            <category term="ceph"/>
+        
+            <category term="s3"/>
+        
+            <category term="advanced"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="kubernetes"/>
+        
+            <category term="storage"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Ansible: Configuration management &amp;amp; infrastructure provision</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Ansible: Configuration management &amp; infrastructure provision"/>
+        <published>2019-07-03T00:00:00+03:00</published>
+        <updated>2019-07-03T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-010/do-010</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-010/">
+            Какая цель тренинга?
+Наработать best practices и подготовить к поддержке более сложных инфраструктур, расширить кругозор используемых подходов и решений, показать новые ниши для автоматизации и поделиться рабочими лайфхаками.
+
+Зачем мне это нужно?
+Счет облачных сервисов идет на десятки, и каждый из них имеет уникальную конфигурацию, которая зависит от множества параметров - установленной версии пакета, операционной системы, настроек и переменных окружения, прав доступа. Без инструментов для управления конфигурациями поддержка кода инфраструктуры рано или поздно перестанет быть контролируемой - виной тому чрезмерная избыточность, высокая вероятность появления ошибок по вине человеческого фактора, слабая воспроизводимость среды и самое критичное в этой ситуации - предсказуемость поведения окружения. Несколько часов инвестиции в знания configuration management окупится с лихвой в дальнейшей работе.
+
+С чем успеем поработать?
+На воркшопе мы разберем workflow на примере Ansible, отработав несколько стандартных сценариев:
+
+  полный provisioning среды, на примере bare-metal установки docker+kubernetes
+  управление инфраструктурой (группировка серверов, паралельное-последовательное выполнение, работа с контейнерами)
+И несколько нестандартных, но набирающих популярность:
+  работа в связке с Kubernetes - через API, в качестве задачи (Job) и отдельно - как оператор
+  адаптируемость к новым API (на примерах интеграции с DigitalOcean, Vault, Slack и другими сервисами)
+
+
+Почему именно эти темы?
+Примеры полностью покрывают весь функционал - секреты, события, факты, циклы, роли, повышение полномочий и т.д.
+
+На кого расчитан тренинг?
+Воркшоп рекомендуется для разработчиков под любые серверные технологии, системных администраторов, инженеров DevOps / SecOps/ SRE, и QA Automation / SDET, работающих с несколькими тестовыми контурами.
+для комфортного восприятия рекомендуется:
+
+  иметь достаточный для настройки окружения разработки unix-окружения (на основе Debian или CentOs)
+  плюсом будет опыт работы с аналогичным инструментом
+  быть готовым к интенсивному темпу live-coding сессии
+  не брать ноутбук в расчете повторять шаги по ходу сессии (код с комментариями и примерами будет доступен )
+
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="software-engineering"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="ansible"/>
+        
+            <category term="configuration-management"/>
+        
+            <category term="2H"/>
+        
+            <category term="Wed"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Docker Swarm: Complete cluster infrastructure from scratch</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Docker Swarm: Complete cluster infrastructure from scratch"/>
+        <published>2019-07-02T00:00:00+03:00</published>
+        <updated>2019-07-02T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-001/do-001</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-001/">
+            Какая цель тренинга?
+Наглядно продемонстрировать на примере Swarm простоту первого шага к адапатации приложений к Cloud Native, структурировать знания дизайна микросервисных архитектур, узнать новые подходы и приемы работы.
+
+Зачем мне это нужно?
+Если вы уже работаете с Docker и использовали Compose, то перейти к Swarm не составит труда. И даже если вы все равно планируете использовать Kubernetes, основные концепции контейнерной оркестровки применимы и к Swarm.
+
+С чем успеем поработать?
+
+  создадим кластер swarm с master и slave нодами и подключим локальный Registry
+  развернем в кластере Postgres и RabbitMQ в режиме HA;
+  используя Traefik, настроим балансировку траффика и DNS
+  с помощью LetsEncrypt настроим авто выдачу SSL-сертификатов подпишем *.localhost для удобства локальной разработки
+  добавим мониторинг и сбор логов с TICK и ELK стеками, и менеджмент кластера с Portainer
+  установим Vault для менеджмента секретных данных и S3 совместимое open-source решение для хранения файлов
+  развернем API Gateway на NodeJS + GraphQL, и несколько API микросервисов на Spring Cloud
+  активируем serverless-возможности на базе OpenFAAS
+  в итоге, с помощью автоматизации на Ansible, перенесем наш кластер на дроплеты DigitalOcean, используя API
+  в конце проведем сессию вопросов-ответов и обзор альтернативных решений
+
+
+Почему именно эти темы?
+Этот список технологий считаю джентельменским набором, хорошо зарекомендовавшим себя как в эксплуатации, так и обучении для программистов с разным уровнем знаний и опытом разработки.
+
+На кого рассчитан тренинг?
+Разработчики и Dev/Ops, и все специалисты, работающие с Cloud Native приложениями. Для комфортного восприятия рекомендуется:
+
+  иметь опыт с Docker и Docker Compose
+  на базовом работать с UNIX-based системами
+  понимать концепции 12-factor-app (https://12factor.net/)
+  быть готовым к интенсивному темпу live-coding сессии
+  не брать ноутбук в расчете повторять шаги по ходу сессии (код с комментариями будет доступен после воркшопа)
+
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="docker"/>
+        
+            <category term="docker-swarm"/>
+        
+            <category term="orchestration"/>
+        
+            <category term="2H"/>
+        
+            <category term="Thu"/>
+        
+            <category term="starter"/>
+        
+    </entry>
+    <entry>
+        <title type="html">SDLC: Solutions</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="SDLC: Solutions"/>
+        <published>2019-07-01T00:00:00+03:00</published>
+        <updated>2019-07-01T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/ep-001/ep-001</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/ep-001/">
+            
+
+        </content>
+            <category term="engineering-practices"/>
+        
+            <category term="2H"/>
+        
+            <category term="Mon"/>
+        
+    </entry>
+    <entry>
+        <title type="html">GraphQL API: Advanced client/server features and insights for everyone experienced with REST</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="GraphQL API: Advanced client/server features and insights for everyone experienced with REST"/>
+        <published>2019-06-29T00:00:00+03:00</published>
+        <updated>2019-06-29T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/ts-021/ts-021</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/ts-021/">
+            Программа
+
+  подписки на события - в качестве наглядного примера события Kubernetes будут очень уместны
+  продвинутая кодогенерация (генерируем любые типы в любые типы через призму GraphQL, а также готовые запросы для клиентов iOS / Android / React, схемы JSON в GraphQL, TypeScript в Kotlin - на что только хватит фантазии)
+  кастомные директивы - например, для генерации в реальном времени фейковых данных тех полей с бекенда, которых к примеру там еще не существует
+  разбор нескольких проблемных примеров, связанных с совместимостью и производительностью
+  базовый обзор реализации на GraphQL Relay - в качестве альтернативы, для понимания контекста и общей эрудиции
+
+
+На кого рассчитан тренинг?
+Тренинг продолжительностью 4 часа рассчитан на инженеров, имеющих опыт работы с GraphQL и понимающих основные принципы.
+
+Если вы не знакомы с технологией, рекомендуем посетить первую часть в этот же день - GraphQL Part I: Essentials
+
+        </content>
+            <category term="technology-services"/>
+        
+            <category term="software-engineering"/>
+        
+            <category term="system-design"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+            <category term="HTTP-API"/>
+        
+            <category term="advanced"/>
+        
+            <category term="nodejs"/>
+        
+            <category term="typescript"/>
+        
+            <category term="spring-boot"/>
+        
+            <category term="graphql"/>
+        
+    </entry>
+    <entry>
+        <title type="html">GraphQL API: Essentials and starter guide for everyone experienced with REST</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="GraphQL API: Essentials and starter guide for everyone experienced with REST"/>
+        <published>2019-06-29T00:00:00+03:00</published>
+        <updated>2019-06-29T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/ts-020/ts-020</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/ts-020/">
+            Программа
+Базовый курс даст веб-разработчикам ответы на следующие вопросы:
+
+  достоинств и ключевых отличие в разработке GraphQL API
+  схема, типы данных, директивы,
+  кодогенерация
+  язык запросов, интроспекция
+  best practices и подводные камни из рабочей практики
+  IDE и tooling
+  в качестве примера используем Apollo Client на TypeScript, в качестве сервера на выбор - имплементации на Java / NodeJS / PHP.
+
+
+На кого рассчитан тренинг?
+Тренинг продолжительностью 4 часа будет полезен как для frontend, так и backend разработчиков, работающих с HTTP API.
+
+Если чувствуете в себе силы, можно продолжить знакомство во второй части в этот же день - GraphQL Part II: Advanced
+
+        </content>
+            <category term="technology-services"/>
+        
+            <category term="software-engineering"/>
+        
+            <category term="system-design"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+            <category term="starter"/>
+        
+            <category term="nodejs"/>
+        
+            <category term="spring-boot"/>
+        
+            <category term="typescript"/>
+        
+            <category term="HTTP-API"/>
+        
+            <category term="graphql"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Serverless: Fundamentals, frameworks, cloud providers</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Serverless: Fundamentals, frameworks, cloud providers"/>
+        <published>2019-06-27T00:00:00+03:00</published>
+        <updated>2019-06-27T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/ts-050/ts-050</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/ts-050/">
+            
+
+        </content>
+            <category term="engineering-practices"/>
+        
+            <category term="2H"/>
+        
+            <category term="Thu"/>
+        
+            <category term="serverless"/>
+        
+            <category term="advanced"/>
+        
+            <category term="openwhisk"/>
+        
+            <category term="kubernetes"/>
+        
+            <category term="spring-cloud"/>
+        
+            <category term="spring-boot"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Kubernetes: Security and key management with Vault</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Security and key management with Vault"/>
+        <published>2019-06-26T00:00:00+03:00</published>
+        <updated>2019-06-26T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-027/do-027</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-027/">
+            
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="2H"/>
+        
+            <category term="Wed"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="kubernetes"/>
+        
+            <category term="vault"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Media processing: Video-on-Demand, transmux, images operations</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Media processing: Video-on-Demand, transmux, images operations"/>
+        <published>2019-06-25T00:00:00+03:00</published>
+        <updated>2019-06-25T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/ts-030/ts-030</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/ts-030/">
+            
+
+        </content>
+            <category term="technology-services"/>
+        
+            <category term="software-engineering"/>
+        
+            <category term="system-design"/>
+        
+            <category term="2H"/>
+        
+            <category term="Tue"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Kubernetes: Logging with ELK stack</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Logging with ELK stack"/>
+        <published>2019-06-24T00:00:00+03:00</published>
+        <updated>2019-06-24T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-024/do-024</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-024/">
+            Какая цель тренинга?
+Научиться, как собрать, отфильтровать, сгруппировать и анализировать логи облачных сервисов и приложений.
+
+Зачем мне это нужно?
+Рано или поздно, у вас будет одна из этих задач - отследить баг в production, найти IP клиентской операции, узнать, с каким сообщением упал сервис в полночь - рано или поздно, но вопросы логирования нужно будет решать - как на стадии проектирования, так и при эксплуатации микросервисов. ELK - это одно из самых популярных решений, доступных в open source, и очень мощный комплекс, закрывающий все вопросы.
+
+Программа
+
+  в основе тренинга - классический ELK стек для логгирования - Elasticsearch для индексации, Logstash для аггрегации и Kibana - для визуализации данных логов
+  дополнительно - их работу в контексте кластера - сбор, ротация, особенности структуры, работа с filebeat и fluentd
+
+
+На кого расчитан тренинг?
+Разработчики, Dev/Ops, SysOps работающие с микросервисами под управлением Kubernetes. Большая часть не привязана к оркестратору, и применима к Docker Swarm / Mesos. Несмотря на 6-ую позицию в серии тренингов, можно посетить после Kubernetes III: Workloads
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="kubernetes"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="2H"/>
+        
+            <category term="Mon"/>
+        
+            <category term="elk"/>
+        
+            <category term="logging"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Java 8 API: Streams API and functional interfaces with cutting-edge test frameworks for QA automation engineers</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Java 8 API: Streams API and functional interfaces with cutting-edge test frameworks for QA automation engineers"/>
+        <published>2019-06-22T00:00:00+03:00</published>
+        <updated>2019-06-22T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/qa-030/qa-030</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/qa-030/">
+            Какая цель тренинга?
+Одними из ключевых нововведением в Java 8 API стали стримы и лямбда-выражения. И хоть это произошло 5 лет назад, не все используют функциональную парадигму при разработке, а особенно - в тестировании.
+
+Зачем мне это нужно?
+Это отличный способ повысить квалификацию и перейти на новый уровень.
+
+С чем успеем поработать?
+
+  фильтровать и сортировать коллекции, трансформировать данные в необходимую структуру, валидировать значения или делать группировку
+  обрабатывать Nullable значения и работать с операциями, бросающими Exception
+  писать универсальные матчеры, условия и предикаты для тестов, не зависящие от контекста
+  расширять AssertJ, Cucumber, Jupiter API
+
+
+На кого расчитан тренинг?
+Этот тренинг - для Automation QA инженеров, и разработчиков, использующих Java и вспомогательные библиотеки (Cucumber, JUnit, AssertJ) для тестирования веб-приложений и API. Вы научитесь эффективней работать с коллекциями, сократите дублирование, узнаете о новых API инструментов для тестирования и улучшите качество и читаемость вашего кода.
+
+        </content>
+            <category term="quality-assurance"/>
+        
+            <category term="starter"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+            <category term="java"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Kubernetes: Configuring and running controllers and workloads</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Configuring and running controllers and workloads"/>
+        <published>2019-06-22T00:00:00+03:00</published>
+        <updated>2019-06-22T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-022/do-022</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-022/">
+            
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Thin client: Move your environment to the cloud</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Thin client: Move your environment to the cloud"/>
+        <published>2019-06-21T00:00:00+03:00</published>
+        <updated>2019-06-21T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/ep-031/ep-031</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/ep-031/">
+            
+
+        </content>
+            <category term="engineering-practices"/>
+        
+            <category term="software-engineering"/>
+        
+            <category term="2H"/>
+        
+            <category term="localhost"/>
+        
+            <category term="Friday"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Kubernetes: Initial setup and configuration and local environment workflows</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Initial setup and configuration and local environment workflows"/>
+        <published>2019-06-20T00:00:00+03:00</published>
+        <updated>2019-06-20T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-021/do-021</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-021/">
+            Программа
+
+  Helm - это пакетный менеджер для Kubernetes. Идея, подкупающая своей новизной - репозиторий, из которого скачиваешь нужный пакет - набор ресурсов - и релизишь. В теории все легко и просто, на практике - десятки статей с критикой и предупреждениями не использовать. Тем не менее, очень много готовых рецептов уже доступно в репозиториях и установка сторонних сервисов часто начинается с helm install - начнем и мы, как минимум для понимания контекста.
+  Операторы - свежий виток переосмысления повышенной сложности эксплуатации определенных ресурсов. Хоть helm и предоставляет установку чего-либо в одну команду, на практике комплексным продуктам (например, слой приложений для мониторинга, или кластер postgres с pgbouncer, бекапами и репликацией) подобный подход не подходит. Упростить это должны были операторы, а на практике - мы с ними и познакомимся.
+  3 элемент - небольшая утилита, единственной функцией которой является замена работающего контейнера в кластере его локальной версией, с поддержкой монтирования локальной файловой системы и полным погружением в контекст кластера - секреты, сервисные аккаунты, открытые порты - все переходит под ваш контроль, с возможностью поставить breakpoint.
+  И аналогично Docker, научимся запускать K8S в режиме Kube-in-Docker, с возможностью запуска контейнеров в контейнере (но в другом Runtime). Это вовсе не штатный режим, но полезен для начинающих он тем, что за 2 секунды старта контейнера вы получаете чистый настроеный куб, занимающий в ОЗУ 100 мегабайт.
+
+
+На кого расчитан тренинг?
+Опыт работы с Docker и знание базовых концептов Kube обязательно - темы для старта довольно требовательные, и легко можно потерять суть происходящего. Ноутбук тоже не очень рекомендую, так как без опыта настройки можно потратить много времени. По завершению воркшопа все скрипты будут доступны.
+Рекомендуется посетить вводный урок Kubernetes: Technology kick-off
+
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="2H"/>
+        
+            <category term="Thu"/>
+        
+            <category term="kubernetes"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Kubernetes: Push and pull monitoring with Prometheus &amp;amp; TICK stacks</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Push and pull monitoring with Prometheus &amp; TICK stacks"/>
+        <published>2019-06-19T00:00:00+03:00</published>
+        <updated>2019-06-19T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-025/do-025</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-025/">
+            Какая цель тренинга?
+Узнать о разных способах мониторинга облачных сервисов и научиться аггрегировать и визуализировать как системные, так и произвольные метрики произвольных событий
+
+Зачем мне это нужно?
+Мониторинг или логирование многие разработчики часто игнориуют, переводя стрелки на системных администраторов и DevOps. Тонкую настройку и правда стоит делегировать, но анализ собранных данных необходим, например, при решении проблем производительности и оптимизации ресурсов приложения. Добавим сюда события бизнес-логики, данные о работе с  БД и очередями сообщений - вот и несколько причин посетить этот тренинг.
+
+Программа
+
+  Pull-подход при сборе метрик на примере промышленного стандарта в экосистеме -  Prometheus + Grafana
+  Альтернативный сценарий - сбор сведений о хосте и событиях приложения через push, используя стек TICK - Telegraph, InfluxDB, Chronograph, Kapacitor
+
+
+Почему именно эти темы?
+Часто берут один из стеков (как правило, Prometheus), и пытаются покрыть им все требования, исключая возможность сделать это проще и оптимальней. TICK стек хорошо интегрируется и незаслуженно обделен вниманием.
+
+На кого расчитан тренинг?
+Разработчики, Dev/Ops, SysOps работающие с микросервисами под управлением Kubernetes. Большая часть не привязана к оркестратору, и применима к Docker Swarm / Mesos. Несмотря на 5-ую позицию в серии тренингов, можно посетить после Kubernetes III: Workloads
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="2H"/>
+        
+            <category term="kubernetes"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="tick"/>
+        
+            <category term="prometheus"/>
+        
+            <category term="influxdb"/>
+        
+            <category term="time-series-db"/>
+        
+            <category term="db"/>
+        
+            <category term="monitoring"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Neo4J: Introduction to graph databases with samples for SQL-experienced engineers</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Neo4J: Introduction to graph databases with samples for SQL-experienced engineers"/>
+        <published>2019-06-17T00:00:00+03:00</published>
+        <updated>2019-06-17T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/ts-010/ts-010</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/ts-010/">
+            Какая цель тренинга?
+Ознакомиться с возможностями и потенциалом графовых баз данных, увидеть работу основных функций на практике, сменить контекст мышления, зажатого рамками реляционных СУБД
+
+Зачем мне это нужно?
+Существует ряд задач, для решения которых графовые БД зачастую более оптимальный выбор, чем реляционные или NoSQL решения. Например, на вопрос, использует ли фейсбук графовые базы для хранения социальных связей, производитель замечает: “No, but they should”. Если вы работаете с проектированием комплексных систем или их компонент, вам однозначно стоит рассмотреть графы как потенциальную альтернативу.
+
+С чем успеем поработать?
+Помимо знакомства с теорией и задачами, которые решает neo4j, мы разберем два примера, наглядно показывающих принципы и возможности работы - систему рекомендаций и трансформацию плоской структуры (CSV) в связанный граф
+
+###Почему именно эти темы?
+Исходя из опыта - графы решают эти задачи эффективней, чем другие решения.
+
+На кого рассчитан тренинг?
+Разработчики, кто имеет опыт работы с реляционными СУБД, системные и solution архитекторы.
+
+        </content>
+            <category term="technology-services"/>
+        
+            <category term="software-engineering"/>
+        
+            <category term="system-design"/>
+        
+            <category term="graph-db"/>
+        
+            <category term="2H"/>
+        
+            <category term="Mon"/>
+        
+            <category term="neo4j"/>
+        
+            <category term="db"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Infrastructure test automation: Spec-driven and integration testing for automation QA &amp;amp; software engineers</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Infrastructure test automation: Spec-driven and integration testing for automation QA &amp; software engineers"/>
+        <published>2019-06-15T00:00:00+03:00</published>
+        <updated>2019-06-15T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/qa-020/qa-020</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings//">
+            
+        </content>
+    </entry>
+    <entry>
+        <title type="html">Kubernetes: Network service mesh with Istio</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Network service mesh with Istio"/>
+        <published>2019-06-15T00:00:00+03:00</published>
+        <updated>2019-06-15T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-023/do-023</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-023/">
+            Зачем мне это нужно?
+Одна из самых сложных и значимых тем в стеке Cloud Native - сетевая инфраструктура кластера. Весь слой межсервисной коммуникации называют Service Mesh, а продукт Istio объединяет продукты и подходы, помогая в управлении траффиком, безопасностью сети и мониторинга облачных приложений.
+
+Программа
+
+  Envoy Sidecar - легковесные контейнеры, проксирующие входящий HTTP траффик
+  Certification manager - компонент, покрывающий генерацию, доступ и управление SSL-сертификатами
+  Ingress &amp;amp; Egress Gateway и правила маршрутизации внутреннего и внешнего траффика
+  Zipkin &amp;amp; Kiali - трассировка и визуализация графа запросов
+  Telemetry - сбор статистики и метрик
+  Discovery, Load balancing &amp;amp; Circuit break - балансировка нагрузки, контроль за состоянием, восстановлением и доступностью сервисов
+
+
+На кого расчитан тренинг?
+Воркшоп рассчитан на разработчиков и DevOps с опытом Kubernetes. В качестве примеров используется Spring Cloud, имеющий хорошую поддержку и совместимость с Istio.
+Для начинающих осваивать Kubernetes, рекомендуется предварительно посетить другие тренинги по в серии #kubernetes
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+            <category term="istio"/>
+        
+            <category term="kubernetes"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="service-mesh"/>
+        
+            <category term="spring-cloud"/>
+        
+            <category term="advanced"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Jetbrains IDE family: Killer features, complete configuration, ultimate tricks and incentive insights for all JetBrains users</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Jetbrains IDE family: Killer features, complete configuration, ultimate tricks and incentive insights for all JetBrains users"/>
+        <published>2019-06-14T00:00:00+03:00</published>
+        <updated>2019-06-14T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/ep-030/ep-030</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/ep-030/">
+            Программа
+
+  
+    Устройство платформы, обзор системных и пользовательских конфигураций, и отдельной темой - Runtime Environment (движки для отрисовки интерфейса, особенности рендеринга шрифтов и потребляемые ресурсы и скорость отклика) - актуальные для многих вопросы и причиной, по которой избегают IntelliJ.
+  
+  
+    Элементы локального окружения, которые взаимодействуют с IDE - терминал и переменные окружения, установленные sdk и компиляторы, виртуальные машины, контейнеры, сессии авторизации в разных реестрах, запущенные системные процессы и демоны, системы сборок и пакетные менеджеры, пользовательские профили для Git, ssh, nvm, rvm и т.д.
+  
+  
+    Система модулей и способы организации микросервисных проектов в один. Для референса возьмем проект, покрыващий большинство backend, frontend и dev\ops технологий и сценариев их использования. Project-based configuration (например, разные версии линтеров, компиляторов или sdk для модулей), навигацию, тюнинг, интегрирацию, контекст и автодополнение (например, для gradle или ansible playbook/docker-compose/package.json), в том числе и для “двойного синтаксис” (например, jinja шаблон в yaml файле). Кроме того, рассмотрим типичные задачи проектов на схожих технологиях - dependency management, сборка, рефакторинг, тестирование.
+  
+  
+    Аналитика процесса вашей работы - важная составляющая цикла разработки. Рассмотрим несколько вспомогательных инструментов и приемов, позволяющих замерить этот процесс, а временная статистика ваших правок поможет выявлять слабые места и продолжать расти профессионально в дальнейшем.тить 10 секунд, потраченных на навигацию по проекту - до 2ух, 5 секунд на команду в терминале до 1, а секунду, потраченную на форматирование или клик мышки в ряде ситуаций можно и вовсе сэкономить полностью.
+  
+  
+    Аналитика процесса вашей работы - важная составляющая цикла разработки. Рассмотрим несколько вспомогательных инструментов и приемов, позволяющих замерить этот процесс - временная статистика ваших правок поможет выявлять слабые места и продолжать расти профессионально в дальнейшем.
+  
+
+
+        </content>
+            <category term="engineering-practices"/>
+        
+            <category term="software-engineering"/>
+        
+            <category term="2H"/>
+        
+            <category term="Fri"/>
+        
+            <category term="localhost"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Kubernetes: Technology overview &amp;amp; kick-off for developers and DevOps</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Technology overview &amp; kick-off for developers and DevOps"/>
+        <published>2019-06-13T00:00:00+03:00</published>
+        <updated>2019-06-13T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/do-020/do-020</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/do-020/">
+            Цитата SRE из Google:
+“Kubernetes evolves very quickly (too quickly to maintain currency), uses (many) novel concepts and that there are (too) many ways to solve the same problem.”
+
+Спустя год, как и годом ранее, она все еще актуальна. Технология получилась настолько гибкой, что с легкостью смогла принять множество идей и патчей в короткий промежуток времени. Incubating статус перестал пугать, deprecated notice есть в каждой минорной версии, а в течении года появилось сразу несколько новых концептов - операторы и сервис-каталог, которые совсем не упростили понимание новичков.
+
+Охватить все концепции за один тренинг точно не получится, но сделать экскурс по ключевым архитектурным решениям, проследить, какие возможности стали доступны, и с какими сложностями сталкивались компании при переезде - вполне реально. Как минимум, станет реальнее оценить трудозатраты и составить план для дальнейшего изучения.
+
+С чем успеем поработать?
+
+  истории и причинах появления K8S и факторах, обеспечивших спрос, и как следствие - рост его популярности
+  архитектуре, базовых компонентах и их ролях
+  основных ресурсах API, развернув демо-инстанс небольшого приложения
+  возможностях, которые предоставляет API, для расширения стандартных функций (e.g. Custom Resource Defintions, Operators)
+  и в завершение - как Kubernetes повлиял на разработку, отладку, тестирование, деплоймент и другие составляющие SDLC
+
+
+На кого расчитан тренинг?
+Поскольку этот воркшоп скорее фундамент для более предметных тренингов, соотношение лекции/демо будет около 50/50, и поможет разработчикам, которые планируют, уже начали эксплуатацию Kubernetes, либо рассматривают Куб как альтернативу Swarm, составить оптимальный backlog и учесть последние обновления платформы.
+
+        </content>
+            <category term="dev-ops"/>
+        
+            <category term="software-engineering"/>
+        
+            <category term="system-design"/>
+        
+            <category term="cloud-native"/>
+        
+            <category term="orchestration"/>
+        
+            <category term="2H"/>
+        
+            <category term="Wed"/>
+        
+            <category term="kubernetes"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Java: SL class</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Java: SL class"/>
+        <published>2019-06-12T00:00:00+03:00</published>
+        <updated>2019-06-12T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/se-010/se-010</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/se-010/">
+            
+
+        </content>
+            <category term="software-engineering"/>
+        
+            <category term="quality-assurance"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+            <category term="boost"/>
+        
+            <category term="starter"/>
+        
+    </entry>
+    <entry>
+        <title type="html">System Achicture: Role overview</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="System Achicture: Role overview"/>
+        <published>2019-06-11T00:00:00+03:00</published>
+        <updated>2019-06-11T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/sd-000/sd-000</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/sd-000/">
+            
+
+        </content>
+            <category term="system-design"/>
+        
+            <category term="2H"/>
+        
+            <category term="Thu"/>
+        
+            <category term="career"/>
+        
+    </entry>
+    <entry>
+        <title type="html">BDD: Introduction</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="BDD: Introduction"/>
+        <published>2019-06-10T00:00:00+03:00</published>
+        <updated>2019-06-10T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/qa-010/qa-010</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings//">
+            
+        </content>
+    </entry>
+    <entry>
+        <title type="html">BDD: Cucumber</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="BDD: Cucumber"/>
+        <published>2019-06-08T00:00:00+03:00</published>
+        <updated>2019-06-08T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/qa-011/qa-011</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/qa-011/">
+            
+
+        </content>
+            <category term="quality-assurance"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+    </entry>
+    
+</feed>
