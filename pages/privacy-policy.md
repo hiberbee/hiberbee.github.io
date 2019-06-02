@@ -1,5 +1,6 @@
 ---
 layout: blank
+permalink: /privacy-policy/
 ---
 # Privacy Policy
 

@@ -40,6 +40,7 @@ include:
   - CNAME
   - service-worker.js
   - vcard.vcf
+  - _pages/*
 exclude:
   - .bundle
   - Gemfile

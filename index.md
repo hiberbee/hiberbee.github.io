@@ -1,7 +1,7 @@
 ---
 layout: index
 title: Технический консалтинг и повышение квалификации
-description: Профессиональные тренинги для IT-специалистов
+description: Проведи летние каникулы с пользой! 
 offers:
   - category: Dev/Ops
     color: green
