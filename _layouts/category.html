@@ -12,7 +12,8 @@ enabled: false
             {% if event %}
                 <li>
                     <h4>
-                        <a class="tag" href="/trainings/{{ event.slug }}/">{{ site.trainings_identity_map[event.slug] }}</a>
+                        <a class="tag" href="/trainings/{{ event.slug }}/">
+                            {{ site.trainings_identity_map[event.slug] }}</a>
                         <span>{{ event.date | date: "%A, %-d %B" }} {{ event.time_start }} - {{ event.time_end }}</span>
                     </h4>
                 </li>

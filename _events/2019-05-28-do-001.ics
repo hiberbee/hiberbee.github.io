@@ -1,6 +1,7 @@
 ---
 event_id: do-001
 layout: event
+sitemap: false
 ticket_id: b20078b595abc
 time_start: 19<sup>00</sup>
 time_end: 21<sup>30</sup>

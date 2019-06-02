@@ -4,8 +4,8 @@ layout: blank
 {% assign sorted_tags = page.tags | sort | uniq %}
 {% assign events = site.events | where_exp: "item", "item.slug == page.slug" | where_exp: "item", "item.date >= site.time" %}
 {% assign event = events | first %}
-{% assign day_number = page.date | date: '%w' %}
-{% if day_number == "0" or day_number == "6" %}
+{% assign day_number = event.date | date: '%u' %}
+{% if day_number == "6" or day_number == "7" %}
     {% assign ticket_id = "b20078b595abc" %}
     {% assign price = '1200' %}
 {% else %}
