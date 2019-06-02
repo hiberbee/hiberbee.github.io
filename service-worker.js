@@ -1,6 +1,6 @@
 workbox.core.setCacheNameDetails({
     prefix: 'hiberbee',
-    suffix: 'v17',
+    suffix: 'v18',
     precache: 'precache',
     runtime: 'runtime-cache'
 });
