@@ -23,10 +23,10 @@ TRANSP:OPAQUE
 DTEND;TZID=Europe/Kiev:20190622T190000
 UID:D15F3E8A-9763-4490-BD2E-F845E1564ADB
 LOCATION:Часопис\nL'va Tolstoho vulytsya\, 3\, Kiev\, Kiev\, Ukraine
-DESCRIPTION: https://facebook.com/events//
+DESCRIPTION: https://facebook.com/events/892798121065338/
 STATUS:CONFIRMED
 SEQUENCE:0
-SUMMARY:Spring & Hibernate Migration from PHP Symfony & Doctrine
+SUMMARY:Kubernetes Configuring and running controllers and workloads
 LAST-MODIFIED:20190602T140412Z
 DTSTART;TZID=Europe/Kiev:20190622T150000
 CREATED:20190528T214800Z
