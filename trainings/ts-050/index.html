@@ -18,8 +18,10 @@
 <link rel="stylesheet" href="/assets/css/main.css" type="text/css" media="all">
 <link rel="stylesheet" href="/assets/css/mobile.css" media="only screen and (max-width: 768px)">
 <link rel="stylesheet" href="/assets/css/print.css" media="print">
-<link href='/assets/css/fullcalendar/core/main.css' rel='stylesheet'/>
-<link href='/assets/css/fullcalendar/daygrid/main.css' rel='stylesheet'/>
+<link href='/assets/css/fullcalendar/core/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/daygrid/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/timegrid/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/list/main.css' rel='stylesheet' media="all"/>
 
     <script>
     window.onload = function () {
@@ -32,6 +34,11 @@
     }
     ;
 </script>
+<script src='/assets/js/fullcalendar/core/main.js'></script>
+<script src='/assets/js/fullcalendar/interaction/main.js'></script>
+<script src='/assets/js/fullcalendar/daygrid/main.js'></script>
+<script src='/assets/js/fullcalendar/list/main.js'></script>
+<script src='/assets/js/fullcalendar/timegrid/main.js'></script>
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async defer></script>
 <script>
     window.fbAsyncInit = function () {
@@ -112,6 +119,9 @@
                     <a href="/#trainings">Тренинги</a>
                 </li>
                 <li>
+                    <a href="/#services">Сервисы</a>
+                </li>
+                <li>
                     <a href="/#contact">Контакты</a>
                 </li>
                 <li>
@@ -125,8 +135,8 @@
     </nav>
 </header>
 
-<main class="container">
-    
+
+
 
 
 
@@ -134,59 +144,66 @@
 <main class="container">
     <h1>Serverless</h1>
     <h2> Fundamentals, frameworks, cloud providers</h2>
+    <h4>Категории: 
+        
+        <div class="tag">
+            <a href="/category/engineering-practices/">engineering-practices</a>
+        </div>
+    </h4>
     
         
-        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-        </svg>
-        <a class="tag" href="/tag/2h/">2H</a>
+        <div class="tag">
+            <img width="12" height="12" src="/assets/img/icons/tag.svg"><a
+                href="/tag/2h/">2H</a>
+        </div>
     
         
-        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-        </svg>
-        <a class="tag" href="/tag/thu/">Thu</a>
+        <div class="tag">
+            <img width="12" height="12" src="/assets/img/icons/tag.svg"><a
+                href="/tag/thu/">Thu</a>
+        </div>
     
         
-        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-        </svg>
-        <a class="tag" href="/tag/advanced/">advanced</a>
+        <div class="tag">
+            <img width="12" height="12" src="/assets/img/icons/tag.svg"><a
+                href="/tag/advanced/">advanced</a>
+        </div>
     
         
-        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-        </svg>
-        <a class="tag" href="/tag/kubernetes/">kubernetes</a>
+        <div class="tag">
+            <img width="12" height="12" src="/assets/img/icons/tag.svg"><a
+                href="/tag/kubernetes/">kubernetes</a>
+        </div>
     
         
-        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-        </svg>
-        <a class="tag" href="/tag/openwhisk/">openwhisk</a>
+        <div class="tag">
+            <img width="12" height="12" src="/assets/img/icons/tag.svg"><a
+                href="/tag/openwhisk/">openwhisk</a>
+        </div>
     
         
-        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-        </svg>
-        <a class="tag" href="/tag/serverless/">serverless</a>
+        <div class="tag">
+            <img width="12" height="12" src="/assets/img/icons/tag.svg"><a
+                href="/tag/serverless/">serverless</a>
+        </div>
     
         
-        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-        </svg>
-        <a class="tag" href="/tag/spring-boot/">spring-boot</a>
+        <div class="tag">
+            <img width="12" height="12" src="/assets/img/icons/tag.svg"><a
+                href="/tag/spring-boot/">spring-boot</a>
+        </div>
     
         
-        <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-        </svg>
-        <a class="tag" href="/tag/spring-cloud/">spring-cloud</a>
+        <div class="tag">
+            <img width="12" height="12" src="/assets/img/icons/tag.svg"><a
+                href="/tag/spring-cloud/">spring-cloud</a>
+        </div>
     
-    <h4>Адрес: Часопис, L'va Tolstoho vulytsya,  3,  Kiev,  Kiev,  Ukraine</h4>
+    <h4>Адрес:
+        Часопис, L'va Tolstoho vulytsya,  3,  Kiev,  Kiev,  Ukraine</h4>
     <h4>Ближайший тренинг: Thursday, 27 Jun,
         <a href="/events/ts-050/06-27.ics">
-            19<sup>00</sup> - 21<sup>30</sup>
+            19:00 - 21:30
         </a>
     </h4>
     <h4>Тренер: <a href="/about/">Владислав Волков</a></h4>
@@ -201,9 +218,6 @@
            class="btn btn-default btn-xl">Купить билет</a>
     </div>
 </main>
-
-</main>
-
 
 <footer class="navbar-fixed-bottom">
     <nav class="navbar navbar-default " style="background-color: transparent">

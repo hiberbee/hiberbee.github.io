@@ -18,8 +18,10 @@
 <link rel="stylesheet" href="/assets/css/main.css" type="text/css" media="all">
 <link rel="stylesheet" href="/assets/css/mobile.css" media="only screen and (max-width: 768px)">
 <link rel="stylesheet" href="/assets/css/print.css" media="print">
-<link href='/assets/css/fullcalendar/core/main.css' rel='stylesheet'/>
-<link href='/assets/css/fullcalendar/daygrid/main.css' rel='stylesheet'/>
+<link href='/assets/css/fullcalendar/core/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/daygrid/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/timegrid/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/list/main.css' rel='stylesheet' media="all"/>
 
     <script>
     window.onload = function () {
@@ -32,6 +34,11 @@
     }
     ;
 </script>
+<script src='/assets/js/fullcalendar/core/main.js'></script>
+<script src='/assets/js/fullcalendar/interaction/main.js'></script>
+<script src='/assets/js/fullcalendar/daygrid/main.js'></script>
+<script src='/assets/js/fullcalendar/list/main.js'></script>
+<script src='/assets/js/fullcalendar/timegrid/main.js'></script>
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async defer></script>
 <script>
     window.fbAsyncInit = function () {
@@ -112,6 +119,9 @@
                     <a href="/#trainings">Тренинги</a>
                 </li>
                 <li>
+                    <a href="/#services">Сервисы</a>
+                </li>
+                <li>
                     <a href="/#contact">Контакты</a>
                 </li>
                 <li>
@@ -127,230 +137,243 @@
 
 
 <main class="container">
-    <h1>Posts tagged with 2h</h1>
-    <ul>
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/do-001/">
-                            Docker Swarm: Complete cluster infrastructure from scratch</a>
-                        <span>Tuesday, 2 July 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/do-010/">
-                            Ansible: Configuration management & infrastructure provision</a>
-                        <span>Wednesday, 3 July 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/do-020/">
-                            Kubernetes: Technology overview & kick-off for developers and DevOps</a>
-                        <span>Thursday, 13 June 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/do-021/">
-                            Kubernetes: Initial setup and configuration and local environment workflows</a>
-                        <span>Thursday, 20 June 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/do-024/">
-                            Kubernetes: Logging with ELK stack</a>
-                        <span>Monday, 24 June 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/do-025/">
-                            Kubernetes: Push and pull monitoring with Prometheus & TICK stacks</a>
-                        <span>Wednesday, 19 June 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/do-026/">
-                            Kubernetes: Persistence, storages and volumes management with Ceph and S3</a>
-                        <span>Thursday, 4 July 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/do-027/">
-                            Kubernetes: Security and key management with Vault</a>
-                        <span>Wednesday, 26 June 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/ep-001/">
-                            SDLC: Solutions</a>
-                        <span>Monday, 1 July 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/ep-010/">
-                            Exteme Programming: Introduction</a>
-                        <span>Tuesday, 9 July 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/ep-020/">
-                            Continuous integration & delivery: Introduction</a>
-                        <span>Thursday, 11 July 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/ep-030/">
-                            Jetbrains IDE family: Killer features, complete configuration, ultimate tricks and incentive insights for all JetBrains users</a>
-                        <span>Friday, 14 June 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/ep-031/">
-                            Thin client: Move your environment to the cloud</a>
-                        <span>Friday, 21 June 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/sd-000/">
-                            System Achicture: Role overview</a>
-                        <span>Tuesday, 11 June 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/sd-020/">
-                            Microservices: Reverse-engineering, references & best practices</a>
-                        <span>Wednesday, 10 July 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/se-031/">
-                            Gradle: United polyglot build system</a>
-                        <span>Monday, 8 July 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/ts-010/">
-                            Neo4J: Introduction to graph databases with samples for SQL-experienced engineers</a>
-                        <span>Monday, 17 June 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/ts-030/">
-                            Media processing: Video-on-Demand, transmux, images operations</a>
-                        <span>Tuesday, 25 June 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/ts-040/">
-                            Message queues: RabbitMQ</a>
-                        <span>Friday, 12 July 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/ts-050/">
-                            Serverless: Fundamentals, frameworks, cloud providers</a>
-                        <span>Thursday, 27 June 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-    </ul>
+    <h1>Тренинги с тегом &laquo;2h&raquo;</h1>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
+                locale: 'en',
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,listMonth'
+                },
+                businessHours: [
+                    {
+                        daysOfWeek: [1, 2, 3, 4, 5], // Monday, Tuesday, Wednesday
+                        startTime: '18:00', // 8am
+                        endTime: '22:00' // 6pm
+                    },
+                    {
+                        daysOfWeek: [6, 7], // Thursday, Friday
+                        startTime: '10:00', // 10am
+                        endTime: '22:00' // 4pm
+                    }],
+                displayEventTime: true,
+                timeZone: "local",
+                defaultDate: Date.now(),
+                navLinks: true,
+                editable: false,
+                events: [
+                    
+                        
+                        {
+                            title: 'Docker Swarm: Complete cluster infrastructure from scratch',
+                            start: '2019-07-02T19:00',
+                            end: '2019-07-02T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/do-001/',
+                            color: '#5d8b2a'
+                        },
+                    
+                        
+                        {
+                            title: 'Ansible: Configuration management & infrastructure provision',
+                            start: '2019-07-03T19:00',
+                            end: '2019-07-03T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/do-010/',
+                            color: '#5d8b2a'
+                        },
+                    
+                        
+                        {
+                            title: 'Kubernetes: Technology overview & kick-off for developers and DevOps',
+                            start: '2019-06-13T19:00',
+                            end: '2019-06-13T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/do-020/',
+                            color: '#5d8b2a'
+                        },
+                    
+                        
+                        {
+                            title: 'Kubernetes: Initial setup and configuration and local environment workflows',
+                            start: '2019-06-20T19:00',
+                            end: '2019-06-20T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/do-021/',
+                            color: '#5d8b2a'
+                        },
+                    
+                        
+                        {
+                            title: 'Kubernetes: Logging with ELK stack',
+                            start: '2019-06-24T19:00',
+                            end: '2019-06-24T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/do-024/',
+                            color: '#5d8b2a'
+                        },
+                    
+                        
+                        {
+                            title: 'Kubernetes: Push and pull monitoring with Prometheus & TICK stacks',
+                            start: '2019-06-19T19:00',
+                            end: '2019-06-19T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/do-025/',
+                            color: '#5d8b2a'
+                        },
+                    
+                        
+                        {
+                            title: 'Kubernetes: Persistence, storages and volumes management with Ceph and S3',
+                            start: '2019-07-04T19:00',
+                            end: '2019-07-04T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/do-026/',
+                            color: '#5d8b2a'
+                        },
+                    
+                        
+                        {
+                            title: 'Kubernetes: Security and key management with Vault',
+                            start: '2019-06-26T19:00',
+                            end: '2019-06-26T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/do-027/',
+                            color: '#5d8b2a'
+                        },
+                    
+                        
+                        {
+                            title: 'SDLC: Solutions',
+                            start: '2019-07-01T19:00',
+                            end: '2019-07-01T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/ep-001/',
+                            color: ''
+                        },
+                    
+                        
+                        {
+                            title: 'Exteme Programming: Introduction',
+                            start: '2019-07-09T19:00',
+                            end: '2019-07-09T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/ep-010/',
+                            color: ''
+                        },
+                    
+                        
+                        {
+                            title: 'Continuous integration & delivery: Introduction',
+                            start: '2019-07-11T19:00',
+                            end: '2019-07-11T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/ep-020/',
+                            color: ''
+                        },
+                    
+                        
+                        {
+                            title: 'Jetbrains IDE family: Killer features, complete configuration, ultimate tricks and incentive insights for all JetBrains users',
+                            start: '2019-06-14T19:00',
+                            end: '2019-06-14T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/ep-030/',
+                            color: ''
+                        },
+                    
+                        
+                        {
+                            title: 'Thin client: Move your environment to the cloud',
+                            start: '2019-06-21T19:00',
+                            end: '2019-06-21T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/ep-031/',
+                            color: ''
+                        },
+                    
+                        
+                        {
+                            title: 'System Achicture: Role overview',
+                            start: '2019-06-11T19:00',
+                            end: '2019-06-11T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/sd-000/',
+                            color: ''
+                        },
+                    
+                        
+                        {
+                            title: 'Microservices: Reverse-engineering, references & best practices',
+                            start: '2019-07-10T19:00',
+                            end: '2019-07-10T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/sd-020/',
+                            color: ''
+                        },
+                    
+                        
+                        {
+                            title: 'Gradle: United polyglot build system',
+                            start: '2019-07-08T19:00',
+                            end: '2019-07-08T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/se-031/',
+                            color: ''
+                        },
+                    
+                        
+                        {
+                            title: 'Neo4J: Introduction to graph databases with samples for SQL-experienced engineers',
+                            start: '2019-06-17T19:00',
+                            end: '2019-06-17T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/ts-010/',
+                            color: '#682a8b'
+                        },
+                    
+                        
+                        {
+                            title: 'Media processing: Video-on-Demand, transmux, images operations',
+                            start: '2019-06-25T19:00',
+                            end: '2019-06-25T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/ts-030/',
+                            color: '#682a8b'
+                        },
+                    
+                        
+                        {
+                            title: 'Message queues: RabbitMQ',
+                            start: '2019-07-12T19:00',
+                            end: '2019-07-12T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/ts-040/',
+                            color: '#682a8b'
+                        },
+                    
+                        
+                        {
+                            title: 'Serverless: Fundamentals, frameworks, cloud providers',
+                            start: '2019-06-27T19:00',
+                            end: '2019-06-27T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/ts-050/',
+                            color: '#682a8b'
+                        },
+                    
+                ]
+            });
+            calendar.render();
+        });
+    </script>
+    <div id="calendar" class="container"></div>
 </main>
 
 <footer class="navbar-fixed-bottom">

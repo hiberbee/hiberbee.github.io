@@ -18,8 +18,10 @@
 <link rel="stylesheet" href="/assets/css/main.css" type="text/css" media="all">
 <link rel="stylesheet" href="/assets/css/mobile.css" media="only screen and (max-width: 768px)">
 <link rel="stylesheet" href="/assets/css/print.css" media="print">
-<link href='/assets/css/fullcalendar/core/main.css' rel='stylesheet'/>
-<link href='/assets/css/fullcalendar/daygrid/main.css' rel='stylesheet'/>
+<link href='/assets/css/fullcalendar/core/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/daygrid/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/timegrid/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/list/main.css' rel='stylesheet' media="all"/>
 
     <script>
     window.onload = function () {
@@ -32,6 +34,11 @@
     }
     ;
 </script>
+<script src='/assets/js/fullcalendar/core/main.js'></script>
+<script src='/assets/js/fullcalendar/interaction/main.js'></script>
+<script src='/assets/js/fullcalendar/daygrid/main.js'></script>
+<script src='/assets/js/fullcalendar/list/main.js'></script>
+<script src='/assets/js/fullcalendar/timegrid/main.js'></script>
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async defer></script>
 <script>
     window.fbAsyncInit = function () {
@@ -112,6 +119,9 @@
                     <a href="/#trainings">Тренинги</a>
                 </li>
                 <li>
+                    <a href="/#services">Сервисы</a>
+                </li>
+                <li>
                     <a href="/#contact">Контакты</a>
                 </li>
                 <li>
@@ -127,21 +137,53 @@
 
 
 <main class="container">
-    <h1>Posts tagged with cd</h1>
-    <ul>
-        
-            
-            
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/se-031/">
-                            Gradle: United polyglot build system</a>
-                        <span>Monday, 8 July 19<sup>00</sup> - 21<sup>30</sup></span>
-                    </h4>
-                </li>
-            
-        
-    </ul>
+    <h1>Тренинги с тегом &laquo;cd&raquo;</h1>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
+                locale: 'en',
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,listMonth'
+                },
+                businessHours: [
+                    {
+                        daysOfWeek: [1, 2, 3, 4, 5], // Monday, Tuesday, Wednesday
+                        startTime: '18:00', // 8am
+                        endTime: '22:00' // 6pm
+                    },
+                    {
+                        daysOfWeek: [6, 7], // Thursday, Friday
+                        startTime: '10:00', // 10am
+                        endTime: '22:00' // 4pm
+                    }],
+                displayEventTime: true,
+                timeZone: "local",
+                defaultDate: Date.now(),
+                navLinks: true,
+                editable: false,
+                events: [
+                    
+                        
+                        {
+                            title: 'Gradle: United polyglot build system',
+                            start: '2019-07-08T19:00',
+                            end: '2019-07-08T21:30',
+                            constraint: 'businessHours',
+                            url: '/trainings/se-031/',
+                            color: ''
+                        },
+                    
+                ]
+            });
+            calendar.render();
+        });
+    </script>
+    <div id="calendar" class="container"></div>
 </main>
 
 <footer class="navbar-fixed-bottom">

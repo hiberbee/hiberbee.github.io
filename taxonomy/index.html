@@ -18,8 +18,10 @@
 <link rel="stylesheet" href="/assets/css/main.css" type="text/css" media="all">
 <link rel="stylesheet" href="/assets/css/mobile.css" media="only screen and (max-width: 768px)">
 <link rel="stylesheet" href="/assets/css/print.css" media="print">
-<link href='/assets/css/fullcalendar/core/main.css' rel='stylesheet'/>
-<link href='/assets/css/fullcalendar/daygrid/main.css' rel='stylesheet'/>
+<link href='/assets/css/fullcalendar/core/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/daygrid/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/timegrid/main.css' rel='stylesheet' media="all"/>
+<link href='/assets/css/fullcalendar/list/main.css' rel='stylesheet' media="all"/>
 
     <script>
     window.onload = function () {
@@ -32,6 +34,11 @@
     }
     ;
 </script>
+<script src='/assets/js/fullcalendar/core/main.js'></script>
+<script src='/assets/js/fullcalendar/interaction/main.js'></script>
+<script src='/assets/js/fullcalendar/daygrid/main.js'></script>
+<script src='/assets/js/fullcalendar/list/main.js'></script>
+<script src='/assets/js/fullcalendar/timegrid/main.js'></script>
 <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async defer></script>
 <script>
     window.fbAsyncInit = function () {
@@ -112,6 +119,9 @@
                     <a href="/#trainings">Тренинги</a>
                 </li>
                 <li>
+                    <a href="/#services">Сервисы</a>
+                </li>
+                <li>
                     <a href="/#contact">Контакты</a>
                 </li>
                 <li>
@@ -132,379 +142,267 @@
         <h1>Таксономия</h1>
         <h3>Категории</h3>
         
-            <a class="tag" href="/category/dev-ops/"><span
-                    class="text-faded">#</span>dev-ops</a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/category/dev-ops/">dev-ops</a>
+            </div>
         
-            <a class="tag" href="/category/engineering-practices/"><span
-                    class="text-faded">#</span>engineering-practices</a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/category/engineering-practices/">engineering-practices</a>
+            </div>
         
-            <a class="tag" href="/category/quality-assurance/"><span
-                    class="text-faded">#</span>quality-assurance</a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/category/quality-assurance/">quality-assurance</a>
+            </div>
         
-            <a class="tag" href="/category/software-engineering/"><span
-                    class="text-faded">#</span>software-engineering</a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/category/software-engineering/">software-engineering</a>
+            </div>
         
-            <a class="tag" href="/category/system-design/"><span
-                    class="text-faded">#</span>system-design</a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/category/system-design/">system-design</a>
+            </div>
         
-            <a class="tag" href="/category/technology-services/"><span
-                    class="text-faded">#</span>technology-services</a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/category/technology-services/">technology-services</a>
+            </div>
         
         <h3>Теги</h3>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/2h/">2H
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/2h/">2H</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/4h/">4H
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/4h/">4H</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/bdd/">BDD
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/bdd/">BDD</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/fri/">Fri
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/fri/">Fri</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/friday/">Friday
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/friday/">Friday</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/http-api/">HTTP-API
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/http-api/">HTTP-API</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/mon/">Mon
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/mon/">Mon</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/sat/">Sat
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/sat/">Sat</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/thu/">Thu
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/thu/">Thu</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/tue/">Tue
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/tue/">Tue</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/wed/">Wed
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/wed/">Wed</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/advanced/">advanced
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/advanced/">advanced</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/ansible/">ansible
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/ansible/">ansible</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/boost/">boost
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/boost/">boost</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/build/">build
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/build/">build</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/career/">career
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/career/">career</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/cd/">cd
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/cd/">cd</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/ceph/">ceph
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/ceph/">ceph</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/ci/">ci
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/ci/">ci</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/cloud-native/">cloud-native
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/cloud-native/">cloud-native</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/configuration-management/">configuration-management
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/configuration-management/">configuration-management</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/cucumber/">cucumber
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/cucumber/">cucumber</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/db/">db
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/db/">db</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/docker/">docker
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/docker/">docker</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/docker-swarm/">docker-swarm
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/docker-swarm/">docker-swarm</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/elk/">elk
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/elk/">elk</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/gatling/">gatling
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/gatling/">gatling</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/gradle/">gradle
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/gradle/">gradle</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/graph-db/">graph-db
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/graph-db/">graph-db</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/graphql/">graphql
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/graphql/">graphql</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/influxdb/">influxdb
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/influxdb/">influxdb</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/istio/">istio
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/istio/">istio</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/java/">java
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/java/">java</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/kubernetes/">kubernetes
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/kubernetes/">kubernetes</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/localhost/">localhost
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/localhost/">localhost</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/logging/">logging
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/logging/">logging</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/message-queue/">message-queue
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/message-queue/">message-queue</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/monitoring/">monitoring
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/monitoring/">monitoring</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/neo4j/">neo4j
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/neo4j/">neo4j</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/nodejs/">nodejs
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/nodejs/">nodejs</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/openwhisk/">openwhisk
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/openwhisk/">openwhisk</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/orchestration/">orchestration
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/orchestration/">orchestration</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/performance-testing/">performance-testing
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/performance-testing/">performance-testing</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/process/">process
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/process/">process</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/prometheus/">prometheus
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/prometheus/">prometheus</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/s3/">s3
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/s3/">s3</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/scala/">scala
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/scala/">scala</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/serverless/">serverless
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/serverless/">serverless</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/service-mesh/">service-mesh
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/service-mesh/">service-mesh</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/spring-boot/">spring-boot
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/spring-boot/">spring-boot</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/spring-cloud/">spring-cloud
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/spring-cloud/">spring-cloud</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/starter/">starter
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/starter/">starter</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/storage/">storage
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/storage/">storage</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/stress-testing/">stress-testing
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/stress-testing/">stress-testing</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/tick/">tick
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/tick/">tick</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/time-series-db/">time-series-db
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/time-series-db/">time-series-db</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/typescript/">typescript
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/typescript/">typescript</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/uml/">uml
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/uml/">uml</a>
+            </div>
         
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/vault/">vault
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/vault/">vault</a>
+            </div>
         
     </div>
 </main>
