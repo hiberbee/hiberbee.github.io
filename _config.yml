@@ -147,6 +147,7 @@ trainings_identity_map:
   ts-030: "Media processing: Video-on-Demand, transmux, images operations"
   ts-040: "Message queues: RabbitMQ"
   ts-050: "Serverless: Fundamentals, frameworks, cloud providers"
+  tc-000: "Technical consulting: Free-style sessions"
 colors_map:
   dev-ops: "#5d8b2a"
   engineering-practices: "#2a7d8b"

@@ -13,6 +13,7 @@ enabled: false
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
                 locale: 'en',
+                firstDay: 1,
                 header: {
                     left: 'prev,next today',
                     center: false,
@@ -36,15 +37,17 @@ enabled: false
                 editable: false,
                 events: [
                     {% for post in posts %}
-                        {% assign event = site.events | where_exp: "item", "item.slug == post.slug" | where_exp: "item", "item.date >= site.time" | first %}
-                        {
-                            title: '{{ site.trainings_identity_map[event.slug] }}',
-                            start: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_start }}',
-                            end: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_end }}',
-                            constraint: 'businessHours',
-                            url: '/trainings/{{ event.slug }}/',
-                            color: '{{ site.colors_map[event.event_category] }}'
-                        },
+                        {% assign events = site.events | where_exp: "item", "item.slug == post.slug" | where_exp: "item", "item.date >= site.time" %}
+                        {% for event in events %}
+                            {
+                                title: '{{ site.trainings_identity_map[event.slug] }}',
+                                start: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_start }}',
+                                end: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_end }}',
+                                constraint: 'businessHours',
+                                url: '/trainings/{{ event.slug }}/',
+                                color: '{{ site.colors_map[event.event_category] }}'
+                            },
+                        {% endfor %}
                     {% endfor %}
                 ]
             });

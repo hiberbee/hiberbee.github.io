@@ -6,12 +6,11 @@ layout: default
 {% assign events = site.events | where_exp: "item", "item.slug == page.slug" | where_exp: "item", "item.date >= site.time" %}
 {% assign event = events | first %}
 {% assign day_number = event.date | date: '%u' %}
-{% if day_number == "6" or day_number == "7" %}
+{% assign ticket_id = "b7f66d7f9a418" %}
+{% assign price = '600' %}
+{% if day_number == "6" %}
     {% assign ticket_id = "b20078b595abc" %}
     {% assign price = '1200' %}
-{% else %}
-    {% assign ticket_id = "b7f66d7f9a418" %}
-    {% assign price = '600' %}
 {% endif %}
 <main class="container">
     <h1>{{ site.trainings_identity_map[event.slug] | split: ":" | first }}</h1>
@@ -37,13 +36,17 @@ layout: default
         </a>
     </h4>
     <h4>Тренер: <a href="/about/">Владислав Волков</a></h4>
-    <h4>Цена: {{ price }} &#8372;</h4>
+    {% if day_number != "7" %}
+        <h4>Цена: {{ price }} &#8372;</h4>
+    {% endif %}
     {{ content }}
-    <div class="text-center">
-        <hr/>
-        <a rel="noopener" onclick='FB.AppEvents.logEvent("paymentLinkClicked")'
-           href="https://secure.wayforpay.com/button/{{ ticket_id }}"
-           target="_blank"
-           class="btn btn-default btn-xl">Купить билет</a>
-    </div>
+    {% if day_number != "7" %}
+        <div class="text-center">
+            <hr/>
+            <a rel="noopener" onclick='FB.AppEvents.logEvent("paymentLinkClicked")'
+               href="https://secure.wayforpay.com/button/{{ ticket_id }}"
+               target="_blank"
+               class="btn btn-default btn-xl">Купить билет</a>
+        </div>
+    {% endif %}
 </main>
