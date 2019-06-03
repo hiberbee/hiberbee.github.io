@@ -3,7 +3,7 @@
     <generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator>
     <link href="https://hiberbee.com/feed.xml" rel="self" type="application/atom+xml"/>
     <link href="https://hiberbee.com/" rel="alternate" type="text/html" />
-    <updated>2019-06-03T08:41:32+03:00</updated>
+    <updated>2019-06-03T16:40:48+03:00</updated>
     <id>https://hiberbee.com/feed.xml</id>
     
 
@@ -21,8 +21,8 @@
             
         </author>
 <entry>
-        <title type="html">Gatling: Performance and stress-testing with Scala/Gatling for automation QA engineers</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Gatling: Performance and stress-testing with Scala/Gatling for automation QA engineers"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-08-10T00:00:00+03:00</published>
         <updated>2019-08-10T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/qa-040/qa-040</id>
@@ -31,10 +31,6 @@
 
         </content>
             <category term="quality-assurance"/>
-        
-            <category term="4H"/>
-        
-            <category term="Sat"/>
         
             <category term="gatling"/>
         
@@ -46,8 +42,8 @@
         
     </entry>
     <entry>
-        <title type="html">System design specification: 4+1 architecture views</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="System design specification: 4+1 architecture views"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-20T00:00:00+03:00</published>
         <updated>2019-07-20T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/sd-011/sd-011</id>
@@ -57,16 +53,12 @@
         </content>
             <category term="system-design"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
-        
             <category term="uml"/>
         
     </entry>
     <entry>
-        <title type="html">System design specification: UML</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="System design specification: UML"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-20T00:00:00+03:00</published>
         <updated>2019-07-20T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/sd-010/sd-010</id>
@@ -76,14 +68,10 @@
         </content>
             <category term="system-design"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
-        
     </entry>
     <entry>
-        <title type="html">System Achicture: Role overview</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="System Achicture: Role overview"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-16T00:00:00+03:00</published>
         <updated>2019-07-16T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/sd-000/sd-000</id>
@@ -93,16 +81,12 @@
         </content>
             <category term="system-design"/>
         
-            <category term="2H"/>
-        
-            <category term="Tue"/>
-        
             <category term="career"/>
         
     </entry>
     <entry>
-        <title type="html">BDD: Testing REST/GraphQL API with Cucumber &amp;amp; Karate</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="BDD: Testing REST/GraphQL API with Cucumber &amp; Karate"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-13T00:00:00+03:00</published>
         <updated>2019-07-13T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/qa-012/qa-012</id>
@@ -113,10 +97,6 @@
             <category term="quality-assurance"/>
         
             <category term="software-engineering"/>
-        
-            <category term="4H"/>
-        
-            <category term="Sat"/>
         
             <category term="HTTP-API"/>
         
@@ -130,8 +110,8 @@
         
     </entry>
     <entry>
-        <title type="html">Kubernetes: Network service mesh with Istio</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Network service mesh with Istio"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-13T00:00:00+03:00</published>
         <updated>2019-07-13T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-023/do-023</id>
@@ -156,10 +136,6 @@
         </content>
             <category term="dev-ops"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
-        
             <category term="istio"/>
         
             <category term="kubernetes"/>
@@ -174,8 +150,8 @@
         
     </entry>
     <entry>
-        <title type="html">Message queues: RabbitMQ</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Message queues: RabbitMQ"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-12T00:00:00+03:00</published>
         <updated>2019-07-12T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/ts-040/ts-040</id>
@@ -189,18 +165,16 @@
         
             <category term="system-design"/>
         
-            <category term="2H"/>
-        
-            <category term="Fri"/>
-        
             <category term="starter"/>
         
             <category term="message-queue"/>
         
+            <category term="rabbitmq"/>
+        
     </entry>
     <entry>
-        <title type="html">Continuous integration &amp;amp; delivery: Introduction</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Continuous integration &amp; delivery: Introduction"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-11T00:00:00+03:00</published>
         <updated>2019-07-11T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/ep-020/ep-020</id>
@@ -210,16 +184,12 @@
         </content>
             <category term="engineering-practices"/>
         
-            <category term="2H"/>
-        
-            <category term="Thu"/>
-        
             <category term="starter"/>
         
     </entry>
     <entry>
-        <title type="html">Microservices: Reverse-engineering, references &amp;amp; best practices</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Microservices: Reverse-engineering, references &amp; best practices"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-10T00:00:00+03:00</published>
         <updated>2019-07-10T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/sd-020/sd-020</id>
@@ -229,11 +199,7 @@
         </content>
             <category term="system-design"/>
         
-            <category term="2H"/>
-        
             <category term="advanced"/>
-        
-            <category term="Wed"/>
         
             <category term="service-mesh"/>
         
@@ -241,8 +207,8 @@
         
     </entry>
     <entry>
-        <title type="html">Exteme Programming: Introduction</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Exteme Programming: Introduction"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-09T00:00:00+03:00</published>
         <updated>2019-07-09T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/ep-010/ep-010</id>
@@ -252,18 +218,14 @@
         </content>
             <category term="engineering-practices"/>
         
-            <category term="2H"/>
-        
             <category term="starter"/>
-        
-            <category term="Tue"/>
         
             <category term="process"/>
         
     </entry>
     <entry>
-        <title type="html">Gradle: United polyglot build system</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Gradle: United polyglot build system"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-08T00:00:00+03:00</published>
         <updated>2019-07-08T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/se-031/se-031</id>
@@ -272,10 +234,6 @@
 
         </content>
             <category term="software-engineering"/>
-        
-            <category term="2H"/>
-        
-            <category term="Mon"/>
         
             <category term="gradle"/>
         
@@ -287,8 +245,8 @@
         
     </entry>
     <entry>
-        <title type="html">Java: SL class</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Java: SL class"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-06T00:00:00+03:00</published>
         <updated>2019-07-06T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/se-010/se-010</id>
@@ -298,18 +256,14 @@
         </content>
             <category term="software-engineering"/>
         
-            <category term="2H"/>
-        
-            <category term="Fri"/>
-        
             <category term="boost"/>
         
             <category term="starter"/>
         
     </entry>
     <entry>
-        <title type="html">Kubernetes: Configuring and running controllers and workloads</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Configuring and running controllers and workloads"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-06T00:00:00+03:00</published>
         <updated>2019-07-06T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-022/do-022</id>
@@ -321,14 +275,12 @@
         
             <category term="cloud-native"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
+            <category term="kubernetes"/>
         
     </entry>
     <entry>
-        <title type="html">BDD: Cucumber</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="BDD: Cucumber"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-05T00:00:00+03:00</published>
         <updated>2019-07-05T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/qa-011/qa-011</id>
@@ -338,14 +290,10 @@
         </content>
             <category term="quality-assurance"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
-        
     </entry>
     <entry>
-        <title type="html">Kubernetes: Persistence, storages and volumes management with Ceph and S3</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Persistence, storages and volumes management with Ceph and S3"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-04T00:00:00+03:00</published>
         <updated>2019-07-04T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-026/do-026</id>
@@ -356,10 +304,6 @@
             <category term="dev-ops"/>
         
             <category term="system-design"/>
-        
-            <category term="2H"/>
-        
-            <category term="Thu"/>
         
             <category term="ceph"/>
         
@@ -375,8 +319,8 @@
         
     </entry>
     <entry>
-        <title type="html">Ansible: Configuration management &amp;amp; infrastructure provision</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Ansible: Configuration management &amp; infrastructure provision"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-03T00:00:00+03:00</published>
         <updated>2019-07-03T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-010/do-010</id>
@@ -421,14 +365,10 @@
         
             <category term="configuration-management"/>
         
-            <category term="2H"/>
-        
-            <category term="Wed"/>
-        
     </entry>
     <entry>
-        <title type="html">Docker Swarm: Complete cluster infrastructure from scratch</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Docker Swarm: Complete cluster infrastructure from scratch"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-02T00:00:00+03:00</published>
         <updated>2019-07-02T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-001/do-001</id>
@@ -477,16 +417,12 @@
         
             <category term="orchestration"/>
         
-            <category term="2H"/>
-        
-            <category term="Tue"/>
-        
             <category term="starter"/>
         
     </entry>
     <entry>
-        <title type="html">SDLC: Solutions</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="SDLC: Solutions"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-07-01T00:00:00+03:00</published>
         <updated>2019-07-01T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/ep-001/ep-001</id>
@@ -496,14 +432,12 @@
         </content>
             <category term="engineering-practices"/>
         
-            <category term="2H"/>
-        
-            <category term="Mon"/>
+            <category term="sdlc"/>
         
     </entry>
     <entry>
-        <title type="html">Technical consulting: Free-style sessions</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Technical consulting: Free-style sessions"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-30T00:00:00+03:00</published>
         <updated>2019-06-30T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/tc-000/tc-000</id>
@@ -515,16 +449,10 @@
         </content>
             <category term="technical-consulting"/>
         
-            <category term="2H"/>
-        
-            <category term="4H"/>
-        
-            <category term="Sun"/>
-        
     </entry>
     <entry>
-        <title type="html">GraphQL API: Advanced client/server features and insights for everyone experienced with REST</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="GraphQL API: Advanced client/server features and insights for everyone experienced with REST"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-29T00:00:00+03:00</published>
         <updated>2019-06-29T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/ts-021/ts-021</id>
@@ -550,10 +478,6 @@
         
             <category term="system-design"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
-        
             <category term="HTTP-API"/>
         
             <category term="advanced"/>
@@ -568,8 +492,8 @@
         
     </entry>
     <entry>
-        <title type="html">GraphQL API: Essentials and starter guide for everyone experienced with REST</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="GraphQL API: Essentials and starter guide for everyone experienced with REST"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-29T00:00:00+03:00</published>
         <updated>2019-06-29T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/ts-020/ts-020</id>
@@ -598,10 +522,6 @@
         
             <category term="system-design"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
-        
             <category term="starter"/>
         
             <category term="nodejs"/>
@@ -616,8 +536,8 @@
         
     </entry>
     <entry>
-        <title type="html">Serverless: Fundamentals, frameworks, cloud providers</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Serverless: Fundamentals, frameworks, cloud providers"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-27T00:00:00+03:00</published>
         <updated>2019-06-27T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/ts-050/ts-050</id>
@@ -626,10 +546,6 @@
 
         </content>
             <category term="engineering-practices"/>
-        
-            <category term="2H"/>
-        
-            <category term="Thu"/>
         
             <category term="serverless"/>
         
@@ -645,8 +561,8 @@
         
     </entry>
     <entry>
-        <title type="html">Kubernetes: Security and key management with Vault</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Security and key management with Vault"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-26T00:00:00+03:00</published>
         <updated>2019-06-26T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-027/do-027</id>
@@ -656,10 +572,6 @@
         </content>
             <category term="dev-ops"/>
         
-            <category term="2H"/>
-        
-            <category term="Wed"/>
-        
             <category term="cloud-native"/>
         
             <category term="kubernetes"/>
@@ -668,8 +580,8 @@
         
     </entry>
     <entry>
-        <title type="html">Media processing: Video-on-Demand, transmux, images operations</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Media processing: Video-on-Demand, transmux, images operations"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-25T00:00:00+03:00</published>
         <updated>2019-06-25T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/ts-030/ts-030</id>
@@ -683,14 +595,10 @@
         
             <category term="system-design"/>
         
-            <category term="2H"/>
-        
-            <category term="Tue"/>
-        
     </entry>
     <entry>
-        <title type="html">Kubernetes: Logging with ELK stack</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Logging with ELK stack"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-24T00:00:00+03:00</published>
         <updated>2019-06-24T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-024/do-024</id>
@@ -717,18 +625,14 @@
         
             <category term="cloud-native"/>
         
-            <category term="2H"/>
-        
-            <category term="Mon"/>
-        
             <category term="elk"/>
         
             <category term="logging"/>
         
     </entry>
     <entry>
-        <title type="html">Technical consulting: Free-style sessions</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Technical consulting: Free-style sessions"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-23T00:00:00+03:00</published>
         <updated>2019-06-23T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/tc-000/tc-000</id>
@@ -740,16 +644,10 @@
         </content>
             <category term="technical-consulting"/>
         
-            <category term="2H"/>
-        
-            <category term="4H"/>
-        
-            <category term="Sun"/>
-        
     </entry>
     <entry>
-        <title type="html">Java 8 API: Streams API and functional interfaces with cutting-edge test frameworks for QA automation engineers</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Java 8 API: Streams API and functional interfaces with cutting-edge test frameworks for QA automation engineers"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-22T00:00:00+03:00</published>
         <updated>2019-06-22T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/qa-030/qa-030</id>
@@ -776,16 +674,12 @@
         
             <category term="starter"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
-        
             <category term="java"/>
         
     </entry>
     <entry>
-        <title type="html">Kubernetes: Configuring and running controllers and workloads</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Configuring and running controllers and workloads"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-22T00:00:00+03:00</published>
         <updated>2019-06-22T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-022/do-022</id>
@@ -797,14 +691,12 @@
         
             <category term="cloud-native"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
+            <category term="kubernetes"/>
         
     </entry>
     <entry>
-        <title type="html">Thin client: Move your environment to the cloud</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Thin client: Move your environment to the cloud"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-21T00:00:00+03:00</published>
         <updated>2019-06-21T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/ep-031/ep-031</id>
@@ -816,16 +708,12 @@
         
             <category term="software-engineering"/>
         
-            <category term="2H"/>
-        
             <category term="localhost"/>
-        
-            <category term="Friday"/>
         
     </entry>
     <entry>
-        <title type="html">Kubernetes: Initial setup and configuration and local environment workflows</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Initial setup and configuration and local environment workflows"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-20T00:00:00+03:00</published>
         <updated>2019-06-20T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-021/do-021</id>
@@ -848,16 +736,14 @@
         
             <category term="cloud-native"/>
         
-            <category term="2H"/>
-        
-            <category term="Thu"/>
-        
             <category term="kubernetes"/>
+        
+            <category term="localhost"/>
         
     </entry>
     <entry>
-        <title type="html">Kubernetes: Push and pull monitoring with Prometheus &amp;amp; TICK stacks</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Push and pull monitoring with Prometheus &amp; TICK stacks"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-19T00:00:00+03:00</published>
         <updated>2019-06-19T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-025/do-025</id>
@@ -883,8 +769,6 @@
         </content>
             <category term="dev-ops"/>
         
-            <category term="2H"/>
-        
             <category term="kubernetes"/>
         
             <category term="cloud-native"/>
@@ -903,8 +787,8 @@
         
     </entry>
     <entry>
-        <title type="html">Neo4J: Introduction to graph databases with samples for SQL-experienced engineers</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Neo4J: Introduction to graph databases with samples for SQL-experienced engineers"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-17T00:00:00+03:00</published>
         <updated>2019-06-17T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/ts-010/ts-010</id>
@@ -933,18 +817,14 @@
         
             <category term="graph-db"/>
         
-            <category term="2H"/>
-        
-            <category term="Mon"/>
-        
             <category term="neo4j"/>
         
             <category term="db"/>
         
     </entry>
     <entry>
-        <title type="html">Technical consulting: Free-style sessions</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Technical consulting: Free-style sessions"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-16T00:00:00+03:00</published>
         <updated>2019-06-16T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/tc-000/tc-000</id>
@@ -956,16 +836,10 @@
         </content>
             <category term="technical-consulting"/>
         
-            <category term="2H"/>
-        
-            <category term="4H"/>
-        
-            <category term="Sun"/>
-        
     </entry>
     <entry>
-        <title type="html">Infrastructure test automation: Spec-driven and integration testing for automation QA &amp;amp; software engineers</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Infrastructure test automation: Spec-driven and integration testing for automation QA &amp; software engineers"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-15T00:00:00+03:00</published>
         <updated>2019-06-15T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/qa-020/qa-020</id>
@@ -976,10 +850,6 @@
             <category term="quality-assurance"/>
         
             <category term="software-engineering"/>
-        
-            <category term="4H"/>
-        
-            <category term="Sat"/>
         
             <category term="docker"/>
         
@@ -993,8 +863,8 @@
         
     </entry>
     <entry>
-        <title type="html">Kubernetes: Network service mesh with Istio</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Network service mesh with Istio"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-15T00:00:00+03:00</published>
         <updated>2019-06-15T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-023/do-023</id>
@@ -1019,10 +889,6 @@
         </content>
             <category term="dev-ops"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
-        
             <category term="istio"/>
         
             <category term="kubernetes"/>
@@ -1037,8 +903,8 @@
         
     </entry>
     <entry>
-        <title type="html">Jetbrains IDE family: Killer features, complete configuration, ultimate tricks and incentive insights for all JetBrains users</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Jetbrains IDE family: Killer features, complete configuration, ultimate tricks and incentive insights for all JetBrains users"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-14T00:00:00+03:00</published>
         <updated>2019-06-14T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/ep-030/ep-030</id>
@@ -1067,16 +933,12 @@
         
             <category term="software-engineering"/>
         
-            <category term="2H"/>
-        
-            <category term="Fri"/>
-        
             <category term="localhost"/>
         
     </entry>
     <entry>
-        <title type="html">Kubernetes: Technology overview &amp;amp; kick-off for developers and DevOps</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Kubernetes: Technology overview &amp; kick-off for developers and DevOps"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-13T00:00:00+03:00</published>
         <updated>2019-06-13T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/do-020/do-020</id>
@@ -1111,16 +973,12 @@
         
             <category term="orchestration"/>
         
-            <category term="2H"/>
-        
-            <category term="Wed"/>
-        
             <category term="kubernetes"/>
         
     </entry>
     <entry>
-        <title type="html">Java: SL class</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Java: SL class"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-12T00:00:00+03:00</published>
         <updated>2019-06-12T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/se-010/se-010</id>
@@ -1130,18 +988,14 @@
         </content>
             <category term="software-engineering"/>
         
-            <category term="2H"/>
-        
-            <category term="Fri"/>
-        
             <category term="boost"/>
         
             <category term="starter"/>
         
     </entry>
     <entry>
-        <title type="html">System Achicture: Role overview</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="System Achicture: Role overview"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-11T00:00:00+03:00</published>
         <updated>2019-06-11T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/sd-000/sd-000</id>
@@ -1151,16 +1005,12 @@
         </content>
             <category term="system-design"/>
         
-            <category term="2H"/>
-        
-            <category term="Tue"/>
-        
             <category term="career"/>
         
     </entry>
     <entry>
-        <title type="html">BDD: Introduction</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="BDD: Introduction"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-10T00:00:00+03:00</published>
         <updated>2019-06-10T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/qa-010/qa-010</id>
@@ -1169,8 +1019,8 @@
         </content>
     </entry>
     <entry>
-        <title type="html">Technical consulting: Free-style sessions</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Technical consulting: Free-style sessions"/>
+        <title type="html"></title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title=""/>
         <published>2019-06-09T00:00:00+03:00</published>
         <updated>2019-06-09T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/tc-000/tc-000</id>
@@ -1181,12 +1031,6 @@
 
         </content>
             <category term="technical-consulting"/>
-        
-            <category term="2H"/>
-        
-            <category term="4H"/>
-        
-            <category term="Sun"/>
         
     </entry>
     
