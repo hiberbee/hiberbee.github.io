@@ -60,7 +60,7 @@ autopages:
     enabled: true
     layouts:
       - 'category.html'
-    title: 'Тренинги в группе &laquo;:coll&raquo;'
+    title: 'Все тренинги'
     permalink: '/:coll'
   categories:
     enabled: true
