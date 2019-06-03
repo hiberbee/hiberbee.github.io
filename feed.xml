@@ -3,7 +3,7 @@
     <generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator>
     <link href="https://hiberbee.com/feed.xml" rel="self" type="application/atom+xml"/>
     <link href="https://hiberbee.com/" rel="alternate" type="text/html" />
-    <updated>2019-06-03T08:37:16+03:00</updated>
+    <updated>2019-06-03T08:41:32+03:00</updated>
     <id>https://hiberbee.com/feed.xml</id>
     
 
@@ -969,9 +969,28 @@
         <published>2019-06-15T00:00:00+03:00</published>
         <updated>2019-06-15T00:00:00+03:00</updated>
         <id>https://hiberbee.com/events/qa-020/qa-020</id>
-        <content type="html" xml:base="https://hiberbee.com/trainings//">
+        <content type="html" xml:base="https://hiberbee.com/trainings/qa-020/">
             
+
         </content>
+            <category term="quality-assurance"/>
+        
+            <category term="software-engineering"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+            <category term="docker"/>
+        
+            <category term="integration-testing"/>
+        
+            <category term="serverspec"/>
+        
+            <category term="Cucumber"/>
+        
+            <category term="RSpec"/>
+        
     </entry>
     <entry>
         <title type="html">Kubernetes: Network service mesh with Istio</title>
