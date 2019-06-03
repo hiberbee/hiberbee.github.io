@@ -145,6 +145,7 @@
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
                 locale: 'en',
+                firstDay: 1,
                 header: {
                     left: 'prev,next today',
                     center: false,
@@ -169,54 +170,73 @@
                 events: [
                     
                         
-                        {
-                            title: 'Kubernetes: Network service mesh with Istio',
-                            start: '2019-06-15T15:00',
-                            end: '2019-06-15T19:00',
-                            constraint: 'businessHours',
-                            url: '/trainings/do-023/',
-                            color: '#5d8b2a'
-                        },
+                        
+                            {
+                                title: 'Kubernetes: Network service mesh with Istio',
+                                start: '2019-06-15T15:00',
+                                end: '2019-06-15T19:00',
+                                constraint: 'businessHours',
+                                url: '/trainings/do-023/',
+                                color: '#5d8b2a'
+                            },
+                        
+                            {
+                                title: 'Kubernetes: Network service mesh with Istio',
+                                start: '2019-07-13T15:00',
+                                end: '2019-07-13T19:00',
+                                constraint: 'businessHours',
+                                url: '/trainings/do-023/',
+                                color: '#5d8b2a'
+                            },
+                        
                     
                         
-                        {
-                            title: 'Kubernetes: Persistence, storages and volumes management with Ceph and S3',
-                            start: '2019-07-04T19:00',
-                            end: '2019-07-04T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/do-026/',
-                            color: '#5d8b2a'
-                        },
+                        
+                            {
+                                title: 'Kubernetes: Persistence, storages and volumes management with Ceph and S3',
+                                start: '2019-07-04T19:00',
+                                end: '2019-07-04T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/do-026/',
+                                color: '#5d8b2a'
+                            },
+                        
                     
                         
-                        {
-                            title: 'Microservices: Reverse-engineering, references & best practices',
-                            start: '2019-07-10T19:00',
-                            end: '2019-07-10T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/sd-020/',
-                            color: '#8b2a2c'
-                        },
+                        
+                            {
+                                title: 'Microservices: Reverse-engineering, references & best practices',
+                                start: '2019-07-10T19:00',
+                                end: '2019-07-10T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/sd-020/',
+                                color: '#8b2a2c'
+                            },
+                        
                     
                         
-                        {
-                            title: 'GraphQL API: Advanced client/server features and insights for everyone experienced with REST',
-                            start: '2019-06-29T15:00',
-                            end: '2019-06-29T19:00',
-                            constraint: 'businessHours',
-                            url: '/trainings/ts-021/',
-                            color: '#682a8b'
-                        },
+                        
+                            {
+                                title: 'GraphQL API: Advanced client/server features and insights for everyone experienced with REST',
+                                start: '2019-06-29T15:00',
+                                end: '2019-06-29T19:00',
+                                constraint: 'businessHours',
+                                url: '/trainings/ts-021/',
+                                color: '#682a8b'
+                            },
+                        
                     
                         
-                        {
-                            title: 'Serverless: Fundamentals, frameworks, cloud providers',
-                            start: '2019-06-27T19:00',
-                            end: '2019-06-27T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/ts-050/',
-                            color: '#682a8b'
-                        },
+                        
+                            {
+                                title: 'Serverless: Fundamentals, frameworks, cloud providers',
+                                start: '2019-06-27T19:00',
+                                end: '2019-06-27T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/ts-050/',
+                                color: '#682a8b'
+                            },
+                        
                     
                 ]
             });

@@ -3,7 +3,7 @@
     <generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator>
     <link href="https://hiberbee.com/feed.xml" rel="self" type="application/atom+xml"/>
     <link href="https://hiberbee.com/" rel="alternate" type="text/html" />
-    <updated>2019-06-03T06:30:29+03:00</updated>
+    <updated>2019-06-03T08:33:50+03:00</updated>
     <id>https://hiberbee.com/feed.xml</id>
     
 
@@ -298,11 +298,9 @@
         </content>
             <category term="software-engineering"/>
         
-            <category term="quality-assurance"/>
+            <category term="2H"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
+            <category term="Fri"/>
         
             <category term="boost"/>
         
@@ -322,6 +320,23 @@
             <category term="dev-ops"/>
         
             <category term="cloud-native"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sat"/>
+        
+    </entry>
+    <entry>
+        <title type="html">BDD: Cucumber</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="BDD: Cucumber"/>
+        <published>2019-07-05T00:00:00+03:00</published>
+        <updated>2019-07-05T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/qa-011/qa-011</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/qa-011/">
+            
+
+        </content>
+            <category term="quality-assurance"/>
         
             <category term="4H"/>
         
@@ -484,6 +499,27 @@
             <category term="2H"/>
         
             <category term="Mon"/>
+        
+    </entry>
+    <entry>
+        <title type="html">Technical consulting: Free-style sessions</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Technical consulting: Free-style sessions"/>
+        <published>2019-06-30T00:00:00+03:00</published>
+        <updated>2019-06-30T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/tc-000/tc-000</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/tc-000/">
+            Если вам нужен независимый code &amp;amp; design review, вы ищите напарника для парного программирования или же просто нуждаетесь в профессиональном совете - приходите на еженедельные консалтинг-сессии.
+
+С 10 до 22 по воскресеньям я открыт для консультаций по любым вопросам, связанным с языками программирования, технологиями Cloud Native и DevOps, микросервисной архитектурой, автотестами.
+
+        </content>
+            <category term="technical-consulting"/>
+        
+            <category term="2H"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sun"/>
         
     </entry>
     <entry>
@@ -691,6 +727,27 @@
         
     </entry>
     <entry>
+        <title type="html">Technical consulting: Free-style sessions</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Technical consulting: Free-style sessions"/>
+        <published>2019-06-23T00:00:00+03:00</published>
+        <updated>2019-06-23T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/tc-000/tc-000</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/tc-000/">
+            Если вам нужен независимый code &amp;amp; design review, вы ищите напарника для парного программирования или же просто нуждаетесь в профессиональном совете - приходите на еженедельные консалтинг-сессии.
+
+С 10 до 22 по воскресеньям я открыт для консультаций по любым вопросам, связанным с языками программирования, технологиями Cloud Native и DevOps, микросервисной архитектурой, автотестами.
+
+        </content>
+            <category term="technical-consulting"/>
+        
+            <category term="2H"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sun"/>
+        
+    </entry>
+    <entry>
         <title type="html">Java 8 API: Streams API and functional interfaces with cutting-edge test frameworks for QA automation engineers</title>
         <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Java 8 API: Streams API and functional interfaces with cutting-edge test frameworks for QA automation engineers"/>
         <published>2019-06-22T00:00:00+03:00</published>
@@ -886,6 +943,27 @@
         
     </entry>
     <entry>
+        <title type="html">Technical consulting: Free-style sessions</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Technical consulting: Free-style sessions"/>
+        <published>2019-06-16T00:00:00+03:00</published>
+        <updated>2019-06-16T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/tc-000/tc-000</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/tc-000/">
+            Если вам нужен независимый code &amp;amp; design review, вы ищите напарника для парного программирования или же просто нуждаетесь в профессиональном совете - приходите на еженедельные консалтинг-сессии.
+
+С 10 до 22 по воскресеньям я открыт для консультаций по любым вопросам, связанным с языками программирования, технологиями Cloud Native и DevOps, микросервисной архитектурой, автотестами.
+
+        </content>
+            <category term="technical-consulting"/>
+        
+            <category term="2H"/>
+        
+            <category term="4H"/>
+        
+            <category term="Sun"/>
+        
+    </entry>
+    <entry>
         <title type="html">Infrastructure test automation: Spec-driven and integration testing for automation QA &amp;amp; software engineers</title>
         <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Infrastructure test automation: Spec-driven and integration testing for automation QA &amp; software engineers"/>
         <published>2019-06-15T00:00:00+03:00</published>
@@ -1033,11 +1111,9 @@
         </content>
             <category term="software-engineering"/>
         
-            <category term="quality-assurance"/>
+            <category term="2H"/>
         
-            <category term="4H"/>
-        
-            <category term="Sat"/>
+            <category term="Fri"/>
         
             <category term="boost"/>
         
@@ -1074,20 +1150,24 @@
         </content>
     </entry>
     <entry>
-        <title type="html">BDD: Cucumber</title>
-        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="BDD: Cucumber"/>
-        <published>2019-06-08T00:00:00+03:00</published>
-        <updated>2019-06-08T00:00:00+03:00</updated>
-        <id>https://hiberbee.com/events/qa-011/qa-011</id>
-        <content type="html" xml:base="https://hiberbee.com/trainings/qa-011/">
-            
+        <title type="html">Technical consulting: Free-style sessions</title>
+        <link href="https://hiberbee.com/trainings//" rel="alternate" type="text/html" title="Technical consulting: Free-style sessions"/>
+        <published>2019-06-09T00:00:00+03:00</published>
+        <updated>2019-06-09T00:00:00+03:00</updated>
+        <id>https://hiberbee.com/events/tc-000/tc-000</id>
+        <content type="html" xml:base="https://hiberbee.com/trainings/tc-000/">
+            Если вам нужен независимый code &amp;amp; design review, вы ищите напарника для парного программирования или же просто нуждаетесь в профессиональном совете - приходите на еженедельные консалтинг-сессии.
+
+С 10 до 22 по воскресеньям я открыт для консультаций по любым вопросам, связанным с языками программирования, технологиями Cloud Native и DevOps, микросервисной архитектурой, автотестами.
 
         </content>
-            <category term="quality-assurance"/>
+            <category term="technical-consulting"/>
+        
+            <category term="2H"/>
         
             <category term="4H"/>
         
-            <category term="Sat"/>
+            <category term="Sun"/>
         
     </entry>
     

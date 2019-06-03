@@ -145,6 +145,7 @@
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
                 locale: 'en',
+                firstDay: 1,
                 header: {
                     left: 'prev,next today',
                     center: false,
@@ -169,14 +170,16 @@
                 events: [
                     
                         
-                        {
-                            title: 'Docker Swarm: Complete cluster infrastructure from scratch',
-                            start: '2019-07-02T19:00',
-                            end: '2019-07-02T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/do-001/',
-                            color: '#5d8b2a'
-                        },
+                        
+                            {
+                                title: 'Docker Swarm: Complete cluster infrastructure from scratch',
+                                start: '2019-07-02T19:00',
+                                end: '2019-07-02T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/do-001/',
+                                color: '#5d8b2a'
+                            },
+                        
                     
                 ]
             });

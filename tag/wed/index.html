@@ -145,6 +145,7 @@
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
                 locale: 'en',
+                firstDay: 1,
                 header: {
                     left: 'prev,next today',
                     center: false,
@@ -169,44 +170,52 @@
                 events: [
                     
                         
-                        {
-                            title: 'Ansible: Configuration management & infrastructure provision',
-                            start: '2019-07-03T19:00',
-                            end: '2019-07-03T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/do-010/',
-                            color: '#5d8b2a'
-                        },
+                        
+                            {
+                                title: 'Ansible: Configuration management & infrastructure provision',
+                                start: '2019-07-03T19:00',
+                                end: '2019-07-03T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/do-010/',
+                                color: '#5d8b2a'
+                            },
+                        
                     
                         
-                        {
-                            title: 'Kubernetes: Technology overview & kick-off for developers and DevOps',
-                            start: '2019-06-13T19:00',
-                            end: '2019-06-13T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/do-020/',
-                            color: '#5d8b2a'
-                        },
+                        
+                            {
+                                title: 'Kubernetes: Technology overview & kick-off for developers and DevOps',
+                                start: '2019-06-13T19:00',
+                                end: '2019-06-13T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/do-020/',
+                                color: '#5d8b2a'
+                            },
+                        
                     
                         
-                        {
-                            title: 'Kubernetes: Security and key management with Vault',
-                            start: '2019-06-26T19:00',
-                            end: '2019-06-26T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/do-027/',
-                            color: '#5d8b2a'
-                        },
+                        
+                            {
+                                title: 'Kubernetes: Security and key management with Vault',
+                                start: '2019-06-26T19:00',
+                                end: '2019-06-26T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/do-027/',
+                                color: '#5d8b2a'
+                            },
+                        
                     
                         
-                        {
-                            title: 'Microservices: Reverse-engineering, references & best practices',
-                            start: '2019-07-10T19:00',
-                            end: '2019-07-10T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/sd-020/',
-                            color: '#8b2a2c'
-                        },
+                        
+                            {
+                                title: 'Microservices: Reverse-engineering, references & best practices',
+                                start: '2019-07-10T19:00',
+                                end: '2019-07-10T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/sd-020/',
+                                color: '#8b2a2c'
+                            },
+                        
                     
                 ]
             });

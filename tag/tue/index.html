@@ -145,6 +145,7 @@
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
                 locale: 'en',
+                firstDay: 1,
                 header: {
                     left: 'prev,next today',
                     center: false,
@@ -169,24 +170,28 @@
                 events: [
                     
                         
-                        {
-                            title: 'Exteme Programming: Introduction',
-                            start: '2019-07-09T19:00',
-                            end: '2019-07-09T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/ep-010/',
-                            color: '#2a7d8b'
-                        },
+                        
+                            {
+                                title: 'Exteme Programming: Introduction',
+                                start: '2019-07-09T19:00',
+                                end: '2019-07-09T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/ep-010/',
+                                color: '#2a7d8b'
+                            },
+                        
                     
                         
-                        {
-                            title: 'Media processing: Video-on-Demand, transmux, images operations',
-                            start: '2019-06-25T19:00',
-                            end: '2019-06-25T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/ts-030/',
-                            color: '#682a8b'
-                        },
+                        
+                            {
+                                title: 'Media processing: Video-on-Demand, transmux, images operations',
+                                start: '2019-06-25T19:00',
+                                end: '2019-06-25T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/ts-030/',
+                                color: '#682a8b'
+                            },
+                        
                     
                 ]
             });

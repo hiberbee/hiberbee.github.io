@@ -145,6 +145,7 @@
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
                 locale: 'en',
+                firstDay: 1,
                 header: {
                     left: 'prev,next today',
                     center: false,
@@ -169,14 +170,25 @@
                 events: [
                     
                         
-                        {
-                            title: 'System Achicture: Role overview',
-                            start: '2019-06-11T19:00',
-                            end: '2019-06-11T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/sd-000/',
-                            color: '#8b2a2c'
-                        },
+                        
+                            {
+                                title: 'System Achicture: Role overview',
+                                start: '2019-06-11T19:00',
+                                end: '2019-06-11T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/sd-000/',
+                                color: '#8b2a2c'
+                            },
+                        
+                            {
+                                title: 'System Achicture: Role overview',
+                                start: '2019-07-16T19:00',
+                                end: '2019-07-16T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/sd-000/',
+                                color: '#8b2a2c'
+                            },
+                        
                     
                 ]
             });

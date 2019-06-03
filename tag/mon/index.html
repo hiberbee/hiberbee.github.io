@@ -145,6 +145,7 @@
             var calendar = new FullCalendar.Calendar(calendarEl, {
                 plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
                 locale: 'en',
+                firstDay: 1,
                 header: {
                     left: 'prev,next today',
                     center: false,
@@ -169,44 +170,52 @@
                 events: [
                     
                         
-                        {
-                            title: 'Kubernetes: Logging with ELK stack',
-                            start: '2019-06-24T19:00',
-                            end: '2019-06-24T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/do-024/',
-                            color: '#5d8b2a'
-                        },
+                        
+                            {
+                                title: 'Kubernetes: Logging with ELK stack',
+                                start: '2019-06-24T19:00',
+                                end: '2019-06-24T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/do-024/',
+                                color: '#5d8b2a'
+                            },
+                        
                     
                         
-                        {
-                            title: 'SDLC: Solutions',
-                            start: '2019-07-01T19:00',
-                            end: '2019-07-01T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/ep-001/',
-                            color: '#2a7d8b'
-                        },
+                        
+                            {
+                                title: 'SDLC: Solutions',
+                                start: '2019-07-01T19:00',
+                                end: '2019-07-01T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/ep-001/',
+                                color: '#2a7d8b'
+                            },
+                        
                     
                         
-                        {
-                            title: 'Gradle: United polyglot build system',
-                            start: '2019-07-08T19:00',
-                            end: '2019-07-08T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/se-031/',
-                            color: '#bb7e31'
-                        },
+                        
+                            {
+                                title: 'Gradle: United polyglot build system',
+                                start: '2019-07-08T19:00',
+                                end: '2019-07-08T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/se-031/',
+                                color: '#bb7e31'
+                            },
+                        
                     
                         
-                        {
-                            title: 'Neo4J: Introduction to graph databases with samples for SQL-experienced engineers',
-                            start: '2019-06-17T19:00',
-                            end: '2019-06-17T21:30',
-                            constraint: 'businessHours',
-                            url: '/trainings/ts-010/',
-                            color: '#682a8b'
-                        },
+                        
+                            {
+                                title: 'Neo4J: Introduction to graph databases with samples for SQL-experienced engineers',
+                                start: '2019-06-17T19:00',
+                                end: '2019-06-17T21:30',
+                                constraint: 'businessHours',
+                                url: '/trainings/ts-010/',
+                                color: '#682a8b'
+                            },
+                        
                     
                 ]
             });
