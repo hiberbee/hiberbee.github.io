@@ -7,17 +7,16 @@ layout: default
     <div class="container">
         <h1>Таксономия</h1>
         <h3>Категории</h3>
-        {% for category in categories %}
-            <a class="tag" href="/category/{{ category | downcase }}/"><span
-                    class="text-faded">#</span>{{ category }}</a>
+        {% for tag in categories %}
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/category/{{ tag | downcase }}/">{{ tag }}</a>
+            </div>
         {% endfor %}
         <h3>Теги</h3>
         {% for tag in tags %}
-            <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path fill="white" opacity="0.5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/>
-            </svg>
-            <a class="tag" href="/tag/{{ tag | downcase }}/">{{ tag }}
-            </a>
+            <div class="tag">
+                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
+            </div>
         {% endfor %}
     </div>
 </main>

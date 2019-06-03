@@ -3,21 +3,53 @@ layout: default
 pagination:
 enabled: false
 ---
-{% assign posts = paginator.posts | sort: "slug"  %}
+{% assign posts = paginator.posts | sort: "slug" %}
 <main class="container">
     <h1>{{ page.title }}</h1>
-    <ul>
-        {% for post in posts %}
-            {% assign event = site.events | where_exp: "item", "item.slug == post.slug" | where_exp: "item", "item.date >= site.time" | first %}
-            {% if event %}
-                <li>
-                    <h4>
-                        <a class="tag" href="/trainings/{{ event.slug }}/">
-                            {{ site.trainings_identity_map[event.slug] }}</a>
-                        <span>{{ event.date | date: "%A, %-d %B" }} {{ event.time_start }} - {{ event.time_end }}</span>
-                    </h4>
-                </li>
-            {% endif %}
-        {% endfor %}
-    </ul>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var calendarEl = document.getElementById('calendar');
+
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
+                locale: 'en',
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,listMonth'
+                },
+                businessHours: [
+                    {
+                        daysOfWeek: [1, 2, 3, 4, 5], // Monday, Tuesday, Wednesday
+                        startTime: '18:00', // 8am
+                        endTime: '22:00' // 6pm
+                    },
+                    {
+                        daysOfWeek: [6, 7], // Thursday, Friday
+                        startTime: '10:00', // 10am
+                        endTime: '22:00' // 4pm
+                    }],
+                displayEventTime: true,
+                timeZone: "local",
+                defaultDate: Date.now(),
+                navLinks: true,
+                editable: false,
+                events: [
+                    {% for post in posts %}
+                        {% assign event = site.events | where_exp: "item", "item.slug == post.slug" | where_exp: "item", "item.date >= site.time" | first %}
+                        {
+                            title: '{{ site.trainings_identity_map[event.slug] }}',
+                            start: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_start }}',
+                            end: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_end }}',
+                            constraint: 'businessHours',
+                            url: '/trainings/{{ event.slug }}/',
+                            color: '{{ site.colors_map[event.event_category] }}'
+                        },
+                    {% endfor %}
+                ]
+            });
+            calendar.render();
+        });
+    </script>
+    <div id="calendar" class="container"></div>
 </main>

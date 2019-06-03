@@ -60,19 +60,19 @@ autopages:
     enabled: true
     layouts:
       - 'category.html'
-    title: 'Posts in collection :coll'
+    title: 'Тренинги в группе &laquo;:coll&raquo;'
     permalink: '/:coll'
   categories:
     enabled: true
     layouts:
       - 'category.html'
-    title: 'Posts with category :cat'
+    title: 'Тренинги в категории &laquo;:cat&raquo;'
     permalink: '/category/:cat'
   tags:
     enabled: true
     layouts:
       - 'category.html'
-    title: 'Posts tagged with :tag'
+    title: 'Тренинги с тегом &laquo;:tag&raquo;'
     permalink: '/tag/:tag'
 future: true
 pwa:
@@ -147,3 +147,10 @@ trainings_identity_map:
   ts-030: "Media processing: Video-on-Demand, transmux, images operations"
   ts-040: "Message queues: RabbitMQ"
   ts-050: "Serverless: Fundamentals, frameworks, cloud providers"
+colors_map:
+  dev-ops: "#5d8b2a"
+  engineering-practices: "#2a7d8b"
+  system-design: "#8b2a2c"
+  software-engineering: "#bb7e31"
+  quality-assurance: "#2a4d8b"
+  technology-services: "#682a8b"

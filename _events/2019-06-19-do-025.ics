@@ -1,7 +1,8 @@
 ---
+event_category: dev-ops
 facebook_link:
 layout: event
 sitemap: false
-time_end: 21<sup>30</sup>
-time_start: 19<sup>00</sup>
+time_end: "21:30"
+time_start: "19:00"
 ---

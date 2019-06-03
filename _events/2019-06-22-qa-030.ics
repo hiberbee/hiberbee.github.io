@@ -1,6 +1,7 @@
 ---
+event_category: quality-assurance
 layout: event
 sitemap: false
-time_end: 14<sup>00</sup>
-time_start: 10<sup>00</sup>
+time_end: "14:00"
+time_start: "10:00"
 ---

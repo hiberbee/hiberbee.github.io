@@ -17,9 +17,11 @@
                                 </h3>
                             </div>
                             <div class="project-name">
-                                {% for training in offer.trainings %}
-                                    #<a class="tag"
-                                       href="/tag/{{ training }}/">{{ training }}</a>
+                                {% for tag in offer.trainings %}
+                                    <div class="tag">
+                                        <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a
+                                            href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
+                                    </div>
                                 {% endfor %}
                             </div>
                         </div>
