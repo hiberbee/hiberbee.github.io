@@ -24,7 +24,7 @@ layout: default
     {% for tag_name in sorted_tags %}
         {% capture tag %}{{ tag_name }}{% endcapture %}
         <div class="tag">
-            <img width="12" height="12" src="/assets/img/icons/tag.svg"><a
+            <img alt="{{ tag }}" width="12" height="12" src="/assets/img/icons/tag.svg"><a
                 href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
         </div>
     {% endfor %}

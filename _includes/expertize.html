@@ -19,7 +19,8 @@
                             <div class="project-name">
                                 {% for tag in offer.trainings %}
                                     <div class="tag">
-                                        <img alt="{{ tag }}" class="icon" width="12" height="12"
+                                        <img style="filter: invert(1)" alt="{{ tag }}" class="icon" width="12"
+                                             height="12"
                                              src="/assets/img/icons/tag.svg"><a
                                             href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
                                     </div>
