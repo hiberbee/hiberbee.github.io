@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 <head>
+    <title>{{ page.title | default: site.title }}</title>
     <meta charset="utf-8">
-    <meta name="theme-color" content="#e6b12e">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.description }}">
-    <meta name="keywords"
-          content="DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services">
-    <title>{{ site.title }}</title>
+    <meta name="keywords" content="{{ page.tags | join: "," | default: site.keywords }}">
     {% include links.html %}
     {% include scripts.html %}
 </head>
@@ -16,31 +14,6 @@
 {% include header.html site=site %}
 {{ content }}
 {% include footer.html %}
-<script type="text/javascript">
-    function toggleContent(e) {
-        e.stopPropagation();
-        const button = this;
-        const content = document.getElementById('menu');
-
-        e.preventDefault();
-
-        if (content.getAttribute('aria-hidden') === 'true') {
-            content.setAttribute('aria-hidden', 'false');
-            button.setAttribute('aria-expanded', 'true');
-        } else {
-            content.setAttribute('aria-hidden', 'true');
-            button.setAttribute('aria-expanded', 'false');
-        }
-    }
-
-    document.getElementById('page-top').addEventListener('click', function () {
-        const content = document.getElementById('menu');
-        if (document.getElementById('menu').getAttribute('aria-hidden') === 'false') {
-            content.setAttribute('aria-hidden', 'true');
-            document.getElementById('burger').setAttribute('aria-expanded', 'false');
-        }
-    });
-    document.getElementById('burger').addEventListener('click', toggleContent);
-</script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

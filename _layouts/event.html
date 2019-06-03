@@ -24,7 +24,7 @@ LOCATION:{{ page.address | default: site.organization.address }}
 DESCRIPTION: https://facebook.com/events/{{ page.facebook_link }}/
 STATUS:CONFIRMED
 SEQUENCE:0
-SUMMARY:{{ site.trainings_identity_map[page.slug] }}
+SUMMARY:{{ site.data.trainings[page.slug] }}
 DTSTART;TZID=Europe/Kiev:{{ page.date | date: "%Y" }}{{ page.date | date: "%m" }}{{ page.date | date: "%d" }}T{{ page.time_start | strip_html }}00
 X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
 BEGIN:VALARM

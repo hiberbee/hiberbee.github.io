@@ -3,19 +3,21 @@ layout: default
 ---
 {% assign categories = site.trainings  | map: 'categories' | uniq | sort %}
 {% assign tags = site.trainings  | map: 'tags' | uniq | sort %}
-<main class="hero dark-section" style="text-align: left; background-image: url('/assets/img/background/black.png');">
-    <div class="container">
+<main class="hero">
+    <div class="container text-left">
         <h1>Таксономия</h1>
         <h3>Категории</h3>
         {% for tag in categories %}
             <div class="tag">
-                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/category/{{ tag | downcase }}/">{{ tag }}</a>
+                <img alt="{{ tag }}" class="icon" width="12" height="12" src="/assets/img/icons/tag.svg"><a
+                    href="/category/{{ tag | downcase }}/">{{ tag }}</a>
             </div>
         {% endfor %}
         <h3>Теги</h3>
         {% for tag in tags %}
             <div class="tag">
-                <img width="12" height="12" src="/assets/img/icons/tag-white.svg"><a href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
+                <img alt="{{ tag }}" class="icon" width="12" height="12" src="/assets/img/icons/tag.svg"><a
+                    href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
             </div>
         {% endfor %}
     </div>

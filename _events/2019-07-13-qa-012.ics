@@ -1,7 +1,5 @@
 ---
 event_category: quality-assurance
-layout: event
-sitemap: false
 time_start: "10:00"
 time_end: "14:00"
 ticket_id: b20078b595abc

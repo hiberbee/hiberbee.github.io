@@ -1,10 +1,8 @@
 ---
-layout: default
-pagination:
-enabled: false
+layout: calendar
 ---
 {% assign posts = paginator.posts | sort: "slug" %}
-<main class="container">
+<main class="hero container">
     <h1>{{ page.title }}</h1>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -21,31 +19,33 @@ enabled: false
                 },
                 businessHours: [
                     {
-                        daysOfWeek: [1, 2, 3, 4, 5], // Monday, Tuesday, Wednesday
-                        startTime: '18:00', // 8am
-                        endTime: '22:00' // 6pm
+                        daysOfWeek: [1, 2, 3, 4, 5],
+                        startTime: '18:00',
+                        endTime: '22:00'
                     },
                     {
-                        daysOfWeek: [6, 7], // Thursday, Friday
-                        startTime: '10:00', // 10am
-                        endTime: '22:00' // 4pm
+                        daysOfWeek: [6, 7],
+                        startTime: '10:00',
+                        endTime: '22:00'
                     }],
                 displayEventTime: true,
                 timeZone: "local",
                 defaultDate: Date.now(),
                 navLinks: true,
+                theme: "darkly",
                 editable: false,
                 events: [
                     {% for post in posts %}
                         {% assign events = site.events | where_exp: "item", "item.slug == post.slug" | where_exp: "item", "item.date >= site.time" %}
+                        {% capture category %}{{ post.categories | first }}{% endcapture %}
                         {% for event in events %}
                             {
-                                title: '{{ site.trainings_identity_map[event.slug] }}',
+                                title: '{{ site.data.trainings[event.slug] }}',
                                 start: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_start }}',
                                 end: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_end }}',
                                 constraint: 'businessHours',
                                 url: '/trainings/{{ event.slug }}/',
-                                color: '{{ site.colors_map[event.event_category] }}'
+                                color: '{{ site.data.colors[category] }}'
                             },
                         {% endfor %}
                     {% endfor %}

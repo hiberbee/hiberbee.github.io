@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="theme-color" content="#e6b12e">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="keywords"
+          content="DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services">
+    <title>{{ site.title }}</title>
+    {% include links.html %}
+    {% include scripts.html %}
+    {% include calendar-scripts.html %}
+</head>
+<body id="page-top">
+{% include header.html site=site %}
+{{ content }}
+{% include footer.html %}
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

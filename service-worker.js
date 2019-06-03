@@ -1,6 +1,6 @@
 workbox.core.setCacheNameDetails({
     prefix: 'hiberbee',
-    suffix: 'v32',
+    suffix: 'v34',
     precache: 'precache',
     runtime: 'runtime-cache'
 });
@@ -11,7 +11,7 @@ workbox.clientsClaim();
 workbox.precaching.precacheAndRoute(self.__precacheManifest);
 
 workbox.routing.registerRoute(
-    /\.(?:png|gif|jpg|jpeg|webp|svg)$/,
+    /\.(?:png|gif|jpg|jpeg|ttf|webp|svg)$/,
     new workbox.strategies.CacheFirst({
         cacheName: 'images',
         plugins: [

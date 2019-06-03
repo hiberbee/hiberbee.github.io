@@ -13,8 +13,8 @@ layout: default
     {% assign price = '1200' %}
 {% endif %}
 <main class="container">
-    <h1>{{ site.trainings_identity_map[event.slug] | split: ":" | first }}</h1>
-    <h2>{{ site.trainings_identity_map[event.slug] | split: ":" | last }}</h2>
+    <h1>{{ site.data.trainings[event.slug] | split: ":" | first }}</h1>
+    <h2>{{ site.data.trainings[event.slug] | split: ":" | last }}</h2>
     <h4>Категории: {% for category_name in sorted_categories %}
         {% capture category %}{{ category_name }}{% endcapture %}
         <div class="tag">

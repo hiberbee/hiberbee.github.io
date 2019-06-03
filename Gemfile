@@ -1,5 +1,8 @@
 source "https://rubygems.org"
 
+gem "rake"
+gem "html-proofer"
+
 group :jekyll_plugins do
   gem "github-pages"
   gem "jekyll-github-metadata"

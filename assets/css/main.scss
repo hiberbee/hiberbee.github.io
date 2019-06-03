@@ -5,26 +5,24 @@
 @font-face {
   font-family: "Myriad Pro Semibold";
   font-style: normal;
-  font-display: fallback;
   font-weight: normal;
-  src: local("Myriad Pro Semibold"), url("../fonts/MyriadPro-Semibold.ttf");
+  src: local("Myriad Pro Semibold"), url("../fonts/MyriadPro-Semibold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Myriad Pro Bold";
   font-style: normal;
-  font-display: fallback;
   font-weight: normal;
-  src: local("Myriad Pro Bold"), url("../fonts/MyriadPro-Bold.ttf");
+  src: local("Myriad Pro Bold"), url("../fonts/MyriadPro-Bold.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Myriad Pro";
   font-style: normal;
-  font-display: fallback;
   font-weight: normal;
-  src: local("Myriad Web Pro Regular"), url("../fonts/MyriadPro-Regular.ttf");
+  src: local("Myriad Pro"), url("../fonts/MyriadPro-Regular.ttf") format("truetype");
 }
+
 
 @mixin headerFont() {
   font-family: "Myriad Pro Bold", sans-serif;
@@ -45,8 +43,24 @@
   transition: all 0.35s;
 }
 
-$primaryColor: #e6b12e;
-$darkColor: #222222;
+:root {
+  --primary-color: #e6b12e;
+  --secondary-color: #F9D778;
+  --header-color: #ffffff;
+  --header-text: #206080;
+  --font-color: #222222;
+  --bg-color: #ffffff;
+  --image-inversion: invert(1);
+}
+
+[data-theme="dark"] {
+
+  --header-color: #222222;
+  --header-text: #e6b12e;
+  --font-color: #ffffff;
+  --bg-color: #323232;
+  --image-inversion: invert(-1);
+}
 
 html {
   -webkit-font-smoothing: subpixel-antialiased;
@@ -55,29 +69,22 @@ html {
 
 html,
 body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
   height: 100%;
   width: 100%;
   @include regularFont;
   font-size: 16px;
 }
 
-.tab-link {
-  @include accentFont;
-  font-size: 20px;
-  margin-right: 20px;
-
-  a {
-    text-decoration: dashed;
-  }
-}
-
 a {
-  @include transition-all;
+  color: #4e2f68;
 
   &:hover {
+    @include transition-all;
+    color: #FF0072;
     text-decoration: none;
   }
-
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -85,16 +92,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 10px 0;
 }
 
-a:hover {
-  color: $primaryColor;
-}
-
 section {
-  background: #ffffff;
+  background: var(--bg-color);
 }
 
-.dark-section a {
-  color: $primaryColor;
+.navbar-brand img {
+  margin-top: 3px;
 }
 
 hr {
@@ -102,7 +105,6 @@ hr {
 }
 
 .tag {
-  @include transition-all;
   display: inline-block;
   margin-right: 5px;
 
@@ -112,58 +114,21 @@ hr {
   }
 
   img {
-    vertical-align: baseline;
-    opacity: 0.7
-  }
-
-  &:hover {
     opacity: 0.7;
   }
 }
 
-
-span {
-  @include accentFont;
-  font-size: 16px;
+.icon {
+  filter: var(--image-inversion);
 }
 
 .not-found {
   background-image: url("../img/background/404.webp");
 }
 
-.dark-section {
-  background-color: #222222;
-  color: white;
-
-  a {
-    color: $primaryColor;
-
-    &:hover,
-    &:focus {
-      color: white;
-    }
-  }
-
-  h1, h2 {
-    color: $primaryColor;
-  }
-
-  h3, h4, h5, h6, span, p {
-    color: white;
-  }
-}
-
 h1 {
   margin-top: 40px;
   padding-top: 40px;
-}
-
-.text-primary {
-  color: $primaryColor
-}
-
-.text-faded {
-  color: rgba(255, 255, 255, .7);
 }
 
 section, aside {
@@ -172,22 +137,6 @@ section, aside {
 
 .no-padding {
   padding: 0;
-}
-
-header, section {
-  svg {
-    width: 18px;
-    height: 18px;
-
-    path {
-      fill: white;
-    }
-
-    :hover, :focus, :active path {
-      @include transition-all;
-      fill: $primaryColor
-    }
-  }
 }
 
 main {
@@ -199,47 +148,30 @@ main {
 }
 
 .navbar-default {
-  color: #ffffff;
-  background-color: $darkColor;
+  background-color: #222222;
+  box-shadow: 0 0 10px #000000;
   border: none !important;
 
   .navbar-header {
     a {
-      font-size: 20px;
-      color: #ffffff;
+      color: #e6b12e;
       text-transform: uppercase;
       padding: 15px 10px 5px;
       line-height: 30px;
-
-      &:hover,
-      &:focus {
-        color: $primaryColor;
-      }
     }
-
   }
 
   .nav {
-    > li {
-      > a,
-      > a:focus {
+    li {
+      a {
         text-transform: uppercase;
         font-size: 14px;
-        color: #ffffff;
-
-        &:hover {
-          color: $primaryColor;
-        }
+        color: var(--primary-color)
       }
-    }
-  }
 
-  .navbar-header a {
-    color: #ffffff;
-
-    &:hover,
-    &:focus {
-      color: $primaryColor;
+      a:focus, a:hover {
+        color: var(--secondary-color);
+      }
     }
   }
 
@@ -258,12 +190,17 @@ main {
   }
 }
 
+.td.fc-today {
+  background-color: var(--primary-color);
+}
+
 .hero {
+  background-color: #fff;
+  //style="text-align: left; background-image: url('/assets/img/background/black.png');"
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
-  color: white;
   min-height: 100vh;
   position: relative;
   text-align: center;
@@ -276,7 +213,8 @@ main {
     width: 100%;
 
     .header-content-inner {
-      h1 {
+      h1, h2, h3 {
+        color: #ffffff;
         text-transform: uppercase;
         margin-top: 0;
         margin-bottom: 0;
@@ -331,7 +269,7 @@ footer {
   margin: 0 auto;
 
   .portfolio-box-caption {
-    color: white;
+    color: var(--bg-color);
     opacity: 0.7;
     display: block;
     background: rgba(34, 34, 34, 0.7);
@@ -341,16 +279,22 @@ footer {
     width: 100%;
     height: 100%;
 
+    a {
+      color: #e6b12e;
+    }
+
+    .tag {
+      img {
+        filter: invert(1);
+      }
+    }
+
     .portfolio-box-caption-content {
       width: 100%;
       text-align: center;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-
-      .project-name a {
-        color: $primaryColor;
-      }
     }
   }
 
@@ -363,10 +307,6 @@ footer {
 
 }
 
-.text-primary {
-  color: $primaryColor;
-}
-
 .no-gutter > [class*="col-"] {
   padding-right: 0;
   padding-left: 0;
@@ -374,8 +314,8 @@ footer {
 
 .btn-default {
   color: #282828 !important;
-  background-color: #f8cf4c;
-  border: #f8cf4c;
+  background-color: #FFC83C;
+  border: #FFC83C;
 
   &:hover,
   &:focus,
@@ -414,28 +354,6 @@ footer {
 
 .btn-xl {
   padding: 15px 30px;
-}
-
-::-moz-selection {
-  color: white;
-  text-shadow: none;
-  background: $darkColor;
-}
-
-::selection {
-  color: white;
-  text-shadow: none;
-  background: $darkColor;
-}
-
-img::selection {
-  color: white;
-  background: transparent;
-}
-
-img::-moz-selection {
-  color: white;
-  background: transparent;
 }
 
 #burger {
