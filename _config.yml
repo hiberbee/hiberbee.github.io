@@ -9,6 +9,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-pwa-plugin
+  - jekyll-include-cache
 author:
   name: "Vladyslav Volkov"
   email: "vlad@hiberbee.com"
@@ -33,7 +34,10 @@ exclude:
   - .sass-cache/*
   - build.gradle
 push_app_id: d3180b47-35fb-477f-98a4-49105f4c3bb3
-markdown: kramdown
+markdown: CommonMark
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
 collections:
   events:
     output: true
@@ -87,6 +91,7 @@ autopages:
     title: 'Тренинги с тегом &laquo;:tag&raquo;'
     permalink: '/tag/:tag'
 future: true
+incremental: true
 pwa:
   dest_js_directory: assets/js
   precache_glob_ignores:
@@ -96,11 +101,6 @@ pwa:
     - "/manifest.json"
     - "/favicon*.png"
     - "/index.html"
-    - "/404.html"
-    - "/faq/index.html"
-    - "/privacy-policy/index.html"
-    - "/taxonomy/index.html"
-    - "/terms-of-use/index.html"
 sass:
   style: compressed
 webp:
