@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html class="dark" lang="en">
+<html lang="en">
 <head>
-    <title>Se 031</title>
+    
+    <title>Gradle: United polyglot build system</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,10 +13,11 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="stylesheet" href="/assets/css/bootstrap.css" media="all">
+<link rel="stylesheet" href="https://use.typekit.net/ckf8ybo.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="/assets/css/site.css" type="text/css" media="all">
 <link rel="stylesheet" href="/assets/css/main.css" type="text/css" media="all">
 <link rel="stylesheet" href="/assets/css/mobile.css" media="only screen and (max-width: 768px)">
-<link rel="stylesheet" href="/assets/css/print.css" media="print">
 
 
     <script>
@@ -55,62 +57,33 @@
 
 </head>
 <body id="page-top">
-<header class="container-fluid">
-    <nav class="navbar navbar-default navbar-fixed-top" style="padding: 0 10px">
-        <div class="navbar-header">
-            <a href="#" id="burger" style="float: right;margin-top: -5px"
-               aria-controls="#menu" aria-expanded="false">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/burger.svg" alt="Menu" width="16"
-                     height="16"/>
-            </a>
-            <a class="navbar-brand" href="/" style="padding-top: 13px">
-                Hiberbee<img alt="Hiberbee" src="/assets/img/logo-icon.svg"
-                                                 class="flex-auto"
-                                                 style="float: left; margin: -5px 15px 0 5px;" width="32"
-                                                 height="32"/></a>
-            <a class="navbar-brand" rel="noopener" href="https://m.me/hiberbee"
-               target="_blank">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/messenger.svg" alt="Messenger"
-                     width="16" height="16"/>
-            </a>
-            <a class="navbar-brand" rel="noopener" href="https://facebook.com/hiberbee"
-               target="_blank">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/facebook.svg" alt="Facebook"
-                     width="16" height="16"/>
-            </a>
-            <a class="navbar-brand" rel="noopener" href="https://instagram.com/hiberbee"
-               target="_blank">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/instagram.svg" alt="Telegram"
-                     width="16" height="16"/>
-            </a>
-            <a class="navbar-brand" href="https://t.me/nezquiraj" target="_blank">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/telegram.svg" alt="Telegram"
-                     width="16" height="16"/>
-            </a>
-            <a class="navbar-brand" rel="noopener" href="mailto:contact@hiberbee.com">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/mail.svg" alt="Mail" width="16"
-                     height="16"/>
-            </a>
-        </div>
-        <div id="menu" aria-hidden="true">
-            <ul class="nav navbar-nav navbar-right" style="margin-top: 3px">
-                <li>
-                    <a href="/#portfolio">Эспертиза</a>
+<header class="dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top text-uppercase">
+        <a href="" id="burger" aria-controls="#menu" aria-expanded="false">
+            <img class="icon" src="/assets/img/icons/burger.svg" width="16" height="16" alt="Menu">
+        </a>
+        <a class="navbar-brand" href="/" rel="home" title="Hiberbee">
+            <img src="/assets/img/logo-icon.svg" width="32" height="32" style="margin-right: 10px;"
+                 class="d-inline-block"
+                 alt="Hiberbee">
+            Hiberbee
+        </a>
+        <div class="collapse navbar-collapse" aria-hidden="true" id="menu">
+            <ul class="navbar-nav navbar-right">
+                <li class="navbar-item">
+                    <a class="nav-link" href="/#portfolio">Эспертиза</a>
                 </li>
-                <li>
-                    <a href="/#trainings">Тренинги</a>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/#trainings">Тренинги</a>
                 </li>
-                <li>
-                    <a href="/#services">Сервисы</a>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/#services">Сервисы</a>
                 </li>
-                <li>
-                    <a href="/#contact">Контакты</a>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/#contact">Контакты</a>
                 </li>
-                <li>
-                    <a href="/taxonomy/">Таксономия</a>
-                </li>
-                <li>
-                    <a href="/about/">Супервизор</a>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/about/">О проекте</a>
                 </li>
             </ul>
         </div>
@@ -125,78 +98,145 @@
 
 
 
-<main class="container">
-    <h1>Gradle</h1>
-    <h2> United polyglot build system</h2>
-    <h4>Категории: 
-        
-        <div class="tag">
-            <a href="/category/software-engineering/">software-engineering</a>
-        </div>
-    </h4>
+<main style="margin-bottom: -150px;padding-bottom: 20px" role="main" class="container">
+    <h1 style="margin: 5px 0">Gradle</h1>
+    <h3 style="margin-top: 5px;">
+         United polyglot build system</h3>
     
         
-        <div class="tag">
-            <img alt="build" width="12" height="12" src="/assets/img/icons/tag.svg"><a
-                href="/tag/build/">build</a>
+        <div class="badge"
+             style="font-size: 14px;padding: 5px;background-color: #fd7e14!important;">
+            <a style="color: white" href="/category/software-engineering/">software-engineering</a>
         </div>
     
+    
         
-        <div class="tag">
-            <img alt="cd" width="12" height="12" src="/assets/img/icons/tag.svg"><a
-                href="/tag/cd/">cd</a>
+        <div class="badge badge-dark bg-dark" style="font-size: 14px;padding: 5px">
+            <a href="/tag/build/">build</a>
         </div>
     
         
-        <div class="tag">
-            <img alt="ci" width="12" height="12" src="/assets/img/icons/tag.svg"><a
-                href="/tag/ci/">ci</a>
+        <div class="badge badge-dark bg-dark" style="font-size: 14px;padding: 5px">
+            <a href="/tag/cd/">cd</a>
         </div>
     
         
-        <div class="tag">
-            <img alt="gradle" width="12" height="12" src="/assets/img/icons/tag.svg"><a
-                href="/tag/gradle/">gradle</a>
+        <div class="badge badge-dark bg-dark" style="font-size: 14px;padding: 5px">
+            <a href="/tag/ci/">ci</a>
         </div>
     
-    <h4>Адрес:
-        Часопис, L'va Tolstoho vulytsya,  3,  Kiev,  Kiev,  Ukraine</h4>
-    <h4>Ближайший тренинг: Monday, 8 Jul,
-        <a href="/events/se-031/07-08.ics">
-            19:00 - 21:30
-        </a>
-    </h4>
-    <h4>Тренер: <a href="/about/">Владислав Волков</a></h4>
+        
+        <div class="badge badge-dark bg-dark" style="font-size: 14px;padding: 5px">
+            <a href="/tag/gradle/">gradle</a>
+        </div>
     
-        <h4>Цена: 600 &#8372;</h4>
+    <hr/>
     
-    
-
-    
-        <div class="text-center">
+    <hr/>
+    <div class="container text-center">
+        <div class="font-accent" style="font-size: 1.3rem;margin-top: 20px">
+            Monday, 8 Jul,<a
+                href="/events/se-031/07-08.ics"> 19<sup>00</sup> -
+            21<sup>30</sup></a>
+        </div>
+        
             <hr/>
-            <a rel="noopener" onclick='FB.AppEvents.logEvent("paymentLinkClicked")'
+            <a rel="noopener" data-anchor="paymentLinkClicked"
                href="https://secure.wayforpay.com/button/b7f66d7f9a418"
                target="_blank"
-               class="btn btn-default btn-xl">Купить билет</a>
-        </div>
-    
+               class="facebookEventLink font-accent font-weight-bold text-uppercase btn btn-warning btn-lg">Купить
+                билет</a>
+        
+    </div>
 </main>
 
-<footer class="navbar-fixed-bottom">
-    <nav class="navbar" style="background-color: transparent">
-        <div class="container-fluid text-right">
-            
-            <ul class="nav navbar-nav navbar-right">
-                <li style="display: inline-block">
-                    <a href="/privacy-policy/">Privacy Policy</a>
-                </li>
-                <li style="display: inline-block">
-                    <a href="/terms-of-use/">Terms of use</a>
-                </li>
-            </ul>
+<footer class="bg-dark">
+    <div class="container no-padding">
+        <div class="row">
+            <div class="col-lg-2 col-md-6">
+                <p class="font-weight-normal">Контакты</p>
+                <ul class="no-padding">
+                    <li>
+                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
+                           href="https://m.me/hiberbee"
+                           target="_blank">
+                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/messenger.svg"
+                                 alt="Messenger"
+                                 width="16" height="16"/>
+                        </a>
+                        <a href="https://t.me/nezquiraj" class="facebookEventLink"
+                           data-anchor="footerContactsClicked" rel="noopener" target="_blank">
+                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/telegram.svg"
+                                 alt="Telegram"
+                                 width="16" height="16"/>
+                        </a>
+                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
+                           href="https://instagram.com/hiberbee"
+                           target="_blank">
+                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/instagram.svg"
+                                 alt="Instagram"
+                                 width="16" height="16"/>
+                        </a>
+                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
+                           href="https://facebook.com/hiberbee"
+                           target="_blank">
+                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/facebook.svg"
+                                 alt="Facebook"
+                                 width="16" height="16"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
+                           href="tel:+380671204517">
+                            +380671204517
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="noopener" href="mailto:contact@hiberbee.com">
+                            contact@hiberbee.com
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="noopener" data-anchor="vCardLinkClicked" class="facebookEventLink" href="/vcard.vcf"
+                           target="_blank">
+                            Электронная визитка
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6">
+                <p class="font-weight-normal">О проекте</p>
+                <ul class="no-padding">
+                    <li>
+                        <a href="/about/">Тренер</a>
+                    </li>
+                    <li>
+                        <a href="/faq/">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="/taxonomy/">Таксономия</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <p class="font-weight-normal">Юридические документы</p>
+                <ul class="no-padding">
+                    <li>
+                        <a href="/offer/">Договор публичной оферты</a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy/">Политика конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a href="/terms-of-use/">Пользовательское соглашение</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <p>2019 &copy; Hiberbee. Все права защищены.</p>
+            </div>
         </div>
-    </nav>
+    </div>
 </footer>
 
 <script src="/assets/js/main.js"></script>
