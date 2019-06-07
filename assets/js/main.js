@@ -24,12 +24,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    document.querySelector(".navbar-nav li a").addEventListener("click", function () {
-        const element = document.getElementById(this.getAttribute("href").replace("/", "").replace("#", ""));
-        element.scrollIntoView({block: "nearest", behavior: "smooth"});
-        setTimeout(() => window.scrollBy(0, -53), 0);
-    });
-
     document.getElementById("burger").addEventListener("click", toggleContent);
 
     document.querySelector(".facebookEventLink").addEventListener("click", function () {

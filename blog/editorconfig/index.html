@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    
+    <title>Editorconfig</title>
     <meta charset="utf-8">
-    <meta name="theme-color" content="#e6b12e">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Технический консалтинг и супервайзинг для разработчиков, техлидов, проектных команд. Специализации: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services">
-    <meta name="keywords"
-          content="DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services">
-    <title>Hiberbee | Tech Consulting for IT professionals</title>
+    <meta name="keywords" content="DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services">
     <link rel="manifest" href="/manifest.json">
 <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="Hiberbee | Tech Consulting for IT professionals"/>
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -57,21 +56,8 @@
     }(document, 'script', 'facebook-jssdk'));
 </script>
 
-    <link href='https://use.fontawesome.com/releases/v5.0.6/css/all.css' rel='stylesheet'>
-<link href='/assets/css/fullcalendar/core/main.css' rel='stylesheet' media="all"/>
-<link href='/assets/css/fullcalendar/daygrid/main.css' rel='stylesheet' media="all"/>
-<link href='/assets/css/fullcalendar/timegrid/main.css' rel='stylesheet' media="all"/>
-<link href='/assets/css/fullcalendar/list/main.css' rel='stylesheet' media="all"/>
-<link href='/assets/css/fullcalendar/bootstrap/main.css' rel='stylesheet' media="all"/>
-<script src='/assets/js/fullcalendar/core/main.js'></script>
-<script src='/assets/js/fullcalendar/interaction/main.js'></script>
-<script src='/assets/js/fullcalendar/daygrid/main.js'></script>
-<script src='/assets/js/fullcalendar/list/main.js'></script>
-<script src='/assets/js/fullcalendar/timegrid/main.js'></script>
-<script src='/assets/js/fullcalendar/bootstrap/main.js'></script>
-
 </head>
-<body id="page-top">
+<body>
 <header class="dark">
     <nav class="navbar shadow-md navbar-expand-sm navbar-dark bg-dark fixed-top text-uppercase">
         <a href="" id="burger" aria-controls="#menu" aria-expanded="false">
@@ -105,75 +91,13 @@
     </nav>
 </header>
 
+<main role="main" class="no-padding">
+    <div class="container">
+        <h1>Editorconfig</h1>
 
-<main class="container">
-    <h1>Тренинги с тегом &laquo;orchestration&raquo;</h1>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const calendarEl = document.getElementById('calendar');
-
-            const calendar = new FullCalendar.Calendar(calendarEl, {
-                plugins: ['interaction', 'bootstrap', 'dayGrid', 'timeGrid', 'list'],
-                locale: 'en',
-                themeSystem: "bootstrap",
-                firstDay: 1,
-                header: {
-                    left: 'prev,next today',
-                    center: false,
-                    right: 'dayGridMonth,timeGridWeek,listMonth'
-                },
-                businessHours: [
-                    {
-                        daysOfWeek: [1, 2, 3, 4, 5],
-                        startTime: '18:00',
-                        endTime: '22:00'
-                    },
-                    {
-                        daysOfWeek: [6, 7],
-                        startTime: '10:00',
-                        endTime: '22:00'
-                    }],
-                displayEventTime: true,
-                timeZone: "local",
-                defaultDate: Date.now(),
-                navLinks: true,
-                theme: "darkly",
-                editable: false,
-                events: [
-                    
-                        
-                        
-                        
-                            {
-                                title: 'Docker Swarm: Complete cluster infrastructure from scratch',
-                                start: '2019-07-02T19:00',
-                                end: '2019-07-02T21:30',
-                                constraint: 'businessHours',
-                                url: '/trainings/do-001/',
-                                color: '#28a745'
-                            },
-                        
-                    
-                        
-                        
-                        
-                            {
-                                title: 'Kubernetes: Technology overview & kick-off for developers and DevOps',
-                                start: '2019-06-13T19:00',
-                                end: '2019-06-13T21:30',
-                                constraint: 'businessHours',
-                                url: '/trainings/do-020/',
-                                color: '#28a745'
-                            },
-                        
-                    
-                ]
-            });
-            calendar.render();
-        });
-    </script>
-    <div id="calendar" class="container"></div>
+    </div>
 </main>
+
 
 <footer class="bg-dark">
     <div class="container no-padding">
