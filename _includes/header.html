@@ -1,59 +1,30 @@
-<header class="container-fluid">
-    <nav class="navbar navbar-default navbar-fixed-top" style="padding: 0 10px">
-        <div class="navbar-header">
-            <a href="#" id="burger" style="float: right;margin-top: -5px"
-               aria-controls="#menu" aria-expanded="false">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/burger.svg" alt="Menu" width="16"
-                     height="16"/>
-            </a>
-            <a class="navbar-brand" href="/" style="padding-top: 13px">
-                {{ site.organization.name }}<img alt="{{ site.organization.name }}" src="/assets/img/logo-icon.svg"
-                                                 class="flex-auto"
-                                                 style="float: left; margin: -5px 15px 0 5px;" width="32"
-                                                 height="32"/></a>
-            <a class="navbar-brand" rel="noopener" href="https://m.me/{{ site.author.facebook }}"
-               target="_blank">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/messenger.svg" alt="Messenger"
-                     width="16" height="16"/>
-            </a>
-            <a class="navbar-brand" rel="noopener" href="https://facebook.com/{{ site.author.facebook }}"
-               target="_blank">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/facebook.svg" alt="Facebook"
-                     width="16" height="16"/>
-            </a>
-            <a class="navbar-brand" rel="noopener" href="https://instagram.com/{{ site.author.instagram }}"
-               target="_blank">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/instagram.svg" alt="Telegram"
-                     width="16" height="16"/>
-            </a>
-            <a class="navbar-brand" href="https://t.me/{{ site.author.telegram }}" target="_blank">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/telegram.svg" alt="Telegram"
-                     width="16" height="16"/>
-            </a>
-            <a class="navbar-brand" rel="noopener" href="mailto:contact@hiberbee.com">
-                <img class="icon" style="filter: invert(1)" src="/assets/img/icons/mail.svg" alt="Mail" width="16"
-                     height="16"/>
-            </a>
-        </div>
-        <div id="menu" aria-hidden="true">
-            <ul class="nav navbar-nav navbar-right" style="margin-top: 3px">
-                <li>
-                    <a href="/#portfolio">Эспертиза</a>
+<header class="dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top text-uppercase">
+        <a href="" id="burger" aria-controls="#menu" aria-expanded="false">
+            <img class="icon" src="/assets/img/icons/burger.svg" width="16" height="16" alt="Menu">
+        </a>
+        <a class="navbar-brand" href="/" rel="home" title="{{ site.organization.name }}">
+            <img src="/assets/img/logo-icon.svg" width="32" height="32" style="margin-right: 10px;"
+                 class="d-inline-block"
+                 alt="{{ site.organization.name }}">
+            {{ site.organization.name }}
+        </a>
+        <div class="collapse navbar-collapse" aria-hidden="true" id="menu">
+            <ul class="navbar-nav navbar-right">
+                <li class="navbar-item">
+                    <a class="nav-link" href="/#portfolio">Эспертиза</a>
                 </li>
-                <li>
-                    <a href="/#trainings">Тренинги</a>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/#trainings">Тренинги</a>
                 </li>
-                <li>
-                    <a href="/#services">Сервисы</a>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/#services">Сервисы</a>
                 </li>
-                <li>
-                    <a href="/#contact">Контакты</a>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/#contact">Контакты</a>
                 </li>
-                <li>
-                    <a href="/taxonomy/">Таксономия</a>
-                </li>
-                <li>
-                    <a href="/about/">Супервизор</a>
+                <li class="navbar-item">
+                    <a class="nav-link" href="/about/">О проекте</a>
                 </li>
             </ul>
         </div>

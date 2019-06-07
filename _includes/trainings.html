@@ -1,35 +1,44 @@
-<section id="trainings">
-    <div class="container text-center">
-        <div class="col-md-6 col-sm-12 text-left">
-            <h2>Тренинги <a id="rssSubscribed" onclick="handleFacebookEvent()" class="facebookEvent" rel="noopener"
-                            target="_blank" href="/feed.xml">
-                <img class="icon" src="/assets/img/icons/rss.svg" width="24" height="24" alt="RSS">
-            </a>
-            </h2>
-            <p>Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают
-                несколько
-                тем, для их группировки используются теги и <a href="/taxonomy/">таксономия</a>.
-                Все тренинги и способы подписки на обновления доступны на <a
-                        href="https://github.com/Hiberbee/hiberbee.github.io/tree/development/_posts">Github</a></p>
-            <p>Как правило, на странице тренинга есть ссылка на оплату. Если вы хотите приобрести
-                несколько тренингов или
-                использовать промо-код, воспользуйтесь <a onclick='FB.AppEvents.logEvent("genericPaymentLinkClicked")'
-                                                          href="https://secure.wayforpay.com/button/b06d4b2643b9e"
-                                                          rel="noopener"
-                                                          target="_blank"
-                >ссылкой</a>, указав в комментарии, какой тренинг и дата вас
-                интересуют.</p>
-            <div>
-                <h3><a href="/trainings/">Расписание тренингов на июнь</a></h3>
+<section id="trainings" class="bg-dark">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-6 col-sm-12">
+                <h2>Тренинги <a data-anchor="rssSubscribed" class="facebookEventLink"
+                                rel="noopener"
+                                target="_blank" href="/feed.xml">
+                    <img class="icon" src="/assets/img/icons/rss.svg" width="24" height="24" alt="RSS">
+                </a>
+                </h2>
+                <p>Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают
+                    несколько
+                    тем, для их группировки используются теги и <a href="/taxonomy/">таксономия</a>.
+                    Все тренинги и способы подписки на обновления доступны на <a
+                            href="https://github.com/{{ site.author.github }}/hiberbee.github.io/tree/development/">Github</a>
+                </p>
+                <p>Как правило, на странице тренинга есть ссылка на оплату. Если вы хотите приобрести
+                    несколько тренингов или
+                    использовать промо-код, воспользуйтесь <a data-anchor="genericPaymentLinkClicked"
+                                                              class="facebookEventLink"
+                                                              href="https://secure.wayforpay.com/button/b06d4b2643b9e"
+                                                              rel="noopener"
+                                                              target="_blank"
+                    >ссылкой</a>, указав в комментарии, какой тренинг и дата вас
+                    интересуют.</p>
+                <div>
+                    <h3><a href="/trainings/">Расписание тренингов на июнь</a></h3>
+                </div>
             </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-            <div class="fb-page" data-href="https://www.facebook.com/hiberbee/" data-tabs="events,messages"
-                 data-width="500"
-                 data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-                 data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/hiberbee/" class="fb-xfbml-parse-ignore"><a
-                        href="https://www.facebook.com/hiberbee/">Hiberbee</a></blockquote>
+            <div class="col-md-6 col-sm-12">
+                <div class="fb-page"
+                     data-href="https://www.facebook.com/{{ site.author.facebook }}/"
+                     data-tabs="events,messages"
+                     data-width="500"
+                     data-height="" data-small-header="false" data-adapt-container-width="true"
+                     data-hide-cover="false"
+                     data-show-facepile="true">
+                    <blockquote cite="https://www.facebook.com/{{ site.author.facebook }}/"
+                                class="fb-xfbml-parse-ignore"><a
+                            href="https://www.facebook.com/{{ site.author.facebook }}/">Hiberbee</a></blockquote>
+                </div>
             </div>
         </div>
     </div>

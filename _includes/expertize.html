@@ -1,35 +1,33 @@
 <section id="portfolio" class="no-padding">
-    <div class="container-fluid">
-        <div class="row no-gutter">
-            {% for offer in include.page.offers %}
-                <div class="col-lg-4 col-sm-6 portfolio-box">
-                    <picture>
-                        <source srcset="/assets/img/portfolio/{{ offer.color }}.webp" class="img-responsive"
-                                type="image/webp">
-                        <img src="/assets/img/portfolio/{{ offer.color }}.png" class="img-responsive"
-                             alt="{{ offer.category }}">
-                    </picture>
-                    <div class="portfolio-box-caption">
-                        <div class="portfolio-box-caption-content">
-                            <div class="project-category">
-                                <h3><a href="/category/{{ offer.category | slugify }}/">
-                                    {{ offer.category }}</a>
-                                </h3>
-                            </div>
-                            <div class="project-name">
-                                {% for tag in offer.trainings %}
-                                    <div class="tag">
-                                        <img style="filter: invert(1)" alt="{{ tag }}" class="icon" width="12"
-                                             height="12"
-                                             src="/assets/img/icons/tag.svg"><a
-                                            href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
-                                    </div>
-                                {% endfor %}
-                            </div>
+    <div class="row no-gutters">
+        {% for offer in include.page.offers %}
+            <div class="col-sm-12 col-md-4 portfolio-box">
+                <picture>
+                    <source srcset="/assets/img/portfolio/{{ offer.color }}.webp" class="img-fluid"
+                            type="image/webp">
+                    <img src="/assets/img/portfolio/{{ offer.color }}.png" class="img-fluid"
+                         alt="{{ offer.category }}">
+                </picture>
+                <div class="portfolio-box-caption">
+                    <div class="portfolio-box-caption-content">
+                        <div class="project-category">
+                            <h3><a href="/category/{{ offer.category | slugify }}/">
+                                {{ offer.category }}</a>
+                            </h3>
+                        </div>
+                        <div class="project-name">
+                            {% for tag in offer.trainings %}
+                                <div class="tag">
+                                    <img style="filter: invert(1)" alt="{{ tag }}" class="icon" width="12"
+                                         height="12"
+                                         src="/assets/img/icons/tag.svg"><a
+                                        href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
+                                </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
-            {% endfor %}
-        </div>
+            </div>
+        {% endfor %}
     </div>
 </section>

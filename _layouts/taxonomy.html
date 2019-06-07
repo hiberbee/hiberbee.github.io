@@ -3,22 +3,21 @@ layout: default
 ---
 {% assign categories = site.trainings  | map: 'categories' | uniq | sort %}
 {% assign tags = site.trainings  | map: 'tags' | uniq | sort %}
-<main class="hero">
-    <div class="container text-left">
-        <h1>Таксономия</h1>
-        <h3>Категории</h3>
-        {% for tag in categories %}
-            <div class="tag">
-                <img alt="{{ tag }}" class="icon" width="12" height="12" src="/assets/img/icons/tag.svg"><a
-                    href="/category/{{ tag | downcase }}/">{{ tag }}</a>
-            </div>
-        {% endfor %}
-        <h3>Теги</h3>
-        {% for tag in tags %}
-            <div class="tag">
-                <img alt="{{ tag }}" class="icon" width="12" height="12" src="/assets/img/icons/tag.svg"><a
-                    href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
-            </div>
-        {% endfor %}
-    </div>
+<main class="container">
+    <h1>Таксономия</h1>
+    <h2>Категории</h2>
+    {% for category in categories %}
+        <div class="badge"
+             style="font-size: 14px;padding: 5px;background-color: {{ site.data.colors[category] }}!important;">
+            <a style="color: white" href="/category/{{ category | downcase }}/">{{ category }}</a>
+        </div>
+    {% endfor %}
+    <h2>Теги</h2>
+    {% for tag in tags %}
+        <div class="tag">
+            <img alt="{{ tag }}" class="icon" width="12" height="12" src="/assets/img/icons/tag.svg"><a
+                style="font-weight: 600"
+                href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
+        </div>
+    {% endfor %}
 </main>

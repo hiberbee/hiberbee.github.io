@@ -2,15 +2,16 @@
 layout: calendar
 ---
 {% assign posts = paginator.posts | sort: "slug" %}
-<main class="hero container">
+<main class="container">
     <h1>{{ page.title }}</h1>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            var calendarEl = document.getElementById('calendar');
+            const calendarEl = document.getElementById('calendar');
 
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                plugins: ['interaction', 'dayGrid', 'timeGrid', 'list'],
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'bootstrap', 'dayGrid', 'timeGrid', 'list'],
                 locale: 'en',
+                themeSystem: "bootstrap",
                 firstDay: 1,
                 header: {
                     left: 'prev,next today',

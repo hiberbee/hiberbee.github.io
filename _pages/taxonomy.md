@@ -1,4 +1,3 @@
 ---
 layout: taxonomy
-permalink: /taxonomy/
 ---

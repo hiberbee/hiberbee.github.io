@@ -25,19 +25,12 @@ facebook_pixel: 402031503981717
 facebook_app_id: 145510372820525
 google_tag: GTM-P5LNHBZ
 timezone: Europe/Kiev
-include:
-  - feed.xml
-  - 404.html
-  - manifest.json
-  - CNAME
-  - service-worker.js
-  - vcard.vcf
-  - pages/*
 exclude:
-  - .bundle
+  - .bundle/*
   - Gemfile
   - Gemfile.lock
-  - vendor
+  - vendor/*
+  - .sass-cache/*
   - build.gradle
 push_app_id: d3180b47-35fb-477f-98a4-49105f4c3bb3
 markdown: kramdown
@@ -50,6 +43,9 @@ collections:
     output_tags: true
     output_categories: true
     permalink: /trainings/:title/
+  pages:
+    output: true
+    permalink: /:title/
 defaults:
   - scope:
       path: ""
@@ -57,6 +53,11 @@ defaults:
     values:
       layout: "event"
       sitemap: false
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "blank"
   - scope:
       path: ""
       type: "trainings"

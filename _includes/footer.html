@@ -1,22 +1,88 @@
-<footer class="navbar-fixed-bottom">
-    <nav class="navbar" style="background-color: transparent">
-        <div class="container-fluid text-right">
-            {% comment %}
-            <div class="theme-switch-wrapper" style="float: left">
-                <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox"/>
-                </label>
-                Enable Dark Mode
+<footer class="bg-dark">
+    <div class="container no-padding">
+        <div class="row">
+            <div class="col-lg-2 col-md-6">
+                <p class="font-weight-normal">Контакты</p>
+                <ul class="no-padding">
+                    <li>
+                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
+                           href="https://m.me/{{ site.author.facebook }}"
+                           target="_blank">
+                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/messenger.svg"
+                                 alt="Messenger"
+                                 width="16" height="16"/>
+                        </a>
+                        <a href="https://t.me/{{ site.author.telegram }}" class="facebookEventLink"
+                           data-anchor="footerContactsClicked" rel="noopener" target="_blank">
+                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/telegram.svg"
+                                 alt="Telegram"
+                                 width="16" height="16"/>
+                        </a>
+                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
+                           href="https://instagram.com/{{ site.author.instagram }}"
+                           target="_blank">
+                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/instagram.svg"
+                                 alt="Instagram"
+                                 width="16" height="16"/>
+                        </a>
+                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
+                           href="https://facebook.com/{{ site.author.facebook }}"
+                           target="_blank">
+                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/facebook.svg"
+                                 alt="Facebook"
+                                 width="16" height="16"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
+                           href="tel:+380671204517">
+                            +380671204517
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="noopener" href="mailto:contact@hiberbee.com">
+                            contact@hiberbee.com
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="noopener" data-anchor="vCardLinkClicked" class="facebookEventLink" href="/vcard.vcf"
+                           target="_blank">
+                            Электронная визитка
+                        </a>
+                    </li>
+                </ul>
             </div>
-            {% endcomment %}
-            <ul class="nav navbar-nav navbar-right">
-                <li style="display: inline-block">
-                    <a href="/privacy-policy/">Privacy Policy</a>
-                </li>
-                <li style="display: inline-block">
-                    <a href="/terms-of-use/">Terms of use</a>
-                </li>
-            </ul>
+            <div class="col-lg-2 col-md-6">
+                <p class="font-weight-normal">О проекте</p>
+                <ul class="no-padding">
+                    <li>
+                        <a href="/about/">Тренер</a>
+                    </li>
+                    <li>
+                        <a href="/faq/">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="/taxonomy/">Таксономия</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <p class="font-weight-normal">Юридические документы</p>
+                <ul class="no-padding">
+                    <li>
+                        <a href="/offer/">Договор публичной оферты</a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy/">Политика конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a href="/terms-of-use/">Пользовательское соглашение</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-5 col-md-12">
+                <p>2019 &copy; Hiberbee. Все права защищены.</p>
+            </div>
         </div>
-    </nav>
+    </div>
 </footer>

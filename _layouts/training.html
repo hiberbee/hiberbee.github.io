@@ -12,41 +12,39 @@ layout: default
     {% assign ticket_id = "b20078b595abc" %}
     {% assign price = '1200' %}
 {% endif %}
-<main class="container">
-    <h1>{{ site.data.trainings[event.slug] | split: ":" | first }}</h1>
-    <h2>{{ site.data.trainings[event.slug] | split: ":" | last }}</h2>
-    <h4>Категории: {% for category_name in sorted_categories %}
+<main style="margin-bottom: -150px;padding-bottom: 20px" role="main" class="container">
+    <h1 style="margin: 5px 0">{{ site.data.trainings[event.slug] | split: ":" | first }}</h1>
+    <h3 style="margin-top: 5px;">
+        {{ site.data.trainings[event.slug] | split: ":" | last }}</h3>
+    {% for category_name in sorted_categories %}
         {% capture category %}{{ category_name }}{% endcapture %}
-        <div class="tag">
-            <a href="/category/{{ category | downcase }}/">{{ category }}</a>
-        </div>
-    {% endfor %}</h4>
-    {% for tag_name in sorted_tags %}
-        {% capture tag %}{{ tag_name }}{% endcapture %}
-        <div class="tag">
-            <img alt="{{ tag }}" width="12" height="12" src="/assets/img/icons/tag.svg"><a
-                href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
+        <div class="badge"
+             style="font-size: 14px;padding: 5px;background-color: {{ site.data.colors[category_name] }}!important;">
+            <a style="color: white" href="/category/{{ category | downcase }}/">{{ category }}</a>
         </div>
     {% endfor %}
-    <h4>Адрес:
-        {{ event.address | default: site.organization.address | replace: '\n', ', ' | replace: '\,', ', ' }}</h4>
-    <h4>Ближайший тренинг: {{ event.date | date: "%A, %-d %b" }},
-        <a href="{{ event.url }}">
-            {{ event.time_start }} - {{ event.time_end }}
-        </a>
-    </h4>
-    <h4>Тренер: <a href="/about/">Владислав Волков</a></h4>
-    {% if day_number != "7" %}
-        <h4>Цена: {{ price }} &#8372;</h4>
-    {% endif %}
+    {% for tag_name in sorted_tags %}
+        {% capture tag %}{{ tag_name }}{% endcapture %}
+        <div class="badge badge-dark bg-dark" style="font-size: 14px;padding: 5px">
+            <a href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
+        </div>
+    {% endfor %}
+    <hr/>
     {{ content }}
-    {% if day_number != "7" %}
-        <div class="text-center">
+    <hr/>
+    <div class="container text-center">
+        <div class="font-accent" style="font-size: 1.3rem;margin-top: 20px">
+            {{ event.date | date: "%A, %-d %b" }},<a
+                href="{{ event.url }}"> {{ event.time_start | date: "%H<sup>%M</sup>" }} -
+            {{ event.time_end | date: "%H<sup>%M</sup>" }}</a>
+        </div>
+        {% if day_number != "7" %}
             <hr/>
-            <a rel="noopener" onclick='FB.AppEvents.logEvent("paymentLinkClicked")'
+            <a rel="noopener" data-anchor="paymentLinkClicked"
                href="https://secure.wayforpay.com/button/{{ ticket_id }}"
                target="_blank"
-               class="btn btn-default btn-xl">Купить билет</a>
-        </div>
-    {% endif %}
+               class="facebookEventLink font-accent font-weight-bold text-uppercase btn btn-warning btn-lg">Купить
+                билет</a>
+        {% endif %}
+    </div>
 </main>
