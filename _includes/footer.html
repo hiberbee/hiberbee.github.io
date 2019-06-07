@@ -6,27 +6,27 @@
                 <ul class="no-padding">
                     <li>
                         <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
-                           href="https://m.me/{{ site.author.facebook }}"
+                           href="https://m.me/{{ site.data.me.facebook }}"
                            target="_blank">
                             <img class="icon" style="margin-right: 5px" src="/assets/img/icons/messenger.svg"
                                  alt="Messenger"
                                  width="16" height="16"/>
                         </a>
-                        <a href="https://t.me/{{ site.author.telegram }}" class="facebookEventLink"
+                        <a href="https://t.me/{{ site.data.me.telegram }}" class="facebookEventLink"
                            data-anchor="footerContactsClicked" rel="noopener" target="_blank">
                             <img class="icon" style="margin-right: 5px" src="/assets/img/icons/telegram.svg"
                                  alt="Telegram"
                                  width="16" height="16"/>
                         </a>
                         <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
-                           href="https://instagram.com/{{ site.author.instagram }}"
+                           href="https://instagram.com/{{ site.data.me.instagram }}"
                            target="_blank">
                             <img class="icon" style="margin-right: 5px" src="/assets/img/icons/instagram.svg"
                                  alt="Instagram"
                                  width="16" height="16"/>
                         </a>
                         <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
-                           href="https://facebook.com/{{ site.author.facebook }}"
+                           href="https://facebook.com/{{ site.data.me.facebook }}"
                            target="_blank">
                             <img class="icon" style="margin-right: 5px" src="/assets/img/icons/facebook.svg"
                                  alt="Facebook"
@@ -63,6 +63,11 @@
                     </li>
                     <li>
                         <a href="/taxonomy/">Таксономия</a>
+                    </li>
+                    <li>
+                        <a data-anchor="rssSubscribed" class="facebookEventLink"
+                           rel="noopener"
+                           target="_blank" href="/feed.xml">RSS feed</a>
                     </li>
                 </ul>
             </div>

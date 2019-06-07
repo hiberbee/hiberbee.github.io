@@ -9,7 +9,7 @@
 ценности и инсайты.
 
 ## Аккаунты
-- [Linkedin](https://linkedin.com/in/{{ site.author.linkedin }})
+- [Linkedin](https://linkedin.com/in/{{ site.data.me.linkedin }})
 
 ### Профиль и квалификация
 - разработка

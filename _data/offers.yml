@@ -1,0 +1,25 @@
+- name: Dev/Ops
+  trainings:
+    - cloud-native
+    - kubernetes
+    - docker
+- name: System design
+  trainings:
+    - uml
+- name: Engineering practices
+  trainings:
+    - localhost
+- name: Software Engineering
+  trainings:
+    - java
+    - spring-boot
+    - nodejs
+- name: Quality Assurance
+  trainings:
+    - gatling
+    - cucumber
+    - bdd
+- name: Technology & Services
+  trainings:
+    - db
+    - graphql

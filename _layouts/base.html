@@ -1,19 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    {% assign title = site.data.trainings[page.slug] %}
+    <title>{{ title | default: page.title }}</title>
     <meta charset="utf-8">
-    <meta name="theme-color" content="#e6b12e">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.description }}">
-    <meta name="keywords"
-          content="DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services">
-    <title>{{ site.title }}</title>
+    <meta name="keywords" content="{{ page.tags | join: "," | default: site.keywords }}">
     {% include links.html %}
     {% include scripts.html %}
-    {% include calendar-scripts.html %}
 </head>
-<body id="page-top">
+<body>
 {% include header.html %}
 {{ content }}
 {% include footer.html %}

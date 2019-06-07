@@ -20,7 +20,7 @@ BEGIN:VEVENT
 TRANSP:OPAQUE
 DTEND;TZID=Europe/Kiev:{{ page.date | date: "%Y" }}{{ page.date | date: "%m" }}{{ page.date | date: "%d" }}T{{ page.time_end | strip_html }}00
 UID:D15F3E8A-9763-4490-BD2E-F845E1564ADB
-LOCATION:{{ page.address | default: site.organization.address }}
+LOCATION:{{ page.address | default: site.data.author.organization.address }}
 DESCRIPTION: https://facebook.com/events/{{ page.facebook_link }}/
 STATUS:CONFIRMED
 SEQUENCE:0

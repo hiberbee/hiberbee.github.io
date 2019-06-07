@@ -1,8 +1,133 @@
 ---
-layout: default
+layout: base
 ---
-{% include hero.html page=page %}
-{% include expertize.html page=page %}
-{% include trainings.html %}
-{% include services.html page=page %}
-{% include call-to-action.html %}
+{% assign posts_by_category = site.posts | group: "category" %}
+
+<div class="container-fluid no-padding">
+    <section class="hero text-center"
+             style="min-height: 100vh;position: relative;background-image: url('/assets/img/background/default.webp');">
+        <div class="header-content text-uppercase">
+            <div class="header-content-inner">
+                <h1 class="font-accent">{{ page.title }}</h1>
+                <hr/>
+                <h3 class="font-accent">{{ page.description }}</h3>
+                <hr/>
+                <a href="/#portfolio"
+                   class="btn btn-warning btn-lg font-weight-bold text-uppercase shadow-md font-accent">Расписание и
+                    программы</a>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="no-padding">
+        <div class="row no-gutters">
+            {% for category in site.data.offers %}
+                {% assign category_slug = category.name | slugify %}
+                <div class="col-sm-12 col-md-4 portfolio-box">
+                    <picture>
+                        <source srcset="/assets/img/portfolio/{{ category_slug }}.webp" class="img-fluid"
+                                type="image/webp">
+                        <img src="/assets/img/portfolio/{{ category_slug }}.png" class="img-fluid"
+                             alt="{{ category.name }}">
+                    </picture>
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category">
+                                <h3><a href="/category/{{ category_slug }}/">
+                                    {{ category.name }}</a>
+                                </h3>
+                            </div>
+                            <div class="project-name">
+                                {% for tag in category.trainings %}
+                                    <div class="tag">
+                                        <img alt="{{ tag }}" class="icon inverted" width="12"
+                                             height="12"
+                                             src="/assets/img/icons/tag.svg"><a
+                                            href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
+                                    </div>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    <section id="trainings" class="bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col col-md-6 col-sm-12">
+                    <h2>Тренинги</h2>
+                    <p>Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают
+                        несколько
+                        тем, для их группировки используются теги и <a href="/taxonomy/">таксономия</a>.
+                        Все тренинги и способы подписки на обновления доступны на <a
+                                href="https://github.com/{{ site.data.me.github }}/hiberbee.github.io/tree/development/">Github</a>
+                    </p>
+                    <p>Как правило, на странице тренинга есть ссылка на оплату. Если вы хотите приобрести
+                        несколько тренингов или
+                        использовать промо-код, воспользуйтесь <a data-anchor="genericPaymentLinkClicked"
+                                                                  class="facebookEventLink"
+                                                                  href="https://secure.wayforpay.com/button/b06d4b2643b9e"
+                                                                  rel="noopener"
+                                                                  target="_blank"
+                        >ссылкой</a>, указав в комментарии, какой тренинг и дата вас
+                        интересуют.</p>
+
+                    <h3><a href="/trainings/">Расписание тренингов на июнь</a></h3>
+
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="fb-page"
+                         data-href="https://www.facebook.com/{{ site.data.me.facebook }}/"
+                         data-tabs="events,messages"
+                         data-width="500"
+                         data-height="" data-small-header="false" data-adapt-container-width="true"
+                         data-hide-cover="false"
+                         data-show-facepile="true">
+                        <blockquote cite="https://www.facebook.com/{{ site.data.me.facebook }}/"
+                                    class="fb-xfbml-parse-ignore"><a
+                                href="https://www.facebook.com/{{ site.data.me.facebook }}/">Hiberbee</a></blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services" style="background-color: #ffce1c;color: black">
+        <div class="container text-center">
+            <h2>Сервисы</h2>
+            <div class="row">
+                <div class="col-4 text-center">
+                    <img width="75px" height="75px" src="/assets/img/icons/certificate.webp" alt="Cetification">
+                    <h4>Профессиональная переподготовка</h4>
+                </div>
+                <div class="col-4 text-center">
+                    <img width="75px" height="75px" src="/assets/img/icons/transformation-skill.webp"
+                         alt="T-Shaped skillset">
+                    <h4>T-shaped трансформация</h4>
+                </div>
+                <div class="col-4 text-center">
+                    <img width="75px" height="75px" src="/assets/img/icons/training.webp" alt="Trainings">
+                    <h4>Супервизия и менторинг</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h4>Для компаний</h4>
+                    <p>
+                        TBD
+                    </p>
+                </div>
+                <div class="col-6">
+                    <h4>Для компаний</h4>
+                    <p>
+                        TBD
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

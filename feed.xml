@@ -16,12 +16,12 @@
 {% endif %}
 {% if site.author %}
         <author>
-            <name>{{ site.author.name | default: site.author | xml_escape }}</name>
-            {% if site.author.email %}
-            <email>{{ site.author.email | xml_escape }}</email>
+            <name>{{ site.data.author.name | default: site.author | xml_escape }}</name>
+            {% if site.data.author.email %}
+            <email>{{ site.data.author.email | xml_escape }}</email>
             {% endif %}
-            {% if site.author.uri %}
-            <uri>{{ site.author.uri | xml_escape }}</uri>
+            {% if site.data.author.uri %}
+            <uri>{{ site.data.author.uri | xml_escape }}</uri>
             {% endif %}
         </author>
 {% endif %}

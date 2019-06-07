@@ -12,8 +12,8 @@ layout: default
     {% assign ticket_id = "b20078b595abc" %}
     {% assign price = '1200' %}
 {% endif %}
-<main style="padding-bottom: 10px" role="main" class="container">
-    <h1 style="margin: 5px 0">{{ site.data.trainings[event.slug] | split: ":" | first }}</h1>
+<div class="container">
+    <h1 style="margin: 15px 0">{{ site.data.trainings[event.slug] | split: ":" | first }}</h1>
     <h3 style="margin-top: 5px;">
         {{ site.data.trainings[event.slug] | split: ":" | last }}</h3>
     {% for category_name in sorted_categories %}
@@ -26,7 +26,7 @@ layout: default
     {% for tag_name in sorted_tags %}
         {% capture tag %}{{ tag_name }}{% endcapture %}
         <div class="badge badge-dark bg-dark" style="font-size: 14px;padding: 5px">
-            <a href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
+            <a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
         </div>
     {% endfor %}
 
@@ -44,8 +44,8 @@ layout: default
             <a rel="noopener" data-anchor="paymentLinkClicked"
                href="https://secure.wayforpay.com/button/{{ ticket_id }}"
                target="_blank"
-               class="facebookEventLink font-accent font-weight-bold text-uppercase btn btn-warning btn-lg">Купить
+               class="facebookEventLink font-accent font-weight-bold shadow-md text-uppercase btn btn-warning btn-lg">Купить
                 билет</a>
         {% endif %}
     </div>
-</main>
+</div>
