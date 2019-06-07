@@ -12,7 +12,7 @@ layout: default
     {% assign ticket_id = "b20078b595abc" %}
     {% assign price = '1200' %}
 {% endif %}
-<main style="margin-bottom: -150px;padding-bottom: 20px" role="main" class="container">
+<main style="padding-bottom: 10px" role="main" class="container">
     <h1 style="margin: 5px 0">{{ site.data.trainings[event.slug] | split: ":" | first }}</h1>
     <h3 style="margin-top: 5px;">
         {{ site.data.trainings[event.slug] | split: ":" | last }}</h3>
@@ -29,8 +29,9 @@ layout: default
             <a href="/tag/{{ tag | downcase }}/">{{ tag }}</a>
         </div>
     {% endfor %}
-    <hr/>
+
     {{ content }}
+
     <hr/>
     <div class="container text-center">
         <div class="font-accent" style="font-size: 1.3rem;margin-top: 20px">
