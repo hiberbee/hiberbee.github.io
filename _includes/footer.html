@@ -1,38 +1,9 @@
-<footer class="bg-dark">
+<footer class="bg-dark" {{ fixed_class }}>
     <div class="container no-padding">
         <div class="row">
-            <div class="col-lg-2 col-md-6">
+            <div class="col-lg-2 col-sm-6 col-md-6">
                 <p class="font-weight-normal">Контакты</p>
                 <ul class="no-padding">
-                    <li>
-                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
-                           href="https://m.me/{{ site.data.me.facebook }}"
-                           target="_blank">
-                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/messenger.svg"
-                                 alt="Messenger"
-                                 width="16" height="16"/>
-                        </a>
-                        <a href="https://t.me/{{ site.data.me.telegram }}" class="facebookEventLink"
-                           data-anchor="footerContactsClicked" rel="noopener" target="_blank">
-                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/telegram.svg"
-                                 alt="Telegram"
-                                 width="16" height="16"/>
-                        </a>
-                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
-                           href="https://instagram.com/{{ site.data.me.instagram }}"
-                           target="_blank">
-                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/instagram.svg"
-                                 alt="Instagram"
-                                 width="16" height="16"/>
-                        </a>
-                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
-                           href="https://facebook.com/{{ site.data.me.facebook }}"
-                           target="_blank">
-                            <img class="icon" style="margin-right: 5px" src="/assets/img/icons/facebook.svg"
-                                 alt="Facebook"
-                                 width="16" height="16"/>
-                        </a>
-                    </li>
                     <li>
                         <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
                            href="tel:+380671204517">
@@ -51,9 +22,39 @@
                         </a>
                     </li>
                 </ul>
+                <hr/>
+                <p>Социальные сети</p>
+                <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
+                   href="https://m.me/{{ site.data.me.facebook }}"
+                   target="_blank">
+                    <img class="icon" style="margin-right: 5px" src="/assets/img/icons/messenger.svg"
+                         alt="Messenger"
+                         width="16" height="16"/>
+                </a>
+                <a href="https://t.me/{{ site.data.me.telegram }}" class="facebookEventLink"
+                   data-anchor="footerContactsClicked" rel="noopener" target="_blank">
+                    <img class="icon" style="margin-right: 5px" src="/assets/img/icons/telegram.svg"
+                         alt="Telegram"
+                         width="16" height="16"/>
+                </a>
+                <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
+                   href="https://instagram.com/{{ site.data.me.instagram }}"
+                   target="_blank">
+                    <img class="icon" style="margin-right: 5px" src="/assets/img/icons/instagram.svg"
+                         alt="Instagram"
+                         width="16" height="16"/>
+                </a>
+                <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
+                   href="https://facebook.com/{{ site.data.me.facebook }}"
+                   target="_blank">
+                    <img class="icon" style="margin-right: 5px" src="/assets/img/icons/facebook.svg"
+                         alt="Facebook"
+                         width="16" height="16"/>
+                </a>
+                <hr/>
             </div>
-            <div class="col-lg-2 col-md-6">
-                <p class="font-weight-normal">О проекте</p>
+            <div class="col-lg-2 col-sm-6 col-md-6">
+                <p class="font-weight-normal">Меню</p>
                 <ul class="no-padding">
                     <li>
                         <a href="/about/">Тренер</a>
@@ -62,7 +63,7 @@
                         <a href="/faq/">FAQ</a>
                     </li>
                     <li>
-                        <a href="/taxonomy/">Таксономия</a>
+                        <a href="/taxonomy/">{{ site.data.i18n.global.taxonomy }}</a>
                     </li>
                     <li>
                         <a data-anchor="rssSubscribed" class="facebookEventLink"
@@ -71,7 +72,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-md-12">
+            <div class="col-lg-3 col-sm-6 col-md-12">
                 <p class="font-weight-normal">Юридические документы</p>
                 <ul class="no-padding">
                     <li>
@@ -85,8 +86,19 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-5 col-md-12">
+            <div class="col-lg-5 col-sm-6 col-md-12">
                 <p>2019 &copy; Hiberbee. Все права защищены.</p>
+                <span class="font-weight-normal">Язык: </span>
+                {% if site.active_lang == "en" %}
+                    <span style="color: rgba(127,127,127,0.99)!important;">English</span> |
+                {% else %}
+                    <a href=" {{ site.url }}/en{{ page.permalink }}">English</a>
+                {% endif %}
+                {% if site.active_lang == "ru" %}
+                    <span style="color: rgba(127,127,127,0.99)!important;">Русский</span>
+                {% else %}
+                    <a href=" {{ site.url }}{{ page.permalink }}">Русский</a>
+                {% endif %}
             </div>
         </div>
     </div>

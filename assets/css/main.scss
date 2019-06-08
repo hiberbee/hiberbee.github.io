@@ -44,6 +44,7 @@ body {
 
 main > .container {
   padding-top: 60px;
+  padding-bottom: 20px;
 }
 
 footer {
@@ -70,9 +71,13 @@ footer {
 }
 
 main {
-  min-height: 100vh;
-  position: relative;
-  width: 100%;
+  @media(min-width: 576px) {
+    min-height: calc(100vh - 330px);
+  }
+
+  @media(min-width: 768px) {
+    min-height: calc(100vh - 225px);
+  }
 
   p > img {
     display: block;
@@ -121,10 +126,6 @@ header {
       color: $lightColor !important;;
     }
   }
-}
-
-main {
-  padding: 60px 10px;
 }
 
 .tag {

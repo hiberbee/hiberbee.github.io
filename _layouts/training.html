@@ -12,40 +12,37 @@ layout: default
     {% assign ticket_id = "b20078b595abc" %}
     {% assign price = '1200' %}
 {% endif %}
-<div class="container">
-    <h1 style="margin: 15px 0">{{ site.data.trainings[event.slug] | split: ":" | first }}</h1>
-    <h3 style="margin-top: 5px;">
-        {{ site.data.trainings[event.slug] | split: ":" | last }}</h3>
-    {% for category_name in sorted_categories %}
-        {% capture category %}{{ category_name }}{% endcapture %}
-        <div class="badge"
-             style="font-size: 14px;padding: 5px;background-color: {{ site.data.colors[category_name] }}!important;">
-            <a style="color: white" href="/category/{{ category | downcase }}/">{{ category }}</a>
-        </div>
-    {% endfor %}
-    {% for tag_name in sorted_tags %}
-        {% capture tag %}{{ tag_name }}{% endcapture %}
-        <div class="badge badge-dark bg-dark" style="font-size: 14px;padding: 5px">
-            <a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
-        </div>
-    {% endfor %}
-
-    {{ content }}
-
-    <hr/>
-    <div class="container text-center">
-        <div class="font-accent" style="font-size: 1.3rem;margin-top: 20px">
-            {{ event.date | date: "%A, %-d %b" }},<a
-                href="{{ event.url }}"> {{ event.time_start | date: "%H<sup>%M</sup>" }} -
-            {{ event.time_end | date: "%H<sup>%M</sup>" }}</a>
-        </div>
-        {% if day_number != "7" %}
-            <hr/>
-            <a rel="noopener" data-anchor="paymentLinkClicked"
-               href="https://secure.wayforpay.com/button/{{ ticket_id }}"
-               target="_blank"
-               class="facebookEventLink font-accent font-weight-bold shadow-md text-uppercase btn btn-warning btn-lg">Купить
-                билет</a>
-        {% endif %}
+<h1 style="margin: 15px 0">{{ page.title }}</h1>
+<h3 style="margin-top: 5px;">{{ page.description }}</h3>
+{% for category_name in sorted_categories %}
+    {% capture category %}{{ category_name }}{% endcapture %}
+    <div class="badge"
+         style="font-size: 14px;padding: 5px;background-color: {{ site.data.colors[category_name] }}!important;">
+        <a style="color: white" href="/category/{{ category | downcase }}/">{{ category }}</a>
     </div>
+{% endfor %}
+{% for tag_name in sorted_tags %}
+    {% capture tag %}{{ tag_name }}{% endcapture %}
+    <div class="badge badge-dark bg-dark" style="font-size: 14px;padding: 5px">
+        <a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
+    </div>
+{% endfor %}
+
+{{ content }}
+
+<hr/>
+<div class="container text-center">
+    <div class="font-accent" style="font-size: 1.3rem;margin-top: 20px">
+        {{ event.date | date: "%A, %-d %b" }},<a
+            href="{{ event.url }}"> {{ event.time_start | date: "%H<sup>%M</sup>" }} -
+        {{ event.time_end | date: "%H<sup>%M</sup>" }}</a>
+    </div>
+    {% if day_number != "7" %}
+        <hr/>
+        <a rel="noopener" data-anchor="paymentLinkClicked"
+           href="https://secure.wayforpay.com/button/{{ ticket_id }}"
+           target="_blank"
+           class="facebookEventLink font-accent font-weight-bold shadow-md text-uppercase btn btn-warning btn-lg">Купить
+            билет</a>
+    {% endif %}
 </div>

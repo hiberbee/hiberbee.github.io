@@ -1,0 +1,13 @@
+global:
+  taxonomy: Taxonomy
+  categories: Categories
+  tags: Tags
+index:
+  title: Technology consulting and professional education services
+  tagline: Summer is great time to boost your skills!
+  description: "Технический консалтинг и супервайзинг для разработчиков, техлидов, проектных команд. Специализации: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services"
+  keywords: "DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services"
+taxonomy:
+  title: Taxonomy
+not_found:
+  title: Requested page not found

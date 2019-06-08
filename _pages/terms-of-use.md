@@ -1,4 +1,5 @@
 ---
+lang: en
 ---
 # Terms of Use
 
@@ -7,8 +8,7 @@ The Hiberbee website located at [{{ site.url }}]({{ site.url }}) is a copyrighte
 All such additional terms, guidelines, and rules are incorporated by reference into these Terms.
 These Terms of Use described the legally binding terms and conditions that oversee your use of the Site. BY LOGGING INTO THE SITE, YOU ARE BEING COMPLIANT THAT THESE TERMS and you represent that you have the authority and capacity to enter into these Terms. YOU SHOULD BE AT LEAST 18 YEARS OF AGE TO ACCESS THE SITE. IF YOU DISAGREE WITH ALL OF THE PROVISION OF THESE TERMS, DO NOT LOG INTO AND/OR USE THE SITE.
 These terms require the use of arbitration Section 10.2 on an individual basis to resolve disputes and also limit the remedies available 
-to you in the event of a dispute. These Terms of Use were created with the help of the [Terms Of Use Generator](https://www
-.termsofusegenerator.net) and the [Privacy Policy Template](https://www.privacy-policy-template.com){:target="_blank"}.
+to you in the event of a dispute. These Terms of Use were created with the help of the [Terms Of Use Generator](https://www.termsofusegenerator.net){:target="_blank"} and the [Privacy Policy Template](https://www.privacy-policy-template.com){:target="_blank"}.
 
 ## Access to the Site
 

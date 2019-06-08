@@ -1,23 +1,29 @@
-title: "Hiberbee | Tech Consulting for IT professionals"
-description: "Технический консалтинг и супервайзинг для разработчиков, техлидов, проектных команд. Специализации: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services"
-keywords: "DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services"
 url: "https://hiberbee.com"
 plugins:
-  - jekyll-mentions
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-pwa-plugin
+  - jekyll-commonmark
   - jekyll-include-cache
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-polyglot
+  - jekyll-pwa-plugin
+  - jekyll-sitemap
+  - jekyll-webp
 timezone: Europe/Kiev
 exclude:
   - .bundle/*
+  - .jekyll-metadata
+  - .travis.yml
+  - build.gradle
   - Gemfile
   - Gemfile.lock
-  - .jekyll-metadata
-  - vendor/*
   - LICENSE
-  - build.gradle
+  - README.md
+  - vendor/*
 markdown: CommonMark
+languages: ["ru", "en"]
+exclude_from_localization: ["assets"]
+default_lang: ru
+parallel_localization: true
 commonmark:
   options: ["SMART", "FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "table"]
@@ -64,31 +70,33 @@ autopages:
     enabled: true
     layouts:
       - "category.html"
-    title: "Все тренинги"
     permalink: "/:coll"
   categories:
     enabled: true
     layouts:
       - "category.html"
-    title: "Тренинги в категории &laquo;:cat&raquo;"
     permalink: "/category/:cat"
   tags:
     enabled: true
     layouts:
       - "category.html"
-    title: "Тренинги с тегом &laquo;:tag&raquo;"
     permalink: "/tag/:tag"
 future: true
-incremental: true
 permalink: /blog/:title/
 pwa:
   dest_js_directory: assets/js
+  precache_glob_ignores:
+    - sw-register.js
   precache_glob_patterns:
     - "/assets/{js,css,img,fonts}/**/*.{js,woff,webp,ttf,css,png,svg,jpg,jpeg}"
-    - "/**/*.*"
+    - "/manifest.json"
+    - "/*.png"
+    - "/*.js"
     - "/**/*.html"
-sass:
-  style: compressed
+jekyll-minifier:
+  exclude: 'feed.xml,manifest.json'
+  uglifier_args:
+    harmony: true
 webp:
   enabled: true
   quality: 75

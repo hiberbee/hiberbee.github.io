@@ -1,20 +1,15 @@
 ---
 layout: base
 ---
-{% assign posts_by_category = site.posts | group: "category" %}
-
 <div class="container-fluid no-padding">
     <section class="hero text-center"
              style="min-height: 100vh;position: relative;background-image: url('/assets/img/background/default.webp');">
         <div class="header-content text-uppercase">
             <div class="header-content-inner">
-                <h1 class="font-accent">{{ page.title }}</h1>
-                <hr/>
-                <h3 class="font-accent">{{ page.description }}</h3>
+                <h1 class="font-accent">{{ site.data.i18n.index.title }}</h1>
                 <hr/>
                 <a href="/#portfolio"
-                   class="btn btn-warning btn-lg font-weight-bold text-uppercase shadow-md font-accent">Расписание и
-                    программы</a>
+                   class="btn btn-warning btn-lg font-weight-bold text-uppercase shadow-md font-accent">{{ site.data.i18n.index.tagline }}</a>
             </div>
         </div>
     </section>
