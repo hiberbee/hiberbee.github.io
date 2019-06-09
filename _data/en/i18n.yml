@@ -6,12 +6,14 @@ global:
   tags: 'Hashtags'
   copyrights: 'Copyrights'
   rss: 'RSS feed'
+  source_code: 'Source code'
+  legal_documents: 'Legal documents'
 index:
-  title: Technology consulting and professional education services
-  tagline: Summer is great time to boost your skills!
-  description: "Технический консалтинг и супервайзинг для разработчиков, техлидов, проектных команд. Специализации: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services"
-  keywords: "DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services"
+  title: 'Technology consulting and professional education services'
+  tagline: 'Summer is great time to boost your skills!'
+  description: 'Technology consulting and supervisioning for software engineers and project teams. Key competences: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services'
+  keywords: 'DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services'
 taxonomy:
-  title: Taxonomy
+  title: 'Taxonomy'
 training:
-  buy_ticket: Checkout
+  checkout_button: 'Checkout'

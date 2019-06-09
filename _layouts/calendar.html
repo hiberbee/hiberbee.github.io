@@ -1,8 +1,6 @@
 ---
 layout: default
 ---
-{% assign posts = paginator.posts %}
-{% assign categories = site.data.offers | group_by: "name" %}
 <h1>{{ page.title }}</h1>
 <div id="calendar"></div>
 <script>
@@ -42,19 +40,7 @@ layout: default
             navLinks: false,
             timeZone: "local",
             events: [
-                {% for post in posts %}
-                    {% assign events = site.events | where_exp: "item", "item.slug == post.slug" | where_exp: "item", "item.date >= site.time" %}
-                    {% assign category = post.categories | first %}
-                    {% for event in events %}
-                        {
-                            title: '{{ category | capitalize | replace: "-", " " }}: {{ post.title }}',
-                            start: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_start }}',
-                            end: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_end }}',
-                            url: '/trainings/{{ post.slug }}/',
-                            color: '{{ site.data.colors[category] }}'
-                        },
-                    {% endfor %}
-                {% endfor %}
+                {% include events-loop.html trainings=paginator.posts %}
             ]
         });
         calendar.render();

@@ -18,6 +18,6 @@ taxonomy:
 not_found:
   title: 'Мы не нашли эту страницу'
 training:
-  buy_ticket: Оплатить
+  checkout_button: 'Оплатить'
 category:
-  title: Расписание занятий
+  title: 'Расписание занятий'

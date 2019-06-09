@@ -7,10 +7,10 @@ layout: base
     <section class="hero text-center">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 class="font-accent text-white text-uppercase">{{ site.data.i18n.index.title }}</h1>
+                <h1 class="font-accent text-white ">{{ site.data.i18n.index.title }}</h1>
                 <p class="lead">
                     <a href="/#portfolio"
-                       class="btn btn-primary btn-lg text-uppercase text-gray-dark shadow-md font-accent">{{ site.data.i18n.index.tagline }}</a>
+                       class="btn btn-primary btn-lg text-gray-dark shadow-md font-accent">{{ site.data.i18n.index.tagline }}</a>
                 </p>
             </div>
         </div>
@@ -48,7 +48,7 @@ layout: base
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <h2 style="margin-bottom: 1em;">Ближайшие тренинги</h2>
+                    <h3 class="font-accent" style="margin-bottom: 1em;">Ближайшие тренинги</h3>
                     <p>Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают
                         несколько
                         тем, для их группировки используются теги и <a href="/taxonomy/">таксономия</a>.
@@ -98,18 +98,9 @@ layout: base
                                     navLinks: false,
                                     timeZone: "local",
                                     events: [
-                                        {% for event in events %}
-                                            {
-                                                title: '{{ site.data.trainings[event.slug] }}',
-                                                start: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_start }}',
-                                                end: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_end }}',
-                                                url: '/trainings/{{ event.slug }}/',
-                                                backgroundColor: '{{ site.data.colors[event.event_category] }}'
-                                            },
-                                        {% endfor %}
+                                        {% include events-loop.html trainings=site.trainings %}
                                     ]
                                 });
-
                                 calendar.render();
                             });
                         </script>
@@ -120,24 +111,24 @@ layout: base
     </section>
     <section id="services">
         <div class="container text-center">
-            <h2>Сервисы</h2>
+            <h3 class="font-accent">Сервисы</h3>
             <div class="row">
                 <div class="col-lg-3 col-6 text-center">
                     <img width="100px" height="100px" src="/assets/img/icons/job.svg" alt="Trainings">
-                    <p>Менторинг</p>
+                    <h4>Менторинг</h4>
                 </div>
                 <div class="col-lg-3 col-6 text-center">
                     <img width="100px" height="100px" src="/assets/img/icons/supervision.svg" alt="Supervision">
-                    <p>Консалтинг</p>
+                    <h4>Консалтинг</h4>
                 </div>
                 <div class="col-lg-3 col-6 text-center">
                     <img width="100px" height="100px" src="/assets/img/icons/levelup.svg"
                          alt="T-Shaped skillset">
-                    <p>T-shaped трансформация</p>
+                    <h4>T-shaped трансформация</h4>
                 </div>
                 <div class="col-lg-3 col-6 text-center">
                     <img width="100px" height="100px" src="/assets/img/icons/transformation.svg" alt="Cetification">
-                    <p>Профессиональная переподготовка</p>
+                    <h4>Профессиональная переподготовка</h4>
                 </div>
             </div>
         </div>

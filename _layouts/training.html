@@ -18,16 +18,23 @@ layout: default
 
 <h1>{{ page.title }}</h1>
 <p class="lead font-weight-semibold">{{ page.description }}</p>
-<span class="font-weight-semibold mr-2">{{ event.date | date: "%A, %-d %b" }}, {{ event.time_start | date: "%H<sup>%M</sup>" }} -
-    {{ event.time_end | date: "%H<sup>%M</sup>" }}</span>
-<a class="font-weight-semibold mr-2" href="{{ event.url }}"><i class="fas fa-calendar-check"></i> Добавить в
-    календарь</a>
-{% if event.facebook_event_id %}
-    <a class="font-weight-semibold" rel="noopener"
-       href="https://facebook.com/events/{{ event.facebook_event_id }}"><i class="fab fa-facebook-square"></i>
-        Страница в facebook</a>
-{% endif %}
-<hr/>
+<div class="row">
+    <div class="col-lg-4 col-md-12 col-sm-12">
+        <span class="font-weight-semibold mr-2">{{ event.date | date: "%A, %-d %b" }}, {{ event.time_start | date: "%H<sup>%M</sup>" }} -
+            {{ event.time_end | date: "%H<sup>%M</sup>" }}</span>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12">
+        <a class="font-weight-semibold mr-2" href="{{ event.url }}"><i class="fas fa-calendar-check"></i> Добавить в
+            календарь</a>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12">
+        {% if event.facebook_event_id %}
+            <a class="font-weight-semibold" rel="noopener"
+               href="https://facebook.com/events/{{ event.facebook_event_id }}"><i class="fab fa-facebook-square"></i>
+                Страница в facebook</a>
+        {% endif %}
+    </div>
+</div>
 {% for category_name in sorted_categories %}
     {% capture category %}{{ category_name }}{% endcapture %}
     <div class="badge" style="background-color: {{ site.data.colors[category_name] }}!important;">
@@ -52,7 +59,7 @@ layout: default
            href="https://secure.wayforpay.com/button/{{ button_id }}" rel="nofollow"
            style="padding: 15px;
   height: 55px;background:#2B3160 url('https://s3.eu-central-1.amazonaws.com/w4p-merch/button/bg5x2.png') no-repeat center right;background-size:cover;width: 270px!important;box-sizing:border-box!important;"
-        >Оплатить</a>
+        >{{ site.data.i18n.training.checkout_button }}</a>
     {% endif %}
 </div>
 
