@@ -12,5 +12,12 @@ api:
   google_analytics: UA-111095351-4
   facebook_pixel: 402031503981717
   facebook_app_id: 145510372820525
-  google_tag: GTM-P5LNHBZ
-  push_app_id: d3180b47-35fb-477f-98a4-49105f4c3bb3
+  payment:
+    express:
+      price: 600
+      url: b7f66d7f9a418
+    long:
+      price: 1200
+      url: b20078b595abc
+    any:
+      url: b0732d2530b93

@@ -1,44 +1,41 @@
 ---
 layout: base
 ---
+{% assign events = site.events | where_exp: "item", "item.date >= site.time" %}
+
 <div class="container-fluid no-padding">
-    <section class="hero text-center"
-             style="min-height: 100vh;position: relative;background-image: url('/assets/img/background/default.webp');">
-        <div class="header-content text-uppercase">
+    <section class="hero text-center">
+        <div class="header-content">
             <div class="header-content-inner">
-                <h1 class="font-accent">{{ site.data.i18n.index.title }}</h1>
-                <hr/>
-                <a href="/#portfolio"
-                   class="btn btn-warning btn-lg font-weight-bold text-uppercase shadow-md font-accent">{{ site.data.i18n.index.tagline }}</a>
+                <h1 class="font-accent text-white text-uppercase">{{ site.data.i18n.index.title }}</h1>
+                <p class="lead">
+                    <a href="/#portfolio"
+                       class="btn btn-primary btn-lg text-uppercase text-gray-dark shadow-md font-accent">{{ site.data.i18n.index.tagline }}</a>
+                </p>
             </div>
         </div>
     </section>
-    <section id="portfolio" class="no-padding">
+    <section id="portfolio" class="no-padding primary-links">
         <div class="row no-gutters">
             {% for category in site.data.offers %}
                 {% assign category_slug = category.name | slugify %}
-                <div class="col-sm-12 col-md-4 portfolio-box">
-                    <picture>
-                        <source srcset="/assets/img/portfolio/{{ category_slug }}.webp" class="img-fluid"
-                                type="image/webp">
-                        <img src="/assets/img/portfolio/{{ category_slug }}.png" class="img-fluid"
-                             alt="{{ category.name }}">
-                    </picture>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 portfolio-box">
+                    <img src="/assets/img/portfolio/{{ category_slug }}.webp" class="img-fluid"
+                         alt="{{ category.name }}">
                     <div class="portfolio-box-caption">
                         <div class="portfolio-box-caption-content">
                             <div class="project-category">
-                                <h3><a href="/category/{{ category_slug }}/">
+                                <a class="font-weight-bold " style="font-size: 20px"
+                                   href="/category/{{ category_slug }}/">
                                     {{ category.name }}</a>
-                                </h3>
                             </div>
-                            <div class="project-name">
-                                {% for tag in category.trainings %}
-                                    <div class="tag">
-                                        <img alt="{{ tag }}" class="icon inverted" width="12"
-                                             height="12"
-                                             src="/assets/img/icons/tag.svg"><a
-                                            href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
-                                    </div>
+                            <div style="margin-top: 5px">
+                                {% for training in category.trainings %}
+                                    <img src="/assets/img/icons/{{ training.id }}.svg"
+                                         height="20" style="vertical-align: text-bottom;line-height: 1.5rem"
+                                         alt="{{ training.name }}"/>
+                                    <a href="/tag/{{ training.id }}/">{{ training.name }}
+                                    </a>
                                 {% endfor %}
                             </div>
                         </div>
@@ -47,11 +44,11 @@ layout: base
             {% endfor %}
         </div>
     </section>
-    <section id="trainings" class="bg-dark">
+    <section id="trainings" class="bg-dark primary-links">
         <div class="container">
             <div class="row">
-                <div class="col col-md-6 col-sm-12">
-                    <h2>Тренинги</h2>
+                <div class="col-lg-4">
+                    <h2 style="margin-bottom: 1em;">Ближайшие тренинги</h2>
                     <p>Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают
                         несколько
                         тем, для их группировки используются теги и <a href="/taxonomy/">таксономия</a>.
@@ -67,56 +64,104 @@ layout: base
                                                                   target="_blank"
                         >ссылкой</a>, указав в комментарии, какой тренинг и дата вас
                         интересуют.</p>
-
-                    <h3><a href="/trainings/">Расписание тренингов на июнь</a></h3>
-
                 </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="fb-page"
-                         data-href="https://www.facebook.com/{{ site.data.me.facebook }}/"
-                         data-tabs="events,messages"
-                         data-width="500"
-                         data-height="" data-small-header="false" data-adapt-container-width="true"
-                         data-hide-cover="false"
-                         data-show-facepile="true">
-                        <blockquote cite="https://www.facebook.com/{{ site.data.me.facebook }}/"
-                                    class="fb-xfbml-parse-ignore"><a
-                                href="https://www.facebook.com/{{ site.data.me.facebook }}/">Hiberbee</a></blockquote>
-                    </div>
+                <div class="col-lg-8">
+                    <section class="container no-padding">
+                        <div id="calendar" class="calendar-sm"></div>
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                const calendarEl = document.getElementById('calendar');
+                                const calendar = new FullCalendar.Calendar(calendarEl, {
+                                    firstDay: 1,
+                                    locale: '{{ site.active_lang }}',
+                                    plugins: ['list'],
+                                    header: {
+                                        left: false,
+                                        center: false,
+                                        right: 'prev,next'
+                                    },
+                                    titleFormat: {
+                                        month: "long", day: "numeric"
+                                    },
+                                    themeSystem: "bootstrap4",
+                                    defaultView: "listWeek",
+                                    displayEventTime: true,
+                                    views: {
+                                        listWeek: {
+                                            type: 'list',
+                                            duration: {days: 7},
+                                        }
+                                    },
+                                    height: 'auto',
+                                    editable: false,
+                                    selectable: false,
+                                    navLinks: false,
+                                    timeZone: "local",
+                                    events: [
+                                        {% for event in events %}
+                                            {
+                                                title: '{{ site.data.trainings[event.slug] }}',
+                                                start: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_start }}',
+                                                end: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_end }}',
+                                                url: '/trainings/{{ event.slug }}/',
+                                                backgroundColor: '{{ site.data.colors[event.event_category] }}'
+                                            },
+                                        {% endfor %}
+                                    ]
+                                });
+
+                                calendar.render();
+                            });
+                        </script>
+                    </section>
                 </div>
             </div>
         </div>
     </section>
-    <section id="services" style="background-color: #ffce1c;color: black">
+    <section id="services">
         <div class="container text-center">
             <h2>Сервисы</h2>
             <div class="row">
-                <div class="col-4 text-center">
-                    <img width="75px" height="75px" src="/assets/img/icons/certificate.webp" alt="Cetification">
-                    <h4>Профессиональная переподготовка</h4>
+                <div class="col-lg-3 col-6 text-center">
+                    <img width="100px" height="100px" src="/assets/img/icons/job.svg" alt="Trainings">
+                    <p>Менторинг</p>
                 </div>
-                <div class="col-4 text-center">
-                    <img width="75px" height="75px" src="/assets/img/icons/transformation-skill.webp"
+                <div class="col-lg-3 col-6 text-center">
+                    <img width="100px" height="100px" src="/assets/img/icons/supervision.svg" alt="Supervision">
+                    <p>Консалтинг</p>
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <img width="100px" height="100px" src="/assets/img/icons/levelup.svg"
                          alt="T-Shaped skillset">
-                    <h4>T-shaped трансформация</h4>
+                    <p>T-shaped трансформация</p>
                 </div>
-                <div class="col-4 text-center">
-                    <img width="75px" height="75px" src="/assets/img/icons/training.webp" alt="Trainings">
-                    <h4>Супервизия и менторинг</h4>
+                <div class="col-lg-3 col-6 text-center">
+                    <img width="100px" height="100px" src="/assets/img/icons/transformation.svg" alt="Cetification">
+                    <p>Профессиональная переподготовка</p>
                 </div>
             </div>
         </div>
     </section>
-    <section id="contact">
-        <div class="container">
+    <section id="enterprise" style="background-color: #ffce1c;color: #222222">
+        <div class="container text-center">
             <div class="row">
-                <div class="col-6">
+                <div class="col-lg-4">
+                    <img width="100px" height="100px" src="/assets/img/icons/trainings.svg" alt="Trainings">
                     <h4>Для компаний</h4>
                     <p>
                         TBD
                     </p>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-4">
+                    <img width="100px" height="100px" src="/assets/img/icons/qna.svg" alt="Examine">
+                    <h4>Для компаний</h4>
+                    <p>
+                        TBD
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <img width="100px" height="100px" src="/assets/img/icons/metrics.svg" alt="Progress">
+
                     <h4>Для компаний</h4>
                     <p>
                         TBD

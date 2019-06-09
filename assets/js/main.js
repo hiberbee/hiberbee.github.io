@@ -1,3 +1,9 @@
+function wayForPay(element) {
+    const wayforpay = new Wayforpay();
+    wayforpay.invoice(element.getAttribute("href"));
+    return false;
+}
+
 document.addEventListener("DOMContentLoaded", function () {
     function toggleContent(e) {
         e.stopPropagation();
@@ -26,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("burger").addEventListener("click", toggleContent);
 
+
     document.querySelector(".facebookEventLink").addEventListener("click", function () {
         FB.AppEvents.logEvent(
             this.getAttribute("data-anchor"),
@@ -33,6 +40,4 @@ document.addEventListener("DOMContentLoaded", function () {
             {}
         );
     });
-
-
 });

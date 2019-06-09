@@ -6,43 +6,54 @@ layout: default
 {% assign events = site.events | where_exp: "item", "item.slug == page.slug" | where_exp: "item", "item.date >= site.time" %}
 {% assign event = events | first %}
 {% assign day_number = event.date | date: '%u' %}
-{% assign ticket_id = "b7f66d7f9a418" %}
-{% assign price = '600' %}
-{% if day_number == "6" %}
-    {% assign ticket_id = "b20078b595abc" %}
-    {% assign price = '1200' %}
+{% if day_number != "7" %}
+    {% if day_number == "6" %}
+        {% assign button_id = site.data.me.api.payment.long.url %}
+        {% assign price = site.data.me.api.payment.long.price %}
+    {% else %}
+        {% assign button_id = site.data.me.api.payment.express.url %}
+        {% assign price = site.data.me.api.payment.express.price %}
+    {% endif %}
 {% endif %}
-<h1 style="margin: 15px 0">{{ page.title }}</h1>
-<h3 style="margin-top: 5px;">{{ page.description }}</h3>
+
+<h1>{{ page.title }}</h1>
+<p class="lead font-weight-semibold">{{ page.description }}</p>
+<span class="font-weight-semibold mr-2">{{ event.date | date: "%A, %-d %b" }}, {{ event.time_start | date: "%H<sup>%M</sup>" }} -
+    {{ event.time_end | date: "%H<sup>%M</sup>" }}</span>
+<a class="font-weight-semibold mr-2" href="{{ event.url }}"><i class="fas fa-calendar-check"></i> Добавить в
+    календарь</a>
+{% if event.facebook_event_id %}
+    <a class="font-weight-semibold" rel="noopener"
+       href="https://facebook.com/events/{{ event.facebook_event_id }}"><i class="fab fa-facebook-square"></i>
+        Страница в facebook</a>
+{% endif %}
+<hr/>
 {% for category_name in sorted_categories %}
     {% capture category %}{{ category_name }}{% endcapture %}
-    <div class="badge"
-         style="font-size: 14px;padding: 5px;background-color: {{ site.data.colors[category_name] }}!important;">
-        <a style="color: white" href="/category/{{ category | downcase }}/">{{ category }}</a>
+    <div class="badge" style="background-color: {{ site.data.colors[category_name] }}!important;">
+        <a href="/category/{{ category | slugify }}/">{{ category }}</a>
     </div>
 {% endfor %}
 {% for tag_name in sorted_tags %}
     {% capture tag %}{{ tag_name }}{% endcapture %}
-    <div class="badge badge-dark bg-dark" style="font-size: 14px;padding: 5px">
+    <div class="badge badge-dark bg-dark">
         <a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
     </div>
 {% endfor %}
 
 {{ content }}
 
-<hr/>
-<div class="container text-center">
-    <div class="font-accent" style="font-size: 1.3rem;margin-top: 20px">
-        {{ event.date | date: "%A, %-d %b" }},<a
-            href="{{ event.url }}"> {{ event.time_start | date: "%H<sup>%M</sup>" }} -
-        {{ event.time_end | date: "%H<sup>%M</sup>" }}</a>
-    </div>
-    {% if day_number != "7" %}
-        <hr/>
-        <a rel="noopener" data-anchor="paymentLinkClicked"
-           href="https://secure.wayforpay.com/button/{{ ticket_id }}"
-           target="_blank"
-           class="facebookEventLink font-accent font-weight-bold shadow-md text-uppercase btn btn-warning btn-lg">Купить
-            билет</a>
+<div class="text-center">
+    {% if button_id %}
+        <script type="text/javascript" id="widget-wfp-script"
+                src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script>
+        <a id="payment-button" onclick="return wayForPay(this)"
+           class="facebookEventLink btn-default text-white text-left btn btn-lg shadow-md font-accent font-weight-bold text-uppercase"
+           href="https://secure.wayforpay.com/button/{{ button_id }}" rel="nofollow"
+           style="padding: 15px;
+  height: 55px;background:#2B3160 url('https://s3.eu-central-1.amazonaws.com/w4p-merch/button/bg5x2.png') no-repeat center right;background-size:cover;width: 270px!important;box-sizing:border-box!important;"
+        >Оплатить</a>
     {% endif %}
 </div>
+
+

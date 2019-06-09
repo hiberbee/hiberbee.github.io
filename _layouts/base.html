@@ -9,11 +9,12 @@
     <meta name="keywords" content="{{ page.tags | join: "," | default: site.data.i18n.index.keywords }}">
     {% include links.html %}
     {% include scripts.html %}
+    {% seo %}
 </head>
 <body>
 {% include header.html %}
-    {{ content }}
-    {% include footer.html %}
+{{ content }}
+{% include footer.html %}
 <script src="/assets/js/main.js"></script>
 </body>
 </html>

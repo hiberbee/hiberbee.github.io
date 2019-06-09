@@ -1,63 +1,15 @@
-<footer class="bg-dark" {{ fixed_class }}>
-    <div class="container no-padding">
+<footer class="bg-dark small" id="contacts">
+    <div class="container">
         <div class="row">
-            <div class="col-lg-2 col-sm-6 col-md-6">
-                <p class="font-weight-normal">Контакты</p>
-                <ul class="no-padding">
+            <div class="col-lg-2 col-sm-6 col-6 col-md-4">
+                <p class="text-white font-weight-normal">{{ site.data.i18n.global.menu }}</p>
+                <ul>
                     <li>
-                        <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
-                           href="tel:+380671204517">
-                            +380671204517
-                        </a>
-                    </li>
-                    <li>
-                        <a rel="noopener" href="mailto:contact@hiberbee.com">
-                            contact@hiberbee.com
-                        </a>
-                    </li>
-                    <li>
-                        <a rel="noopener" data-anchor="vCardLinkClicked" class="facebookEventLink" href="/vcard.vcf"
-                           target="_blank">
-                            Электронная визитка
-                        </a>
-                    </li>
-                </ul>
-                <hr/>
-                <p>Социальные сети</p>
-                <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
-                   href="https://m.me/{{ site.data.me.facebook }}"
-                   target="_blank">
-                    <img class="icon" style="margin-right: 5px" src="/assets/img/icons/messenger.svg"
-                         alt="Messenger"
-                         width="16" height="16"/>
-                </a>
-                <a href="https://t.me/{{ site.data.me.telegram }}" class="facebookEventLink"
-                   data-anchor="footerContactsClicked" rel="noopener" target="_blank">
-                    <img class="icon" style="margin-right: 5px" src="/assets/img/icons/telegram.svg"
-                         alt="Telegram"
-                         width="16" height="16"/>
-                </a>
-                <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
-                   href="https://instagram.com/{{ site.data.me.instagram }}"
-                   target="_blank">
-                    <img class="icon" style="margin-right: 5px" src="/assets/img/icons/instagram.svg"
-                         alt="Instagram"
-                         width="16" height="16"/>
-                </a>
-                <a rel="noopener" class="facebookEventLink" data-anchor="footerContactsClicked"
-                   href="https://facebook.com/{{ site.data.me.facebook }}"
-                   target="_blank">
-                    <img class="icon" style="margin-right: 5px" src="/assets/img/icons/facebook.svg"
-                         alt="Facebook"
-                         width="16" height="16"/>
-                </a>
-                <hr/>
-            </div>
-            <div class="col-lg-2 col-sm-6 col-md-6">
-                <p class="font-weight-normal">Меню</p>
-                <ul class="no-padding">
-                    <li>
-                        <a href="/about/">Тренер</a>
+                        {% if site.active_lang == "en" %}
+                            <a href=" {{ page.permalink }}">Русская версия</a>
+                        {% else %}
+                            <a href=" /en{{ page.permalink }}">English version</a>
+                        {% endif %}
                     </li>
                     <li>
                         <a href="/faq/">FAQ</a>
@@ -68,15 +20,59 @@
                     <li>
                         <a data-anchor="rssSubscribed" class="facebookEventLink"
                            rel="noopener"
-                           target="_blank" href="/feed.xml">RSS feed</a>
+                           target="_blank" href="/atom.xml">{{ site.data.i18n.global.rss }}</a>
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-3 col-sm-6 col-md-12">
-                <p class="font-weight-normal">Юридические документы</p>
-                <ul class="no-padding">
+            <div class="col-lg-3  col-sm-6 col-6 col-md-4">
+                <p class="text-white font-weight-normal">Прием платежей</p>
+                <ul>
                     <li>
-                        <a href="/offer/">Договор публичной оферты</a>
+                        <a href="/">Страница оплаты</a>
+                    </li>
+                    <li>
+                        <a href="/">Скидки и возмещение</a>
+                    </li>
+                    <li>
+                        <a href="/">Безналичный расчет</a>
+                    </li>
+                    <li>
+                        <img src="/assets/img/icons/visa.svg" height="18" style="padding: 4px 0;" alt="Visa"
+                             class="mr-1 md-1"/>
+                        <img src="/assets/img/icons/mastercard.svg" height="18" alt="Mastercard"
+                             class="mr-1 md-1" style="padding: 1px 0;">
+                        <img src="/assets/img/icons/apple-pay.svg" height="20" alt="Apple Pay"
+                             class="mr-1 md-1"/>
+                        <img src="/assets/img/icons/google-pay.svg" height="24" alt="Google Pay"
+                             class="mr-1 md-1"/>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-sm-6 col-6 col-md-4">
+                <p class="text-white font-weight-normal">{{ site.data.i18n.global.copyrights }}</p>
+                <ul>
+                    <li>
+                        <a rel="noopener" href="https://github.com/Hiberbee/hiberbee.github.io/blob/development/LICENSE"
+                           target="_blank">MIT лицензия</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/hiberbee/hiberbee.github.io"
+                           target="_blank">{{ site.data.i18n.global.source_code }}</a>
+                    </li>
+                    <li>
+                        <a rel="noopener" class="facebookEventLink" target="_blank"
+                           href="https://gitter.im/hiberbee/community"
+                           data-anchor="footerContactsClicked">
+                            Сообщить об ошибке
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 col-6 col-md-6">
+                <p class="text-white font-weight-normal">{{ site.data.i18n.global.legal_documents }}</p>
+                <ul>
+                    <li>
+                        <a href="/offer/">Публичная оферта</a>
                     </li>
                     <li>
                         <a href="/privacy-policy/">Политика конфиденциальности</a>
@@ -86,19 +82,59 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-lg-5 col-sm-6 col-md-12">
-                <p>2019 &copy; Hiberbee. Все права защищены.</p>
-                <span class="font-weight-normal">Язык: </span>
-                {% if site.active_lang == "en" %}
-                    <span style="color: rgba(127,127,127,0.99)!important;">English</span> |
-                {% else %}
-                    <a href=" {{ site.url }}/en{{ page.permalink }}">English</a>
-                {% endif %}
-                {% if site.active_lang == "ru" %}
-                    <span style="color: rgba(127,127,127,0.99)!important;">Русский</span>
-                {% else %}
-                    <a href=" {{ site.url }}{{ page.permalink }}">Русский</a>
-                {% endif %}
+            <div class="col-lg-2 col-sm-6 col-12 col-md-6">
+                <p class="text-white font-weight-normal">Благодарности</p>
+                <ul>
+                    <li class="text-light">
+                        <a href="/gratitude/projects/">Проектам</a>
+                    </li>
+                    <li class="text-light">
+                        <a href="/gratitude/people/">Людям</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row no-padding">
+            <div class="col-lg-9 col-md-8 col-sm-12" style="padding: 15px 15px 0">
+                <a rel="noopener" class="text-white mr-3 facebookEventLink"
+                   data-anchor="footerContactsClicked"
+                   href="tel:+380671204517">
+                    +380671204517
+                </a>
+                <a class="text-white mr-3 facebookEventLink" data-anchor="emailLinkClicked" rel="noopener"
+                   href="mailto:contact@hiberbee.com">
+                    contact@hiberbee.com
+                </a>
+                <a rel="noopener" data-anchor="vCardLinkClicked"
+                   class="text-white facebookEventLink"
+                   href="/vcard.vcf"
+                   target="_blank">
+                    vCard
+                </a>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-12" style="padding: 15px 15px 0">
+                <a rel="noopener" class="facebookEventLink"
+                   data-anchor="footerContactsClicked"
+                   href="https://m.me/{{ site.data.me.facebook }}"
+                   target="_blank">
+                    <i class="fab fa-facebook-messenger" style="color: #327DFF"></i>
+                </a>
+                <a href="https://t.me/{{ site.data.me.telegram }}" class="facebookEventLink ml-3"
+                   data-anchor="footerContactsClicked" rel="noopener" target="_blank">
+                    <i class="fab fa-telegram-plane" style="color: #4DDFEA"></i>
+                </a>
+                <a rel="noopener" class="facebookEventLink ml-3"
+                   data-anchor="footerContactsClicked"
+                   href="https://instagram.com/{{ site.data.me.instagram }}"
+                   target="_blank">
+                    <i class="fab fa-instagram" style="color: #FF0072"></i>
+                </a>
+                <a rel="noopener" class="facebookEventLink ml-3"
+                   data-anchor="footerContactsClicked"
+                   href="https://facebook.com/{{ site.data.me.facebook }}"
+                   target="_blank">
+                    <i class="fab fa-facebook-square" style="color: #A89FEC"></i>
+                </a>
             </div>
         </div>
     </div>

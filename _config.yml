@@ -1,24 +1,36 @@
 url: "https://hiberbee.com"
 plugins:
   - jekyll-commonmark
+  - jekyll-feed
   - jekyll-include-cache
   - jekyll-minifier
   - jekyll-paginate-v2
   - jekyll-polyglot
   - jekyll-pwa-plugin
+  - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-webp
 timezone: Europe/Kiev
+facebook:
+  app_id: 145510372820525
+  publisher: hiberbee
+  admins: nezquiraj
+logo: /assets/img/logo-icon.png
 exclude:
   - .bundle/*
   - .jekyll-metadata
   - .travis.yml
   - build.gradle
   - Gemfile
+  - .Ulysses*
   - Gemfile.lock
-  - LICENSE
   - README.md
   - vendor/*
+feed:
+  path: atom.xml
+  collections:
+    - trainings
+    - pages
 markdown: CommonMark
 languages: ["ru", "en"]
 exclude_from_localization: ["assets"]
@@ -69,18 +81,21 @@ autopages:
   collections:
     enabled: true
     layouts:
-      - "category.html"
-    permalink: "/:coll"
+      - "calendar.html"
+    title: "Тренинги #:coll"
+    permalink: "/:coll/"
   categories:
     enabled: true
     layouts:
-      - "category.html"
-    permalink: "/category/:cat"
+      - "calendar.html"
+    title: "Тренинги #:cat"
+    permalink: "/category/:cat/"
   tags:
     enabled: true
     layouts:
-      - "category.html"
-    permalink: "/tag/:tag"
+      - "calendar.html"
+    permalink: "/tag/:tag/"
+    title: "Тренинги #:tag"
 future: true
 permalink: /blog/:title/
 pwa:
@@ -94,13 +109,17 @@ pwa:
     - "/*.js"
     - "/**/*.html"
 jekyll-minifier:
-  exclude: 'feed.xml,manifest.json'
+  exclude: 'atom.xml,sitemap.xml,manifest.json'
   uglifier_args:
     harmony: true
+sass:
+  load_paths:
+    - _sass
+    - vendor/bundle/ruby/2.6.0/gems/bootstrap-4.3.1/assets/stylesheets
 webp:
   enabled: true
   quality: 75
   img_dir: ["/assets/img/"]
   regenerate: false
   webp_path: nil
-  exclude: []
+  exclude: ["/assets/img/**/*.svg"]

@@ -18,14 +18,14 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 TRANSP:OPAQUE
-DTEND;TZID=Europe/Kiev:{{ page.date | date: "%Y" }}{{ page.date | date: "%m" }}{{ page.date | date: "%d" }}T{{ page.time_end | strip_html }}00
+DTEND;TZID=Europe/Kiev:{{ page.date | date: "%Y" }}{{ page.date | date: "%m" }}{{ page.date | date: "%d" }}T{{ page.time_end | replace: ":", "" | strip_html }}00
 UID:D15F3E8A-9763-4490-BD2E-F845E1564ADB
-LOCATION:{{ page.address | default: site.data.author.organization.address }}
-DESCRIPTION: https://facebook.com/events/{{ page.facebook_link }}/
+LOCATION:{{ site.data.me.organization.address }}
+DESCRIPTION: https://facebook.com/events/{{ page.facebook_event_id }}/
 STATUS:CONFIRMED
 SEQUENCE:0
 SUMMARY:{{ site.data.trainings[page.slug] }}
-DTSTART;TZID=Europe/Kiev:{{ page.date | date: "%Y" }}{{ page.date | date: "%m" }}{{ page.date | date: "%d" }}T{{ page.time_start | strip_html }}00
+DTSTART;TZID=Europe/Kiev:{{ page.date | date: "%Y" }}{{ page.date | date: "%m" }}{{ page.date | date: "%d" }}T{{ page.time_start | replace: ":", ""| strip_html }}00
 X-APPLE-TRAVEL-ADVISORY-BEHAVIOR:AUTOMATIC
 BEGIN:VALARM
 X-WR-ALARMUID:ADC5B744-64AE-45D2-98BE-E07FFD2449A0

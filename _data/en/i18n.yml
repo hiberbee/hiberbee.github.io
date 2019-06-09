@@ -1,7 +1,11 @@
 global:
-  taxonomy: Taxonomy
-  categories: Categories
-  tags: Tags
+  menu: 'Navigation'
+  about: 'Project and coach'
+  taxonomy: 'Taxonomy'
+  categories: 'Categories'
+  tags: 'Hashtags'
+  copyrights: 'Copyrights'
+  rss: 'RSS feed'
 index:
   title: Technology consulting and professional education services
   tagline: Summer is great time to boost your skills!
@@ -9,5 +13,5 @@ index:
   keywords: "DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services"
 taxonomy:
   title: Taxonomy
-not_found:
-  title: Requested page not found
+training:
+  buy_ticket: Checkout

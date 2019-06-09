@@ -1,25 +1,24 @@
 - name: Dev/Ops
   trainings:
-    - cloud-native
-    - kubernetes
-    - docker
+    - id: kubernetes
+      name: Полный курс по Kubernetes
 - name: System design
   trainings:
-    - uml
+    - id: microservices
+      name: Микросервисная архитектура
 - name: Engineering practices
   trainings:
-    - localhost
+    - id: dev-environment
+      name: Development environment
 - name: Software Engineering
   trainings:
-    - java
-    - spring-boot
-    - nodejs
+    - id: java
+      name: Java
 - name: Quality Assurance
   trainings:
-    - gatling
-    - cucumber
-    - bdd
+    - id: bdd
+      name: BDD и Cucumber
 - name: Technology & Services
   trainings:
-    - db
-    - graphql
+    - id: graphql
+      name: GraphQL API

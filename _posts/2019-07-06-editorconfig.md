@@ -1,4 +1,4 @@
 ---
 ---
 
-# Editorconfig
+# Editor Config

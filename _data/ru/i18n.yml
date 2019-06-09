@@ -1,7 +1,13 @@
 global:
+  menu: 'Навигация'
+  about: 'Проект и преподаватель'
   taxonomy: 'Таксономия'
   categories: 'Категории'
   tags: 'Теги'
+  copyrights: 'Копирайты'
+  rss: 'RSS лента'
+  source_code: 'Исходный код'
+  legal_documents: 'Юридические документы'
 index:
   title: 'Технический консалтинг и повышение квалификации'
   tagline: 'Проведи летние каникулы с пользой!'
@@ -11,3 +17,7 @@ taxonomy:
   title: 'Таксономия'
 not_found:
   title: 'Мы не нашли эту страницу'
+training:
+  buy_ticket: Оплатить
+category:
+  title: Расписание занятий

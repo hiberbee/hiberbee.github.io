@@ -1,22 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="theme-color" content="#e6b12e">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.description }}">
-    <meta name="keywords"
-          content="DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services">
-    <title>{{ site.title }}</title>
-    {% include links.html %}
-    {% include scripts.html %}
-    {% include calendar-scripts.html %}
-</head>
-<body id="page-top">
-{% include header.html %}
-{{ content }}
-{% include footer.html %}
-<script src="/assets/js/main.js"></script>
-</body>
-</html>
+---
+layout: default
+---
+{% assign posts = paginator.posts %}
+{% assign categories = site.data.offers | group_by: "name" %}
+<h1>{{ page.title }}</h1>
+<div id="calendar"></div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+
+        const calendarEl = document.getElementById('calendar');
+
+        const calendar = new FullCalendar.Calendar(calendarEl, {
+            firstDay: 1,
+            locale: '{{ site.active_lang }}',
+            plugins: ['bootstrap', 'dayGrid', 'timeGrid', 'list'],
+            themeSystem: "bootstrap",
+            height: 'auto',
+            header: {
+                left: 'prev,next today',
+                center: 'title',
+                right: 'dayGridMonth,timeGridWeek,listMonth'
+            },
+            businessHours: [
+                {
+                    daysOfWeek: [1, 2, 3, 4, 5],
+                    startTime: '18:00',
+                    endTime: '22:00'
+                },
+                {
+                    daysOfWeek: [6, 7],
+                    startTime: '10:00',
+                    endTime: '22:00'
+                }],
+            defaultDate: Date.now(),
+            displayEventTime: true,
+            displayEventEnd: true,
+            showNonCurrentDates: true,
+            editable: false,
+            selectable: false,
+            fixedWeekCount: false,
+            navLinks: false,
+            timeZone: "local",
+            events: [
+                {% for post in posts %}
+                    {% assign events = site.events | where_exp: "item", "item.slug == post.slug" | where_exp: "item", "item.date >= site.time" %}
+                    {% assign category = post.categories | first %}
+                    {% for event in events %}
+                        {
+                            title: '{{ category | capitalize | replace: "-", " " }}: {{ post.title }}',
+                            start: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_start }}',
+                            end: '{{ event.date | date: "%Y-%m-%d" }}T{{ event.time_end }}',
+                            url: '/trainings/{{ post.slug }}/',
+                            color: '{{ site.data.colors[category] }}'
+                        },
+                    {% endfor %}
+                {% endfor %}
+            ]
+        });
+        calendar.render();
+    });
+</script>
