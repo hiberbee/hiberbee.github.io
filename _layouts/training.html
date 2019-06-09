@@ -17,24 +17,23 @@ layout: default
 {% endif %}
 
 <h1>{{ page.title }}</h1>
-<p class="lead font-weight-semibold">{{ page.description }}</p>
-<div class="row">
-    <div class="col-lg-4 col-md-12 col-sm-12">
-        <span class="font-weight-semibold mr-2">{{ event.date | date: "%A, %-d %b" }}, {{ event.time_start | date: "%H<sup>%M</sup>" }} -
-            {{ event.time_end | date: "%H<sup>%M</sup>" }}</span>
-    </div>
-    <div class="col-lg-4 col-md-12 col-sm-12">
-        <a class="font-weight-semibold mr-2" href="{{ event.url }}"><i class="fas fa-calendar-check"></i> Добавить в
-            календарь</a>
-    </div>
-    <div class="col-lg-4 col-md-12 col-sm-12">
-        {% if event.facebook_event_id %}
-            <a class="font-weight-semibold" rel="noopener"
-               href="https://facebook.com/events/{{ event.facebook_event_id }}"><i class="fab fa-facebook-square"></i>
-                Страница в facebook</a>
-        {% endif %}
-    </div>
-</div>
+
+<h2>{{ page.description }}</h2>
+
+<p class="lead">{{ event.date | date: "%A, %-d %b" }},
+    {{ event.time_start | date: "%H<sup>%M</sup>" }} -
+    {{ event.time_end | date: "%H<sup>%M</sup>" }}</p>
+<p>
+    <a href="{{ event.url }}"><i class="fas fa-calendar-check"></i> Добавить в календарь</a>
+</p>
+<p>
+    {% if event.facebook_event_id %}
+        <a rel="noopener"
+           href="https://facebook.com/events/{{ event.facebook_event_id }}"><i class="fab fa-facebook-square"></i>
+            Страница в facebook</a>
+    {% endif %}
+</p>
+<hr/>
 {% for category_name in sorted_categories %}
     {% capture category %}{{ category_name }}{% endcapture %}
     <div class="badge" style="background-color: {{ site.data.colors[category_name] }}!important;">
@@ -55,7 +54,7 @@ layout: default
         <script type="text/javascript" id="widget-wfp-script"
                 src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script>
         <a id="payment-button" onclick="return wayForPay(this)"
-           class="facebookEventLink btn-default text-white text-left btn btn-lg shadow-md font-accent font-weight-bold text-uppercase"
+           class="facebookEventLink btn-default text-white text-left btn btn-lg font-weight-bolder"
            href="https://secure.wayforpay.com/button/{{ button_id }}" rel="nofollow"
            style="padding: 15px;
   height: 55px;background:#2B3160 url('https://s3.eu-central-1.amazonaws.com/w4p-merch/button/bg5x2.png') no-repeat center right;background-size:cover;width: 270px!important;box-sizing:border-box!important;"

@@ -4,7 +4,7 @@ layout: default
 {% assign categories = site.trainings  | map: 'categories' | uniq | sort %}
 {% assign tags = site.trainings  | map: 'tags' | uniq | sort %}
 <h1>{{ site.data.i18n.taxonomy.title }}</h1>
-<p>{{ site.data.i18n.global.categories }}</p>
+<h2>{{ site.data.i18n.global.categories }}</h2>
 {% for category in categories %}
     <div class="badge"
          style="background-color: {{ site.data.colors[category] }}!important;">

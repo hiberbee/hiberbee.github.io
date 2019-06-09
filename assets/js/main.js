@@ -32,7 +32,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     document.getElementById("burger").addEventListener("click", toggleContent);
 
-
     document.querySelector(".facebookEventLink").addEventListener("click", function () {
         FB.AppEvents.logEvent(
             this.getAttribute("data-anchor"),

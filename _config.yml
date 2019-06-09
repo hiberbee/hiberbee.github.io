@@ -107,7 +107,7 @@ pwa:
     - "/manifest.json"
     - "/*.png"
     - "/*.js"
-    - "/**/*.html"
+    - "/index.html"
 jekyll-minifier:
   exclude: 'atom.xml,sitemap.xml,manifest.json'
   uglifier_args:

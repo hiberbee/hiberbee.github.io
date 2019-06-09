@@ -14,7 +14,7 @@ $font-family-sans-serif: lato, sans-serif;
 $font-family-monospace: FiraCode, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 $primary: #FFBD42;
 $secondary: #fff;
-$dark: #232323;
+$dark: #1e1e1e;
 $link-color: #007BFE;
 $link-hover-color: #FF0072;
 $link-hover-decoration: none;
@@ -23,13 +23,6 @@ $footerHeight: 200px;
 $body-bg: #ffffff;
 $body-color: $dark;
 $font-size-base: 1rem;
-$font-size-lg: $font-size-base * 1.125;
-$font-size-sm: $font-size-base * 0.875;
-$h1-font-size: $font-size-base * 2 !default;
-$h2-font-size: $font-size-base * 1.75 !default;
-$h3-font-size: $font-size-base * 1.5 !default;
-$h4-font-size: $font-size-base * 1.25 !default;
-$h5-font-size: $font-size-base * 1.125 !default;
 
 @import "bootstrap/functions";
 @import "bootstrap/variables";
@@ -43,8 +36,8 @@ $h5-font-size: $font-size-base * 1.125 !default;
 @import "bootstrap/tables";
 //@import "bootstrap/forms";
 @import "bootstrap/buttons";
-@import "bootstrap/transitions";
-@import "bootstrap/dropdown";
+//@import "bootstrap/transitions";
+//@import "bootstrap/dropdown";
 @import "bootstrap/button-group";
 //@import "bootstrap/input-group";
 //@import "bootstrap/custom-forms";
@@ -62,43 +55,23 @@ $h5-font-size: $font-size-base * 1.125 !default;
 @import "bootstrap/close";
 //@import "bootstrap/toasts";
 //@import "bootstrap/modal";
-@import "bootstrap/tooltip";
-@import "bootstrap/popover";
+//@import "bootstrap/tooltip";
+//@import "bootstrap/popover";
 //@import "bootstrap/carousel";
-@import "bootstrap/spinners";
+//@import "bootstrap/spinners";
 @import "bootstrap/utilities";
 @import "bootstrap/print";
 
-@mixin transition-all() {
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  transition: all 0.35s;
-}
-
-body, html {
-  height: 100%
-}
-
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  min-width: 320px;
-  -webkit-font-smoothing: subpixel-antialiased;
-}
-
-.font-weight-semibold {
-  font-weight: 600 !important;
+a {
+  color: $link-color;
 }
 
 a:hover {
-  @include transition-all;
-  text-decoration: none!important;
-}
-
-.font-accent {
-  font-weight: 500;
+  color: $link-hover-color;
+  -webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
+  text-decoration: none !important;
 }
 
 main > .container {
@@ -109,6 +82,76 @@ main > .container {
   padding: 20px;
 }
 
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  min-width: 320px;
+  background: $secondary;
+  font-family: lato, sans-serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: $dark;
+  font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  line-height: 1.25em;
+  margin: calc(1.75rem - 0.15em) 0 1rem;
+  padding: 0;
+}
+
+h1 {
+  min-height: 1rem;
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 1.125rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child {
+  margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child {
+  margin-bottom: 0;
+}
+
 h1 {
   font-weight: 900;
 }
@@ -117,21 +160,33 @@ h2, h3 {
   font-weight: 700;
 }
 
-h4, h5 {
+h4 {
   font-weight: 500;
 }
 
+h5 {
+  font-weight: 400;
+}
+
+header {
+  a {
+    color: $primary;
+
+    &:hover {
+      color: $secondary !important;
+    }
+  }
+}
+
 .navbar-brand {
-  padding-top: 11px;
+  padding-top: 10px;
   font-weight: 700;
-  padding-bottom: 9px;
 }
 
 footer {
   min-height: $footerHeight;
   bottom: 0;
   width: 100%;
-  font-weight: 300;
 
   [class="col-*"] {
     padding: 10px
@@ -144,17 +199,15 @@ footer {
 
   i {
     vertical-align: middle;
-    font-size: 1.225rem;
+    font-size: 1.25rem;
   }
 
   ul li a {
-    color: #888888;
+    color: #afafaf;
 
     &:hover {
-      color: lighten(#888888, 50%)
+      color: $secondary
     }
-
-
   }
 }
 
@@ -175,8 +228,17 @@ main {
 }
 
 .badge {
-  margin-bottom: 5px;
-  font-weight: 400;
+  margin: 5px 0;
+  padding: 5px;
+  font-size: 14px;
+
+  a {
+    color: $secondary;
+  }
+
+  :hover {
+    opacity: 0.75;
+  }
 }
 
 hr {
@@ -195,10 +257,6 @@ section {
   padding: 30px 0;
 }
 
-header {
-  font-size: $font-family-sans-serif;
-}
-
 .bg-dark {
   background: $dark !important;
   color: $secondary;
@@ -214,17 +272,6 @@ header {
   }
 }
 
-.badge {
-  a {
-    color: $secondary;
-
-    &:hover {
-      color: $primary;
-    }
-  }
-
-  font-size: 14px;
-}
 
 .hero {
   background-image: url("../img/background/default.webp");
@@ -255,7 +302,6 @@ header {
       }
     }
   }
-
 }
 
 .portfolio-box {
@@ -282,7 +328,9 @@ header {
 
   &:hover {
     .portfolio-box-caption {
-      @include transition-all;
+      -webkit-transition: all 0.35s;
+      -moz-transition: all 0.35s;
+      transition: all 0.35s;
       opacity: 1;
     }
   }
@@ -306,7 +354,7 @@ header {
 }
 
 .text-small {
-  font-size: $font-size-sm;
+  font-size: 0.9 * $font-size-base;
 }
 
 #burger {
