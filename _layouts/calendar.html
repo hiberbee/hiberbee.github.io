@@ -1,48 +1,50 @@
 ---
 layout: default
 ---
-<h1>{{ page.title }}</h1>
-<div id="calendar"></div>
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
+<div class="container">
+    <h1>{{ page.title }}</h1>
+    <div id="calendar"></div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
 
-        const calendarEl = document.getElementById('calendar');
+            const calendarEl = document.getElementById('calendar');
 
-        const calendar = new FullCalendar.Calendar(calendarEl, {
-            firstDay: 1,
-            locale: '{{ site.active_lang }}',
-            plugins: ['bootstrap', 'dayGrid', 'timeGrid', 'list'],
-            themeSystem: "bootstrap",
-            height: 'auto',
-            header: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'dayGridMonth,timeGridWeek,listMonth'
-            },
-            businessHours: [
-                {
-                    daysOfWeek: [1, 2, 3, 4, 5],
-                    startTime: '18:00',
-                    endTime: '22:00'
+            const calendar = new FullCalendar.Calendar(calendarEl, {
+                firstDay: 1,
+                locale: '{{ site.active_lang }}',
+                plugins: ['dayGrid', 'timeGrid', 'list'],
+                themeSystem: "bootstrap4",
+                height: 'auto',
+                header: {
+                    left: 'prev,next today',
+                    center: 'title',
+                    right: 'dayGridMonth,timeGridWeek,listMonth'
                 },
-                {
-                    daysOfWeek: [6, 7],
-                    startTime: '10:00',
-                    endTime: '22:00'
-                }],
-            defaultDate: Date.now(),
-            displayEventTime: true,
-            displayEventEnd: true,
-            showNonCurrentDates: true,
-            editable: false,
-            selectable: false,
-            fixedWeekCount: false,
-            navLinks: false,
-            timeZone: "local",
-            events: [
-                {% include events-loop.html trainings=paginator.posts %}
-            ]
+                businessHours: [
+                    {
+                        daysOfWeek: [1, 2, 3, 4, 5],
+                        startTime: '18:00',
+                        endTime: '22:00'
+                    },
+                    {
+                        daysOfWeek: [6, 7],
+                        startTime: '10:00',
+                        endTime: '22:00'
+                    }],
+                defaultDate: Date.now(),
+                displayEventTime: true,
+                displayEventEnd: true,
+                showNonCurrentDates: true,
+                editable: false,
+                selectable: false,
+                fixedWeekCount: false,
+                navLinks: false,
+                timeZone: "local",
+                events: [
+                    {% include events-loop.html trainings=paginator.posts %}
+                ]
+            });
+            calendar.render();
         });
-        calendar.render();
-    });
-</script>
+    </script>
+</div>

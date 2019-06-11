@@ -15,51 +15,54 @@ layout: default
         {% assign price = site.data.me.api.payment.express.price %}
     {% endif %}
 {% endif %}
+<div class="container">
 
-<h1>{{ page.title }}</h1>
+    <h1>Тренинг &laquo;{{ page.title }}: {{ page.description }}&raquo;</h1>
 
-<h2>{{ page.description }}</h2>
-
-<p class="lead">{{ event.date | date: "%A, %-d %b" }},
-    {{ event.time_start | date: "%H<sup>%M</sup>" }} -
-    {{ event.time_end | date: "%H<sup>%M</sup>" }}</p>
-<p>
-    <a href="{{ event.url }}"><i class="fas fa-calendar-check"></i> Добавить в календарь</a>
-</p>
-<p>
-    {% if event.facebook_event_id %}
-        <a rel="noopener"
-           href="https://facebook.com/events/{{ event.facebook_event_id }}"><i class="fab fa-facebook-square"></i>
+    <p class="lead"><span class="mr-2">{{ event.date | date: "%A, %-d %b" }},
+        {{ event.time_start | date: "%H<sup>%M</sup>" }} -
+        {{ event.time_end | date: "%H<sup>%M</sup>" }}</span><span class="text-small mr-2"><a
+            href="{{ event.url }}"><img src="/assets/img/icons/calendar.svg"
+                                        style="vertical-align: baseline;filter: invert(1)" height="12" width="12"
+                                        alt="Добавить в календарь" class="mr-1">Добавить в календарь</a></span>
+        {% if event.facebook_event_id %}
+            <span class="text-small mr-2">
+            <a rel="noopener"
+               href="https://facebook.com/events/{{ event.facebook_event_id }}/{% if event.facebook_event_time_id %}?event_time_id={{ event.facebook_event_time_id }}{% endif %}"><img
+                    src="/assets/img/icons/facebook.svg" style="vertical-align: baseline;filter: invert(1)" height="12"
+                    width="12"
+                    alt="Страница в Facebook" class="mr-1">
             Страница в facebook</a>
-    {% endif %}
-</p>
-<hr/>
-{% for category_name in sorted_categories %}
-    {% capture category %}{{ category_name }}{% endcapture %}
-    <div class="badge" style="background-color: {{ site.data.colors[category_name] }}!important;">
-        <a href="/category/{{ category | slugify }}/">{{ category }}</a>
-    </div>
-{% endfor %}
-{% for tag_name in sorted_tags %}
-    {% capture tag %}{{ tag_name }}{% endcapture %}
-    <div class="badge badge-dark bg-dark">
-        <a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
-    </div>
-{% endfor %}
+        </span>
+        {% endif %}</p>
+    {% for category in sorted_categories %}
+        {% capture category_name %}{{ category }}{% endcapture %}
+        {% capture category_slug %}{{ category_name | slugify }}{% endcapture %}
+        <div class="badge" style="background-color: {{ site.data.colors[category_slug] }}!important;">
+            <a href="/category/{{ category_slug }}/">{{ category }}</a>
+        </div>
+    {% endfor %}
+    {% for tag_name in sorted_tags %}
+        {% capture tag %}{{ tag_name }}{% endcapture %}
+        <div class="badge badge-primary">
+            <a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
+        </div>
+    {% endfor %}
 
-{{ content }}
+    {{ content }}
 
-<div class="text-center">
-    {% if button_id %}
-        <script type="text/javascript" id="widget-wfp-script"
-                src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script>
-        <a id="payment-button" onclick="return wayForPay(this)"
-           class="facebookEventLink btn-default text-white text-left btn btn-lg font-weight-bolder"
-           href="https://secure.wayforpay.com/button/{{ button_id }}" rel="nofollow"
-           style="padding: 15px;
-  height: 55px;background:#2B3160 url('https://s3.eu-central-1.amazonaws.com/w4p-merch/button/bg5x2.png') no-repeat center right;background-size:cover;width: 270px!important;box-sizing:border-box!important;"
-        >{{ site.data.i18n.training.checkout_button }}</a>
-    {% endif %}
+    <div class="text-center">
+        {% if button_id %}
+            <script type="text/javascript" id="widget-wfp-script"
+                    src="https://secure.wayforpay.com/server/pay-widget.js?ref=button"></script>
+            <a id="payment-button" onclick="return wayForPay(this)"
+               class="facebookEventLink btn-default text-white text-left btn btn-lg font-weight-bolder"
+               href="https://secure.wayforpay.com/button/{{ button_id }}" rel="nofollow"
+               style="padding: 10px;
+  height: 55px;background: transparent url('https://s3.eu-central-1.amazonaws.com/w4p-merch/button/bg5x2.png') no-repeat center right;background-size:cover;width: 270px!important;box-sizing:border-box!important;"
+            >{{ site.data.i18n.training.checkout_button }}</a>
+        {% endif %}
+    </div>
 </div>
 
 

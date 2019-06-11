@@ -15,19 +15,18 @@ $font-family-monospace: FiraCode, Menlo, Monaco, Consolas, "Liberation Mono", "C
 $primary: #FFBD42;
 $secondary: #fff;
 $dark: #1e1e1e;
-$link-color: #007BFE;
-$link-hover-color: #FF0072;
+$border-color: lighten($dark, 20%);
 $link-hover-decoration: none;
 $headerHeight: 60px;
 $footerHeight: 200px;
-$body-bg: #ffffff;
-$body-color: $dark;
+$body-bg: #282828;
+$body-color: $secondary;
 $font-size-base: 1rem;
 
 @import "bootstrap/functions";
 @import "bootstrap/variables";
 @import "bootstrap/mixins";
-//@import "bootstrap/root";
+@import "bootstrap/root";
 @import "bootstrap/reboot";
 @import "bootstrap/type";
 @import "bootstrap/images";
@@ -62,15 +61,14 @@ $font-size-base: 1rem;
 @import "bootstrap/utilities";
 @import "bootstrap/print";
 
-a {
-  color: $link-color;
-}
-
-a:hover {
-  color: $link-hover-color;
+@mixin transition {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
+}
+
+a:hover, .badge:hover {
+  @include transition();
   text-decoration: none !important;
 }
 
@@ -85,10 +83,9 @@ main > .container {
 html,
 body {
   height: 100%;
-}
-
-html {
-  font-size: 14px;
+  font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-size: 1em;
 }
 
 body {
@@ -96,13 +93,8 @@ body {
   padding: 0;
   overflow-x: hidden;
   min-width: 320px;
-  background: $secondary;
   font-family: lato, sans-serif;
-  font-size: 14px;
   line-height: 1.5em;
-  color: $dark;
-  font-smoothing: subpixel-antialiased;
-  -webkit-font-smoothing: subpixel-antialiased;
 }
 
 h1,
@@ -168,14 +160,9 @@ h5 {
   font-weight: 400;
 }
 
-header {
-  a {
-    color: $primary;
-
-    &:hover {
-      color: $secondary !important;
-    }
-  }
+header .navbar {
+  background-color: $dark;
+  font-size: 1rem;
 }
 
 .navbar-brand {
@@ -184,6 +171,7 @@ header {
 }
 
 footer {
+  background-color: $dark;
   min-height: $footerHeight;
   bottom: 0;
   width: 100%;
@@ -192,21 +180,17 @@ footer {
     padding: 10px
   }
 
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-
   i {
     vertical-align: middle;
     font-size: 1.25rem;
   }
 
   ul li a {
-    color: #afafaf;
+    color: lighten($dark, 70%);
 
     &:hover {
-      color: $secondary
+      color: lighten($dark, 90%);
+      @include transition();
     }
   }
 }
@@ -230,14 +214,24 @@ main {
 .badge {
   margin: 5px 0;
   padding: 5px;
-  font-size: 14px;
+  font-size: 0.85rem;
+  text-align: center;
+  vertical-align: middle;
 
   a {
     color: $secondary;
   }
 
-  :hover {
-    opacity: 0.75;
+  &:hover {
+    @include transition();
+    opacity: 0.8;
+  }
+
+}
+
+.badge-primary {
+  a {
+    color: $dark;
   }
 }
 
@@ -245,8 +239,8 @@ hr {
   border: none;
 }
 
-.not-found {
-  background-image: url("../img/background/404.webp");
+.lead {
+  font-weight: 400;
 }
 
 .no-padding {
@@ -256,22 +250,6 @@ hr {
 section {
   padding: 30px 0;
 }
-
-.bg-dark {
-  background: $dark !important;
-  color: $secondary;
-}
-
-.primary-links {
-  a {
-    color: $primary;
-
-    &:hover {
-      color: $secondary;
-    }
-  }
-}
-
 
 .hero {
   background-image: url("../img/background/default.webp");
@@ -310,7 +288,7 @@ section {
   .portfolio-box-caption {
     opacity: 0.7;
     display: block;
-    background: rgba(34, 34, 34, 0.7);
+    background: rgba(30, 30, 30, 0.7);
     position: absolute;
     bottom: 0;
     text-align: center;
@@ -328,25 +306,11 @@ section {
 
   &:hover {
     .portfolio-box-caption {
-      -webkit-transition: all 0.35s;
-      -moz-transition: all 0.35s;
-      transition: all 0.35s;
+      @include transition();
       opacity: 1;
     }
   }
 
-}
-
-.shadow-md {
-  box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.4);
-
-  &:hover {
-    box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.3);
-  }
-
-  &:focus {
-    box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.2);
-  }
 }
 
 .btn, .btn:focus, .btn:active {
@@ -365,49 +329,109 @@ section {
   white-space: normal !important;
 }
 
-#trainings {
-  .fc-scroller {
-    min-height: 70px;
-    background-color: #282828;
-  }
+.fc-scroller {
+  min-height: 70px;
+  background-color: #282828;
+}
 
-  .fc-button-primary {
-    background-color: #222222;
-    color: $secondary;
-    border-color: #444444;
+.fc-button {
+  color: $secondary !important;
+  background-color: $dark;
+  border-color: $border-color;
 
-    &:hover {
-      background-color: $dark;
 
-    }
-  }
-
-  .fc-unthemed .fc-popover, .fc-unthemed .fc-list-heading td {
-    background-color: #222222 !important;
-  }
-
-  .fc-unthemed th,
-  .fc-unthemed td,
-  .fc-unthemed thead,
-  .fc-unthemed tbody,
-  .fc-unthemed .fc-divider,
-  .fc-unthemed .fc-row,
-  .fc-unthemed .fc-content,
-  .fc-unthemed .fc-popover,
-  .fc-unthemed .fc-list-view,
-  .fc-unthemed .fc-list-heading td {
-    border-color: #444444 !important;
-  }
-
-  .fc-unthemed {
-    table, tbody, thead, tr, td {
-      border-color: #444444 !important;
-      background-color: #282828 !important;
+  &.fc-button-active, &.fc-button-primary {
+    &.fc-button-active {
+      color: $primary !important;
     }
 
-    .fc-list-empty {
-      background-color: #282828 !important;
-    }
+    border-color: $border-color !important;
+    background-color: lighten($dark, 5%) !important;
+  }
+
+  &:hover {
+    @include transition();
+    border-color: lighten($border-color, 10%);
+    background-color: lighten($dark, 10%);
+  }
+
+  &:focus, &:active {
+    background-color: lighten($dark, 20%) !important;
+    border-color: lighten($border-color, 20%) !important;
   }
 }
 
+.fc-unthemed .fc-popover, .fc-unthemed .fc-list-heading td {
+  background-color: $dark !important;
+}
+
+.fc-row {
+  border-bottom: 1px solid $border-color;
+}
+
+.fc-unthemed th,
+.fc-unthemed td,
+.fc-unthemed thead,
+.fc-unthemed tbody,
+.fc-unthemed .fc-divider,
+.fc-unthemed .fc-row,
+.fc-unthemed .fc-content,
+.fc-unthemed .fc-popover,
+.fc-unthemed .fc-list-view,
+.fc-unthemed .fc-list-heading td {
+  border-color: $border-color !important;
+}
+
+.fc-unthemed {
+  table, tbody, thead, tr, td {
+    border-color: $border-color !important;
+  }
+
+  .fc-list-item:hover td {
+    @include transition();
+    background-color: darken($dark, 10%);
+  }
+
+}
+
+.fc-today {
+  background-color: lighten($dark, 30%) !important;
+}
+
+.fc-button .fc-icon {
+  vertical-align: baseline;
+  font-size: 1em;
+}
+
+.fc-day-grid-container .fc-event-container .fc-content {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-height: 1.2;
+  min-height: 3.6em;
+  max-height: 3.6em;
+}
+
+.fc-list-item-title a {
+  color: $primary;
+
+  &:hover {
+    @include transition();
+    color: darken($primary, 10%)
+  }
+}
+
+blockquote {
+  color: lighten($primary, 30%);
+  font-weight: 600;
+  margin: 1rem;
+  border-left: 2px solid $border-color;
+  padding: 1rem;
+
+  p {
+    padding: 0;
+    margin: 0;
+  }
+}

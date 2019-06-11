@@ -1,4 +1,4 @@
 ---
 permalink: /gratitude/projects/
 ---
-# Проекты
+# Ресурсы, использованные на {{ site.url }}

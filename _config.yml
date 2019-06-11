@@ -76,6 +76,9 @@ defaults:
 pagination:
   enabled: true
   per_page: 100
+  slugify:
+    mode: nil
+    cased: true
 autopages:
   enabled: true
   collections:
@@ -84,18 +87,27 @@ autopages:
       - "calendar.html"
     title: "Тренинги #:coll"
     permalink: "/:coll/"
+    slugify:
+      mode: pretty
+      cased: true
   categories:
     enabled: true
     layouts:
       - "calendar.html"
     title: "Тренинги #:cat"
     permalink: "/category/:cat/"
+    slugify:
+      mode: pretty
+      cased: true
   tags:
     enabled: true
     layouts:
       - "calendar.html"
     permalink: "/tag/:tag/"
     title: "Тренинги #:tag"
+    slugify:
+      mode: pretty
+      cased: true
 future: true
 permalink: /blog/:title/
 pwa:
