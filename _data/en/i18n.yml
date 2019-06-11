@@ -11,7 +11,7 @@ global:
 index:
   title: 'Technology consulting and professional education services'
   tagline: 'Summer is great time to boost your skills!'
-  description: 'Technology consulting and supervisioning for software engineers and project teams. Key competences: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services'
+  description: 'Consulting and supervision for software engineers and project teams. Key competences: dev/ops, system architecture, engineering practices, software development, quality assurance, technologies, services'
   keywords: 'DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services'
 taxonomy:
   title: 'Taxonomy'

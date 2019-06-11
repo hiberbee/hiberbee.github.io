@@ -26,7 +26,7 @@ layout: base
                         <div class="portfolio-box-caption-content">
                             <div class="project-category">
                                 <a class="font-weight-bold " style="font-size: 20px"
-                                   href="/category/{{ category_slug }}/">
+                                   href="/trainings/{{ category_slug }}/">
                                     {{ category.name }}</a>
                             </div>
                             <div style="margin-top: 5px">
@@ -34,7 +34,7 @@ layout: base
                                     <img src="/assets/img/icons/{{ training.id }}.svg"
                                          height="20" style="vertical-align: text-bottom;line-height: 1.5rem"
                                          alt="{{ training.name }}"/>
-                                    <a href="/tag/{{ training.id }}/">{{ training.name }}
+                                    <a href="/trainings/{{ training.id }}/">{{ training.name }}
                                     </a>
                                 {% endfor %}
                             </div>
@@ -46,64 +46,55 @@ layout: base
     </section>
     <section id="trainings">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <h2 class="font-accent" style="margin-bottom: 1em;">Тренинги</h2>
-                    <p>Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают
-                        несколько тем, для их группировки используются теги и <a href="/taxonomy/">таксономия</a>.
-                    </p>
-                    <p>Все тренинги и способы подписки на обновления доступны на <a
-                            href="https://github.com/{{ site.data.me.github }}/hiberbee.github.io/tree/development/">Github</a>
-                    </p>
-                    <p>
-                        <a class="lead text-center" href="/trainings/">Календарь</a>
-                    </p>
-                </div>
-                <div class="col-lg-8">
-                    <section class="container no-padding">
-                        <div id="calendar" class="calendar-sm"></div>
-                        <script>
-                            document.addEventListener('DOMContentLoaded', function () {
-                                const calendarEl = document.getElementById('calendar');
-                                const calendar = new FullCalendar.Calendar(calendarEl, {
-                                    firstDay: 1,
-                                    locale: '{{ site.active_lang }}',
-                                    plugins: ['list'],
-                                    header: {
-                                        left: false,
-                                        center: false,
-                                        right: 'prev,next'
-                                    },
-                                    titleFormat: {
-                                        month: "long", day: "numeric"
-                                    },
-                                    themeSystem: "bootstrap4",
-                                    defaultView: "listWeek",
-                                    displayEventTime: true,
-                                    views: {
-                                        listWeek: {
-                                            type: 'list',
-                                            duration: {days: 7},
-                                        }
-                                    },
-                                    height: 'auto',
-                                    editable: false,
-                                    selectable: false,
-                                    navLinks: false,
-                                    timeZone: "local",
-                                    events: [
-                                        {% include events-loop.html trainings=site.trainings %}
-                                    ]
-                                });
-                                calendar.render();
-                            });
-                        </script>
-                    </section>
-                </div>
-            </div>
+            <h2 class="font-accent" style="margin-bottom: 1em;">Тренинги</h2>
+            <p>Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают
+                несколько тем, для их группировки используются теги и <a href="/taxonomy/">таксономия</a>.
+                Все тренинги и способы подписки на обновления доступны на <a
+                        href="https://github.com/{{ site.data.me.github }}/hiberbee.github.io/tree/development/">Github</a>
+            </p>
+            <p class="lead" style="z-index: 10">
+                <a href="/trainings/">Расписание занятий</a>
+            </p>
+            <div id="calendar" class="calendar-sm" style="margin-top: -45px;"></div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const calendarEl = document.getElementById('calendar');
+                    const calendar = new FullCalendar.Calendar(calendarEl, {
+                        firstDay: 1,
+                        locale: '{{ site.active_lang }}',
+                        plugins: ['list'],
+                        header: {
+                            left: false,
+                            center: false,
+                            right: 'prev,next'
+                        },
+                        titleFormat: {
+                            month: "long", day: "numeric"
+                        },
+                        themeSystem: "bootstrap4",
+                        defaultView: "listWeek",
+                        displayEventTime: true,
+                        views: {
+                            listWeek: {
+                                type: 'list',
+                                duration: {days: 7},
+                            }
+                        },
+                        height: 'auto',
+                        editable: false,
+                        selectable: false,
+                        navLinks: false,
+                        timeZone: "local",
+                        events: [
+                            {% include events-loop.html trainings=site.trainings %}
+                        ]
+                    });
+                    calendar.render();
+                });
+            </script>
         </div>
     </section>
-    <section id="services" style="background-color: #1e1e1e">
+    <section id="services" style="background-color: #1e1e1e;padding: 20px;">
         <div class="container-fluid text-center">
             <h2>Сервисы</h2>
         </div>

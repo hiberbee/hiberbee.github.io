@@ -1,6 +1,12 @@
 {
-  "name": "Hiberbee",
+  "name": "Hiberbee Technology consulting and professional education services",
+  "description": "Consulting and supervision for software engineers and project teams. Key competences: dev/ops, system architecture, engineering practices, software development, quality assurance, technologies, services",
   "short_name": "Hiberbee",
+  "lang": "en",
+  "serviceworker": {
+    "src": "/service-worker.js",
+    "use_cache": false
+  },
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,9 +19,13 @@
       "type": "image/png"
     }
   ],
+  "categories": [
+    "education",
+    "productivity"
+  ],
   "gcm_sender_id": "482941778795",
   "start_url": "/",
-  "theme_color": "#F8CF4C",
-  "background_color": "#282828",
+  "theme_color": "#FFBD42",
+  "background_color": "#2d2d2d",
   "display": "standalone"
 }

@@ -39,13 +39,13 @@ layout: default
         {% capture category_name %}{{ category }}{% endcapture %}
         {% capture category_slug %}{{ category_name | slugify }}{% endcapture %}
         <div class="badge" style="background-color: {{ site.data.colors[category_slug] }}!important;">
-            <a href="/category/{{ category_slug }}/">{{ category }}</a>
+            <a href="/trainings/{{ category_slug }}/">{{ category }}</a>
         </div>
     {% endfor %}
     {% for tag_name in sorted_tags %}
         {% capture tag %}{{ tag_name }}{% endcapture %}
         <div class="badge badge-primary">
-            <a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
+            <a href="/trainings/{{ tag | slugify }}/">{{ tag }}</a>
         </div>
     {% endfor %}
 

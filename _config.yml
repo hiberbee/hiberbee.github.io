@@ -62,7 +62,7 @@ defaults:
       path: ""
       type: "pages"
     values:
-      layout: "default"
+      layout: "page"
   - scope:
       path: ""
       type: "posts"
@@ -85,7 +85,7 @@ autopages:
     enabled: true
     layouts:
       - "calendar.html"
-    title: "Тренинги #:coll"
+    title: "Тренинги &laquo;:coll&raquo;"
     permalink: "/:coll/"
     slugify:
       mode: pretty
@@ -94,8 +94,8 @@ autopages:
     enabled: true
     layouts:
       - "calendar.html"
-    title: "Тренинги #:cat"
-    permalink: "/category/:cat/"
+    title: "Тренинги &laquo;:cat&raquo;"
+    permalink: "/trainings/:cat/"
     slugify:
       mode: pretty
       cased: true
@@ -103,8 +103,8 @@ autopages:
     enabled: true
     layouts:
       - "calendar.html"
-    permalink: "/tag/:tag/"
-    title: "Тренинги #:tag"
+    permalink: "/trainings/:tag/"
+    title: "Тренинги &laquo;:tag&raquo;"
     slugify:
       mode: pretty
       cased: true
@@ -119,6 +119,7 @@ pwa:
     - "/manifest.json"
     - "/*.png"
     - "/*.js"
+    - "/trainings/*.html"
     - "/index.html"
 jekyll-minifier:
   exclude: 'atom.xml,sitemap.xml,manifest.json'

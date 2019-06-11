@@ -10,13 +10,13 @@ layout: default
         {% assign slug = category | slugify %}
         <div class="badge"
              style="background-color: {{ site.data.colors[slug] }}!important;">
-            <a href="/category/{{ slug }}/">{{ category }}</a>
+            <a href="/trainings/{{ slug }}/">{{ category }}</a>
         </div>
     {% endfor %}
     <h2>{{ site.data.i18n.global.tags }}</h2>
     {% for tag in tags %}
         <div class="badge badge-primary">
-            <a href="/tag/{{ tag | slugify }}/">{{ tag }}</a>
+            <a href="/trainings/{{ tag | slugify }}/">{{ tag }}</a>
         </div>
     {% endfor %}
 </div>

@@ -16,10 +16,17 @@ layout: default
                 themeSystem: "bootstrap4",
                 height: 'auto',
                 header: {
-                    left: 'prev,next today',
+                    left: 'prev,next,today',
                     center: 'title',
                     right: 'dayGridMonth,timeGridWeek,listMonth'
                 },
+                titleRangeSeparator: "-",
+                titleFormat: {
+                    month: "numeric", day: "numeric",
+                },
+                allDaySlot: false,
+                minTime: "09:00",
+                maxTime: "23:00",
                 businessHours: [
                     {
                         daysOfWeek: [1, 2, 3, 4, 5],
