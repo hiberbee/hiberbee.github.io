@@ -123,10 +123,6 @@ jekyll-minifier:
     harmony: true
 sass:
   sass_dir: _sass
-  style: compressed
-  load_paths:
-    - _sass
-    - _sass/bootstrap
 webp:
   enabled: true
   quality: 75

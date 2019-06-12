@@ -2,7 +2,6 @@ source "https://rubygems.org"
 
 gem "html-proofer"
 gem "liquid-c"
-gem "sassc"
 
 group :jekyll_plugins do
   gem "jekyll-commonmark"
