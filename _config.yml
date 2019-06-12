@@ -35,7 +35,8 @@ markdown: CommonMark
 languages: ["ru", "en"]
 exclude_from_localization: ["assets"]
 default_lang: ru
-parallel_localization: true
+parallel_localization: false
+permalink: /gc/:title/
 commonmark:
   options: ["SMART", "FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "table"]
@@ -123,6 +124,9 @@ jekyll-minifier:
 sass:
   sass_dir: _sass
   style: compressed
+  load_paths:
+    - _sass
+    - _sass/bootstrap
 webp:
   enabled: true
   quality: 75
