@@ -1,11 +1,8 @@
 source "https://rubygems.org"
 
-ruby "2.6.3"
-
 gem "html-proofer"
 gem "liquid-c"
 gem "sassc"
-gem 'bootstrap', '~> 4.3.1'
 
 group :jekyll_plugins do
   gem "jekyll-commonmark"

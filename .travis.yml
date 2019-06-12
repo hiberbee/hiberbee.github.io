@@ -1,19 +1,17 @@
 language: ruby
 cache: bundler
 sudo: false
-rvm: 2.6.3
+rvm: 2.6
 
 install:
   - gem install bundler
   - bundle install
 
 env:
-  - JEKYLL_ENV=development
+  - JEKYLL_ENV=production
 
 script:
   - bundle exec jekyll build
-
-after_script:
   - bundle exec htmlproofer _site --http-status-ignore 999
 
 after_success:

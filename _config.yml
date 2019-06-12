@@ -76,9 +76,6 @@ defaults:
 pagination:
   enabled: true
   per_page: 100
-  slugify:
-    mode: nil
-    cased: true
 autopages:
   enabled: true
   collections:
@@ -109,7 +106,6 @@ autopages:
       mode: pretty
       cased: true
 future: true
-permalink: /gc/:title/
 pwa:
   dest_js_directory: assets/js
   precache_glob_ignores:
@@ -124,10 +120,6 @@ jekyll-minifier:
   exclude: 'atom.xml,sitemap.xml,manifest.json'
   uglifier_args:
     harmony: true
-sass:
-  load_paths:
-    - _sass
-    - vendor/bundle/ruby/2.6.3/gems/bootstrap-4.3.1/assets/stylesheets
 webp:
   enabled: true
   quality: 75
