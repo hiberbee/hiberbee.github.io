@@ -85,7 +85,7 @@ autopages:
     enabled: true
     layouts:
       - "calendar.html"
-    title: "Тренинги &laquo;:coll&raquo;"
+    title: ":coll"
     permalink: "/:coll/"
     slugify:
       mode: pretty
@@ -94,7 +94,7 @@ autopages:
     enabled: true
     layouts:
       - "calendar.html"
-    title: "Тренинги &laquo;:cat&raquo;"
+    title: ":cat"
     permalink: "/trainings/:cat/"
     slugify:
       mode: pretty
@@ -104,12 +104,12 @@ autopages:
     layouts:
       - "calendar.html"
     permalink: "/trainings/:tag/"
-    title: "Тренинги &laquo;:tag&raquo;"
+    title: ":tag"
     slugify:
       mode: pretty
       cased: true
 future: true
-permalink: /blog/:title/
+permalink: /gc/:title/
 pwa:
   dest_js_directory: assets/js
   precache_glob_ignores:

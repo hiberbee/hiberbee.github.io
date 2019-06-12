@@ -8,8 +8,9 @@ layout: default
 {% assign day_number = event.date | date: '%u' %}
 {% if day_number != "7" %}
     {% if day_number == "6" %}
-        {% assign button_id = site.data.me.api.payment.long.url %}
-        {% assign price = site.data.me.api.payment.long.price %}
+        {% assign event_duration = event.duration | default: 'long' %}
+        {% assign button_id = site.data.me.api.payment[event_duration].url %}
+        {% assign price = site.data.me.api.payment[event_duration].price %}
     {% else %}
         {% assign button_id = site.data.me.api.payment.express.url %}
         {% assign price = site.data.me.api.payment.express.price %}

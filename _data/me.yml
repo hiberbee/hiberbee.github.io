@@ -19,5 +19,8 @@ api:
     long:
       price: 1200
       url: b20078b595abc
+    full_day:
+      price: 3000
+      url: b209b19ce80c8
     any:
       url: b0732d2530b93

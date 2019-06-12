@@ -18,7 +18,7 @@ $dark: #1e1e1e;
 $border-color: lighten($dark, 20%);
 $link-hover-decoration: none;
 $headerHeight: 60px;
-$footerHeight: 200px;
+$footerHeight: 245px;
 $body-bg: #2d2d2d;
 $body-color: $secondary;
 $font-size-base: 1rem;
@@ -72,7 +72,7 @@ a:hover, .badge:hover {
   text-decoration: none !important;
 }
 
-main > .container {
+main > .container, main > .container-fluid {
   padding-top: 20px + $headerHeight;
 }
 
@@ -173,16 +173,12 @@ header .navbar {
 footer {
   background-color: $dark;
   min-height: $footerHeight;
+  font-weight: 300;
   bottom: 0;
   width: 100%;
 
   [class="col-*"] {
     padding: 10px
-  }
-
-  i {
-    vertical-align: middle;
-    font-size: 1.25rem;
   }
 
   ul li a {
@@ -201,7 +197,7 @@ main {
   }
 
   @media(min-width: 768px) {
-    min-height: calc(100vh - 200px);
+    min-height: calc(100vh - 257px);
   }
 
   p > img {
@@ -209,6 +205,10 @@ main {
     width: 80%;
     margin: 0 auto;
   }
+}
+
+.small {
+  font-weight: 300;
 }
 
 .badge {
@@ -405,7 +405,7 @@ hr {
 }
 
 .fc-button {
-  font-size: 0.85em!important;
+  font-size: 0.85em !important;
 }
 
 .fc-day-grid-container .fc-event-container .fc-content {

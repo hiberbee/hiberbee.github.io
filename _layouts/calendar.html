@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="container">
-    <h1>{{ page.title }}</h1>
+    <h1>Тренинги &laquo;{{ page.title }}&raquo;</h1>
     <div id="calendar"></div>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -54,4 +54,26 @@ layout: default
             calendar.render();
         });
     </script>
+
+    {% assign post_with_tags = site.posts | where_exp: "item", "item.tags contains page.autopage.display_name" %}
+    {% if post_with_tags.size > 0 %}
+        <h2>Дамп garbage collector</h2>
+        <ul>
+            {% for post in post_with_tags %}
+                <li>
+                    <a href="{{ post.permalink }}">{{ post.title }}</a>
+                    <p class="small">{{ post.description }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+    <h2>Внешние ресурсы</h2>
+    <ul>
+        <li><a target="_blank" rel="nofollow"
+               href="https://stackoverflow.com/questions/tagged/{{ page.title | slugify }}">StackOverflow tag:
+            #{{ page.title | slugify }}</a></li>
+        <li><a target="_blank" rel="nofollow" href="https://github.com/search?q={{ page.title | slugify }}">Github
+            search: &ldquo;{{ page.title | slugify }}&rdquo;</a></li>
+
+    </ul>
 </div>
