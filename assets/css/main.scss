@@ -23,7 +23,7 @@ $body-bg: #2d2d2d;
 $body-color: $secondary;
 $font-size-base: 1rem;
 
-@import "bootstrap/bootstrap";
+@import "bootstrap";
 
 @mixin transition {
   -webkit-transition: all 0.35s;
