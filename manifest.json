@@ -3,9 +3,6 @@
   "description": "Consulting and supervision for software engineers and project teams. Key competences: dev/ops, system architecture, engineering practices, software development, quality assurance, technologies, services",
   "short_name": "Hiberbee",
   "lang": "en",
-  "serviceworker": {
-    "src": "/service-worker.js"
-  },
   "icons": [
     {
       "src": "/android-chrome-192x192.png",

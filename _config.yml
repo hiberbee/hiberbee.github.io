@@ -119,7 +119,6 @@ pwa:
     - "/manifest.json"
     - "/*.png"
     - "/*.js"
-    - "/trainings/*.html"
     - "/index.html"
 jekyll-minifier:
   exclude: 'atom.xml,sitemap.xml,manifest.json'
