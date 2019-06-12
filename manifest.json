@@ -4,8 +4,7 @@
   "short_name": "Hiberbee",
   "lang": "en",
   "serviceworker": {
-    "src": "/service-worker.js",
-    "use_cache": false
+    "src": "/service-worker.js"
   },
   "icons": [
     {
