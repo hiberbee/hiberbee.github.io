@@ -120,6 +120,9 @@ jekyll-minifier:
   exclude: 'atom.xml,sitemap.xml,manifest.json'
   uglifier_args:
     harmony: true
+sass:
+  sass_dir: _sass
+  style: compressed
 webp:
   enabled: true
   quality: 75
