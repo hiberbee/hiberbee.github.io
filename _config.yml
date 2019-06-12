@@ -127,7 +127,7 @@ jekyll-minifier:
 sass:
   load_paths:
     - _sass
-    - vendor/bundle/ruby/2.6.0/gems/bootstrap-4.3.1/assets/stylesheets
+    - vendor/bundle/ruby/2.6.3/gems/bootstrap-4.3.1/assets/stylesheets
 webp:
   enabled: true
   quality: 75

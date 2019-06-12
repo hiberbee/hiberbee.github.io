@@ -1,14 +1,14 @@
 language: ruby
 cache: bundler
 sudo: false
-rvm: 2.5
+rvm: 2.6.3
 
 install:
   - gem install bundler
   - bundle install
 
 env:
-  - JEKYLL_ENV=production
+  - JEKYLL_ENV=development
 
 script:
   - bundle exec jekyll build

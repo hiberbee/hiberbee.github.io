@@ -1,5 +1,5 @@
 ---
-layout: page
+lang: ru
 title: URL на каждый день
 ---
 # URL на каждый день
