@@ -47,10 +47,10 @@ collections:
     output: true
     output_tags: true
     output_categories: true
-    permalink: "/trainings/:title"
+    permalink: "/trainings/:title/"
   pages:
     output: true
-    permalink: "/:title"
+    permalink: "/:title/"
 defaults:
   - scope:
       path: ""
@@ -86,7 +86,7 @@ autopages:
     layouts:
       - "calendar.html"
     title: ":coll"
-    permalink: "/:coll"
+    permalink: "/:coll/"
     slugify:
       mode: pretty
       cased: true
@@ -95,7 +95,7 @@ autopages:
     layouts:
       - "calendar.html"
     title: ":cat"
-    permalink: "/trainings/:cat"
+    permalink: "/trainings/:cat/"
     slugify:
       mode: pretty
       cased: true
@@ -103,7 +103,7 @@ autopages:
     enabled: true
     layouts:
       - "calendar.html"
-    permalink: "/trainings/:tag"
+    permalink: "/trainings/:tag/"
     title: ":tag"
     slugify:
       mode: pretty
