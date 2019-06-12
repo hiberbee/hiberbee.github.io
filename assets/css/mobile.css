@@ -1,0 +1,1 @@
+#burger{display:block}[aria-expanded="true"] svg path{fill:#e6b12e}[aria-expanded="false"] svg path{fill:#fff}[aria-hidden="true"]{display:none}[aria-hidden="false"]{display:block}.not-found{background-image:url("../img/background/404-vertical.webp")}
