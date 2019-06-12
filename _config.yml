@@ -17,7 +17,7 @@ facebook:
   admins: nezquiraj
 logo: /assets/img/logo-icon.png
 exclude:
-  - .bundle/*
+  - .bundle/config
   - .jekyll-metadata
   - .travis.yml
   - build.gradle
@@ -25,7 +25,7 @@ exclude:
   - .Ulysses*
   - Gemfile.lock
   - README.md
-  - vendor/*
+  - vendor/bundle/ruby/*
 feed:
   path: atom.xml
   collections:
