@@ -12,7 +12,6 @@ env:
 
 script:
   - bundle exec jekyll build
-  - bundle exec htmlproofer _site --http-status-ignore 999
 
 after_success:
   - touch ./_site/.nojekyll
