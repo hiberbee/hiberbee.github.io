@@ -1,0 +1,133 @@
+url: "https://hiberbee.com"
+plugins:
+  - jekyll-commonmark
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-minifier
+  - jekyll-paginate-v2
+  - jekyll-polyglot
+  - jekyll-pwa-plugin
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-webp
+timezone: Europe/Kiev
+facebook:
+  app_id: 145510372820525
+  publisher: hiberbee
+  admins: nezquiraj
+logo: /assets/img/logo-icon.png
+exclude:
+  - .bundle/config
+  - .jekyll-metadata
+  - .travis.yml
+  - build.gradle
+  - Gemfile
+  - .Ulysses*
+  - Gemfile.lock
+  - README.md
+  - vendor/bundle/ruby/*
+feed:
+  path: atom.xml
+  collections:
+    - trainings
+    - pages
+markdown: CommonMark
+languages: ["ru", "en"]
+exclude_from_localization: ["assets"]
+default_lang: ru
+parallel_localization: false
+permalink: /gc/:title/
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
+collections:
+  events:
+    output: true
+    permalink: "/events/:title/:month-:day.ics"
+  trainings:
+    output: true
+    output_tags: true
+    output_categories: true
+    permalink: "/trainings/:title/"
+  pages:
+    output: true
+    permalink: "/:title/"
+defaults:
+  - scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+      sitemap: false
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+      type: "trainings"
+    values:
+      layout: "training"
+pagination:
+  enabled: true
+  per_page: 100
+autopages:
+  enabled: true
+  collections:
+    enabled: true
+    layouts:
+      - "calendar.html"
+    title: ":coll"
+    permalink: "/:coll/"
+    slugify:
+      mode: pretty
+      cased: true
+  categories:
+    enabled: true
+    layouts:
+      - "calendar.html"
+    title: ":cat"
+    permalink: "/trainings/:cat/"
+    slugify:
+      mode: pretty
+      cased: true
+  tags:
+    enabled: true
+    layouts:
+      - "calendar.html"
+    permalink: "/trainings/:tag/"
+    title: ":tag"
+    slugify:
+      mode: pretty
+      cased: true
+future: true
+pwa:
+  dest_js_directory: assets/js
+  precache_glob_ignores:
+    - sw-register.js
+  precache_glob_patterns:
+    - "/assets/{js,css,img,fonts}/**/*.{js,woff,webp,ttf,css,png,svg,jpg,jpeg}"
+    - "/manifest.json"
+    - "/*.png"
+    - "/*.js"
+    - "/**/*.html"
+    - "/index.html"
+jekyll-minifier:
+  exclude: 'atom.xml,sitemap.xml,manifest.json'
+  uglifier_args:
+    harmony: true
+sass:
+  sass_dir: _sass
+webp:
+  enabled: true
+  quality: 75
+  img_dir: ["/assets/img/"]
+  regenerate: false
+  webp_path: nil
+  exclude: ["/assets/img/**/*.svg"]

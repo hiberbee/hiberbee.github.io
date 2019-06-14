@@ -1,0 +1,6 @@
+---
+lang: en
+permalink: /404.html
+---
+# Page not found
+

@@ -1,0 +1,28 @@
+language: ruby
+cache: bundler
+sudo: false
+rvm: 2.6
+
+install:
+  - gem install bundler
+  - bundle install
+
+env:
+  - JEKYLL_ENV=production
+
+script:
+  - bundle exec jekyll build
+
+after_success:
+  - touch ./_site/.nojekyll
+
+deploy:
+  provider: pages
+  skip-cleanup: true
+  on:
+    branch: development
+  github-token: $GITHUB_TOKEN
+  local-dir: _site
+  keep-history: true
+  committer-from-gh: true
+  target_branch: master

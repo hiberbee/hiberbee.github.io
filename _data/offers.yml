@@ -1,0 +1,24 @@
+- name: Dev/Ops
+  trainings:
+    - id: kubernetes
+      name: Полный курс по Kubernetes
+- name: System design
+  trainings:
+    - id: microservices
+      name: Микросервисная архитектура
+- name: Engineering practices
+  trainings:
+    - id: dev-environment
+      name: Development environment
+- name: Software Engineering
+  trainings:
+    - id: java
+      name: Java
+- name: Quality Assurance
+  trainings:
+    - id: bdd
+      name: BDD и Cucumber
+- name: Technology & Services
+  trainings:
+    - id: graphql
+      name: GraphQL API

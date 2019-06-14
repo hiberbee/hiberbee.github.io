@@ -1,0 +1,19 @@
+global:
+  menu: 'Navigation'
+  about: 'Project and coach'
+  taxonomy: 'Taxonomy'
+  categories: 'Categories'
+  tags: 'Hashtags'
+  copyrights: 'Copyrights'
+  rss: 'RSS feed'
+  source_code: 'Source code'
+  legal_documents: 'Legal documents'
+index:
+  title: 'Technology consulting and professional education services'
+  tagline: 'Summer is great time to boost your skills!'
+  description: 'Consulting and supervision for software engineers and project teams. Key competences: dev/ops, system architecture, engineering practices, software development, quality assurance, technologies, services'
+  keywords: 'DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services'
+taxonomy:
+  title: 'Taxonomy'
+training:
+  checkout_button: 'Checkout'

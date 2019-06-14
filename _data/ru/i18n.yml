@@ -1,0 +1,23 @@
+global:
+  menu: 'Навигация'
+  about: 'Проект и преподаватель'
+  taxonomy: 'Таксономия'
+  categories: 'Категории'
+  tags: 'Теги'
+  copyrights: 'Копирайты'
+  rss: 'RSS лента'
+  source_code: 'Исходный код'
+  legal_documents: 'Юридические документы'
+index:
+  title: 'Технический консалтинг и повышение квалификации'
+  tagline: 'Проведи летние каникулы с пользой!'
+  description: 'Технический консалтинг и супервайзинг для разработчиков, техлидов, проектных команд. Специализации: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services'
+  keywords: 'DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services'
+taxonomy:
+  title: 'Таксономия'
+not_found:
+  title: 'Мы не нашли эту страницу'
+training:
+  checkout_button: 'Оплатить'
+category:
+  title: 'Расписание занятий'

@@ -1,0 +1,140 @@
+---
+layout: base
+---
+{% assign events = site.events | where_exp: "item", "item.date >= site.time" %}
+
+<div class="container-fluid no-padding">
+    <section class="hero text-center">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 class="text-white">{{ site.data.i18n.index.title }}</h1>
+                <p class="lead">
+                    <a href="/#portfolio"
+                       class="btn btn-primary btn-lg text-gray-dark font-accent">{{ site.data.i18n.index.tagline }}</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio" class="no-padding">
+        <div class="row no-gutters">
+            {% for category in site.data.offers %}
+                {% assign category_slug = category.name | slugify %}
+                <div class="col-12 col-sm-6 col-md-6 col-lg-4 portfolio-box">
+                    <img src="/assets/img/portfolio/{{ category_slug }}.webp" class="img-fluid"
+                         alt="{{ category.name }}">
+                    <div class="portfolio-box-caption">
+                        <div class="portfolio-box-caption-content">
+                            <div class="project-category">
+                                <a class="font-weight-bold " style="font-size: 20px"
+                                   href="/trainings/{{ category_slug }}/">
+                                    {{ category.name }}</a>
+                            </div>
+                            <div style="margin-top: 5px">
+                                {% for training in category.trainings %}
+                                    <img src="/assets/img/icons/{{ training.id }}.svg"
+                                         height="20" style="vertical-align: text-bottom;line-height: 1.5rem"
+                                         alt="{{ training.name }}"/>
+                                    <a href="/trainings/{{ training.id }}/">{{ training.name }}
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </section>
+    <section id="trainings">
+        <div class="container">
+            <h2 class="font-accent" style="margin-bottom: 1em;">Тренинги</h2>
+            <p>Поскольку многие тренинги расчитаны на специалистов разного профиля и покрывают
+                несколько тем, для их группировки используются теги и <a href="/taxonomy/">таксономия</a>.
+                Все тренинги и способы подписки на обновления доступны на <a
+                        href="https://github.com/{{ site.data.me.github }}/hiberbee.github.io/tree/development/">Github</a>
+            </p>
+            <p class="lead" style="z-index: 10">
+                <a href="/trainings/">Расписание занятий</a>
+            </p>
+            <div id="calendar" class="calendar-sm" style="margin-top: -45px;"></div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                    const calendarEl = document.getElementById('calendar');
+                    const calendar = new FullCalendar.Calendar(calendarEl, {
+                        firstDay: 1,
+                        locale: '{{ site.active_lang }}',
+                        plugins: ['list'],
+                        header: {
+                            left: false,
+                            center: false,
+                            right: 'prev,next'
+                        },
+                        titleFormat: {
+                            month: "long", day: "numeric"
+                        },
+                        themeSystem: "bootstrap4",
+                        defaultView: "listWeek",
+                        displayEventTime: true,
+                        views: {
+                            listWeek: {
+                                type: 'list',
+                                duration: {days: 7},
+                            }
+                        },
+                        height: 'auto',
+                        editable: false,
+                        selectable: false,
+                        navLinks: false,
+                        timeZone: "local",
+                        events: [
+                            {% include events-loop.html trainings=site.trainings %}
+                        ]
+                    });
+                    calendar.render();
+                });
+            </script>
+        </div>
+    </section>
+    <section id="services" style="background-color: #1e1e1e;padding: 20px;">
+        <div class="container-fluid text-center">
+            <h2>Сервисы</h2>
+        </div>
+    </section>
+    <section style="background-color: #ffffff;color: #222222;padding: 0">
+        <div class="container text-center">
+            <h3>Для разработчиков</h3>
+            <div class="row">
+                <div class="col-lg-3 col-6 text-center">
+                    <img width="100px" height="100px" style="margin-top: -5px" src="/assets/img/icons/job.svg"
+                         alt="Trainings">
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <img width="100px" height="100px" src="/assets/img/icons/supervision.svg" alt="Supervision">
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <img width="90" height="90" src="/assets/img/icons/levelup.svg"
+                         alt="T-Shaped skillset">
+                </div>
+                <div class="col-lg-3 col-6 text-center">
+                    <img width="100px" height="100px" style="margin-top: -5px"
+                         src="/assets/img/icons/transformation.svg" alt="Cetification">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="enterprise" style="background-color: #ffce1c;color: #222222;padding: 0">
+        <div class="container text-center">
+            <h3>Для компаний</h3>
+            <div class="row">
+                <div class="col-lg-4">
+                    <img width="100px" height="100px" src="/assets/img/icons/trainings.svg" alt="Trainings">
+                </div>
+                <div class="col-lg-4">
+                    <img width="100px" height="100px" src="/assets/img/icons/qna.svg" alt="Examine">
+                </div>
+                <div class="col-lg-4">
+                    <img width="100px" height="100px" src="/assets/img/icons/metrics.svg" alt="Progress">
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ site.active_lang }}">
+<head>
+    <title>{{ page.title | default: site.data.i18n.index.title }}</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="theme-color" content="#FFBD42">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ page.description | default: site.data.i18n.index.description }}">
+    <meta name="keywords" content="{{ page.tags | join: "," | default: site.data.i18n.index.keywords }}">
+    <meta http-equiv="Content-Language" content="{{ site.active_lang }}">
+    {% include links.html %}
+    {% include scripts.html %}
+    {% seo %}
+</head>
+<body id="page">
+{% include header.html %}
+{{ content }}
+{% include footer.html %}
+<script src='/assets/js/fullcalendar/core/main.js'></script>
+<script src='/assets/js/fullcalendar/interaction/main.js'></script>
+<script src='/assets/js/fullcalendar/daygrid/main.js'></script>
+<script src='/assets/js/fullcalendar/list/main.js'></script>
+<script src='/assets/js/fullcalendar/timegrid/main.js'></script>
+<script src='/assets/js/fullcalendar/bootstrap/main.js'></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

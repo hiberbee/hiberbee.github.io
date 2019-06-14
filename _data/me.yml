@@ -1,0 +1,26 @@
+name: "Vladyslav Volkov"
+email: "vlad@hiberbee.com"
+github: hiberbee
+facebook: hiberbee
+linkedin: vladyslavvolkov
+instagram: hiberbee
+telegram: nezquiraj
+organization:
+  name: Hiberbee
+  address: Часопис\nL"va Tolstoho vulytsya\, 3\, Kiev\, Kiev\, Ukraine
+api:
+  google_analytics: UA-111095351-4
+  facebook_pixel: 402031503981717
+  facebook_app_id: 145510372820525
+  payment:
+    express:
+      price: 600
+      url: b7f66d7f9a418
+    long:
+      price: 1200
+      url: b20078b595abc
+    full_day:
+      price: 3000
+      url: b209b19ce80c8
+    any:
+      url: b0732d2530b93
