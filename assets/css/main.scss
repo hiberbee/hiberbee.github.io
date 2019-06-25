@@ -10,8 +10,10 @@
   src: url("../fonts/FiraCode.ttf") format("truetype");
 }
 
-$font-family-sans-serif: lato, Helvetica, Arial, sans-serif;
+$font-family-sans-serif: myriad-pro, Helvetica, Arial, sans-serif;
+
 $font-family-monospace: FiraCode, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
 $primary: #FFBD42;
 $secondary: #fff;
 $dark: #1e1e1e;
@@ -65,6 +67,19 @@ $font-size-base: 1rem;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
+}
+
+.navbar-brand {
+  margin-top: -10px;
+  padding-top:0;
+  padding-bottom:0;
+}
+
+pre, code {
+  color: $primary;
+  font-family: $font-family-monospace;
+  padding: 10px 20px;
+  background: $dark;
 }
 
 a:hover, .badge:hover {
@@ -412,7 +427,7 @@ hr {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
-  line-height: 1.2;
+  line-height: 1.25;
   font-weight: 300;
   min-height: 4.6em;
   max-height: 4.6em;
