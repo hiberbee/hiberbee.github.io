@@ -9,8 +9,8 @@ global:
   source_code: 'Исходный код'
   legal_documents: 'Юридические документы'
 index:
-  title: 'Технический консалтинг и повышение квалификации'
-  tagline: 'Проведи летние каникулы с пользой!'
+  title: ''
+  tagline: ''
   description: 'Технический консалтинг и супервайзинг для разработчиков, техлидов, проектных команд. Специализации: DevOps, System Architecture, Engineering Practices, Software Engineering, Quality Assurance, technologies, services'
   keywords: 'DevOps, System design, Engineering practices, Software engineering, Quality assurance, Technology, Services'
 taxonomy:
