@@ -1,0 +1,29 @@
+{
+  "name": "Hiberbee",
+  "description": "Consulting and supervision for software engineers and project teams. Development tools and resources",
+  "short_name": "Hiberbee",
+  "lang": "en",
+  "icons": [
+    {
+      "src": "img/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "img/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "categories": [
+    "education",
+    "development",
+    "productivity"
+  ],
+  "gcm_sender_id": "482941778795",
+  "start_url": ".",
+  "theme_color": "#FFBD42",
+  "background_color": "#2d2d2d",
+  "license": "MIT",
+  "display": "standalone"
+}

@@ -1,0 +1,11 @@
+package.json
+build
+.dockerignore
+.eslintignore
+.editorconfig
+Dockerfile*
+.gitignore
+.prettierignore
+LICENSE
+.eslintcache
+*.log

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JsonSchemaMappingsProjectConfiguration">
+    <state>
+      <map>
+        <entry key="nginx-unit">
+          <value>
+            <SchemaInfo>
+              <option name="name" value="nginx-unit" />
+              <option name="relativePathToSchema" value="../../yamlschema.net/src/jsonschema/nginx/unit-config.jsonschema" />
+              <option name="patterns">
+                <list>
+                  <Item>
+                    <option name="path" value="docker-entrypoint.d/nginx.json" />
+                  </Item>
+                </list>
+              </option>
+            </SchemaInfo>
+          </value>
+        </entry>
+      </map>
+    </state>
+  </component>
+</project>
