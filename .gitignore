@@ -1,4 +1,7 @@
+.idea/sonarlint
+.idea/aws.xml
+.idea/codestream.xml
+
 build
 node_modules
 .eslintcache
-.idea/sonarlint
