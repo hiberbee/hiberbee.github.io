@@ -29,6 +29,7 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "^3.4.1",
     "rimraf": "^3.0.2",
+    "gh-pages": "^2.2.0",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
@@ -48,6 +49,7 @@
     "clean": "yarn rimraf build",
     "lint": "yarn tsc && yarn prettier --write src && yarn eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
     "start": "yarn serve -s build",
+    "deploy": "yarn build && yarn lint && yarn gh-pages -b master -d build",
     "watch": "HTTPS=true SSL_CRT_FILE=certs/tls.crt SSL_KEY_FILE=certs/tls.key NODE_ENV=production yarn react-scripts start"
   },
   "engines": {
