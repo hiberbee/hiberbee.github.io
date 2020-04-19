@@ -1,7 +1,7 @@
 .dockerignore
-.git*
+Dockerfile
+*git*
 build
 .idea
 node_modules
-docker-entrypoint.d
 .editorconfig

@@ -1,5 +1,5 @@
 {
-  "name": "@template/typescript-react-antd",
+  "name": "@skeleton/typescript-react-antd",
   "private": true,
   "description": "Antd React Typescript boilerplate",
   "repository": {
@@ -16,62 +16,54 @@
     "email": "vlad@hiberbee.com",
     "url": "https://github.com/vladyslavvolkov"
   },
+  "homepage": "https://hiberbee.github.io",
   "main": "src/index.tsx",
   "dependencies": {
-    "antd": "^4.1.4",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-icons": "^3.9.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "^3.4.1"
-  },
-  "devDependencies": {
-    "typescript": "^3.8.3",
     "@types/node": "^13.13.0",
     "@types/react": "^16.9.34",
     "@types/react-dom": "^16.9.6",
     "@types/react-router-dom": "^5.1.4",
-    "@types/react-syntax-highlighter": "^11.0.4",
+    "antd": "^4.1.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^3.8.3"
+  },
+  "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^2.28.0",
     "@typescript-eslint/parser": "^2.28.0",
-    "dotenv": "^8.2.0",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.1",
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^3.0.0",
-    "husky": "^4.2.5",
-    "lint-staged": "^10.1.5",
     "prettier": "^2.0.4",
-    "rimraf": "^3.0.2",
-    "stylelint": "^13.3.2"
+    "serve": "^11.3.0"
   },
   "scripts": {
-    "build": "NODE_ENV=production react-scripts build",
-    "clean": "rimraf build",
-    "eject": "react-scripts eject",
-    "lint": "tsc && prettier --write src && eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
-    "start": "HTTPS=true SSL_CRT_FILE=certs/tls.crt SSL_KEY_FILE=certs/tls.key NODE_ENV=production react-scripts start",
-    "test": "react-scripts test --env=jsdom"
-  },
-  "lint-staged": {
-    "*.{js,jsx,ts,tsx}": [
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
+    "build": "NODE_ENV=production yarn clean && yarn react-scripts build",
+    "clean": "yarn rimraf build",
+    "lint": "yarn tsc && yarn prettier --write src && yarn eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
+    "start": "yarn serve -s build",
+    "watch": "HTTPS=true SSL_CRT_FILE=certs/tls.crt SSL_KEY_FILE=certs/tls.key NODE_ENV=production yarn react-scripts start"
   },
   "engines": {
     "npm": "^6.0",
     "yarn": "^1.20"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

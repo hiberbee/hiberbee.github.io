@@ -38,10 +38,12 @@ wrapper {
   distributionType(Wrapper.DistributionType.ALL)
   gradleVersion("6.4-rc-1")
 }
+
 java {
   sourceCompatibility = JavaVersion.VERSION_11
   targetCompatibility = JavaVersion.VERSION_14
 }
+
 def projectGroup = "dev.hiberbee"
 def projectVersion = (Instant.now().toEpochMilli() / 1000) as String
 
