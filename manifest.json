@@ -1,7 +1,7 @@
 {
-  "name": "Hiberbee",
-  "description": "Consulting and supervision for software engineers and project teams. Development tools and resources",
-  "short_name": "Hiberbee",
+  "name": "Hiberbee Honeycomb",
+  "description": "Development tools and resources. Consulting and supervision services for software engineers individuals and project teams.",
+  "short_name": "Honeycomb",
   "lang": "en",
   "icons": [
     {
@@ -22,8 +22,8 @@
   ],
   "gcm_sender_id": "482941778795",
   "start_url": ".",
-  "theme_color": "#FFBD42",
-  "background_color": "#2d2d2d",
+  "theme_color": "#FFC83C",
+  "background_color": "#242424",
   "license": "MIT",
   "display": "standalone"
 }
