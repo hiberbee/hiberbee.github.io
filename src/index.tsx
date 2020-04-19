@@ -27,7 +27,6 @@ import { register } from './serviceWorker';
 import { Layout, Typography } from 'antd';
 import { render } from 'react-dom';
 import { BrowserRouter, Route } from 'react-router-dom';
-import 'antd/dist/antd.compact.min.css';
 
 function Index(): JSX.Element {
   return (
