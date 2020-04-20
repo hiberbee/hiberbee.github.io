@@ -12,4 +12,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: yarn --production --ignore-scripts --prefer-offline
-      - run: yarn deploy --repo='https://${{ secrets.GITHUB_TOKEN }}@github.com/hiberbee/hiberbee.github.io
+      - run: yarn deploy --repo='https://${GITHUB_TOKEN}@github.com/hiberbee/hiberbee.github.io
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
