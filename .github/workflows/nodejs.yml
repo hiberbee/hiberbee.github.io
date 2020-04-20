@@ -14,4 +14,4 @@ jobs:
       - run: yarn --production --ignore-scripts --prefer-offline
       - run: yarn deploy --repo="https://${GITHUB_TOKEN}@github.com/hiberbee/hiberbee.github.io"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TOKEN }}
